@@ -66,7 +66,7 @@
             <!-- Dropdown - Laporan Survei -->
             <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in"
                 aria-labelledby="laporanSurveiDropdown">
-                <a class="dropdown-item" href="#" style="font-size: 14px;">Pengguna Lulusan</a>
+                <a class="dropdown-item" href="{{ route('penggunaLulusan.index') }}" style="font-size: 14px;">Pengguna Lulusan</a>
                 <a class="dropdown-item" href="#" style="font-size: 14px;">Dosen</a>
                 <a class="dropdown-item" href="#" style="font-size: 14px;">Mahasiswa</a>
                 <a class="dropdown-item" href="#" style="font-size: 14px;">Mitra Kerja Sama</a>

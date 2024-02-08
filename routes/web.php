@@ -18,4 +18,5 @@ Route::get('/', function () {
     return view('layouts/master');
 });
 
-Route::resource('penggunaLulusan', PenggunaLulusanController::class);
+Route::get('penggunaLulusan', [PenggunaLulusanController::class, 'index'])->name('penggunaLulusan.index');
+Route::post('/penggunaLulusan/import', [PenggunaLulusanController::class, 'import'])->name('penggunaLulusan.import');
