@@ -1,12 +1,15 @@
-<nav class="navbar navbar-expand-lg navbar-light bg-primary topbar mb-4 fixed-top">
+<nav class="navbar navbar-expand-lg navbar-light bg-primary topbar mb-4 fixed-top bg-body-tertiary">
+    <div class="container-fluid">
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
     <!-- Logo or Image on the left side -->
     <a class="navbar-brand" href="#">
         <img src="{{ asset('sbadmin/img/logoUNIB.png') }}" height="60" alt="logo">
     </a>
+    <br>
 
     <!-- Sidebar Toggle (Topbar) for Mobile View -->
     <button id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle mr-3">
-        <i class="fa fa-bars"></i>
+        <i class="fa fa-bars">hi</i>
     </button>
 
     <!-- Topbar Navbar -->
@@ -46,8 +49,8 @@
         <li class="nav-item dropdown no-arrow">
             <a class="nav-link dropdown-toggle" href="#" style="font-size: 14px;" id="laporanSurveiDropdown" role="button"
                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                <i class="fas fa-file-alt fa-fw"></i>
-                <span>Evaluasi<i class="fas fa-chart-line"></i></span>
+                <i class="fas fa-chart-line"></i>
+                <span>Evaluasi<i class="fas fa-chevron-down"></i></span>
             </a>
             <!-- Dropdown - Laporan Survei -->
             <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in"
@@ -147,5 +150,7 @@
             </div>
         </li>
     </ul>
+</div>
+</div>
 </nav>
 <!-- End of Topbar -->

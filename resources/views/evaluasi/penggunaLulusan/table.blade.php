@@ -1,13 +1,19 @@
 @extends('layouts.master')
-@section('title', 'Home')
+@section('title', 'Evaluasi -> Pengguna Lulusan')
+@section('page', 'Evaluasi -> Pengguna Lulusan')
 
 
 {{-- content --}}
 @section('content')
 
-<div class="table-responsive">
-    <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
-        <thead>
+<div class="card shadow mb-4">
+    <div class="card-header py-3 text-center">
+        <h6 class="m-0 font-weight-bold text-primary">Penjelasan Tiap Butir Pertanyaan</h6>
+    </div>
+    <div class="card-body">
+        <div class="table-responsive">
+            <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                <thead>
             <tr>
                 <th>Item Pertanyaan</th>
                 <th>Sangat Baik</th>
@@ -300,6 +306,8 @@
             </tr>
         </tbody>
     </table>
+   </div>
+  </div>
 </div>
 
 @endsection
