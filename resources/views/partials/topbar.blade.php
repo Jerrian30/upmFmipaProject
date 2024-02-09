@@ -43,11 +43,29 @@
             </a>
         </li>
 
-        <li class="nav-item active">
-            <a class="nav-link" href="#" style="font-size: 14px;">
-                <i class="fas fa-chart-line"></i>
-                <span>Evaluasi</span>
+        <li class="nav-item dropdown no-arrow">
+            <a class="nav-link dropdown-toggle" href="#" style="font-size: 14px;" id="laporanSurveiDropdown" role="button"
+                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <i class="fas fa-file-alt fa-fw"></i>
+                <span>Evaluasi<i class="fas fa-chart-line"></i></span>
             </a>
+            <!-- Dropdown - Laporan Survei -->
+            <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in"
+                aria-labelledby="laporanSurveiDropdown">
+                <a class="dropdown-item" href="{{ route('penggunaLulusan.eval') }}" style="font-size: 14px;">Pengguna Lulusan</a>
+                <a class="dropdown-item" href="#" style="font-size: 14px;">Dosen</a>
+                <a class="dropdown-item" href="#" style="font-size: 14px;">Mahasiswa</a>
+                <a class="dropdown-item" href="#" style="font-size: 14px;">Mitra Kerja Sama</a>
+                <a class="dropdown-item" href="#" style="font-size: 14px;">Tracer Studi</a>
+                <a class="dropdown-item" href="#" style="font-size: 14px;">Pengguna Terhadap Kinerja Pimpinan Fakultas</a>
+                <a class="dropdown-item" href="#" style="font-size: 14px;">Pengguna Terhadap Kinerja Layanan Prodi</a>
+                <a class="dropdown-item" href="#" style="font-size: 14px;">Pengguna Terhadap Kinerja Layanan Laboratorium</a>
+                <a class="dropdown-item" href="#" style="font-size: 14px;">Pengguna Terhadap Kinerja Layanan Subbagian Kemahasiswaan</a>
+                <a class="dropdown-item" href="#" style="font-size: 14px;">Pengguna Terhadap Kinerja Layanan Subbagian Keuangan</a>
+                <a class="dropdown-item" href="#" style="font-size: 14px;">Pengguna Terhadap Kinerja Layanan Subbagian TURTP</a>
+                <a class="dropdown-item" href="#" style="font-size: 14px;">Pengguna Terhadap Kinerja Layanan Subbagian Akademik</a>
+                <a class="dropdown-item" href="#" style="font-size: 14px;">VMTS</a>
+            </div>
         </li>
 
         <li class="nav-item active">
