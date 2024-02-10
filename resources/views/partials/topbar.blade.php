@@ -1,6 +1,4 @@
 <nav class="navbar navbar-expand-lg navbar-light bg-primary topbar mb-4 fixed-top bg-body-tertiary">
-    <div class="container-fluid">
-        <div class="collapse navbar-collapse" id="navbarNavDropdown">
     <!-- Logo or Image on the left side -->
     <a class="navbar-brand" href="#">
         <img src="{{ asset('sbadmin/img/logoUNIB.png') }}" height="60" alt="logo">
@@ -56,7 +54,7 @@
             <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in"
                 aria-labelledby="laporanSurveiDropdown">
                 <a class="dropdown-item" href="{{ route('penggunaLulusan.eval') }}" style="font-size: 14px;">Pengguna Lulusan</a>
-                <a class="dropdown-item" href="#" style="font-size: 14px;">Dosen</a>
+                <a class="dropdown-item" href="{{ route('dosen.eval') }}" style="font-size: 14px;">Dosen</a>
                 <a class="dropdown-item" href="#" style="font-size: 14px;">Mahasiswa</a>
                 <a class="dropdown-item" href="#" style="font-size: 14px;">Mitra Kerja Sama</a>
                 <a class="dropdown-item" href="#" style="font-size: 14px;">Tracer Studi</a>
@@ -88,7 +86,7 @@
             <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in"
                 aria-labelledby="laporanSurveiDropdown">
                 <a class="dropdown-item" href="{{ route('penggunaLulusan.index') }}" style="font-size: 14px;">Pengguna Lulusan</a>
-                <a class="dropdown-item" href="#" style="font-size: 14px;">Dosen</a>
+                <a class="dropdown-item" href="{{ route('dosen.index') }}" style="font-size: 14px;">Dosen</a>
                 <a class="dropdown-item" href="#" style="font-size: 14px;">Mahasiswa</a>
                 <a class="dropdown-item" href="#" style="font-size: 14px;">Mitra Kerja Sama</a>
                 <a class="dropdown-item" href="#" style="font-size: 14px;">Tracer Studi</a>
@@ -150,7 +148,6 @@
             </div>
         </li>
     </ul>
-</div>
-</div>
+
 </nav>
 <!-- End of Topbar -->

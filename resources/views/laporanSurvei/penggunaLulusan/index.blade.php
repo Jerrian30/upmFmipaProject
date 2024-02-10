@@ -1,6 +1,6 @@
 @extends('layouts.master')
 @section('title', 'Survei Pengguna Lulusan')
-@section('page', 'Laporan Survei')
+@section('page', 'Laporan Survei ->  Pengguna Lulusan')
 
 @section('js')
 <script>
@@ -19,8 +19,6 @@
 @section('content')
 
 <div class="container-fluid">
-
-    <h1 class="h3 mb-4 text-gray-800">Surveis List</h1>
 
     @if(session('success'))
         <div class="alert alert-success">{{ session('success') }}</div>
@@ -110,12 +108,13 @@
                         <td>{{ $penggunaLulusan->kepercayaan_diri }}</td>
                         <td>{{ $penggunaLulusan->rasa_tanggungjawab }}</td>
                         <td>{{ $penggunaLulusan->kemampuan_menyampaikan_ide }}</td>
-                        <td>{{ $penggunaLulusan->keunggulan_alumni }}</td>
-                        <td>{{ $penggunaLulusan->kelemahan_alumni }}</td>
-                        <td>{{ $penggunaLulusan->kualitas_alumni }}</td>
-                        <td>{{ $penggunaLulusan->kompetensi_penting }}</td>
-                        <td>{{ $penggunaLulusan->saran_pemantapan_kompetensi }}</td>
-                        <td>{{ $penggunaLulusan->saran_lembaga_unib }}</td>
+                        <td>{{ $penggunaLulusan->keunggulan_alumni ?? '-' }}</td>
+                        <td>{{ $penggunaLulusan->kelemahan_alumni ?? '-' }}</td>
+                        <td>{{ $penggunaLulusan->kualitas_alumni ?? '-' }}</td>
+                        <td>{{ $penggunaLulusan->kompetensi_penting ?? '-' }}</td>
+                        <td>{{ $penggunaLulusan->saran_pemantapan_kompetensi ?? '-' }}</td>
+                        <td>{{ $penggunaLulusan->saran_lembaga_unib ?? '-' }}</td>
+                        
                     </tr>
                 @endforeach
             </tbody>
