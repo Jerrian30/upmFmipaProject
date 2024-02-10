@@ -1,17 +1,17 @@
-
+<div class="row">
     <div class="col-lg-3 mb-4 farmasiContainer" style="display: none;">
         <div class="card">
             <div class="card-body" >
-                <h6 class="card-title">1. Memiliki kejujuran, etika pergaulan, keramahan dan sikap  yang baik</h6>
+                <h6 class="card-title">1. Konsistensi pimpinan dalam penegakan aturan dan kebijakan di UNIB</h6>
                 {!! $farm1->container() !!}
             </div>
         </div>
     </div>
-{{-- 
+
     <div class="col-lg-3 mb-4 farmasiContainer" style="display: none;">
         <div class="card">
             <div class="card-body">
-                <h6 class="card-title">2. Memiliki kemampuan dan menguasai bidang keilmuannya <br></h6>
+                <h6 class="card-title">2. Efektivitas pembagian tugas dan fungsi pimpinan secara jelas sesuai dengan struktur organisasi tata kelola UNIB<br></h6>
                 {!! $farm2->container() !!}
             </div>
         </div>
@@ -20,7 +20,7 @@
     <div class="col-lg-3 mb-4 farmasiContainer" style="display: none;">
         <div class="card">
             <div class="card-body">
-                <h6 class="card-title">3. Memiliki kemampuan berbahasa asing (inggris/ jepang/ perancis/ cina)</h6>
+                <h6 class="card-title">3. Kebijakan pimpinan dibuat dan disosialisasikan dengan melibatkan para pemangku kepentingan</h6>
                 {!! $farm3->container() !!}
             </div>
         </div>
@@ -30,7 +30,7 @@
     <div class="col-lg-3 mb-4 farmasiContainer" style="display: none;">
         <div class="card">
             <div class="card-body">
-                <h6 class="card-title">4. Memiliki kemampuan menggunakan Teknologi Informasi dan Komunikasi</h6>
+                <h6 class="card-title">4. Pembagian tugas, wewenang, pengawasan, dan pemantauan terhadap kinerja dosen yang dilakukan pimpinan dalam pengelolaan SDM telah sesuai dengan organisasi tata kelola UNIB</h6>
                 {!! $farm4->container() !!}
             </div>
         </div>
@@ -39,7 +39,7 @@
     <div class="col-lg-3 mb-4 farmasiContainer" style="display: none;">
         <div class="card">
             <div class="card-body">
-                <h6 class="card-title">5. Memiliki kemampuan berkomunikasi</h6>
+                <h6 class="card-title">5. Ketersediaan fasilitas sarana (seperti gedung perkuliahan, laboratorium, perpustakaan, dan lainnya) dan prasarana (seperti LCD, papan tulis, spidol, pendingin ruangan, dan lainnya) yang berkualitas untuk dosen dalam menjalankan tugas pendidikan dan pengajaran</h6>
                 {!! $farm5->container() !!}
             </div>
         </div>
@@ -48,7 +48,7 @@
     <div class="col-lg-3 mb-4 farmasiContainer" style="display: none;">
         <div class="card">
             <div class="card-body">
-                <h6 class="card-title">6. Memiliki kemampuan kerjasama dalam tim</h6>
+                <h6 class="card-title">6. Ketersediaan fasilitas sarana dan prasarana untuk dosen dalam menjalankan tugas penelitian dan pengabdian kepada masyarakat</h6>
                 {!! $farm6->container() !!}
             </div>
         </div>
@@ -58,7 +58,7 @@
     <div class="col-lg-3 mb-4 farmasiContainer" style="display: none;">
         <div class="card">
             <div class="card-body">
-                <h6 class="card-title">7. Memiliki kedisiplinan yang baik dalam berbagai aspek</h6>
+                <h6 class="card-title">7. Suasana ruang perkuliahan yang nyaman dan memiliki prokes Covid 19</h6>
                 {!! $farm7->container() !!}
             </div>
         </div>
@@ -67,7 +67,7 @@
     <div class="col-lg-3 mb-4 farmasiContainer" style="display: none;">
         <div class="card">
             <div class="card-body">
-                <h6 class="card-title">8. Memiliki rasa percaya diri yang tinggi</h6>
+                <h6 class="card-title">8. Adanya kesempatan bagi dosen untuk mengembangkan karir dengan mudah, khususnya yang berkaitan dengan Tri Dharma PT</h6>
                 {!! $farm8->container() !!}
             </div>
         </div>
@@ -77,7 +77,7 @@
     <div class="col-lg-3 mb-4 farmasiContainer" style="display: none;">
         <div class="card">
             <div class="card-body">
-                <h6 class="card-title">9. Memiliki rasa tanggung jawab <br><br> <p style="opacity: 0">hi</p></h6>
+                <h6 class="card-title">9.Pembagian beban kerja dosen sesuai dengan tugas, pokok dan fungsi</p></h6>
                 {!! $farm9->container() !!}
             </div>
         </div>
@@ -86,8 +86,9 @@
     <div class="col-lg-3 mb-4 farmasiContainer" style="display: none;">
         <div class="card">
             <div class="card-body">
-                <h6 class="card-title">10. Kemampuan menyampaikan ide pada bidang pekerjaan yang menjadi tanggung jawabnya</h6>
+                <h6 class="card-title">10. Kepuasan terhadap kesejahteraan dosen (Besaran remunerasi, pembayaran remunerasi serta sertifikasi dosen tepat waktu).</h6>
                 {!! $farm10->container() !!}
             </div>
         </div>
-    </div> --}}
+    </div>
+</div>

@@ -1,6 +1,6 @@
 @extends('layouts.master')
-@section('title', 'Evaluasi -> Dosen')
-@section('page', 'Evaluasi -> Dosen')
+@section('title', 'Home')
+@section('page', 'Evaluasi')
 {{-- java script --}}
 @section('js')
 
@@ -92,11 +92,11 @@
             <option value="d3labsains">D3 Lab Sains</option>
         </select>
         <br>
-        
-        {{-- @include('grafik.dosen.d3kebidanan.view')
-        @include('grafik.dosen.s1statistika.view') --}}
+    
         @include('grafik.dosen.d3farmasi.view')
-        {{-- @include('grafik.dosen.s1matematika.view')
+        {{-- @include('grafik.dosen.d3kebidanan.view')
+        @include('grafik.dosen.s1statistika.view')
+        @include('grafik.dosen.s1matematika.view')
         @include('grafik.dosen.s1biologi.view')
         @include('grafik.dosen.d3keperawatan.view')
         @include('grafik.dosen.d3labsains.view')

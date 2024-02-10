@@ -20,15 +20,15 @@ use App\Models\Dosen;
 
 // Class Farmasi
 use App\Charts\Dosen\D3Farmasi\Farm1;
-// use App\Charts\PenggunaLulusan\D3Farmasi\Farm2;
-// use App\Charts\PenggunaLulusan\D3Farmasi\Farm3;
-// use App\Charts\PenggunaLulusan\D3Farmasi\Farm4;
-// use App\Charts\PenggunaLulusan\D3Farmasi\Farm5;
-// use App\Charts\PenggunaLulusan\D3Farmasi\Farm6;
-// use App\Charts\PenggunaLulusan\D3Farmasi\Farm7;
-// use App\Charts\PenggunaLulusan\D3Farmasi\Farm8;
-// use App\Charts\PenggunaLulusan\D3Farmasi\Farm9;
-// use App\Charts\PenggunaLulusan\D3Farmasi\Farm10;
+use App\Charts\Dosen\D3Farmasi\Farm2;
+use App\Charts\Dosen\D3Farmasi\Farm3;
+use App\Charts\Dosen\D3Farmasi\Farm4;
+use App\Charts\Dosen\D3Farmasi\Farm5;
+use App\Charts\Dosen\D3Farmasi\Farm6;
+use App\Charts\Dosen\D3Farmasi\Farm7;
+use App\Charts\Dosen\D3Farmasi\Farm8;
+use App\Charts\Dosen\D3Farmasi\Farm9;
+use App\Charts\Dosen\D3Farmasi\Farm10;
 
 // // Class Matematika
 // use App\Charts\PenggunaLulusan\S1Matematika\Math1;
@@ -134,15 +134,15 @@ class EvalDosenController extends Controller
     public function index(
         // D3 Farmasi
         Farm1 $farm1,
-        // Farm2 $farm2,
-        // Farm3 $farm3,
-        // Farm4 $farm4,
-        // Farm5 $farm5,
-        // Farm6 $farm6,
-        // Farm7 $farm7,
-        // Farm8 $farm8,
-        // Farm9 $farm9,
-        // Farm10 $farm10,
+        Farm2 $farm2,
+        Farm3 $farm3,
+        Farm4 $farm4,
+        Farm5 $farm5,
+        Farm6 $farm6,
+        Farm7 $farm7,
+        Farm8 $farm8,
+        Farm9 $farm9,
+        Farm10 $farm10,
 
         // // S1 Matematika
         // Math1 $math1,
@@ -246,15 +246,15 @@ class EvalDosenController extends Controller
         [
             'dosen' => $dosen,
             'farm1' => $farm1->build(),
-            // 'farm2' => $farm2->build(),
-            // 'farm3' => $farm3->build(),
-            // 'farm4' => $farm4->build(),
-            // 'farm5' => $farm5->build(),
-            // 'farm6' => $farm6->build(),
-            // 'farm7' => $farm7->build(),
-            // 'farm8' => $farm8->build(),
-            // 'farm9' => $farm9->build(),
-            // 'farm10' => $farm10->build(),
+            'farm2' => $farm2->build(),
+            'farm3' => $farm3->build(),
+            'farm4' => $farm4->build(),
+            'farm5' => $farm5->build(),
+            'farm6' => $farm6->build(),
+            'farm7' => $farm7->build(),
+            'farm8' => $farm8->build(),
+            'farm9' => $farm9->build(),
+            'farm10' => $farm10->build(),
 
             // 'math1' => $math1->build(),
             // 'math2' => $math2->build(),
