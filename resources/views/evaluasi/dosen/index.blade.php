@@ -13,7 +13,7 @@
 @include('grafik.dosen.d3labsains.js')
 @include('grafik.dosen.s1statistika.js')--}}
 @include('grafik.dosen.s1kimia.js')
-{{-- @include('grafik.dosen.s2kimia.js')  --}}
+@include('grafik.dosen.s2kimia.js') 
 
     <script>
         document.getElementById('programStudi').addEventListener('change', function() {
@@ -108,8 +108,8 @@
         @include('grafik.dosen.s1matematika.view')
         @include('grafik.dosen.s1biologi.view')
         @include('grafik.dosen.d3keperawatan.view')
-        @include('grafik.dosen.d3labsains.view')
-        @include('grafik.dosen.s2kimia.view') --}}
+        @include('grafik.dosen.d3labsains.view')--}}
+        @include('grafik.dosen.s2kimia.view') 
     </div>
 </div>
 @endsection

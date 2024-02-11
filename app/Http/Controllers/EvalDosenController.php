@@ -127,16 +127,16 @@ use App\Charts\Dosen\S1Kimia\S1kim9;
 use App\Charts\Dosen\S1Kimia\S1kim10;
 
 // //Class S2 Kimia
-// use App\Charts\Dosen\S2Kimia\S2kim1;
-// use App\Charts\Dosen\S2Kimia\S2kim2;
-// use App\Charts\Dosen\S2Kimia\S2kim3;
-// use App\Charts\Dosen\S2Kimia\S2kim4;
-// use App\Charts\Dosen\S2Kimia\S2kim5;
-// use App\Charts\Dosen\S2Kimia\S2kim6;
-// use App\Charts\Dosen\S2Kimia\S2kim7;
-// use App\Charts\Dosen\S2Kimia\S2kim8;
-// use App\Charts\Dosen\S2Kimia\S2kim9;
-// use App\Charts\Dosen\S2Kimia\S2kim10;
+use App\Charts\Dosen\S2Kimia\S2kim1;
+use App\Charts\Dosen\S2Kimia\S2kim2;
+use App\Charts\Dosen\S2Kimia\S2kim3;
+use App\Charts\Dosen\S2Kimia\S2kim4;
+use App\Charts\Dosen\S2Kimia\S2kim5;
+use App\Charts\Dosen\S2Kimia\S2kim6;
+use App\Charts\Dosen\S2Kimia\S2kim7;
+use App\Charts\Dosen\S2Kimia\S2kim8;
+use App\Charts\Dosen\S2Kimia\S2kim9;
+use App\Charts\Dosen\S2Kimia\S2kim10;
 
 
 
@@ -253,16 +253,16 @@ class EvalDosenController extends Controller
         S1kim10 $s1kim10,
 
         // //S2 Kimia
-        // S2kim1 $s2kim1,
-        // S2kim2 $s2kim2,
-        // S2kim3 $s2kim3,
-        // S2kim4 $s2kim4,
-        // S2kim5 $s2kim5,
-        // S2kim6 $s2kim6,
-        // S2kim7 $s2kim7,
-        // S2kim8 $s2kim8,
-        // S2kim9 $s2kim9,
-        // S2kim10 $s2kim10,
+        S2kim1 $s2kim1,
+        S2kim2 $s2kim2,
+        S2kim3 $s2kim3,
+        S2kim4 $s2kim4,
+        S2kim5 $s2kim5,
+        S2kim6 $s2kim6,
+        S2kim7 $s2kim7,
+        S2kim8 $s2kim8,
+        S2kim9 $s2kim9,
+        S2kim10 $s2kim10,
     )
     {
         $dosen = Dosen::all();
@@ -369,16 +369,16 @@ class EvalDosenController extends Controller
             's1kim9' => $s1kim9->build(),
             's1kim10' => $s1kim10->build(),
 
-            // 's2kim1' => $s2kim1->build(),
-            // 's2kim2' => $s2kim2->build(),
-            // 's2kim3' => $s2kim3->build(),
-            // 's2kim4' => $s2kim4->build(),
-            // 's2kim5' => $s2kim5->build(),
-            // 's2kim6' => $s2kim6->build(),
-            // 's2kim7' => $s2kim7->build(),
-            // 's2kim8' => $s2kim8->build(),
-            // 's2kim9' => $s2kim9->build(),
-            // 's2kim10' => $s2kim10->build()
+            's2kim1' => $s2kim1->build(),
+            's2kim2' => $s2kim2->build(),
+            's2kim3' => $s2kim3->build(),
+            's2kim4' => $s2kim4->build(),
+            's2kim5' => $s2kim5->build(),
+            's2kim6' => $s2kim6->build(),
+            's2kim7' => $s2kim7->build(),
+            's2kim8' => $s2kim8->build(),
+            's2kim9' => $s2kim9->build(),
+            's2kim10' => $s2kim10->build()
         ]);
     } 
 
