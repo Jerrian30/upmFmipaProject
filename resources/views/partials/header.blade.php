@@ -2,7 +2,31 @@
 <html lang="en">
 
 <head>
+    <style>
+    .card-title {
+    overflow-y: auto; /* Mengizinkan scrolling vertikal jika teks lebih panjang dari tinggi elemen */
+    height: 72px; /* Tinggi tetap untuk judul */
+    word-wrap: break-word; /* Memastikan kata-kata dapat dipisahkan untuk menghindari overflow horizontal */
+}
 
+/* Sembunyikan scrollbar untuk WebKit browsers seperti Chrome dan Safari */
+.card-title::-webkit-scrollbar {
+    display: none;
+}
+
+/* Opsi untuk Firefox */
+.card-title {
+    scrollbar-width: none; /* Firefox */
+}
+
+/* Untuk IE dan Edge */
+.card-title {
+    -ms-overflow-style: none; /* Internet Explorer 10+ */
+
+}
+
+
+    </style>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">

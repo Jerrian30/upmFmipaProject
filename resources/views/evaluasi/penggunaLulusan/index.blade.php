@@ -1,6 +1,6 @@
 @extends('layouts.master')
-@section('title', 'Home')
-@section('page', 'Evaluasi')
+@section('title', 'Evaluasi -> Pengguna Lulusan')
+@section('page', 'Evaluasi -> Pengguna Lulusan') 
 {{-- java script --}}
 @section('js')
 

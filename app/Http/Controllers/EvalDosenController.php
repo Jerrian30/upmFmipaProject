@@ -6,19 +6,19 @@ use Illuminate\Http\Request;
 
 use App\Models\Dosen;
 
-// use App\Charts\PenggunaLulusan\PL1;
-// use App\Charts\PenggunaLulusan\PL2;
-// use App\Charts\PenggunaLulusan\PL3;
-// use App\Charts\PenggunaLulusan\PL4;
-// use App\Charts\PenggunaLulusan\PL5;
-// use App\Charts\PenggunaLulusan\PL6;
-// use App\Charts\PenggunaLulusan\PL7;
-// use App\Charts\PenggunaLulusan\PL8;
-// use App\Charts\PenggunaLulusan\PL9;
-// use App\Charts\PenggunaLulusan\PL10;
+// use App\Charts\Dosen\PL1;
+// use App\Charts\Dosen\PL2;
+// use App\Charts\Dosen\PL3;
+// use App\Charts\Dosen\PL4;
+// use App\Charts\Dosen\PL5;
+// use App\Charts\Dosen\PL6;
+// use App\Charts\Dosen\PL7;
+// use App\Charts\Dosen\PL8;
+// use App\Charts\Dosen\PL9;
+// use App\Charts\Dosen\PL10;
 
 
-// Class Farmasi
+// Class D3Farmasi
 use App\Charts\Dosen\D3Farmasi\Farm1;
 use App\Charts\Dosen\D3Farmasi\Farm2;
 use App\Charts\Dosen\D3Farmasi\Farm3;
@@ -30,101 +30,113 @@ use App\Charts\Dosen\D3Farmasi\Farm8;
 use App\Charts\Dosen\D3Farmasi\Farm9;
 use App\Charts\Dosen\D3Farmasi\Farm10;
 
+// Class S1Farmasi
+use App\Charts\Dosen\S1Farmasi\S1Farm1;
+use App\Charts\Dosen\S1Farmasi\S1Farm2;
+use App\Charts\Dosen\S1Farmasi\S1Farm3;
+use App\Charts\Dosen\S1Farmasi\S1Farm4;
+use App\Charts\Dosen\S1Farmasi\S1Farm5;
+use App\Charts\Dosen\S1Farmasi\S1Farm6;
+use App\Charts\Dosen\S1Farmasi\S1Farm7;
+use App\Charts\Dosen\S1Farmasi\S1Farm8;
+use App\Charts\Dosen\S1Farmasi\S1Farm9;
+use App\Charts\Dosen\S1Farmasi\S1Farm10;
+
 // // Class Matematika
-// use App\Charts\PenggunaLulusan\S1Matematika\Math1;
-// use App\Charts\PenggunaLulusan\S1Matematika\Math2;
-// use App\Charts\PenggunaLulusan\S1Matematika\Math3;
-// use App\Charts\PenggunaLulusan\S1Matematika\Math4;
-// use App\Charts\PenggunaLulusan\S1Matematika\Math5;
-// use App\Charts\PenggunaLulusan\S1Matematika\Math6;
-// use App\Charts\PenggunaLulusan\S1Matematika\Math7;
-// use App\Charts\PenggunaLulusan\S1Matematika\Math8;
-// use App\Charts\PenggunaLulusan\S1Matematika\Math9;
-// use App\Charts\PenggunaLulusan\S1Matematika\Math10;
+// use App\Charts\Dosen\S1Matematika\Math1;
+// use App\Charts\Dosen\S1Matematika\Math2;
+// use App\Charts\Dosen\S1Matematika\Math3;
+// use App\Charts\Dosen\S1Matematika\Math4;
+// use App\Charts\Dosen\S1Matematika\Math5;
+// use App\Charts\Dosen\S1Matematika\Math6;
+// use App\Charts\Dosen\S1Matematika\Math7;
+// use App\Charts\Dosen\S1Matematika\Math8;
+// use App\Charts\Dosen\S1Matematika\Math9;
+// use App\Charts\Dosen\S1Matematika\Math10;
 
 // // Class Biologi
-// use App\Charts\PenggunaLulusan\S1Biologi\Bio1;
-// use App\Charts\PenggunaLulusan\S1Biologi\Bio2;
-// use App\Charts\PenggunaLulusan\S1Biologi\Bio3;
-// use App\Charts\PenggunaLulusan\S1Biologi\Bio4;
-// use App\Charts\PenggunaLulusan\S1Biologi\Bio5;
-// use App\Charts\PenggunaLulusan\S1Biologi\Bio6;
-// use App\Charts\PenggunaLulusan\S1Biologi\Bio7;
-// use App\Charts\PenggunaLulusan\S1Biologi\Bio8;
-// use App\Charts\PenggunaLulusan\S1Biologi\Bio9;
-// use App\Charts\PenggunaLulusan\S1Biologi\Bio10;
+// use App\Charts\Dosen\S1Biologi\Bio1;
+// use App\Charts\Dosen\S1Biologi\Bio2;
+// use App\Charts\Dosen\S1Biologi\Bio3;
+// use App\Charts\Dosen\S1Biologi\Bio4;
+// use App\Charts\Dosen\S1Biologi\Bio5;
+// use App\Charts\Dosen\S1Biologi\Bio6;
+// use App\Charts\Dosen\S1Biologi\Bio7;
+// use App\Charts\Dosen\S1Biologi\Bio8;
+// use App\Charts\Dosen\S1Biologi\Bio9;
+// use App\Charts\Dosen\S1Biologi\Bio10;
 
 // // Class Kebidanan
-// use App\Charts\PenggunaLulusan\D3Kebidanan\Bidan1;
-// use App\Charts\PenggunaLulusan\D3Kebidanan\Bidan2;
-// use App\Charts\PenggunaLulusan\D3Kebidanan\Bidan3;
-// use App\Charts\PenggunaLulusan\D3Kebidanan\Bidan4;
-// use App\Charts\PenggunaLulusan\D3Kebidanan\Bidan5;
-// use App\Charts\PenggunaLulusan\D3Kebidanan\Bidan6;
-// use App\Charts\PenggunaLulusan\D3Kebidanan\Bidan7;
-// use App\Charts\PenggunaLulusan\D3Kebidanan\Bidan8;
-// use App\Charts\PenggunaLulusan\D3Kebidanan\Bidan9;
-// use App\Charts\PenggunaLulusan\D3Kebidanan\Bidan10;
+// use App\Charts\Dosen\D3Kebidanan\Bidan1;
+// use App\Charts\Dosen\D3Kebidanan\Bidan2;
+// use App\Charts\Dosen\D3Kebidanan\Bidan3;
+// use App\Charts\Dosen\D3Kebidanan\Bidan4;
+// use App\Charts\Dosen\D3Kebidanan\Bidan5;
+// use App\Charts\Dosen\D3Kebidanan\Bidan6;
+// use App\Charts\Dosen\D3Kebidanan\Bidan7;
+// use App\Charts\Dosen\D3Kebidanan\Bidan8;
+// use App\Charts\Dosen\D3Kebidanan\Bidan9;
+// use App\Charts\Dosen\D3Kebidanan\Bidan10;
 
 // // Class Keperawatan
-// use App\Charts\PenggunaLulusan\D3Keperawatan\Rawat1;
-// use App\Charts\PenggunaLulusan\D3Keperawatan\Rawat2;
-// use App\Charts\PenggunaLulusan\D3Keperawatan\Rawat3;
-// use App\Charts\PenggunaLulusan\D3Keperawatan\Rawat4;
-// use App\Charts\PenggunaLulusan\D3Keperawatan\Rawat5;
-// use App\Charts\PenggunaLulusan\D3Keperawatan\Rawat6;
-// use App\Charts\PenggunaLulusan\D3Keperawatan\Rawat7;
-// use App\Charts\PenggunaLulusan\D3Keperawatan\Rawat8;
-// use App\Charts\PenggunaLulusan\D3Keperawatan\Rawat9;
-// use App\Charts\PenggunaLulusan\D3Keperawatan\Rawat10;
+// use App\Charts\Dosen\D3Keperawatan\Rawat1;
+// use App\Charts\Dosen\D3Keperawatan\Rawat2;
+// use App\Charts\Dosen\D3Keperawatan\Rawat3;
+// use App\Charts\Dosen\D3Keperawatan\Rawat4;
+// use App\Charts\Dosen\D3Keperawatan\Rawat5;
+// use App\Charts\Dosen\D3Keperawatan\Rawat6;
+// use App\Charts\Dosen\D3Keperawatan\Rawat7;
+// use App\Charts\Dosen\D3Keperawatan\Rawat8;
+// use App\Charts\Dosen\D3Keperawatan\Rawat9;
+// use App\Charts\Dosen\D3Keperawatan\Rawat10;
 
 // // Class Lab Sains
-// use App\Charts\PenggunaLulusan\D3LabSains\LabSains1;
-// use App\Charts\PenggunaLulusan\D3LabSains\LabSains2;
-// use App\Charts\PenggunaLulusan\D3LabSains\LabSains3;
-// use App\Charts\PenggunaLulusan\D3LabSains\LabSains4;
-// use App\Charts\PenggunaLulusan\D3LabSains\LabSains5;
-// use App\Charts\PenggunaLulusan\D3LabSains\LabSains6;
-// use App\Charts\PenggunaLulusan\D3LabSains\LabSains7;
-// use App\Charts\PenggunaLulusan\D3LabSains\LabSains8;
-// use App\Charts\PenggunaLulusan\D3LabSains\LabSains9;
-// use App\Charts\PenggunaLulusan\D3LabSains\LabSains10;
+// use App\Charts\Dosen\D3LabSains\LabSains1;
+// use App\Charts\Dosen\D3LabSains\LabSains2;
+// use App\Charts\Dosen\D3LabSains\LabSains3;
+// use App\Charts\Dosen\D3LabSains\LabSains4;
+// use App\Charts\Dosen\D3LabSains\LabSains5;
+// use App\Charts\Dosen\D3LabSains\LabSains6;
+// use App\Charts\Dosen\D3LabSains\LabSains7;
+// use App\Charts\Dosen\D3LabSains\LabSains8;
+// use App\Charts\Dosen\D3LabSains\LabSains9;
+// use App\Charts\Dosen\D3LabSains\LabSains10;
 
 // //Class Statistika
-// use App\Charts\PenggunaLulusan\S1Statistika\Statis1;
-// use App\Charts\PenggunaLulusan\S1Statistika\Statis2;
-// use App\Charts\PenggunaLulusan\S1Statistika\Statis3;
-// use App\Charts\PenggunaLulusan\S1Statistika\Statis4;
-// use App\Charts\PenggunaLulusan\S1Statistika\Statis5;
-// use App\Charts\PenggunaLulusan\S1Statistika\Statis6;
-// use App\Charts\PenggunaLulusan\S1Statistika\Statis7;
-// use App\Charts\PenggunaLulusan\S1Statistika\Statis8;
-// use App\Charts\PenggunaLulusan\S1Statistika\Statis9;
-// use App\Charts\PenggunaLulusan\S1Statistika\Statis10;
+// use App\Charts\Dosen\S1Statistika\Statis1;
+// use App\Charts\Dosen\S1Statistika\Statis2;
+// use App\Charts\Dosen\S1Statistika\Statis3;
+// use App\Charts\Dosen\S1Statistika\Statis4;
+// use App\Charts\Dosen\S1Statistika\Statis5;
+// use App\Charts\Dosen\S1Statistika\Statis6;
+// use App\Charts\Dosen\S1Statistika\Statis7;
+// use App\Charts\Dosen\S1Statistika\Statis8;
+// use App\Charts\Dosen\S1Statistika\Statis9;
+// use App\Charts\Dosen\S1Statistika\Statis10;
 
 // //Class S1 Kimia
-// use App\Charts\PenggunaLulusan\S1Kimia\S1kim1;
-// use App\Charts\PenggunaLulusan\S1Kimia\S1kim2;
-// use App\Charts\PenggunaLulusan\S1Kimia\S1kim3;
-// use App\Charts\PenggunaLulusan\S1Kimia\S1kim4;
-// use App\Charts\PenggunaLulusan\S1Kimia\S1kim5;
-// use App\Charts\PenggunaLulusan\S1Kimia\S1kim6;
-// use App\Charts\PenggunaLulusan\S1Kimia\S1kim7;
-// use App\Charts\PenggunaLulusan\S1Kimia\S1kim8;
-// use App\Charts\PenggunaLulusan\S1Kimia\S1kim9;
-// use App\Charts\PenggunaLulusan\S1Kimia\S1kim10;
+use App\Charts\Dosen\S1Kimia\S1kim1;
+use App\Charts\Dosen\S1Kimia\S1kim2;
+use App\Charts\Dosen\S1Kimia\S1kim3;
+use App\Charts\Dosen\S1Kimia\S1kim4;
+use App\Charts\Dosen\S1Kimia\S1kim5;
+use App\Charts\Dosen\S1Kimia\S1kim6;
+use App\Charts\Dosen\S1Kimia\S1kim7;
+use App\Charts\Dosen\S1Kimia\S1kim8;
+use App\Charts\Dosen\S1Kimia\S1kim9;
+use App\Charts\Dosen\S1Kimia\S1kim10;
 
 // //Class S2 Kimia
-// use App\Charts\PenggunaLulusan\S2Kimia\S2kim1;
-// use App\Charts\PenggunaLulusan\S2Kimia\S2kim2;
-// use App\Charts\PenggunaLulusan\S2Kimia\S2kim3;
-// use App\Charts\PenggunaLulusan\S2Kimia\S2kim4;
-// use App\Charts\PenggunaLulusan\S2Kimia\S2kim5;
-// use App\Charts\PenggunaLulusan\S2Kimia\S2kim6;
-// use App\Charts\PenggunaLulusan\S2Kimia\S2kim7;
-// use App\Charts\PenggunaLulusan\S2Kimia\S2kim8;
-// use App\Charts\PenggunaLulusan\S2Kimia\S2kim9;
-// use App\Charts\PenggunaLulusan\S2Kimia\S2kim10;
+// use App\Charts\Dosen\S2Kimia\S2kim1;
+// use App\Charts\Dosen\S2Kimia\S2kim2;
+// use App\Charts\Dosen\S2Kimia\S2kim3;
+// use App\Charts\Dosen\S2Kimia\S2kim4;
+// use App\Charts\Dosen\S2Kimia\S2kim5;
+// use App\Charts\Dosen\S2Kimia\S2kim6;
+// use App\Charts\Dosen\S2Kimia\S2kim7;
+// use App\Charts\Dosen\S2Kimia\S2kim8;
+// use App\Charts\Dosen\S2Kimia\S2kim9;
+// use App\Charts\Dosen\S2Kimia\S2kim10;
 
 
 
@@ -143,6 +155,18 @@ class EvalDosenController extends Controller
         Farm8 $farm8,
         Farm9 $farm9,
         Farm10 $farm10,
+
+        // S1 Farmasi
+        S1Farm1 $s1farm1,
+        S1Farm2 $s1farm2,
+        S1Farm3 $s1farm3,
+        S1Farm4 $s1farm4,
+        S1Farm5 $s1farm5,
+        S1Farm6 $s1farm6,
+        S1Farm7 $s1farm7,
+        S1Farm8 $s1farm8,
+        S1Farm9 $s1farm9,
+        S1Farm10 $s1farm10,
 
         // // S1 Matematika
         // Math1 $math1,
@@ -217,16 +241,16 @@ class EvalDosenController extends Controller
         // Statis10 $statis10,
 
         // //S1 Kimia
-        // S1kim1 $s1kim1,
-        // S1kim2 $s1kim2,
-        // S1kim3 $s1kim3,
-        // S1kim4 $s1kim4,
-        // S1kim5 $s1kim5,
-        // S1kim6 $s1kim6,
-        // S1kim7 $s1kim7,
-        // S1kim8 $s1kim8,
-        // S1kim9 $s1kim9,
-        // S1kim10 $s1kim10,
+        S1kim1 $s1kim1,
+        S1kim2 $s1kim2,
+        S1kim3 $s1kim3,
+        S1kim4 $s1kim4,
+        S1kim5 $s1kim5,
+        S1kim6 $s1kim6,
+        S1kim7 $s1kim7,
+        S1kim8 $s1kim8,
+        S1kim9 $s1kim9,
+        S1kim10 $s1kim10,
 
         // //S2 Kimia
         // S2kim1 $s2kim1,
@@ -245,6 +269,7 @@ class EvalDosenController extends Controller
         return view('evaluasi.dosen.index',
         [
             'dosen' => $dosen,
+
             'farm1' => $farm1->build(),
             'farm2' => $farm2->build(),
             'farm3' => $farm3->build(),
@@ -255,6 +280,17 @@ class EvalDosenController extends Controller
             'farm8' => $farm8->build(),
             'farm9' => $farm9->build(),
             'farm10' => $farm10->build(),
+
+            's1farm1' => $s1farm1->build(),
+            's1farm2' => $s1farm2->build(),
+            's1farm3' => $s1farm3->build(),
+            's1farm4' => $s1farm4->build(),
+            's1farm5' => $s1farm5->build(),
+            's1farm6' => $s1farm6->build(),
+            's1farm7' => $s1farm7->build(),
+            's1farm8' => $s1farm8->build(),
+            's1farm9' => $s1farm9->build(),
+            's1farm10' => $s1farm10->build(),
 
             // 'math1' => $math1->build(),
             // 'math2' => $math2->build(),
@@ -322,16 +358,16 @@ class EvalDosenController extends Controller
             // 'statis9' => $statis9->build(),
             // 'statis10' => $statis10->build(),
 
-            // 's1kim1' => $s1kim1->build(),
-            // 's1kim2' => $s1kim2->build(),
-            // 's1kim3' => $s1kim3->build(),
-            // 's1kim4' => $s1kim4->build(),
-            // 's1kim5' => $s1kim5->build(),
-            // 's1kim6' => $s1kim6->build(),
-            // 's1kim7' => $s1kim7->build(),
-            // 's1kim8' => $s1kim8->build(),
-            // 's1kim9' => $s1kim9->build(),
-            // 's1kim10' => $s1kim10->build(),
+            's1kim1' => $s1kim1->build(),
+            's1kim2' => $s1kim2->build(),
+            's1kim3' => $s1kim3->build(),
+            's1kim4' => $s1kim4->build(),
+            's1kim5' => $s1kim5->build(),
+            's1kim6' => $s1kim6->build(),
+            's1kim7' => $s1kim7->build(),
+            's1kim8' => $s1kim8->build(),
+            's1kim9' => $s1kim9->build(),
+            's1kim10' => $s1kim10->build(),
 
             // 's2kim1' => $s2kim1->build(),
             // 's2kim2' => $s2kim2->build(),
@@ -371,7 +407,7 @@ class EvalDosenController extends Controller
 //     $percentages10 = $pl10->getDetailedPercentages();
 
 
-//     return view('evaluasi.penggunaLulusan.table', [
+//     return view('evaluasi.Dosen.table', [
 //         'percentages1' => $percentages1,
 //         'percentages2' => $percentages2,
 //         'percentages3' => $percentages3,

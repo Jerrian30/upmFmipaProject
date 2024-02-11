@@ -1,18 +1,19 @@
 @extends('layouts.master')
-@section('title', 'Home')
-@section('page', 'Evaluasi')
+@section('title', 'Evaluasi -> Dosen')
+@section('page', 'Evaluasi -> Dosen')
 {{-- java script --}}
 @section('js')
 
 @include('grafik.dosen.d3farmasi.js')
+@include('grafik.dosen.s1farmasi.js')
 {{-- @include('grafik.dosen.s1matematika.js')
 @include('grafik.dosen.s1biologi.js')
 @include('grafik.dosen.d3kebidanan.js')
 @include('grafik.dosen.d3keperawatan.js')
 @include('grafik.dosen.d3labsains.js')
-@include('grafik.dosen.s1statistika.js')
+@include('grafik.dosen.s1statistika.js')--}}
 @include('grafik.dosen.s1kimia.js')
-@include('grafik.dosen.s2kimia.js') --}}
+{{-- @include('grafik.dosen.s2kimia.js')  --}}
 
     <script>
         document.getElementById('programStudi').addEventListener('change', function() {
@@ -21,6 +22,11 @@
             var farmasiContainers = document.querySelectorAll('.farmasiContainer');
             farmasiContainers.forEach(function(container) {
                 container.style.display = (value === 'd3farmasi') ? 'block' : 'none';
+            });
+            
+            var s1farmasiContainers = document.querySelectorAll('.s1farmasiContainer');
+            s1farmasiContainers.forEach(function(container) {
+                container.style.display = (value === 's1farmasi') ? 'block' : 'none';
             });
 
             var matematikaContainers = document.querySelectorAll('.matematikaContainer');
@@ -83,6 +89,7 @@
             <option value="" disabled selected>Pilih</option>
             <option value="s2kimia">S2 Kimia</option>
             <option value="s1biologi">S1 Biologi</option>
+            <option value="s1farmasi">S1 Farmasi</option>
             <option value="s1kimia">S1 Kimia</option>
             <option value="s1matematika">S1 Matematika</option>
             <option value="s1statistika">S1 Statistika</option>
@@ -94,13 +101,14 @@
         <br>
     
         @include('grafik.dosen.d3farmasi.view')
+        @include('grafik.dosen.s1farmasi.view')
+        @include('grafik.dosen.s1kimia.view')
         {{-- @include('grafik.dosen.d3kebidanan.view')
         @include('grafik.dosen.s1statistika.view')
         @include('grafik.dosen.s1matematika.view')
         @include('grafik.dosen.s1biologi.view')
         @include('grafik.dosen.d3keperawatan.view')
         @include('grafik.dosen.d3labsains.view')
-        @include('grafik.dosen.s1kimia.view')
         @include('grafik.dosen.s2kimia.view') --}}
     </div>
 </div>
