@@ -7,9 +7,9 @@
 @include('grafik.dosen.d3farmasi.js')
 @include('grafik.dosen.s1farmasi.js')
 @include('grafik.dosen.s1matematika.js')
-{{--@include('grafik.dosen.s1biologi.js')
 @include('grafik.dosen.d3kebidanan.js')
-@include('grafik.dosen.d3keperawatan.js') --}}
+@include('grafik.dosen.d3keperawatan.js')
+{{--@include('grafik.dosen.s1biologi.js') --}}
 @include('grafik.dosen.d3labsains.js')
 @include('grafik.dosen.s1statistika.js') 
 @include('grafik.dosen.s1kimia.js')
@@ -113,11 +113,10 @@
         @include('grafik.dosen.s1statistika.view')
         @include('grafik.dosen.d3labsains.view')
         @include('grafik.dosen.s1matematika.view')
-        {{-- 
         @include('grafik.dosen.d3kebidanan.view')
-        @include('grafik.dosen.s1biologi.view')
         @include('grafik.dosen.d3keperawatan.view')
-
+        {{-- 
+        @include('grafik.dosen.s1biologi.view')
         --}}
         @include('grafik.dosen.s2kimia.view') 
         @include('grafik.dosen.s1fisika.view') 

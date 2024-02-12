@@ -68,28 +68,28 @@ use App\Charts\Dosen\S1Matematika\Math10;
 // use App\Charts\Dosen\S1Biologi\Bio10;
 
 // // Class Kebidanan
-// use App\Charts\Dosen\D3Kebidanan\Bidan1;
-// use App\Charts\Dosen\D3Kebidanan\Bidan2;
-// use App\Charts\Dosen\D3Kebidanan\Bidan3;
-// use App\Charts\Dosen\D3Kebidanan\Bidan4;
-// use App\Charts\Dosen\D3Kebidanan\Bidan5;
-// use App\Charts\Dosen\D3Kebidanan\Bidan6;
-// use App\Charts\Dosen\D3Kebidanan\Bidan7;
-// use App\Charts\Dosen\D3Kebidanan\Bidan8;
-// use App\Charts\Dosen\D3Kebidanan\Bidan9;
-// use App\Charts\Dosen\D3Kebidanan\Bidan10;
+use App\Charts\Dosen\D3Kebidanan\Bidan1;
+use App\Charts\Dosen\D3Kebidanan\Bidan2;
+use App\Charts\Dosen\D3Kebidanan\Bidan3;
+use App\Charts\Dosen\D3Kebidanan\Bidan4;
+use App\Charts\Dosen\D3Kebidanan\Bidan5;
+use App\Charts\Dosen\D3Kebidanan\Bidan6;
+use App\Charts\Dosen\D3Kebidanan\Bidan7;
+use App\Charts\Dosen\D3Kebidanan\Bidan8;
+use App\Charts\Dosen\D3Kebidanan\Bidan9;
+use App\Charts\Dosen\D3Kebidanan\Bidan10;
 
 // // Class Keperawatan
-// use App\Charts\Dosen\D3Keperawatan\Rawat1;
-// use App\Charts\Dosen\D3Keperawatan\Rawat2;
-// use App\Charts\Dosen\D3Keperawatan\Rawat3;
-// use App\Charts\Dosen\D3Keperawatan\Rawat4;
-// use App\Charts\Dosen\D3Keperawatan\Rawat5;
-// use App\Charts\Dosen\D3Keperawatan\Rawat6;
-// use App\Charts\Dosen\D3Keperawatan\Rawat7;
-// use App\Charts\Dosen\D3Keperawatan\Rawat8;
-// use App\Charts\Dosen\D3Keperawatan\Rawat9;
-// use App\Charts\Dosen\D3Keperawatan\Rawat10;
+use App\Charts\Dosen\D3Keperawatan\Rawat1;
+use App\Charts\Dosen\D3Keperawatan\Rawat2;
+use App\Charts\Dosen\D3Keperawatan\Rawat3;
+use App\Charts\Dosen\D3Keperawatan\Rawat4;
+use App\Charts\Dosen\D3Keperawatan\Rawat5;
+use App\Charts\Dosen\D3Keperawatan\Rawat6;
+use App\Charts\Dosen\D3Keperawatan\Rawat7;
+use App\Charts\Dosen\D3Keperawatan\Rawat8;
+use App\Charts\Dosen\D3Keperawatan\Rawat9;
+use App\Charts\Dosen\D3Keperawatan\Rawat10;
 
 // // Class Lab Sains
 use App\Charts\Dosen\D3LabSains\LabSains1;
@@ -205,28 +205,28 @@ class EvalDosenController extends Controller
         // Bio10 $bio10,
 
         // //D3 Kebidanan
-        // Bidan1 $bidan1,
-        // Bidan2 $bidan2,
-        // Bidan3 $bidan3,
-        // Bidan4 $bidan4,
-        // Bidan5 $bidan5,
-        // Bidan6 $bidan6,
-        // Bidan7 $bidan7,
-        // Bidan8 $bidan8,
-        // Bidan9 $bidan9,
-        // Bidan10 $bidan10,
+        Bidan1 $bidan1,
+        Bidan2 $bidan2,
+        Bidan3 $bidan3,
+        Bidan4 $bidan4,
+        Bidan5 $bidan5,
+        Bidan6 $bidan6,
+        Bidan7 $bidan7,
+        Bidan8 $bidan8,
+        Bidan9 $bidan9,
+        Bidan10 $bidan10,
 
-        // //D3 Keperawatan
-        // Rawat1 $rawat1,
-        // Rawat2 $rawat2,
-        // Rawat3 $rawat3,
-        // Rawat4 $rawat4,
-        // Rawat5 $rawat5,
-        // Rawat6 $rawat6,
-        // Rawat7 $rawat7,
-        // Rawat8 $rawat8,
-        // Rawat9 $rawat9,
-        // Rawat10 $rawat10,
+        //D3 Keperawatan
+        Rawat1 $rawat1,
+        Rawat2 $rawat2,
+        Rawat3 $rawat3,
+        Rawat4 $rawat4,
+        Rawat5 $rawat5,
+        Rawat6 $rawat6,
+        Rawat7 $rawat7,
+        Rawat8 $rawat8,
+        Rawat9 $rawat9,
+        Rawat10 $rawat10,
 
         // //D3 Lab Sains
         LabSains1 $labsains1,
@@ -338,27 +338,27 @@ class EvalDosenController extends Controller
             // 'bio9' => $bio9->build(),
             // 'bio10' => $bio10->build(),
 
-            // 'bidan1' => $bidan1->build(),
-            // 'bidan2' => $bidan2->build(),
-            // 'bidan3' => $bidan3->build(),
-            // 'bidan4' => $bidan4->build(),
-            // 'bidan5' => $bidan5->build(),
-            // 'bidan6' => $bidan6->build(),
-            // 'bidan7' => $bidan7->build(),
-            // 'bidan8' => $bidan8->build(),
-            // 'bidan9' => $bidan9->build(),
-            // 'bidan10' => $bidan10->build(),
+            'bidan1' => $bidan1->build(),
+            'bidan2' => $bidan2->build(),
+            'bidan3' => $bidan3->build(),
+            'bidan4' => $bidan4->build(),
+            'bidan5' => $bidan5->build(),
+            'bidan6' => $bidan6->build(),
+            'bidan7' => $bidan7->build(),
+            'bidan8' => $bidan8->build(),
+            'bidan9' => $bidan9->build(),
+            'bidan10' => $bidan10->build(),
 
-            // 'rawat1' => $rawat1->build(),
-            // 'rawat2' => $rawat2->build(),
-            // 'rawat3' => $rawat3->build(),
-            // 'rawat4' => $rawat4->build(),
-            // 'rawat5' => $rawat5->build(),
-            // 'rawat6' => $rawat6->build(),
-            // 'rawat7' => $rawat7->build(),
-            // 'rawat8' => $rawat8->build(),
-            // 'rawat9' => $rawat9->build(),
-            // 'rawat10' => $rawat10->build(),
+            'rawat1' => $rawat1->build(),
+            'rawat2' => $rawat2->build(),
+            'rawat3' => $rawat3->build(),
+            'rawat4' => $rawat4->build(),
+            'rawat5' => $rawat5->build(),
+            'rawat6' => $rawat6->build(),
+            'rawat7' => $rawat7->build(),
+            'rawat8' => $rawat8->build(),
+            'rawat9' => $rawat9->build(),
+            'rawat10' => $rawat10->build(),
 
             'labsains1' => $labsains1->build(),
             'labsains2' => $labsains2->build(),
