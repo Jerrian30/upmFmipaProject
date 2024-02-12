@@ -1,11 +1,11 @@
 <?php
 
-namespace App\Charts\Dosen\S2Kimia;
+namespace App\Charts\Dosen\S1Matematika;
 
 use App\Models\Dosen;
 use ArielMejiaDev\LarapexCharts\LarapexChart;
 
-class S2Kim5
+class Math7
 {
     protected $chart;
 
@@ -16,10 +16,10 @@ class S2Kim5
 
     protected function calculatePercentages()
     {
-        $dataD3Farmasi = Dosen::where('program_studi', 'S2 Kimia')
-            ->selectRaw('COUNT(*) as count, ketersediaan_fasilitas_sarana')
-            ->groupBy('ketersediaan_fasilitas_sarana')
-            ->pluck('count', 'ketersediaan_fasilitas_sarana');
+        $dataD3Farmasi = Dosen::where('program_studi', 'D3 Farmasi')
+            ->selectRaw('COUNT(*) as count, suasana_perkuliahan')
+            ->groupBy('suasana_perkuliahan')
+            ->pluck('count', 'suasana_perkuliahan');
 
         $dataValues = [1 => 0, 2 => 0, 3 => 0, 4 => 0];
 

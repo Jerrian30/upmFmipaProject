@@ -5,7 +5,7 @@ namespace App\Charts\Dosen\S1Statistika;
 use App\Models\Dosen;
 use ArielMejiaDev\LarapexCharts\LarapexChart;
 
-class Statis6
+class Statis10
 {
     protected $chart;
 
@@ -17,9 +17,9 @@ class Statis6
     protected function calculatePercentages()
     {
         $dataD3Farmasi = Dosen::where('program_studi',  'S1 Statistika')
-            ->selectRaw('COUNT(*) as count, fasilitas_penelitian_pengabdian')
-            ->groupBy('fasilitas_penelitian_pengabdian')
-            ->pluck('count', 'fasilitas_penelitian_pengabdian');
+            ->selectRaw('COUNT(*) as count, kepuasan_kesejahteraan_dosen')
+            ->groupBy('kepuasan_kesejahteraan_dosen')
+            ->pluck('count', 'kepuasan_kesejahteraan_dosen');
 
         $dataValues = [1 => 0, 2 => 0, 3 => 0, 4 => 0];
 

@@ -43,16 +43,16 @@ use App\Charts\Dosen\S1Farmasi\S1Farm9;
 use App\Charts\Dosen\S1Farmasi\S1Farm10;
 
 // // Class Matematika
-// use App\Charts\Dosen\S1Matematika\Math1;
-// use App\Charts\Dosen\S1Matematika\Math2;
-// use App\Charts\Dosen\S1Matematika\Math3;
-// use App\Charts\Dosen\S1Matematika\Math4;
-// use App\Charts\Dosen\S1Matematika\Math5;
-// use App\Charts\Dosen\S1Matematika\Math6;
-// use App\Charts\Dosen\S1Matematika\Math7;
-// use App\Charts\Dosen\S1Matematika\Math8;
-// use App\Charts\Dosen\S1Matematika\Math9;
-// use App\Charts\Dosen\S1Matematika\Math10;
+use App\Charts\Dosen\S1Matematika\Math1;
+use App\Charts\Dosen\S1Matematika\Math2;
+use App\Charts\Dosen\S1Matematika\Math3;
+use App\Charts\Dosen\S1Matematika\Math4;
+use App\Charts\Dosen\S1Matematika\Math5;
+use App\Charts\Dosen\S1Matematika\Math6;
+use App\Charts\Dosen\S1Matematika\Math7;
+use App\Charts\Dosen\S1Matematika\Math8;
+use App\Charts\Dosen\S1Matematika\Math9;
+use App\Charts\Dosen\S1Matematika\Math10;
 
 // // Class Biologi
 // use App\Charts\Dosen\S1Biologi\Bio1;
@@ -91,28 +91,28 @@ use App\Charts\Dosen\S1Farmasi\S1Farm10;
 // use App\Charts\Dosen\D3Keperawatan\Rawat10;
 
 // // Class Lab Sains
-// use App\Charts\Dosen\D3LabSains\LabSains1;
-// use App\Charts\Dosen\D3LabSains\LabSains2;
-// use App\Charts\Dosen\D3LabSains\LabSains3;
-// use App\Charts\Dosen\D3LabSains\LabSains4;
-// use App\Charts\Dosen\D3LabSains\LabSains5;
-// use App\Charts\Dosen\D3LabSains\LabSains6;
-// use App\Charts\Dosen\D3LabSains\LabSains7;
-// use App\Charts\Dosen\D3LabSains\LabSains8;
-// use App\Charts\Dosen\D3LabSains\LabSains9;
-// use App\Charts\Dosen\D3LabSains\LabSains10;
+use App\Charts\Dosen\D3LabSains\LabSains1;
+use App\Charts\Dosen\D3LabSains\LabSains2;
+use App\Charts\Dosen\D3LabSains\LabSains3;
+use App\Charts\Dosen\D3LabSains\LabSains4;
+use App\Charts\Dosen\D3LabSains\LabSains5;
+use App\Charts\Dosen\D3LabSains\LabSains6;
+use App\Charts\Dosen\D3LabSains\LabSains7;
+use App\Charts\Dosen\D3LabSains\LabSains8;
+use App\Charts\Dosen\D3LabSains\LabSains9;
+use App\Charts\Dosen\D3LabSains\LabSains10;
 
 // //Class Statistika
-// use App\Charts\Dosen\S1Statistika\Statis1;
-// use App\Charts\Dosen\S1Statistika\Statis2;
-// use App\Charts\Dosen\S1Statistika\Statis3;
-// use App\Charts\Dosen\S1Statistika\Statis4;
-// use App\Charts\Dosen\S1Statistika\Statis5;
-// use App\Charts\Dosen\S1Statistika\Statis6;
-// use App\Charts\Dosen\S1Statistika\Statis7;
-// use App\Charts\Dosen\S1Statistika\Statis8;
-// use App\Charts\Dosen\S1Statistika\Statis9;
-// use App\Charts\Dosen\S1Statistika\Statis10;
+use App\Charts\Dosen\S1Statistika\Statis1;
+use App\Charts\Dosen\S1Statistika\Statis2;
+use App\Charts\Dosen\S1Statistika\Statis3;
+use App\Charts\Dosen\S1Statistika\Statis4;
+use App\Charts\Dosen\S1Statistika\Statis5;
+use App\Charts\Dosen\S1Statistika\Statis6;
+use App\Charts\Dosen\S1Statistika\Statis7;
+use App\Charts\Dosen\S1Statistika\Statis8;
+use App\Charts\Dosen\S1Statistika\Statis9;
+use App\Charts\Dosen\S1Statistika\Statis10;
 
 // //Class S1 Kimia
 use App\Charts\Dosen\S1Kimia\S1kim1;
@@ -137,6 +137,17 @@ use App\Charts\Dosen\S2Kimia\S2kim7;
 use App\Charts\Dosen\S2Kimia\S2kim8;
 use App\Charts\Dosen\S2Kimia\S2kim9;
 use App\Charts\Dosen\S2Kimia\S2kim10;
+
+use App\Charts\Dosen\S1Fisika\Fisika1;
+use App\Charts\Dosen\S1Fisika\Fisika2;
+use App\Charts\Dosen\S1Fisika\Fisika3;
+use App\Charts\Dosen\S1Fisika\Fisika4;
+use App\Charts\Dosen\S1Fisika\Fisika5;
+use App\Charts\Dosen\S1Fisika\Fisika6;
+use App\Charts\Dosen\S1Fisika\Fisika7;
+use App\Charts\Dosen\S1Fisika\Fisika8;
+use App\Charts\Dosen\S1Fisika\Fisika9;
+use App\Charts\Dosen\S1Fisika\Fisika10;
 
 
 
@@ -169,16 +180,16 @@ class EvalDosenController extends Controller
         S1Farm10 $s1farm10,
 
         // // S1 Matematika
-        // Math1 $math1,
-        // Math2 $math2,
-        // Math3 $math3,
-        // Math4 $math4,
-        // Math5 $math5,
-        // Math6 $math6,
-        // Math7 $math7,
-        // Math8 $math8,
-        // Math9 $math9,
-        // Math10 $math10,
+        Math1 $math1,
+        Math2 $math2,
+        Math3 $math3,
+        Math4 $math4,
+        Math5 $math5,
+        Math6 $math6,
+        Math7 $math7,
+        Math8 $math8,
+        Math9 $math9,
+        Math10 $math10,
 
         // // S1 Biologi
         // Bio1 $bio1,
@@ -217,28 +228,28 @@ class EvalDosenController extends Controller
         // Rawat10 $rawat10,
 
         // //D3 Lab Sains
-        // LabSains1 $labsains1,
-        // LabSains2 $labsains2,
-        // LabSains3 $labsains3,
-        // LabSains4 $labsains4,
-        // LabSains5 $labsains5,
-        // LabSains6 $labsains6,
-        // LabSains7 $labsains7,
-        // LabSains8 $labsains8,
-        // LabSains9 $labsains9,
-        // LabSains10 $labsains10,
+        LabSains1 $labsains1,
+        LabSains2 $labsains2,
+        LabSains3 $labsains3,
+        LabSains4 $labsains4,
+        LabSains5 $labsains5,
+        LabSains6 $labsains6,
+        LabSains7 $labsains7,
+        LabSains8 $labsains8,
+        LabSains9 $labsains9,
+        LabSains10 $labsains10,
 
-        // //S1 Statistika
-        // Statis1 $statis1,
-        // Statis2 $statis2,
-        // Statis3 $statis3,
-        // Statis4 $statis4,
-        // Statis5 $statis5,
-        // Statis6 $statis6,
-        // Statis7 $statis7,
-        // Statis8 $statis8,
-        // Statis9 $statis9,
-        // Statis10 $statis10,
+        // S1 Statistika
+        Statis1 $statis1,
+        Statis2 $statis2,
+        Statis3 $statis3,
+        Statis4 $statis4,
+        Statis5 $statis5,
+        Statis6 $statis6,
+        Statis7 $statis7,
+        Statis8 $statis8,
+        Statis9 $statis9,
+        Statis10 $statis10,
 
         // //S1 Kimia
         S1kim1 $s1kim1,
@@ -263,6 +274,18 @@ class EvalDosenController extends Controller
         S2kim8 $s2kim8,
         S2kim9 $s2kim9,
         S2kim10 $s2kim10,
+
+        // Fisika
+        Fisika1 $fisika1,
+        Fisika2 $fisika2,
+        Fisika3 $fisika3,
+        Fisika4 $fisika4,
+        Fisika5 $fisika5,
+        Fisika6 $fisika6,
+        Fisika7 $fisika7,
+        Fisika8 $fisika8,
+        Fisika9 $fisika9,
+        Fisika10 $fisika10,
     )
     {
         $dosen = Dosen::all();
@@ -292,16 +315,16 @@ class EvalDosenController extends Controller
             's1farm9' => $s1farm9->build(),
             's1farm10' => $s1farm10->build(),
 
-            // 'math1' => $math1->build(),
-            // 'math2' => $math2->build(),
-            // 'math3' => $math3->build(),
-            // 'math4' => $math4->build(),
-            // 'math5' => $math5->build(),
-            // 'math6' => $math6->build(),
-            // 'math7' => $math7->build(),
-            // 'math8' => $math8->build(),
-            // 'math9' => $math9->build(),
-            // 'math10' => $math10->build(),
+            'math1' => $math1->build(),
+            'math2' => $math2->build(),
+            'math3' => $math3->build(),
+            'math4' => $math4->build(),
+            'math5' => $math5->build(),
+            'math6' => $math6->build(),
+            'math7' => $math7->build(),
+            'math8' => $math8->build(),
+            'math9' => $math9->build(),
+            'math10' => $math10->build(),
 
             // 'bio1' => $bio1->build(),
             // 'bio2' => $bio2->build(),
@@ -336,27 +359,27 @@ class EvalDosenController extends Controller
             // 'rawat9' => $rawat9->build(),
             // 'rawat10' => $rawat10->build(),
 
-            // 'labsains1' => $labsains1->build(),
-            // 'labsains2' => $labsains2->build(),
-            // 'labsains3' => $labsains3->build(),
-            // 'labsains4' => $labsains4->build(),
-            // 'labsains5' => $labsains5->build(),
-            // 'labsains6' => $labsains6->build(),
-            // 'labsains7' => $labsains7->build(),
-            // 'labsains8' => $labsains8->build(),
-            // 'labsains9' => $labsains9->build(),
-            // 'labsains10' => $labsains10->build(),
+            'labsains1' => $labsains1->build(),
+            'labsains2' => $labsains2->build(),
+            'labsains3' => $labsains3->build(),
+            'labsains4' => $labsains4->build(),
+            'labsains5' => $labsains5->build(),
+            'labsains6' => $labsains6->build(),
+            'labsains7' => $labsains7->build(),
+            'labsains8' => $labsains8->build(),
+            'labsains9' => $labsains9->build(),
+            'labsains10' => $labsains10->build(),
             
-            // 'statis1' => $statis1->build(),
-            // 'statis2' => $statis2->build(),
-            // 'statis3' => $statis3->build(),
-            // 'statis4' => $statis4->build(),
-            // 'statis5' => $statis5->build(),
-            // 'statis6' => $statis6->build(),
-            // 'statis7' => $statis7->build(),
-            // 'statis8' => $statis8->build(),
-            // 'statis9' => $statis9->build(),
-            // 'statis10' => $statis10->build(),
+            'statis1' => $statis1->build(),
+            'statis2' => $statis2->build(),
+            'statis3' => $statis3->build(),
+            'statis4' => $statis4->build(),
+            'statis5' => $statis5->build(),
+            'statis6' => $statis6->build(),
+            'statis7' => $statis7->build(),
+            'statis8' => $statis8->build(),
+            'statis9' => $statis9->build(),
+            'statis10' => $statis10->build(),
 
             's1kim1' => $s1kim1->build(),
             's1kim2' => $s1kim2->build(),
@@ -378,7 +401,19 @@ class EvalDosenController extends Controller
             's2kim7' => $s2kim7->build(),
             's2kim8' => $s2kim8->build(),
             's2kim9' => $s2kim9->build(),
-            's2kim10' => $s2kim10->build()
+            's2kim10' => $s2kim10->build(),
+
+            
+            'fisika1' => $fisika1->build(),
+            'fisika2' => $fisika2->build(),
+            'fisika3' => $fisika3->build(),
+            'fisika4' => $fisika4->build(),
+            'fisika5' => $fisika5->build(),
+            'fisika6' => $fisika6->build(),
+            'fisika7' => $fisika7->build(),
+            'fisika8' => $fisika8->build(),
+            'fisika9' => $fisika9->build(),
+            'fisika10' => $fisika10->build()
         ]);
     } 
 
