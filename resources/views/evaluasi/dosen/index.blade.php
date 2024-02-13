@@ -9,12 +9,13 @@
 @include('grafik.dosen.s1matematika.js')
 @include('grafik.dosen.d3kebidanan.js')
 @include('grafik.dosen.d3keperawatan.js')
-{{--@include('grafik.dosen.s1biologi.js') --}}
+@include('grafik.dosen.s1biologi.js')
 @include('grafik.dosen.d3labsains.js')
 @include('grafik.dosen.s1statistika.js') 
 @include('grafik.dosen.s1kimia.js')
 @include('grafik.dosen.s2kimia.js') 
 @include('grafik.dosen.s1fisika.js')
+@include('grafik.dosen.s1geofisika.js')
 
     <script>
         document.getElementById('programStudi').addEventListener('change', function() {
@@ -28,6 +29,11 @@
             var fisikaContainers = document.querySelectorAll('.fisikaContainer');
             fisikaContainers.forEach(function(container) {
                 container.style.display = (value === 's1fisika') ? 'block' : 'none';
+            });
+
+            var geofisikaContainers = document.querySelectorAll('.geofisikaContainer');
+            geofisikaContainers.forEach(function(container) {
+                container.style.display = (value === 's1geofisika') ? 'block' : 'none';
             });
             
             var s1farmasiContainers = document.querySelectorAll('.s1farmasiContainer');
@@ -97,6 +103,7 @@
             <option value="s1biologi">S1 Biologi</option>
             <option value="s1farmasi">S1 Farmasi</option>
             <option value="s1fisika">S1 Fisika</option>
+            <option value="s1geofisika">S1 Geofisika</option>
             <option value="s1kimia">S1 Kimia</option>
             <option value="s1matematika">S1 Matematika</option>
             <option value="s1statistika">S1 Statistika</option>
@@ -115,11 +122,10 @@
         @include('grafik.dosen.s1matematika.view')
         @include('grafik.dosen.d3kebidanan.view')
         @include('grafik.dosen.d3keperawatan.view')
-        {{-- 
         @include('grafik.dosen.s1biologi.view')
-        --}}
         @include('grafik.dosen.s2kimia.view') 
         @include('grafik.dosen.s1fisika.view') 
+        @include('grafik.dosen.s1geofisika.view') 
     </div>
 </div>
 @endsection

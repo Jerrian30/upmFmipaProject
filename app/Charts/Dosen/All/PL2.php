@@ -1,11 +1,11 @@
 <?php
 
-namespace App\Charts\PenggunaLulusan;
+namespace App\Charts\Dosen\All;
 
-use App\Models\PenggunaLulusan;
+use App\Models\Dosen;
 use ArielMejiaDev\LarapexCharts\LarapexChart;
 
-class PL1
+class PL2
 {
     protected $chart;
 
@@ -16,7 +16,7 @@ class PL1
 
     public function build(): \ArielMejiaDev\LarapexCharts\DonutChart
     {
-        $dataPercentages = $this->calculatePercentages('kejujuran_etika');
+        $dataPercentages = $this->calculatePercentages('efektivitas_pembagian_tugas');
         
         return $this->chart->donutChart()
             ->addData(array_values($dataPercentages))
@@ -53,7 +53,7 @@ class PL1
     public function getDetailedPercentages()
     {
         
-        $percentages = $this->calculatePercentages('kejujuran_etika');
+        $percentages = $this->calculatePercentages('efektivitas_pembagian_tugas');
         return [
             'persen1' => $percentages[1] ?? 0,
             'persen2' => $percentages[2] ?? 0,

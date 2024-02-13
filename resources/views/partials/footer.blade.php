@@ -1,11 +1,11 @@
             <!-- Footer -->
-            {{-- <footer class="sticky-footer bg-white">
+            <footer class="sticky-footer bg-white">
                 <div class="container my-auto">
                     <div class="copyright text-center my-auto">
-                        <span>Copyright &copy; Your Website 2021</span>
+                        <span>Copyright &copy; UPM FMIPA 2024</span>
                     </div>
                 </div>
-            </footer> --}}
+            </footer>
             <!-- End of Footer -->
 
         </div>
@@ -55,7 +55,7 @@
     <!-- Page level custom scripts -->
     <script src="{{ asset('sbadmin/js/demo/chart-area-demo.js') }}"></script>
     <script src="{{ asset('sbadmin/js/demo/chart-pie-demo.js') }}"></script>
-    <@yield('js')
+    @yield('js')
 
 </body>
 

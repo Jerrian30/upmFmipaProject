@@ -4,16 +4,16 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-use App\Charts\PenggunaLulusan\PL1;
-use App\Charts\PenggunaLulusan\PL2;
-use App\Charts\PenggunaLulusan\PL3;
-use App\Charts\PenggunaLulusan\PL4;
-use App\Charts\PenggunaLulusan\PL5;
-use App\Charts\PenggunaLulusan\PL6;
-use App\Charts\PenggunaLulusan\PL7;
-use App\Charts\PenggunaLulusan\PL8;
-use App\Charts\PenggunaLulusan\PL9;
-use App\Charts\PenggunaLulusan\PL10;
+use App\Charts\PenggunaLulusan\All\PL1;
+use App\Charts\PenggunaLulusan\All\PL2;
+use App\Charts\PenggunaLulusan\All\PL3;
+use App\Charts\PenggunaLulusan\All\PL4;
+use App\Charts\PenggunaLulusan\All\PL5;
+use App\Charts\PenggunaLulusan\All\PL6;
+use App\Charts\PenggunaLulusan\All\PL7;
+use App\Charts\PenggunaLulusan\All\PL8;
+use App\Charts\PenggunaLulusan\All\PL9;
+use App\Charts\PenggunaLulusan\All\PL10;
 
 use App\Models\PenggunaLulusan;
 

@@ -7,17 +7,29 @@ use Illuminate\Http\Request;
 use App\Models\Dosen;
 
 
-// use App\Charts\Dosen\PL1;
-// use App\Charts\Dosen\PL2;
-// use App\Charts\Dosen\PL3;
-// use App\Charts\Dosen\PL4;
-// use App\Charts\Dosen\PL5;
-// use App\Charts\Dosen\PL6;
-// use App\Charts\Dosen\PL7;
-// use App\Charts\Dosen\PL8;
-// use App\Charts\Dosen\PL9;
-// use App\Charts\Dosen\PL10;
+use App\Charts\Dosen\PL1;
+use App\Charts\Dosen\PL2;
+use App\Charts\Dosen\PL3;
+use App\Charts\Dosen\PL4;
+use App\Charts\Dosen\PL5;
+use App\Charts\Dosen\PL6;
+use App\Charts\Dosen\PL7;
+use App\Charts\Dosen\PL8;
+use App\Charts\Dosen\PL9;
+use App\Charts\Dosen\PL10;
 
+
+// Class Geofisika
+use App\Charts\Dosen\S1Geofisika\Geo1;
+use App\Charts\Dosen\S1Geofisika\Geo2;
+use App\Charts\Dosen\S1Geofisika\Geo3;
+use App\Charts\Dosen\S1Geofisika\Geo4;
+use App\Charts\Dosen\S1Geofisika\Geo5;
+use App\Charts\Dosen\S1Geofisika\Geo6;
+use App\Charts\Dosen\S1Geofisika\Geo7;
+use App\Charts\Dosen\S1Geofisika\Geo8;
+use App\Charts\Dosen\S1Geofisika\Geo9;
+use App\Charts\Dosen\S1Geofisika\Geo10;
 
 // Class D3Farmasi
 use App\Charts\Dosen\D3Farmasi\Farm1;
@@ -56,16 +68,16 @@ use App\Charts\Dosen\S1Matematika\Math9;
 use App\Charts\Dosen\S1Matematika\Math10;
 
 // // Class Biologi
-// use App\Charts\Dosen\S1Biologi\Bio1;
-// use App\Charts\Dosen\S1Biologi\Bio2;
-// use App\Charts\Dosen\S1Biologi\Bio3;
-// use App\Charts\Dosen\S1Biologi\Bio4;
-// use App\Charts\Dosen\S1Biologi\Bio5;
-// use App\Charts\Dosen\S1Biologi\Bio6;
-// use App\Charts\Dosen\S1Biologi\Bio7;
-// use App\Charts\Dosen\S1Biologi\Bio8;
-// use App\Charts\Dosen\S1Biologi\Bio9;
-// use App\Charts\Dosen\S1Biologi\Bio10;
+use App\Charts\Dosen\S1Biologi\Bio1;
+use App\Charts\Dosen\S1Biologi\Bio2;
+use App\Charts\Dosen\S1Biologi\Bio3;
+use App\Charts\Dosen\S1Biologi\Bio4;
+use App\Charts\Dosen\S1Biologi\Bio5;
+use App\Charts\Dosen\S1Biologi\Bio6;
+use App\Charts\Dosen\S1Biologi\Bio7;
+use App\Charts\Dosen\S1Biologi\Bio8;
+use App\Charts\Dosen\S1Biologi\Bio9;
+use App\Charts\Dosen\S1Biologi\Bio10;
 
 // // Class Kebidanan
 use App\Charts\Dosen\D3Kebidanan\Bidan1;
@@ -193,16 +205,16 @@ class EvalDosenController extends Controller
         Math10 $math10,
 
         // // S1 Biologi
-        // Bio1 $bio1,
-        // Bio2 $bio2,
-        // Bio3 $bio3,
-        // Bio4 $bio4,
-        // Bio5 $bio5,
-        // Bio6 $bio6,
-        // Bio7 $bio7,
-        // Bio8 $bio8,
-        // Bio9 $bio9,
-        // Bio10 $bio10,
+        Bio1 $bio1,
+        Bio2 $bio2,
+        Bio3 $bio3,
+        Bio4 $bio4,
+        Bio5 $bio5,
+        Bio6 $bio6,
+        Bio7 $bio7,
+        Bio8 $bio8,
+        Bio9 $bio9,
+        Bio10 $bio10,
 
         // //D3 Kebidanan
         Bidan1 $bidan1,
@@ -287,6 +299,19 @@ class EvalDosenController extends Controller
         Fisika8 $fisika8,
         Fisika9 $fisika9,
         Fisika10 $fisika10,
+
+        //Geofisika
+        Geo1 $geo1,
+        Geo2 $geo2,
+        Geo3 $geo3,
+        Geo4 $geo4,
+        Geo5 $geo5,
+        Geo6 $geo6,
+        Geo7 $geo7,
+        Geo8 $geo8,
+        Geo9 $geo9,
+        Geo10 $geo10,
+
     )
     {
         $dosen = Dosen::all();
@@ -327,16 +352,16 @@ class EvalDosenController extends Controller
             'math9' => $math9->build(),
             'math10' => $math10->build(),
 
-            // 'bio1' => $bio1->build(),
-            // 'bio2' => $bio2->build(),
-            // 'bio3' => $bio3->build(),
-            // 'bio4' => $bio4->build(),
-            // 'bio5' => $bio5->build(),
-            // 'bio6' => $bio6->build(),
-            // 'bio7' => $bio7->build(),
-            // 'bio8' => $bio8->build(),
-            // 'bio9' => $bio9->build(),
-            // 'bio10' => $bio10->build(),
+            'bio1' => $bio1->build(),
+            'bio2' => $bio2->build(),
+            'bio3' => $bio3->build(),
+            'bio4' => $bio4->build(),
+            'bio5' => $bio5->build(),
+            'bio6' => $bio6->build(),
+            'bio7' => $bio7->build(),
+            'bio8' => $bio8->build(),
+            'bio9' => $bio9->build(),
+            'bio10' => $bio10->build(),
 
             'bidan1' => $bidan1->build(),
             'bidan2' => $bidan2->build(),
@@ -414,47 +439,58 @@ class EvalDosenController extends Controller
             'fisika7' => $fisika7->build(),
             'fisika8' => $fisika8->build(),
             'fisika9' => $fisika9->build(),
-            'fisika10' => $fisika10->build()
+            'fisika10' => $fisika10->build(),
+
+            'geo1' => $geo1->build(),
+            'geo2' => $geo2->build(),
+            'geo3' => $geo3->build(),
+            'geo4' => $geo4->build(),
+            'geo5' => $geo5->build(),
+            'geo6' => $geo6->build(),
+            'geo7' => $geo7->build(),
+            'geo8' => $geo8->build(),
+            'geo9' => $geo9->build(),
+            'geo10' => $geo10->build(),
         ]);
     } 
 
-//     public function table(
-//         PL1 $pl1,
-//         PL2 $pl2,
-//         PL3 $pl3,
-//         PL4 $pl4,
-//         PL5 $pl5,
-//         PL6 $pl6,
-//         PL7 $pl7,
-//         PL8 $pl8,
-//         PL9 $pl9,
-//         PL10 $pl10,
-//         )
-// {
-//     $percentages1 = $pl1->getDetailedPercentages();
-//     $percentages2 = $pl2->getDetailedPercentages();
-//     $percentages3 = $pl3->getDetailedPercentages();
-//     $percentages4 = $pl4->getDetailedPercentages();
-//     $percentages5 = $pl5->getDetailedPercentages();
-//     $percentages6 = $pl6->getDetailedPercentages();
-//     $percentages7 = $pl7->getDetailedPercentages();
-//     $percentages8 = $pl8->getDetailedPercentages();
-//     $percentages9 = $pl9->getDetailedPercentages();
-//     $percentages10 = $pl10->getDetailedPercentages();
+    public function table(
+        PL1 $pl1,
+        PL2 $pl2,
+        PL3 $pl3,
+        PL4 $pl4,
+        PL5 $pl5,
+        PL6 $pl6,
+        PL7 $pl7,
+        PL8 $pl8,
+        PL9 $pl9,
+        PL10 $pl10,
+        )
+{
+    $percentages1 = $pl1->getDetailedPercentages();
+    $percentages2 = $pl2->getDetailedPercentages();
+    $percentages3 = $pl3->getDetailedPercentages();
+    $percentages4 = $pl4->getDetailedPercentages();
+    $percentages5 = $pl5->getDetailedPercentages();
+    $percentages6 = $pl6->getDetailedPercentages();
+    $percentages7 = $pl7->getDetailedPercentages();
+    $percentages8 = $pl8->getDetailedPercentages();
+    $percentages9 = $pl9->getDetailedPercentages();
+    $percentages10 = $pl10->getDetailedPercentages();
 
 
-//     return view('evaluasi.Dosen.table', [
-//         'percentages1' => $percentages1,
-//         'percentages2' => $percentages2,
-//         'percentages3' => $percentages3,
-//         'percentages4' => $percentages4,
-//         'percentages5' => $percentages5,
-//         'percentages6' => $percentages6,
-//         'percentages7' => $percentages7,
-//         'percentages8' => $percentages8,
-//         'percentages9' => $percentages9,
-//         'percentages10' => $percentages10
-//     ]);
-// }
+    return view('evaluasi.Dosen.table', [
+        'percentages1' => $percentages1,
+        'percentages2' => $percentages2,
+        'percentages3' => $percentages3,
+        'percentages4' => $percentages4,
+        'percentages5' => $percentages5,
+        'percentages6' => $percentages6,
+        'percentages7' => $percentages7,
+        'percentages8' => $percentages8,
+        'percentages9' => $percentages9,
+        'percentages10' => $percentages10
+    ]);
+}
 
 }
