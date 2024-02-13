@@ -225,7 +225,7 @@
             </tr>
 
             <tr>
-                <td>Memiliki rasa percaya diri yang tinggi</td>
+                <td>Adanya kesempatan bagi dosen untuk mengembangkan karir dengan mudah, khususnya yang berkaitan dengan Tri Dharma PT</td>
                 <td>{{ $percentages8['persen4'] }}%</td>
                 <td>{{ $percentages8['persen3'] }}%</td>
                 <td>{{ $percentages8['persen2'] }}%</td>
@@ -252,7 +252,7 @@
             </tr>
 
             <tr>
-                <td>Memiliki rasa tanggung jawab</td>
+                <td>Pembagian beban kerja dosen sesuai dengan tugas, pokok dan fungsi</td>
                 <td>{{ $percentages9['persen4'] }}%</td>
                 <td>{{ $percentages9['persen3'] }}%</td>
                 <td>{{ $percentages9['persen2'] }}%</td>
@@ -279,7 +279,7 @@
             </tr>
 
             <tr>
-                <td>Kemampuan menyampaikan ide pada bidang pekerjaan yang menjadi tanggung jawabnya</td>
+                <td>Kepuasan terhadap kesejahteraan dosen (Besaran remunerasi, pembayaran remunerasi serta sertifikasi dosen tepat waktu)</td>
                 <td>{{ $percentages10['persen4'] }}%</td>
                 <td>{{ $percentages10['persen3'] }}%</td>
                 <td>{{ $percentages10['persen2'] }}%</td>

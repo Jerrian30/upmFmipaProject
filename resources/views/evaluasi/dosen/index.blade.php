@@ -16,10 +16,16 @@
 @include('grafik.dosen.s2kimia.js') 
 @include('grafik.dosen.s1fisika.js')
 @include('grafik.dosen.s1geofisika.js')
+@include('grafik.dosen.all.js')
 
     <script>
         document.getElementById('programStudi').addEventListener('change', function() {
             var value = this.value;
+
+            var allContainers = document.querySelectorAll('.allContainer');
+            allContainers.forEach(function(container) {
+                container.style.display = (value === 'all') ? 'block' : 'none';
+            });
 
             var farmasiContainers = document.querySelectorAll('.farmasiContainer');
             farmasiContainers.forEach(function(container) {
@@ -99,6 +105,7 @@
         <br><br>
         <select class="form-control" id="programStudi" name="programStudi">
             <option value="" disabled selected>Pilih</option>
+            <option value="all">Semua</option>
             <option value="s2kimia">S2 Kimia</option>
             <option value="s1biologi">S1 Biologi</option>
             <option value="s1farmasi">S1 Farmasi</option>
@@ -126,6 +133,7 @@
         @include('grafik.dosen.s2kimia.view') 
         @include('grafik.dosen.s1fisika.view') 
         @include('grafik.dosen.s1geofisika.view') 
+        @include('grafik.dosen.all.view')
     </div>
 </div>
 @endsection

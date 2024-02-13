@@ -25,7 +25,7 @@ class PL1
 
     protected function calculatePercentages($columnName): array
     {
-        $dataTotal = PenggunaLulusan::selectRaw("COUNT(*) as count, $columnName")
+        $dataTotal = Dosen::selectRaw("COUNT(*) as count, $columnName")
             ->groupBy($columnName)
             ->pluck('count', $columnName);
 

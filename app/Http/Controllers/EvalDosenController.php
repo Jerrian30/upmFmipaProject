@@ -7,16 +7,16 @@ use Illuminate\Http\Request;
 use App\Models\Dosen;
 
 
-use App\Charts\Dosen\PL1;
-use App\Charts\Dosen\PL2;
-use App\Charts\Dosen\PL3;
-use App\Charts\Dosen\PL4;
-use App\Charts\Dosen\PL5;
-use App\Charts\Dosen\PL6;
-use App\Charts\Dosen\PL7;
-use App\Charts\Dosen\PL8;
-use App\Charts\Dosen\PL9;
-use App\Charts\Dosen\PL10;
+use App\Charts\Dosen\All\PL1;
+use App\Charts\Dosen\All\PL2;
+use App\Charts\Dosen\All\PL3;
+use App\Charts\Dosen\All\PL4;
+use App\Charts\Dosen\All\PL5;
+use App\Charts\Dosen\All\PL6;
+use App\Charts\Dosen\All\PL7;
+use App\Charts\Dosen\All\PL8;
+use App\Charts\Dosen\All\PL9;
+use App\Charts\Dosen\All\PL10;
 
 
 // Class Geofisika
@@ -168,6 +168,20 @@ use App\Charts\Dosen\S1Fisika\Fisika10;
 class EvalDosenController extends Controller
 {
     public function index(
+
+        //All
+        PL1 $pl1,
+        PL2 $pl2,
+        PL3 $pl3,
+        PL4 $pl4,
+        PL5 $pl5,
+        PL6 $pl6,
+        PL7 $pl7,
+        PL8 $pl8,
+        PL9 $pl9,
+        PL10 $pl10,
+
+
         // D3 Farmasi
         Farm1 $farm1,
         Farm2 $farm2,
@@ -451,6 +465,19 @@ class EvalDosenController extends Controller
             'geo8' => $geo8->build(),
             'geo9' => $geo9->build(),
             'geo10' => $geo10->build(),
+
+            'pl1' => $pl1->build(),
+            'pl2' => $pl2->build(),
+            'pl3' => $pl3->build(),
+            'pl4' => $pl4->build(),
+            'pl5' => $pl5->build(),
+            'pl6' => $pl6->build(),
+            'pl7' => $pl7->build(),
+            'pl8' => $pl8->build(),
+            'pl9' => $pl9->build(),
+            'pl10' => $pl10->build(),
+
+
         ]);
     } 
 
