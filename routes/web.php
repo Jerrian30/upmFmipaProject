@@ -7,6 +7,9 @@ use App\Http\Controllers\EvalPenggunaLulusanController;
 use App\Http\Controllers\DosenController;
 use App\Http\Controllers\EvalDosenController;
 
+use App\Http\Controllers\LabController;
+use App\Http\Controllers\EvalLabController;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -31,4 +34,9 @@ Route::get('dosen', [DosenController::class, 'index'])->name('dosen.index');
 Route::post('/dosen/import', [DosenController::class, 'import'])->name('dosen.import');
 Route::get('/dosen/eval', [EvalDosenController::class, 'index'])->name('dosen.eval');
 Route::get('/dosen/table', [EvalDosenController::class, 'table'])->name('dosen.table');
+
+Route::get('lab', [LabController::class, 'index'])->name('lab.index');
+Route::post('/lab/import', [LabController::class, 'import'])->name('lab.import');
+Route::get('/lab/eval', [EvalLabController::class, 'index'])->name('lab.eval');
+Route::get('/lab/table', [EvalLabController::class, 'table'])->name('lab.table');
 

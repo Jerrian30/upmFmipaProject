@@ -238,6 +238,17 @@ class EvalPenggunaLulusanController extends Controller
         S2kim8 $s2kim8,
         S2kim9 $s2kim9,
         S2kim10 $s2kim10,
+
+        PL1 $pl1,
+        PL2 $pl2,
+        PL3 $pl3,
+        PL4 $pl4,
+        PL5 $pl5,
+        PL6 $pl6,
+        PL7 $pl7,
+        PL8 $pl8,
+        PL9 $pl9,
+        PL10 $pl10,
     )
     {
         $penggunaLulusan = PenggunaLulusan::all();
@@ -341,7 +352,19 @@ class EvalPenggunaLulusanController extends Controller
             's2kim7' => $s2kim7->build(),
             's2kim8' => $s2kim8->build(),
             's2kim9' => $s2kim9->build(),
-            's2kim10' => $s2kim10->build()
+            's2kim10' => $s2kim10->build(),
+
+            
+            'pl1' => $pl1->build(),
+            'pl2' => $pl2->build(),
+            'pl3' => $pl3->build(),
+            'pl4' => $pl4->build(),
+            'pl5' => $pl5->build(),
+            'pl6' => $pl6->build(),
+            'pl7' => $pl7->build(),
+            'pl8' => $pl8->build(),
+            'pl9' => $pl9->build(),
+            'pl10' => $pl10->build(),
         ]);
     } 
 

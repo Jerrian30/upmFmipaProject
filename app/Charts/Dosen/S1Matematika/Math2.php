@@ -16,7 +16,7 @@ class Math2
 
     protected function calculatePercentages()
     {
-        $dataD3Farmasi = Dosen::where('program_studi', 'D3 Farmasi')
+        $dataD3Farmasi = Dosen::where('program_studi',  'S1 Matematika')
             ->selectRaw('COUNT(*) as count, efektivitas_pembagian_tugas')
             ->groupBy('efektivitas_pembagian_tugas')
             ->pluck('count', 'efektivitas_pembagian_tugas');

@@ -13,6 +13,7 @@
 @include('grafik.penggunaLulusan.s1statistika.js')
 @include('grafik.penggunaLulusan.s1kimia.js')
 @include('grafik.penggunaLulusan.s2kimia.js')
+@include('grafik.penggunaLulusan.all.js')
 
     <script>
         document.getElementById('programStudi').addEventListener('change', function() {
@@ -21,6 +22,11 @@
             var farmasiContainers = document.querySelectorAll('.farmasiContainer');
             farmasiContainers.forEach(function(container) {
                 container.style.display = (value === 'd3farmasi') ? 'block' : 'none';
+            });
+
+            var allContainers = document.querySelectorAll('.allContainer');
+            allContainers.forEach(function(container) {
+                container.style.display = (value === 'all') ? 'block' : 'none';
             });
 
             var matematikaContainers = document.querySelectorAll('.matematikaContainer');
@@ -81,6 +87,7 @@
         <br><br>
         <select class="form-control" id="programStudi" name="programStudi">
             <option value="" disabled selected>Pilih</option>
+            <option value="all">Semua</option>
             <option value="s2kimia">S2 Kimia</option>
             <option value="s1biologi">S1 Biologi</option>
             <option value="s1kimia">S1 Kimia</option>
@@ -102,6 +109,7 @@
         @include('grafik.penggunaLulusan.d3labsains.view')
         @include('grafik.penggunaLulusan.s1kimia.view')
         @include('grafik.penggunaLulusan.s2kimia.view')
+        @include('grafik.penggunaLulusan.all.view')
     </div>
 </div>
 @endsection
