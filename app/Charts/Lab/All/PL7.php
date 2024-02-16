@@ -1,8 +1,8 @@
 <?php
 
-namespace App\Charts\Dosen\All;
+namespace App\Charts\Lab\All;
 
-use App\Models\Dosen;
+use App\Models\Lab;
 use ArielMejiaDev\LarapexCharts\LarapexChart;
 
 class PL7
@@ -16,7 +16,7 @@ class PL7
 
     public function build(): \ArielMejiaDev\LarapexCharts\DonutChart
     {
-        $dataPercentages = $this->calculatePercentages('suasana_perkuliahan');
+        $dataPercentages = $this->calculatePercentages('manual_peralatan');
         
         return $this->chart->donutChart()
             ->addData(array_values($dataPercentages))
@@ -25,7 +25,7 @@ class PL7
 
     protected function calculatePercentages($columnName): array
     {
-        $dataTotal = Dosen::selectRaw("COUNT(*) as count, $columnName")
+        $dataTotal = Lab::selectRaw("COUNT(*) as count, $columnName")
             ->groupBy($columnName)
             ->pluck('count', $columnName);
 
@@ -53,7 +53,7 @@ class PL7
     public function getDetailedPercentages()
     {
         
-        $percentages = $this->calculatePercentages('suasana_perkuliahan');
+        $percentages = $this->calculatePercentages('manual_peralatan');
         return [
             'persen1' => $percentages[1] ?? 0,
             'persen2' => $percentages[2] ?? 0,

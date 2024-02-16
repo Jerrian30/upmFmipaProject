@@ -25,6 +25,12 @@
 
 }
 
+@media (max-width: 768px) {
+    .navbar-nav .nav-link {
+        font-size: 12px;
+    }
+}
+
 
     </style>
     <meta charset="utf-8">

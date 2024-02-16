@@ -7,16 +7,18 @@ use Illuminate\Http\Request;
 use App\Models\Lab;
 
 
-// use App\Charts\Lab\All\PL1;
-// use App\Charts\Lab\All\PL2;
-// use App\Charts\Lab\All\PL3;
-// use App\Charts\Lab\All\PL4;
-// use App\Charts\Lab\All\PL5;
-// use App\Charts\Lab\All\PL6;
-// use App\Charts\Lab\All\PL7;
-// use App\Charts\Lab\All\PL8;
-// use App\Charts\Lab\All\PL9;
-// use App\Charts\Lab\All\PL10;
+use App\Charts\Lab\All\PL1;
+use App\Charts\Lab\All\PL2;
+use App\Charts\Lab\All\PL3;
+use App\Charts\Lab\All\PL4;
+use App\Charts\Lab\All\PL5;
+use App\Charts\Lab\All\PL6;
+use App\Charts\Lab\All\PL7;
+use App\Charts\Lab\All\PL8;
+use App\Charts\Lab\All\PL9;
+use App\Charts\Lab\All\PL10;
+use App\Charts\Lab\All\PL11;
+use App\Charts\Lab\All\PL12;
 
 
 // // Class Geofisika
@@ -56,16 +58,18 @@ use App\Models\Lab;
 // use App\Charts\Lab\S1Farmasi\S1Farm10;
 
 // // // Class Matematika
-// use App\Charts\Lab\S1Matematika\Math1;
-// use App\Charts\Lab\S1Matematika\Math2;
-// use App\Charts\Lab\S1Matematika\Math3;
-// use App\Charts\Lab\S1Matematika\Math4;
-// use App\Charts\Lab\S1Matematika\Math5;
-// use App\Charts\Lab\S1Matematika\Math6;
-// use App\Charts\Lab\S1Matematika\Math7;
-// use App\Charts\Lab\S1Matematika\Math8;
-// use App\Charts\Lab\S1Matematika\Math9;
-// use App\Charts\Lab\S1Matematika\Math10;
+use App\Charts\Lab\S1Matematika\Math1;
+use App\Charts\Lab\S1Matematika\Math2;
+use App\Charts\Lab\S1Matematika\Math3;
+use App\Charts\Lab\S1Matematika\Math4;
+use App\Charts\Lab\S1Matematika\Math5;
+use App\Charts\Lab\S1Matematika\Math6;
+use App\Charts\Lab\S1Matematika\Math7;
+use App\Charts\Lab\S1Matematika\Math8;
+use App\Charts\Lab\S1Matematika\Math9;
+use App\Charts\Lab\S1Matematika\Math10;
+use App\Charts\Lab\S1Matematika\Math11;
+use App\Charts\Lab\S1Matematika\Math12;
 
 // // // Class Biologi
 // use App\Charts\Lab\S1Biologi\Bio1;
@@ -92,16 +96,18 @@ use App\Models\Lab;
 // use App\Charts\Lab\D3Kebidanan\Bidan10;
 
 // // // Class Keperawatan
-// use App\Charts\Lab\D3Keperawatan\Rawat1;
-// use App\Charts\Lab\D3Keperawatan\Rawat2;
-// use App\Charts\Lab\D3Keperawatan\Rawat3;
-// use App\Charts\Lab\D3Keperawatan\Rawat4;
-// use App\Charts\Lab\D3Keperawatan\Rawat5;
-// use App\Charts\Lab\D3Keperawatan\Rawat6;
-// use App\Charts\Lab\D3Keperawatan\Rawat7;
-// use App\Charts\Lab\D3Keperawatan\Rawat8;
-// use App\Charts\Lab\D3Keperawatan\Rawat9;
-// use App\Charts\Lab\D3Keperawatan\Rawat10;
+use App\Charts\Lab\D3Keperawatan\Rawat1;
+use App\Charts\Lab\D3Keperawatan\Rawat2;
+use App\Charts\Lab\D3Keperawatan\Rawat3;
+use App\Charts\Lab\D3Keperawatan\Rawat4;
+use App\Charts\Lab\D3Keperawatan\Rawat5;
+use App\Charts\Lab\D3Keperawatan\Rawat6;
+use App\Charts\Lab\D3Keperawatan\Rawat7;
+use App\Charts\Lab\D3Keperawatan\Rawat8;
+use App\Charts\Lab\D3Keperawatan\Rawat9;
+use App\Charts\Lab\D3Keperawatan\Rawat10;
+use App\Charts\Lab\D3Keperawatan\Rawat11;
+use App\Charts\Lab\D3Keperawatan\Rawat12;
 
 // // // Class Lab Sains
 // use App\Charts\Lab\D3LabSains\LabSains1;
@@ -170,16 +176,18 @@ class EvalLabController extends Controller
     public function index(
 
         //All
-        // PL1 $pl1,
-        // PL2 $pl2,
-        // PL3 $pl3,
-        // PL4 $pl4,
-        // PL5 $pl5,
-        // PL6 $pl6,
-        // PL7 $pl7,
-        // PL8 $pl8,
-        // PL9 $pl9,
-        // PL10 $pl10,
+        PL1 $pl1,
+        PL2 $pl2,
+        PL3 $pl3,
+        PL4 $pl4,
+        PL5 $pl5,
+        PL6 $pl6,
+        PL7 $pl7,
+        PL8 $pl8,
+        PL9 $pl9,
+        PL10 $pl10,
+        PL11 $pl11,
+        PL12 $pl12,
 
 
         // // D3 Farmasi
@@ -207,16 +215,19 @@ class EvalLabController extends Controller
         // S1Farm10 $s1farm10,
 
         // // // S1 Matematika
-        // Math1 $math1,
-        // Math2 $math2,
-        // Math3 $math3,
-        // Math4 $math4,
-        // Math5 $math5,
-        // Math6 $math6,
-        // Math7 $math7,
-        // Math8 $math8,
-        // Math9 $math9,
-        // Math10 $math10,
+        Math1 $math1,
+        Math2 $math2,
+        Math3 $math3,
+        Math4 $math4,
+        Math5 $math5,
+        Math6 $math6,
+        Math7 $math7,
+        Math8 $math8,
+        Math9 $math9,
+        Math10 $math10,
+        Math11 $math11,
+        Math12 $math12,
+
 
         // // // S1 Biologi
         // Bio1 $bio1,
@@ -243,16 +254,18 @@ class EvalLabController extends Controller
         // Bidan10 $bidan10,
 
         // //D3 Keperawatan
-        // Rawat1 $rawat1,
-        // Rawat2 $rawat2,
-        // Rawat3 $rawat3,
-        // Rawat4 $rawat4,
-        // Rawat5 $rawat5,
-        // Rawat6 $rawat6,
-        // Rawat7 $rawat7,
-        // Rawat8 $rawat8,
-        // Rawat9 $rawat9,
-        // Rawat10 $rawat10,
+        Rawat1 $rawat1,
+        Rawat2 $rawat2,
+        Rawat3 $rawat3,
+        Rawat4 $rawat4,
+        Rawat5 $rawat5,
+        Rawat6 $rawat6,
+        Rawat7 $rawat7,
+        Rawat8 $rawat8,
+        Rawat9 $rawat9,
+        Rawat10 $rawat10,
+        Rawat11 $rawat11,
+        Rawat12 $rawat12,
 
         // // //D3 Lab Sains
         // LabSains1 $labsains1,
@@ -355,16 +368,18 @@ class EvalLabController extends Controller
             // 's1farm9' => $s1farm9->build(),
             // 's1farm10' => $s1farm10->build(),
 
-            // 'math1' => $math1->build(),
-            // 'math2' => $math2->build(),
-            // 'math3' => $math3->build(),
-            // 'math4' => $math4->build(),
-            // 'math5' => $math5->build(),
-            // 'math6' => $math6->build(),
-            // 'math7' => $math7->build(),
-            // 'math8' => $math8->build(),
-            // 'math9' => $math9->build(),
-            // 'math10' => $math10->build(),
+            'math1' => $math1->build(),
+            'math2' => $math2->build(),
+            'math3' => $math3->build(),
+            'math4' => $math4->build(),
+            'math5' => $math5->build(),
+            'math6' => $math6->build(),
+            'math7' => $math7->build(),
+            'math8' => $math8->build(),
+            'math9' => $math9->build(),
+            'math10' => $math10->build(),
+            'math11' => $math11->build(),
+            'math12' => $math12->build(),
 
             // 'bio1' => $bio1->build(),
             // 'bio2' => $bio2->build(),
@@ -388,16 +403,18 @@ class EvalLabController extends Controller
             // 'bidan9' => $bidan9->build(),
             // 'bidan10' => $bidan10->build(),
 
-            // 'rawat1' => $rawat1->build(),
-            // 'rawat2' => $rawat2->build(),
-            // 'rawat3' => $rawat3->build(),
-            // 'rawat4' => $rawat4->build(),
-            // 'rawat5' => $rawat5->build(),
-            // 'rawat6' => $rawat6->build(),
-            // 'rawat7' => $rawat7->build(),
-            // 'rawat8' => $rawat8->build(),
-            // 'rawat9' => $rawat9->build(),
-            // 'rawat10' => $rawat10->build(),
+            'rawat1' => $rawat1->build(),
+            'rawat2' => $rawat2->build(),
+            'rawat3' => $rawat3->build(),
+            'rawat4' => $rawat4->build(),
+            'rawat5' => $rawat5->build(),
+            'rawat6' => $rawat6->build(),
+            'rawat7' => $rawat7->build(),
+            'rawat8' => $rawat8->build(),
+            'rawat9' => $rawat9->build(),
+            'rawat10' => $rawat10->build(),
+            'rawat11' => $rawat11->build(),
+            'rawat12' => $rawat12->build(),
 
             // 'labsains1' => $labsains1->build(),
             // 'labsains2' => $labsains2->build(),
@@ -466,16 +483,18 @@ class EvalLabController extends Controller
             // 'geo9' => $geo9->build(),
             // 'geo10' => $geo10->build(),
 
-            // 'pl1' => $pl1->build(),
-            // 'pl2' => $pl2->build(),
-            // 'pl3' => $pl3->build(),
-            // 'pl4' => $pl4->build(),
-            // 'pl5' => $pl5->build(),
-            // 'pl6' => $pl6->build(),
-            // 'pl7' => $pl7->build(),
-            // 'pl8' => $pl8->build(),
-            // 'pl9' => $pl9->build(),
-            // 'pl10' => $pl10->build(),
+            'pl1' => $pl1->build(),
+            'pl2' => $pl2->build(),
+            'pl3' => $pl3->build(),
+            'pl4' => $pl4->build(),
+            'pl5' => $pl5->build(),
+            'pl6' => $pl6->build(),
+            'pl7' => $pl7->build(),
+            'pl8' => $pl8->build(),
+            'pl9' => $pl9->build(),
+            'pl10' => $pl10->build(),
+            'pl11' => $pl11->build(),
+            'pl12' => $pl12->build(),
 
 
         ]);
@@ -494,16 +513,16 @@ class EvalLabController extends Controller
         // PL10 $pl10,
         )
 {
-    $percentages1 = $pl1->getDetailedPercentages();
-    $percentages2 = $pl2->getDetailedPercentages();
-    $percentages3 = $pl3->getDetailedPercentages();
-    $percentages4 = $pl4->getDetailedPercentages();
-    $percentages5 = $pl5->getDetailedPercentages();
-    $percentages6 = $pl6->getDetailedPercentages();
-    $percentages7 = $pl7->getDetailedPercentages();
-    $percentages8 = $pl8->getDetailedPercentages();
-    $percentages9 = $pl9->getDetailedPercentages();
-    $percentages10 = $pl10->getDetailedPercentages();
+    // $percentages1 = $pl1->getDetailedPercentages();
+    // $percentages2 = $pl2->getDetailedPercentages();
+    // $percentages3 = $pl3->getDetailedPercentages();
+    // $percentages4 = $pl4->getDetailedPercentages();
+    // $percentages5 = $pl5->getDetailedPercentages();
+    // $percentages6 = $pl6->getDetailedPercentages();
+    // $percentages7 = $pl7->getDetailedPercentages();
+    // $percentages8 = $pl8->getDetailedPercentages();
+    // $percentages9 = $pl9->getDetailedPercentages();
+    // $percentages10 = $pl10->getDetailedPercentages();
 
 
     return view('evaluasi.Lab.table', [

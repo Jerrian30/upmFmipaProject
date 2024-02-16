@@ -3,20 +3,20 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Models\Dosen;
-use App\Imports\DosenImport;
+use App\Models\Lab;
+use App\Imports\LabImport;
 use Maatwebsite\Excel\Facades\Excel;
 
 
-class DosenController extends Controller
+class LaporanLabController extends Controller
 {
     /**
      * Display a listing of the resource.
      */
     public function index()
     {
-        $dosens = Dosen::all();
-        return view('laporanSurvei.dosen.index', compact('dosens'));
+        $labs = Lab::all();
+        return view('laporanSurvei.lab.index', compact('labs'));
     }
 
     /**
@@ -30,9 +30,9 @@ class DosenController extends Controller
 
         $file = $request->file('excel_file');
 
-        Excel::import(new DosenImport, $file);
+        Excel::import(new LabImport, $file);
 
-        return redirect()->route('dosen.index')->with('success', 'Data berhasil diimpor.');
+        return redirect()->route('lab.index')->with('success', 'Data berhasil diimpor.');
     }
 
 }

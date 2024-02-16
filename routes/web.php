@@ -1,13 +1,13 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\PenggunaLulusanController;
+use App\Http\Controllers\LaporanPenggunaLulusanController;
 use App\Http\Controllers\EvalPenggunaLulusanController;
 
-use App\Http\Controllers\DosenController;
+use App\Http\Controllers\LaporanDosenController;
 use App\Http\Controllers\EvalDosenController;
 
-use App\Http\Controllers\LabController;
+use App\Http\Controllers\LaporanLabController;
 use App\Http\Controllers\EvalLabController;
 
 /*
@@ -25,18 +25,18 @@ Route::get('/', function () {
     return view('layouts/master');
 });
 
-Route::get('penggunaLulusan', [PenggunaLulusanController::class, 'index'])->name('penggunaLulusan.index');
-Route::post('/penggunaLulusan/import', [PenggunaLulusanController::class, 'import'])->name('penggunaLulusan.import');
+Route::get('penggunaLulusan', [LaporanPenggunaLulusanController::class, 'index'])->name('penggunaLulusan.index');
+Route::post('/penggunaLulusan/import', [LaporanPenggunaLulusanController::class, 'import'])->name('penggunaLulusan.import');
 Route::get('/penggunaLulusan/eval', [EvalPenggunaLulusanController::class, 'index'])->name('penggunaLulusan.eval');
 Route::get('/penggunaLulusan/table', [EvalPenggunaLulusanController::class, 'table'])->name('penggunaLulusan.table');
 
-Route::get('dosen', [DosenController::class, 'index'])->name('dosen.index');
-Route::post('/dosen/import', [DosenController::class, 'import'])->name('dosen.import');
+Route::get('dosen', [LaporanDosenController::class, 'index'])->name('dosen.index');
+Route::post('/dosen/import', [LaporanDosenController::class, 'import'])->name('dosen.import');
 Route::get('/dosen/eval', [EvalDosenController::class, 'index'])->name('dosen.eval');
 Route::get('/dosen/table', [EvalDosenController::class, 'table'])->name('dosen.table');
 
-Route::get('lab', [LabController::class, 'index'])->name('lab.index');
-Route::post('/lab/import', [LabController::class, 'import'])->name('lab.import');
+Route::get('lab', [LaporanLabController::class, 'index'])->name('lab.index');
+Route::post('/lab/import', [LaporanLabController::class, 'import'])->name('lab.import');
 Route::get('/lab/eval', [EvalLabController::class, 'index'])->name('lab.eval');
 Route::get('/lab/table', [EvalLabController::class, 'table'])->name('lab.table');
 

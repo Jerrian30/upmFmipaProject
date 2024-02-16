@@ -1,11 +1,11 @@
 <?php
 
-namespace App\Charts\Lab\S1Matematika;
+namespace App\Charts\Lab\D3Keperawatan;
 
 use App\Models\Lab;
 use ArielMejiaDev\LarapexCharts\LarapexChart;
 
-class Math2
+class Rawat2
 {
     protected $chart;
 
@@ -16,7 +16,7 @@ class Math2
 
     protected function calculatePercentages()
     {
-        $dataD3Farmasi = Lab::where('program_studi', 'S1 Matematika')
+        $dataD3Farmasi = Lab::where('program_studi', 'D3 Keperawatan')
             ->selectRaw('COUNT(*) as count, kebersihan_laboratorium')
             ->groupBy('kebersihan_laboratorium')
             ->pluck('count', 'kebersihan_laboratorium');

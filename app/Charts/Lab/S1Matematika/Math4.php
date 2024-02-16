@@ -5,7 +5,7 @@ namespace App\Charts\Lab\S1Matematika;
 use App\Models\Lab;
 use ArielMejiaDev\LarapexCharts\LarapexChart;
 
-class Math1
+class Math4
 {
     protected $chart;
 

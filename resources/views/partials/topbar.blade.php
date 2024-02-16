@@ -1,17 +1,14 @@
 <nav class="navbar navbar-expand-lg navbar-light bg-primary topbar mb-4 fixed-top bg-body-tertiary">
     <!-- Logo or Image on the left side -->
-    <a class="navbar-brand" href="#">
-        <img src="{{ asset('sbadmin/img/logoUNIB.png') }}" height="60" alt="logo">
-    </a>
-    <br>
+
 
     <!-- Sidebar Toggle (Topbar) for Mobile View -->
-    <button id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle mr-3">
-        <i class="fa fa-bars">hi</i>
-    </button>
-
     <!-- Topbar Navbar -->
     <ul class="navbar-nav ml-auto">
+
+        <a class="navbar-brand" href="#">
+            <img src="{{ asset('sbadmin/img/logoUNIB.png') }}" height="60" alt="logo">
+        </a>
 
         <!-- Integrasi Item-Menu dari Sidebar ke Topbar -->
         <!-- Home -->

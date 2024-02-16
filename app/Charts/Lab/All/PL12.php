@@ -5,7 +5,7 @@ namespace App\Charts\Lab\All;
 use App\Models\Lab;
 use ArielMejiaDev\LarapexCharts\LarapexChart;
 
-class PL3
+class PL12
 {
     protected $chart;
 
@@ -16,7 +16,7 @@ class PL3
 
     public function build(): \ArielMejiaDev\LarapexCharts\DonutChart
     {
-        $dataPercentages = $this->calculatePercentages('sarpras_terawat');
+        $dataPercentages = $this->calculatePercentages('sarpras_lengkap');
         
         return $this->chart->donutChart()
             ->addData(array_values($dataPercentages))
@@ -53,7 +53,7 @@ class PL3
     public function getDetailedPercentages()
     {
         
-        $percentages = $this->calculatePercentages('sarpras_terawat');
+        $percentages = $this->calculatePercentages('sarpras_lengkap');
         return [
             'persen1' => $percentages[1] ?? 0,
             'persen2' => $percentages[2] ?? 0,
