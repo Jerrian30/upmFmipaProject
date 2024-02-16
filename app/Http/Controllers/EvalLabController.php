@@ -77,29 +77,33 @@ use App\Charts\Lab\S1Matematika\Math10;
 use App\Charts\Lab\S1Matematika\Math11;
 use App\Charts\Lab\S1Matematika\Math12;
 
-// // // Class Biologi
-// use App\Charts\Lab\S1Biologi\Bio1;
-// use App\Charts\Lab\S1Biologi\Bio2;
-// use App\Charts\Lab\S1Biologi\Bio3;
-// use App\Charts\Lab\S1Biologi\Bio4;
-// use App\Charts\Lab\S1Biologi\Bio5;
-// use App\Charts\Lab\S1Biologi\Bio6;
-// use App\Charts\Lab\S1Biologi\Bio7;
-// use App\Charts\Lab\S1Biologi\Bio8;
-// use App\Charts\Lab\S1Biologi\Bio9;
-// use App\Charts\Lab\S1Biologi\Bio10;
+// Class Biologi
+use App\Charts\Lab\S1Biologi\Bio1;
+use App\Charts\Lab\S1Biologi\Bio2;
+use App\Charts\Lab\S1Biologi\Bio3;
+use App\Charts\Lab\S1Biologi\Bio4;
+use App\Charts\Lab\S1Biologi\Bio5;
+use App\Charts\Lab\S1Biologi\Bio6;
+use App\Charts\Lab\S1Biologi\Bio7;
+use App\Charts\Lab\S1Biologi\Bio8;
+use App\Charts\Lab\S1Biologi\Bio9;
+use App\Charts\Lab\S1Biologi\Bio10;
+use App\Charts\Lab\S1Biologi\Bio11;
+use App\Charts\Lab\S1Biologi\Bio12;
 
-// // // Class Kebidanan
-// use App\Charts\Lab\D3Kebidanan\Bidan1;
-// use App\Charts\Lab\D3Kebidanan\Bidan2;
-// use App\Charts\Lab\D3Kebidanan\Bidan3;
-// use App\Charts\Lab\D3Kebidanan\Bidan4;
-// use App\Charts\Lab\D3Kebidanan\Bidan5;
-// use App\Charts\Lab\D3Kebidanan\Bidan6;
-// use App\Charts\Lab\D3Kebidanan\Bidan7;
-// use App\Charts\Lab\D3Kebidanan\Bidan8;
-// use App\Charts\Lab\D3Kebidanan\Bidan9;
-// use App\Charts\Lab\D3Kebidanan\Bidan10;
+// Class Kebidanan
+use App\Charts\Lab\D3Kebidanan\Bidan1;
+use App\Charts\Lab\D3Kebidanan\Bidan2;
+use App\Charts\Lab\D3Kebidanan\Bidan3;
+use App\Charts\Lab\D3Kebidanan\Bidan4;
+use App\Charts\Lab\D3Kebidanan\Bidan5;
+use App\Charts\Lab\D3Kebidanan\Bidan6;
+use App\Charts\Lab\D3Kebidanan\Bidan7;
+use App\Charts\Lab\D3Kebidanan\Bidan8;
+use App\Charts\Lab\D3Kebidanan\Bidan9;
+use App\Charts\Lab\D3Kebidanan\Bidan10;
+use App\Charts\Lab\D3Kebidanan\Bidan11;
+use App\Charts\Lab\D3Kebidanan\Bidan12;
 
 // // // Class Keperawatan
 use App\Charts\Lab\D3Keperawatan\Rawat1;
@@ -115,53 +119,74 @@ use App\Charts\Lab\D3Keperawatan\Rawat10;
 use App\Charts\Lab\D3Keperawatan\Rawat11;
 use App\Charts\Lab\D3Keperawatan\Rawat12;
 
-// // // Class Lab Sains
-// use App\Charts\Lab\D3LabSains\LabSains1;
-// use App\Charts\Lab\D3LabSains\LabSains2;
-// use App\Charts\Lab\D3LabSains\LabSains3;
-// use App\Charts\Lab\D3LabSains\LabSains4;
-// use App\Charts\Lab\D3LabSains\LabSains5;
-// use App\Charts\Lab\D3LabSains\LabSains6;
-// use App\Charts\Lab\D3LabSains\LabSains7;
-// use App\Charts\Lab\D3LabSains\LabSains8;
-// use App\Charts\Lab\D3LabSains\LabSains9;
-// use App\Charts\Lab\D3LabSains\LabSains10;
+// Class Lab Sains
+use App\Charts\Lab\D3LabSains\LabSains1;
+use App\Charts\Lab\D3LabSains\LabSains2;
+use App\Charts\Lab\D3LabSains\LabSains3;
+use App\Charts\Lab\D3LabSains\LabSains4;
+use App\Charts\Lab\D3LabSains\LabSains5;
+use App\Charts\Lab\D3LabSains\LabSains6;
+use App\Charts\Lab\D3LabSains\LabSains7;
+use App\Charts\Lab\D3LabSains\LabSains8;
+use App\Charts\Lab\D3LabSains\LabSains9;
+use App\Charts\Lab\D3LabSains\LabSains10;
+use App\Charts\Lab\D3LabSains\LabSains11;
+use App\Charts\Lab\D3LabSains\LabSains12;
 
-// // //Class Statistika
-// use App\Charts\Lab\S1Statistika\Statis1;
-// use App\Charts\Lab\S1Statistika\Statis2;
-// use App\Charts\Lab\S1Statistika\Statis3;
-// use App\Charts\Lab\S1Statistika\Statis4;
-// use App\Charts\Lab\S1Statistika\Statis5;
-// use App\Charts\Lab\S1Statistika\Statis6;
-// use App\Charts\Lab\S1Statistika\Statis7;
-// use App\Charts\Lab\S1Statistika\Statis8;
-// use App\Charts\Lab\S1Statistika\Statis9;
-// use App\Charts\Lab\S1Statistika\Statis10;
+//Class Statistika
+use App\Charts\Lab\S1Statistika\Statis1;
+use App\Charts\Lab\S1Statistika\Statis2;
+use App\Charts\Lab\S1Statistika\Statis3;
+use App\Charts\Lab\S1Statistika\Statis4;
+use App\Charts\Lab\S1Statistika\Statis5;
+use App\Charts\Lab\S1Statistika\Statis6;
+use App\Charts\Lab\S1Statistika\Statis7;
+use App\Charts\Lab\S1Statistika\Statis8;
+use App\Charts\Lab\S1Statistika\Statis9;
+use App\Charts\Lab\S1Statistika\Statis10;
+use App\Charts\Lab\S1Statistika\Statis11;
+use App\Charts\Lab\S1Statistika\Statis12;
+
+use App\Charts\Lab\S2Statistika\S2Statis1;
+use App\Charts\Lab\S2Statistika\S2Statis2;
+use App\Charts\Lab\S2Statistika\S2Statis3;
+use App\Charts\Lab\S2Statistika\S2Statis4;
+use App\Charts\Lab\S2Statistika\S2Statis5;
+use App\Charts\Lab\S2Statistika\S2Statis6;
+use App\Charts\Lab\S2Statistika\S2Statis7;
+use App\Charts\Lab\S2Statistika\S2Statis8;
+use App\Charts\Lab\S2Statistika\S2Statis9;
+use App\Charts\Lab\S2Statistika\S2StatiS10;
+use App\Charts\Lab\S2Statistika\S2StatiS11;
+use App\Charts\Lab\S2Statistika\S2Statis12;
 
 // // //Class S1 Kimia
-// use App\Charts\Lab\S1Kimia\S1kim1;
-// use App\Charts\Lab\S1Kimia\S1kim2;
-// use App\Charts\Lab\S1Kimia\S1kim3;
-// use App\Charts\Lab\S1Kimia\S1kim4;
-// use App\Charts\Lab\S1Kimia\S1kim5;
-// use App\Charts\Lab\S1Kimia\S1kim6;
-// use App\Charts\Lab\S1Kimia\S1kim7;
-// use App\Charts\Lab\S1Kimia\S1kim8;
-// use App\Charts\Lab\S1Kimia\S1kim9;
-// use App\Charts\Lab\S1Kimia\S1kim10;
+use App\Charts\Lab\S1Kimia\S1Kim1;
+use App\Charts\Lab\S1Kimia\S1Kim2;
+use App\Charts\Lab\S1Kimia\S1Kim3;
+use App\Charts\Lab\S1Kimia\S1Kim4;
+use App\Charts\Lab\S1Kimia\S1Kim5;
+use App\Charts\Lab\S1Kimia\S1Kim6;
+use App\Charts\Lab\S1Kimia\S1Kim7;
+use App\Charts\Lab\S1Kimia\S1Kim8;
+use App\Charts\Lab\S1Kimia\S1Kim9;
+use App\Charts\Lab\S1Kimia\S1Kim10;
+use App\Charts\Lab\S1Kimia\S1Kim11;
+use App\Charts\Lab\S1Kimia\S1Kim12;
 
 // // //Class S2 Kimia
-// use App\Charts\Lab\S2Kimia\S2kim1;
-// use App\Charts\Lab\S2Kimia\S2kim2;
-// use App\Charts\Lab\S2Kimia\S2kim3;
-// use App\Charts\Lab\S2Kimia\S2kim4;
-// use App\Charts\Lab\S2Kimia\S2kim5;
-// use App\Charts\Lab\S2Kimia\S2kim6;
-// use App\Charts\Lab\S2Kimia\S2kim7;
-// use App\Charts\Lab\S2Kimia\S2kim8;
-// use App\Charts\Lab\S2Kimia\S2kim9;
-// use App\Charts\Lab\S2Kimia\S2kim10;
+use App\Charts\Lab\S2Kimia\S2Kim1;
+use App\Charts\Lab\S2Kimia\S2Kim2;
+use App\Charts\Lab\S2Kimia\S2Kim3;
+use App\Charts\Lab\S2Kimia\S2Kim4;
+use App\Charts\Lab\S2Kimia\S2Kim5;
+use App\Charts\Lab\S2Kimia\S2Kim6;
+use App\Charts\Lab\S2Kimia\S2Kim7;
+use App\Charts\Lab\S2Kimia\S2Kim8;
+use App\Charts\Lab\S2Kimia\S2Kim9;
+use App\Charts\Lab\S2Kimia\S2Kim10;
+use App\Charts\Lab\S2Kimia\S2Kim11;
+use App\Charts\Lab\S2Kimia\S2Kim12;
 
 use App\Charts\Lab\S1Fisika\Fisika1;
 use App\Charts\Lab\S1Fisika\Fisika2;
@@ -241,29 +266,33 @@ class EvalLabController extends Controller
         Math12 $math12,
 
 
-        // // // S1 Biologi
-        // Bio1 $bio1,
-        // Bio2 $bio2,
-        // Bio3 $bio3,
-        // Bio4 $bio4,
-        // Bio5 $bio5,
-        // Bio6 $bio6,
-        // Bio7 $bio7,
-        // Bio8 $bio8,
-        // Bio9 $bio9,
-        // Bio10 $bio10,
+        // S1 Biologi
+        Bio1 $bio1,
+        Bio2 $bio2,
+        Bio3 $bio3,
+        Bio4 $bio4,
+        Bio5 $bio5,
+        Bio6 $bio6,
+        Bio7 $bio7,
+        Bio8 $bio8,
+        Bio9 $bio9,
+        Bio10 $bio10,
+        Bio11 $bio11,
+        Bio12 $bio12,
 
-        // // //D3 Kebidanan
-        // Bidan1 $bidan1,
-        // Bidan2 $bidan2,
-        // Bidan3 $bidan3,
-        // Bidan4 $bidan4,
-        // Bidan5 $bidan5,
-        // Bidan6 $bidan6,
-        // Bidan7 $bidan7,
-        // Bidan8 $bidan8,
-        // Bidan9 $bidan9,
-        // Bidan10 $bidan10,
+        // D3 Kebidanan
+        Bidan1 $bidan1,
+        Bidan2 $bidan2,
+        Bidan3 $bidan3,
+        Bidan4 $bidan4,
+        Bidan5 $bidan5,
+        Bidan6 $bidan6,
+        Bidan7 $bidan7,
+        Bidan8 $bidan8,
+        Bidan9 $bidan9,
+        Bidan10 $bidan10,
+        Bidan11 $bidan11,
+        Bidan12 $bidan12,
 
         // //D3 Keperawatan
         Rawat1 $rawat1,
@@ -279,53 +308,75 @@ class EvalLabController extends Controller
         Rawat11 $rawat11,
         Rawat12 $rawat12,
 
-        // // //D3 Lab Sains
-        // LabSains1 $labsains1,
-        // LabSains2 $labsains2,
-        // LabSains3 $labsains3,
-        // LabSains4 $labsains4,
-        // LabSains5 $labsains5,
-        // LabSains6 $labsains6,
-        // LabSains7 $labsains7,
-        // LabSains8 $labsains8,
-        // LabSains9 $labsains9,
-        // LabSains10 $labsains10,
+        //D3 Lab Sains
+        LabSains1 $labsains1,
+        LabSains2 $labsains2,
+        LabSains3 $labsains3,
+        LabSains4 $labsains4,
+        LabSains5 $labsains5,
+        LabSains6 $labsains6,
+        LabSains7 $labsains7,
+        LabSains8 $labsains8,
+        LabSains9 $labsains9,
+        LabSains10 $labsains10,
+        LabSains11 $labsains11,
+        LabSains12 $labsains12,
 
-        // // S1 Statistika
-        // Statis1 $statis1,
-        // Statis2 $statis2,
-        // Statis3 $statis3,
-        // Statis4 $statis4,
-        // Statis5 $statis5,
-        // Statis6 $statis6,
-        // Statis7 $statis7,
-        // Statis8 $statis8,
-        // Statis9 $statis9,
-        // Statis10 $statis10,
+        // S1 Statistika
+        Statis1 $statis1,
+        Statis2 $statis2,
+        Statis3 $statis3,
+        Statis4 $statis4,
+        Statis5 $statis5,
+        Statis6 $statis6,
+        Statis7 $statis7,
+        Statis8 $statis8,
+        Statis9 $statis9,
+        Statis10 $statis10,
+        Statis11 $statis11,
+        Statis12 $statis12,
+        
+        S2Statis1 $s2statis1,
+        S2Statis2 $s2statis2,
+        S2Statis3 $s2statis3,
+        S2Statis4 $s2statis4,
+        S2Statis5 $s2statis5,
+        S2Statis6 $s2statis6,
+        S2Statis7 $s2statis7,
+        S2Statis8 $s2statis8,
+        S2Statis9 $s2statis9,
+        S2Statis10 $s2statis10,
+        S2Statis11 $s2statis11,
+        S2Statis12 $s2statis12,
 
-        // // //S1 Kimia
-        // S1kim1 $s1kim1,
-        // S1kim2 $s1kim2,
-        // S1kim3 $s1kim3,
-        // S1kim4 $s1kim4,
-        // S1kim5 $s1kim5,
-        // S1kim6 $s1kim6,
-        // S1kim7 $s1kim7,
-        // S1kim8 $s1kim8,
-        // S1kim9 $s1kim9,
-        // S1kim10 $s1kim10,
 
-        // // //S2 Kimia
-        // S2kim1 $s2kim1,
-        // S2kim2 $s2kim2,
-        // S2kim3 $s2kim3,
-        // S2kim4 $s2kim4,
-        // S2kim5 $s2kim5,
-        // S2kim6 $s2kim6,
-        // S2kim7 $s2kim7,
-        // S2kim8 $s2kim8,
-        // S2kim9 $s2kim9,
-        // S2kim10 $s2kim10,
+        // S1 Kimia
+        S1kim1 $s1kim1,
+        S1kim2 $s1kim2,
+        S1kim3 $s1kim3,
+        S1kim4 $s1kim4,
+        S1kim5 $s1kim5,
+        S1kim6 $s1kim6,
+        S1kim7 $s1kim7,
+        S1kim8 $s1kim8,
+        S1kim9 $s1kim9,
+        S1kim10 $s1kim10,
+        S1kim11 $s1kim11,
+        S1kim12 $s1kim12,
+
+        // S2 Kimia
+        S2Kim1 $s2kim1,
+        S2Kim2 $s2kim2,
+        S2Kim3 $s2kim3,
+        S2Kim4 $s2kim4,
+        S2Kim5 $s2kim5,
+        S2Kim6 $s2kim6,
+        S2Kim7 $s2kim7,
+        S2Kim8 $s2kim8,
+        S2Kim9 $s2kim9,
+        S2Kim10 $s2kim10,
+        S2Kim11 $s2kim11,
+        S2Kim12 $s2kim12,
 
         // Fisika
         Fisika1 $fisika1,
@@ -401,27 +452,31 @@ class EvalLabController extends Controller
             'math11' => $math11->build(),
             'math12' => $math12->build(),
 
-            // 'bio1' => $bio1->build(),
-            // 'bio2' => $bio2->build(),
-            // 'bio3' => $bio3->build(),
-            // 'bio4' => $bio4->build(),
-            // 'bio5' => $bio5->build(),
-            // 'bio6' => $bio6->build(),
-            // 'bio7' => $bio7->build(),
-            // 'bio8' => $bio8->build(),
-            // 'bio9' => $bio9->build(),
-            // 'bio10' => $bio10->build(),
+            'bio1' => $bio1->build(),
+            'bio2' => $bio2->build(),
+            'bio3' => $bio3->build(),
+            'bio4' => $bio4->build(),
+            'bio5' => $bio5->build(),
+            'bio6' => $bio6->build(),
+            'bio7' => $bio7->build(),
+            'bio8' => $bio8->build(),
+            'bio9' => $bio9->build(),
+            'bio10' => $bio10->build(),
+            'bio11' => $bio11->build(),
+            'bio12' => $bio12->build(),
 
-            // 'bidan1' => $bidan1->build(),
-            // 'bidan2' => $bidan2->build(),
-            // 'bidan3' => $bidan3->build(),
-            // 'bidan4' => $bidan4->build(),
-            // 'bidan5' => $bidan5->build(),
-            // 'bidan6' => $bidan6->build(),
-            // 'bidan7' => $bidan7->build(),
-            // 'bidan8' => $bidan8->build(),
-            // 'bidan9' => $bidan9->build(),
-            // 'bidan10' => $bidan10->build(),
+            'bidan1' => $bidan1->build(),
+            'bidan2' => $bidan2->build(),
+            'bidan3' => $bidan3->build(),
+            'bidan4' => $bidan4->build(),
+            'bidan5' => $bidan5->build(),
+            'bidan6' => $bidan6->build(),
+            'bidan7' => $bidan7->build(),
+            'bidan8' => $bidan8->build(),
+            'bidan9' => $bidan9->build(),
+            'bidan10' => $bidan10->build(),
+            'bidan11' => $bidan11->build(),
+            'bidan12' => $bidan12->build(),
 
             'rawat1' => $rawat1->build(),
             'rawat2' => $rawat2->build(),
@@ -436,49 +491,71 @@ class EvalLabController extends Controller
             'rawat11' => $rawat11->build(),
             'rawat12' => $rawat12->build(),
 
-            // 'labsains1' => $labsains1->build(),
-            // 'labsains2' => $labsains2->build(),
-            // 'labsains3' => $labsains3->build(),
-            // 'labsains4' => $labsains4->build(),
-            // 'labsains5' => $labsains5->build(),
-            // 'labsains6' => $labsains6->build(),
-            // 'labsains7' => $labsains7->build(),
-            // 'labsains8' => $labsains8->build(),
-            // 'labsains9' => $labsains9->build(),
-            // 'labsains10' => $labsains10->build(),
+            'labsains1' => $labsains1->build(),
+            'labsains2' => $labsains2->build(),
+            'labsains3' => $labsains3->build(),
+            'labsains4' => $labsains4->build(),
+            'labsains5' => $labsains5->build(),
+            'labsains6' => $labsains6->build(),
+            'labsains7' => $labsains7->build(),
+            'labsains8' => $labsains8->build(),
+            'labsains9' => $labsains9->build(),
+            'labsains10' => $labsains10->build(),
+            'labsains11' => $labsains11->build(),
+            'labsains12' => $labsains12->build(),
             
-            // 'statis1' => $statis1->build(),
-            // 'statis2' => $statis2->build(),
-            // 'statis3' => $statis3->build(),
-            // 'statis4' => $statis4->build(),
-            // 'statis5' => $statis5->build(),
-            // 'statis6' => $statis6->build(),
-            // 'statis7' => $statis7->build(),
-            // 'statis8' => $statis8->build(),
-            // 'statis9' => $statis9->build(),
-            // 'statis10' => $statis10->build(),
+            'statis1' => $statis1->build(),
+            'statis2' => $statis2->build(),
+            'statis3' => $statis3->build(),
+            'statis4' => $statis4->build(),
+            'statis5' => $statis5->build(),
+            'statis6' => $statis6->build(),
+            'statis7' => $statis7->build(),
+            'statis8' => $statis8->build(),
+            'statis9' => $statis9->build(),
+            'statis10' => $statis10->build(),
+            'statis11' => $statis11->build(),
+            'statis12' => $statis12->build(),
 
-            // 's1kim1' => $s1kim1->build(),
-            // 's1kim2' => $s1kim2->build(),
-            // 's1kim3' => $s1kim3->build(),
-            // 's1kim4' => $s1kim4->build(),
-            // 's1kim5' => $s1kim5->build(),
-            // 's1kim6' => $s1kim6->build(),
-            // 's1kim7' => $s1kim7->build(),
-            // 's1kim8' => $s1kim8->build(),
-            // 's1kim9' => $s1kim9->build(),
-            // 's1kim10' => $s1kim10->build(),
+            's2statis1' => $s2statis1->build(),
+            's2statis2' => $s2statis2->build(),
+            's2statis3' => $s2statis3->build(),
+            's2statis4' => $s2statis4->build(),
+            's2statis5' => $s2statis5->build(),
+            's2statis6' => $s2statis6->build(),
+            's2statis7' => $s2statis7->build(),
+            's2statis8' => $s2statis8->build(),
+            's2statis9' => $s2statis9->build(),
+            's2statis10' => $s2statis10->build(),
+            's2statis11' => $s2statis11->build(),
+            's2statis12' => $s2statis12->build(),
 
-            // 's2kim1' => $s2kim1->build(),
-            // 's2kim2' => $s2kim2->build(),
-            // 's2kim3' => $s2kim3->build(),
-            // 's2kim4' => $s2kim4->build(),
-            // 's2kim5' => $s2kim5->build(),
-            // 's2kim6' => $s2kim6->build(),
-            // 's2kim7' => $s2kim7->build(),
-            // 's2kim8' => $s2kim8->build(),
-            // 's2kim9' => $s2kim9->build(),
-            // 's2kim10' => $s2kim10->build(),
+
+            's1kim1' => $s1kim1->build(),
+            's1kim2' => $s1kim2->build(),
+            's1kim3' => $s1kim3->build(),
+            's1kim4' => $s1kim4->build(),
+            's1kim5' => $s1kim5->build(),
+            's1kim6' => $s1kim6->build(),
+            's1kim7' => $s1kim7->build(),
+            's1kim8' => $s1kim8->build(),
+            's1kim9' => $s1kim9->build(),
+            's1kim10' => $s1kim10->build(),
+            's1kim11' => $s1kim11->build(),
+            's1kim12' => $s1kim12->build(),
+
+            's2kim1' => $s2kim1->build(),
+            's2kim2' => $s2kim2->build(),
+            's2kim3' => $s2kim3->build(),
+            's2kim4' => $s2kim4->build(),
+            's2kim5' => $s2kim5->build(),
+            's2kim6' => $s2kim6->build(),
+            's2kim7' => $s2kim7->build(),
+            's2kim8' => $s2kim8->build(),
+            's2kim9' => $s2kim9->build(),
+            's2kim10' => $s2kim10->build(),
+            's2kim11' => $s2kim11->build(),
+            's2kim12' => $s2kim12->build(),
 
             
             'fisika1' => $fisika1->build(),

@@ -8,16 +8,15 @@
 @include('grafik.lab.s1farmasi.js')
 @include('grafik.lab.s1matematika.js')
 @include('grafik.lab.s1geofisika.js')
-{{-- @include('grafik.lab.d3kebidanan.js') --}}
+@include('grafik.lab.d3kebidanan.js')
 @include('grafik.lab.d3keperawatan.js')
-{{-- @include('grafik.lab.s1biologi.js')
-@include('grafik.lab.d3labsains.js') --}}
-{{-- @include('grafik.lab.s1statistika.js') 
-@include('grafik.lab.sstatistika.js')  --}}
-{{-- @include('grafik.lab.s1kimia.js') --}}
-{{-- @include('grafik.lab.s2kimia.js')  --}}
+@include('grafik.lab.s1statistika.js') 
+@include('grafik.lab.s2statistika.js')
+@include('grafik.lab.s1biologi.js')
+@include('grafik.lab.d3labsains.js')
+@include('grafik.lab.s1kimia.js')
+@include('grafik.lab.s2kimia.js') 
 @include('grafik.lab.s1fisika.js')
-{{--  --}}
 @include('grafik.lab.all.js')
 
     <script>
@@ -84,13 +83,13 @@
                 container.style.display = (value === 's2statistika') ? 'block' : 'none';
             });
 
-            var statistikaContainer = document.querySelectorAll('.s1kimiaContainer');
-            statistikaContainer.forEach(function(container) {
+            var s1kimiaContainer = document.querySelectorAll('.s1kimiaContainer');
+            s1kimiaContainer.forEach(function(container) {
                 container.style.display = (value === 's1kimia') ? 'block' : 'none';
             });
 
-            var statistikaContainer = document.querySelectorAll('.s2kimiaContainer');
-            statistikaContainer.forEach(function(container) {
+            var s2kimiaContainer = document.querySelectorAll('.s2kimiaContainer');
+            s2kimiaContainer.forEach(function(container) {
                 container.style.display = (value === 's2kimia') ? 'block' : 'none';
             });
         });
@@ -114,7 +113,7 @@
             <option value="" disabled selected>Pilih</option>
             <option value="all">Semua</option>
             <option value="s2kimia">S2 Kimia</option>
-            <option value="s2statistika">S1 Statistika</option>
+            <option value="s2statistika">S2 Statistika</option>
             <option value="s1biologi">S1 Biologi</option>
             <option value="s1farmasi">S1 Farmasi</option>
             <option value="s1fisika">S1 Fisika</option>
@@ -136,20 +135,13 @@
         @include('grafik.lab.s1farmasi.view')
         @include('grafik.lab.s1fisika.view') 
         @include('grafik.lab.s1geofisika.view')
-        {{-- 
-        
         @include('grafik.lab.s1kimia.view')
+        @include('grafik.lab.s2kimia.view') 
+        @include('grafik.lab.d3kebidanan.view')
         @include('grafik.lab.s1statistika.view')
         @include('grafik.lab.s2statistika.view')
-        @include('grafik.lab.d3labsains.view')
-
-        @include('grafik.lab.d3kebidanan.view')
-
         @include('grafik.lab.s1biologi.view')
-        @include('grafik.lab.s2kimia.view') 
-
-        
---}}
+        @include('grafik.lab.d3labsains.view')
     </div>
 </div>
 @endsection

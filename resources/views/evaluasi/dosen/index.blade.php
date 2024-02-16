@@ -77,13 +77,13 @@
                 container.style.display = (value === 's1statistika') ? 'block' : 'none';
             });
 
-            var statistikaContainer = document.querySelectorAll('.s1kimiaContainer');
-            statistikaContainer.forEach(function(container) {
+            var s1kimiaContainer = document.querySelectorAll('.s1kimiaContainer');
+            s1kimiaContainer.forEach(function(container) {
                 container.style.display = (value === 's1kimia') ? 'block' : 'none';
             });
 
-            var statistikaContainer = document.querySelectorAll('.s2kimiaContainer');
-            statistikaContainer.forEach(function(container) {
+            var s2kimiaContainer = document.querySelectorAll('.s2kimiaContainer');
+            s2kimiaContainer.forEach(function(container) {
                 container.style.display = (value === 's2kimia') ? 'block' : 'none';
             });
         });
