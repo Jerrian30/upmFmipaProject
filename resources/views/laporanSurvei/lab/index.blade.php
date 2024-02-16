@@ -1,6 +1,6 @@
 @extends('layouts.master')
-@section('title', 'Survei Dosen')
-@section('page', 'Laporan Survei ->  Dosen')
+@section('title', 'Survei Pengguna Terhadap Kinerja Layanan Laboratorium')
+@section('page', 'Laporan Survei ->  Pengguna Terhadap Kinerja Layanan Laboratorium')
 
 @section('js')
 <script>

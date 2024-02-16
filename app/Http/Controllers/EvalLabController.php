@@ -34,16 +34,18 @@ use App\Charts\Lab\All\PL12;
 // use App\Charts\Lab\S1Geofisika\Geo10;
 
 // // Class D3Farmasi
-// use App\Charts\Lab\D3Farmasi\Farm1;
-// use App\Charts\Lab\D3Farmasi\Farm2;
-// use App\Charts\Lab\D3Farmasi\Farm3;
-// use App\Charts\Lab\D3Farmasi\Farm4;
-// use App\Charts\Lab\D3Farmasi\Farm5;
-// use App\Charts\Lab\D3Farmasi\Farm6;
-// use App\Charts\Lab\D3Farmasi\Farm7;
-// use App\Charts\Lab\D3Farmasi\Farm8;
-// use App\Charts\Lab\D3Farmasi\Farm9;
-// use App\Charts\Lab\D3Farmasi\Farm10;
+use App\Charts\Lab\D3Farmasi\Farm1;
+use App\Charts\Lab\D3Farmasi\Farm2;
+use App\Charts\Lab\D3Farmasi\Farm3;
+use App\Charts\Lab\D3Farmasi\Farm4;
+use App\Charts\Lab\D3Farmasi\Farm5;
+use App\Charts\Lab\D3Farmasi\Farm6;
+use App\Charts\Lab\D3Farmasi\Farm7;
+use App\Charts\Lab\D3Farmasi\Farm8;
+use App\Charts\Lab\D3Farmasi\Farm9;
+use App\Charts\Lab\D3Farmasi\Farm10;
+use App\Charts\Lab\D3Farmasi\Farm11;
+use App\Charts\Lab\D3Farmasi\Farm12;
 
 // // Class S1Farmasi
 // use App\Charts\Lab\S1Farmasi\S1Farm1;
@@ -191,16 +193,18 @@ class EvalLabController extends Controller
 
 
         // // D3 Farmasi
-        // Farm1 $farm1,
-        // Farm2 $farm2,
-        // Farm3 $farm3,
-        // Farm4 $farm4,
-        // Farm5 $farm5,
-        // Farm6 $farm6,
-        // Farm7 $farm7,
-        // Farm8 $farm8,
-        // Farm9 $farm9,
-        // Farm10 $farm10,
+        Farm1 $farm1,
+        Farm2 $farm2,
+        Farm3 $farm3,
+        Farm4 $farm4,
+        Farm5 $farm5,
+        Farm6 $farm6,
+        Farm7 $farm7,
+        Farm8 $farm8,
+        Farm9 $farm9,
+        Farm10 $farm10,
+        Farm11 $farm11,
+        Farm12 $farm12,
 
         // // S1 Farmasi
         // S1Farm1 $s1farm1,
@@ -346,16 +350,18 @@ class EvalLabController extends Controller
         [
             // 'lab' => $Lab,
 
-            // 'farm1' => $farm1->build(),
-            // 'farm2' => $farm2->build(),
-            // 'farm3' => $farm3->build(),
-            // 'farm4' => $farm4->build(),
-            // 'farm5' => $farm5->build(),
-            // 'farm6' => $farm6->build(),
-            // 'farm7' => $farm7->build(),
-            // 'farm8' => $farm8->build(),
-            // 'farm9' => $farm9->build(),
-            // 'farm10' => $farm10->build(),
+            'farm1' => $farm1->build(),
+            'farm2' => $farm2->build(),
+            'farm3' => $farm3->build(),
+            'farm4' => $farm4->build(),
+            'farm5' => $farm5->build(),
+            'farm6' => $farm6->build(),
+            'farm7' => $farm7->build(),
+            'farm8' => $farm8->build(),
+            'farm9' => $farm9->build(),
+            'farm10' => $farm10->build(),
+            'farm11' => $farm11->build(),
+            'farm12' => $farm12->build(),
 
             // 's1farm1' => $s1farm1->build(),
             // 's1farm2' => $s1farm2->build(),
