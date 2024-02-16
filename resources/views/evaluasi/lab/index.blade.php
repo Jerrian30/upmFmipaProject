@@ -5,8 +5,9 @@
 @section('js')
 
 @include('grafik.lab.d3farmasi.js')
-{{-- @include('grafik.lab.s1farmasi.js') --}}
+@include('grafik.lab.s1farmasi.js')
 @include('grafik.lab.s1matematika.js')
+@include('grafik.lab.s1geofisika.js')
 {{-- @include('grafik.lab.d3kebidanan.js') --}}
 @include('grafik.lab.d3keperawatan.js')
 {{-- @include('grafik.lab.s1biologi.js')
@@ -15,8 +16,8 @@
 @include('grafik.lab.sstatistika.js')  --}}
 {{-- @include('grafik.lab.s1kimia.js') --}}
 {{-- @include('grafik.lab.s2kimia.js')  --}}
-{{-- @include('grafik.lab.s1fisika.js') --}}
-{{-- @include('grafik.lab.s1geofisika.js') --}}
+@include('grafik.lab.s1fisika.js')
+{{--  --}}
 @include('grafik.lab.all.js')
 
     <script>
@@ -132,8 +133,11 @@
         @include('grafik.lab.all.view')
         @include('grafik.lab.d3keperawatan.view')
         @include('grafik.lab.d3farmasi.view')
-        {{-- 
         @include('grafik.lab.s1farmasi.view')
+        @include('grafik.lab.s1fisika.view') 
+        @include('grafik.lab.s1geofisika.view')
+        {{-- 
+        
         @include('grafik.lab.s1kimia.view')
         @include('grafik.lab.s1statistika.view')
         @include('grafik.lab.s2statistika.view')
@@ -143,9 +147,9 @@
 
         @include('grafik.lab.s1biologi.view')
         @include('grafik.lab.s2kimia.view') 
-        @include('grafik.lab.s1fisika.view') 
-        @include('grafik.lab.s1geofisika.view') 
- --}}
+
+        
+--}}
     </div>
 </div>
 @endsection

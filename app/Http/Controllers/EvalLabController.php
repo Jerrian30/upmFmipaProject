@@ -22,16 +22,18 @@ use App\Charts\Lab\All\PL12;
 
 
 // // Class Geofisika
-// use App\Charts\Lab\S1Geofisika\Geo1;
-// use App\Charts\Lab\S1Geofisika\Geo2;
-// use App\Charts\Lab\S1Geofisika\Geo3;
-// use App\Charts\Lab\S1Geofisika\Geo4;
-// use App\Charts\Lab\S1Geofisika\Geo5;
-// use App\Charts\Lab\S1Geofisika\Geo6;
-// use App\Charts\Lab\S1Geofisika\Geo7;
-// use App\Charts\Lab\S1Geofisika\Geo8;
-// use App\Charts\Lab\S1Geofisika\Geo9;
-// use App\Charts\Lab\S1Geofisika\Geo10;
+use App\Charts\Lab\S1Geofisika\Geo1;
+use App\Charts\Lab\S1Geofisika\Geo2;
+use App\Charts\Lab\S1Geofisika\Geo3;
+use App\Charts\Lab\S1Geofisika\Geo4;
+use App\Charts\Lab\S1Geofisika\Geo5;
+use App\Charts\Lab\S1Geofisika\Geo6;
+use App\Charts\Lab\S1Geofisika\Geo7;
+use App\Charts\Lab\S1Geofisika\Geo8;
+use App\Charts\Lab\S1Geofisika\Geo9;
+use App\Charts\Lab\S1Geofisika\Geo10;
+use App\Charts\Lab\S1Geofisika\Geo11;
+use App\Charts\Lab\S1Geofisika\Geo12;
 
 // // Class D3Farmasi
 use App\Charts\Lab\D3Farmasi\Farm1;
@@ -48,16 +50,18 @@ use App\Charts\Lab\D3Farmasi\Farm11;
 use App\Charts\Lab\D3Farmasi\Farm12;
 
 // // Class S1Farmasi
-// use App\Charts\Lab\S1Farmasi\S1Farm1;
-// use App\Charts\Lab\S1Farmasi\S1Farm2;
-// use App\Charts\Lab\S1Farmasi\S1Farm3;
-// use App\Charts\Lab\S1Farmasi\S1Farm4;
-// use App\Charts\Lab\S1Farmasi\S1Farm5;
-// use App\Charts\Lab\S1Farmasi\S1Farm6;
-// use App\Charts\Lab\S1Farmasi\S1Farm7;
-// use App\Charts\Lab\S1Farmasi\S1Farm8;
-// use App\Charts\Lab\S1Farmasi\S1Farm9;
-// use App\Charts\Lab\S1Farmasi\S1Farm10;
+use App\Charts\Lab\S1Farmasi\S1Farm1;
+use App\Charts\Lab\S1Farmasi\S1Farm2;
+use App\Charts\Lab\S1Farmasi\S1Farm3;
+use App\Charts\Lab\S1Farmasi\S1Farm4;
+use App\Charts\Lab\S1Farmasi\S1Farm5;
+use App\Charts\Lab\S1Farmasi\S1Farm6;
+use App\Charts\Lab\S1Farmasi\S1Farm7;
+use App\Charts\Lab\S1Farmasi\S1Farm8;
+use App\Charts\Lab\S1Farmasi\S1Farm9;
+use App\Charts\Lab\S1Farmasi\S1Farm10;
+use App\Charts\Lab\S1Farmasi\S1Farm11;
+use App\Charts\Lab\S1Farmasi\S1Farm12;
 
 // // // Class Matematika
 use App\Charts\Lab\S1Matematika\Math1;
@@ -159,16 +163,18 @@ use App\Charts\Lab\D3Keperawatan\Rawat12;
 // use App\Charts\Lab\S2Kimia\S2kim9;
 // use App\Charts\Lab\S2Kimia\S2kim10;
 
-// use App\Charts\Lab\S1Fisika\Fisika1;
-// use App\Charts\Lab\S1Fisika\Fisika2;
-// use App\Charts\Lab\S1Fisika\Fisika3;
-// use App\Charts\Lab\S1Fisika\Fisika4;
-// use App\Charts\Lab\S1Fisika\Fisika5;
-// use App\Charts\Lab\S1Fisika\Fisika6;
-// use App\Charts\Lab\S1Fisika\Fisika7;
-// use App\Charts\Lab\S1Fisika\Fisika8;
-// use App\Charts\Lab\S1Fisika\Fisika9;
-// use App\Charts\Lab\S1Fisika\Fisika10;
+use App\Charts\Lab\S1Fisika\Fisika1;
+use App\Charts\Lab\S1Fisika\Fisika2;
+use App\Charts\Lab\S1Fisika\Fisika3;
+use App\Charts\Lab\S1Fisika\Fisika4;
+use App\Charts\Lab\S1Fisika\Fisika5;
+use App\Charts\Lab\S1Fisika\Fisika6;
+use App\Charts\Lab\S1Fisika\Fisika7;
+use App\Charts\Lab\S1Fisika\Fisika8;
+use App\Charts\Lab\S1Fisika\Fisika9;
+use App\Charts\Lab\S1Fisika\Fisika10;
+use App\Charts\Lab\S1Fisika\Fisika11;
+use App\Charts\Lab\S1Fisika\Fisika12;
 
 
 
@@ -207,16 +213,18 @@ class EvalLabController extends Controller
         Farm12 $farm12,
 
         // // S1 Farmasi
-        // S1Farm1 $s1farm1,
-        // S1Farm2 $s1farm2,
-        // S1Farm3 $s1farm3,
-        // S1Farm4 $s1farm4,
-        // S1Farm5 $s1farm5,
-        // S1Farm6 $s1farm6,
-        // S1Farm7 $s1farm7,
-        // S1Farm8 $s1farm8,
-        // S1Farm9 $s1farm9,
-        // S1Farm10 $s1farm10,
+        S1Farm1 $s1farm1,
+        S1Farm2 $s1farm2,
+        S1Farm3 $s1farm3,
+        S1Farm4 $s1farm4,
+        S1Farm5 $s1farm5,
+        S1Farm6 $s1farm6,
+        S1Farm7 $s1farm7,
+        S1Farm8 $s1farm8,
+        S1Farm9 $s1farm9,
+        S1Farm10 $s1farm10,
+        S1Farm11 $s1farm11,
+        S1Farm12 $s1farm12,
 
         // // // S1 Matematika
         Math1 $math1,
@@ -319,29 +327,33 @@ class EvalLabController extends Controller
         // S2kim9 $s2kim9,
         // S2kim10 $s2kim10,
 
-        // // Fisika
-        // Fisika1 $fisika1,
-        // Fisika2 $fisika2,
-        // Fisika3 $fisika3,
-        // Fisika4 $fisika4,
-        // Fisika5 $fisika5,
-        // Fisika6 $fisika6,
-        // Fisika7 $fisika7,
-        // Fisika8 $fisika8,
-        // Fisika9 $fisika9,
-        // Fisika10 $fisika10,
+        // Fisika
+        Fisika1 $fisika1,
+        Fisika2 $fisika2,
+        Fisika3 $fisika3,
+        Fisika4 $fisika4,
+        Fisika5 $fisika5,
+        Fisika6 $fisika6,
+        Fisika7 $fisika7,
+        Fisika8 $fisika8,
+        Fisika9 $fisika9,
+        Fisika10 $fisika10,
+        Fisika11 $fisika11,
+        Fisika12 $fisika12,
 
-        // //Geofisika
-        // Geo1 $geo1,
-        // Geo2 $geo2,
-        // Geo3 $geo3,
-        // Geo4 $geo4,
-        // Geo5 $geo5,
-        // Geo6 $geo6,
-        // Geo7 $geo7,
-        // Geo8 $geo8,
-        // Geo9 $geo9,
-        // Geo10 $geo10,
+        // Geofisika
+        Geo1 $geo1,
+        Geo2 $geo2,
+        Geo3 $geo3,
+        Geo4 $geo4,
+        Geo5 $geo5,
+        Geo6 $geo6,
+        Geo7 $geo7,
+        Geo8 $geo8,
+        Geo9 $geo9,
+        Geo10 $geo10,
+        Geo11 $geo11,
+        Geo12 $geo12,
 
     )
     {
@@ -363,16 +375,18 @@ class EvalLabController extends Controller
             'farm11' => $farm11->build(),
             'farm12' => $farm12->build(),
 
-            // 's1farm1' => $s1farm1->build(),
-            // 's1farm2' => $s1farm2->build(),
-            // 's1farm3' => $s1farm3->build(),
-            // 's1farm4' => $s1farm4->build(),
-            // 's1farm5' => $s1farm5->build(),
-            // 's1farm6' => $s1farm6->build(),
-            // 's1farm7' => $s1farm7->build(),
-            // 's1farm8' => $s1farm8->build(),
-            // 's1farm9' => $s1farm9->build(),
-            // 's1farm10' => $s1farm10->build(),
+            's1farm1' => $s1farm1->build(),
+            's1farm2' => $s1farm2->build(),
+            's1farm3' => $s1farm3->build(),
+            's1farm4' => $s1farm4->build(),
+            's1farm5' => $s1farm5->build(),
+            's1farm6' => $s1farm6->build(),
+            's1farm7' => $s1farm7->build(),
+            's1farm8' => $s1farm8->build(),
+            's1farm9' => $s1farm9->build(),
+            's1farm10' => $s1farm10->build(),
+            's1farm11' => $s1farm11->build(),
+            's1farm12' => $s1farm12->build(),
 
             'math1' => $math1->build(),
             'math2' => $math2->build(),
@@ -467,27 +481,31 @@ class EvalLabController extends Controller
             // 's2kim10' => $s2kim10->build(),
 
             
-            // 'fisika1' => $fisika1->build(),
-            // 'fisika2' => $fisika2->build(),
-            // 'fisika3' => $fisika3->build(),
-            // 'fisika4' => $fisika4->build(),
-            // 'fisika5' => $fisika5->build(),
-            // 'fisika6' => $fisika6->build(),
-            // 'fisika7' => $fisika7->build(),
-            // 'fisika8' => $fisika8->build(),
-            // 'fisika9' => $fisika9->build(),
-            // 'fisika10' => $fisika10->build(),
+            'fisika1' => $fisika1->build(),
+            'fisika2' => $fisika2->build(),
+            'fisika3' => $fisika3->build(),
+            'fisika4' => $fisika4->build(),
+            'fisika5' => $fisika5->build(),
+            'fisika6' => $fisika6->build(),
+            'fisika7' => $fisika7->build(),
+            'fisika8' => $fisika8->build(),
+            'fisika9' => $fisika9->build(),
+            'fisika10' => $fisika10->build(),
+            'fisika11' => $fisika11->build(),
+            'fisika12' => $fisika12->build(),
 
-            // 'geo1' => $geo1->build(),
-            // 'geo2' => $geo2->build(),
-            // 'geo3' => $geo3->build(),
-            // 'geo4' => $geo4->build(),
-            // 'geo5' => $geo5->build(),
-            // 'geo6' => $geo6->build(),
-            // 'geo7' => $geo7->build(),
-            // 'geo8' => $geo8->build(),
-            // 'geo9' => $geo9->build(),
-            // 'geo10' => $geo10->build(),
+            'geo1' => $geo1->build(),
+            'geo2' => $geo2->build(),
+            'geo3' => $geo3->build(),
+            'geo4' => $geo4->build(),
+            'geo5' => $geo5->build(),
+            'geo6' => $geo6->build(),
+            'geo7' => $geo7->build(),
+            'geo8' => $geo8->build(),
+            'geo9' => $geo9->build(),
+            'geo10' => $geo10->build(),
+            'geo11' => $geo11->build(),
+            'geo12' => $geo12->build(),
 
             'pl1' => $pl1->build(),
             'pl2' => $pl2->build(),
