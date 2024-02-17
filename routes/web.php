@@ -10,6 +10,9 @@ use App\Http\Controllers\EvalDosenController;
 use App\Http\Controllers\LaporanLabController;
 use App\Http\Controllers\EvalLabController;
 
+use App\Http\Controllers\LaporanKemahasiswaanController;
+use App\Http\Controllers\EvalKemahasiswaanController;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -39,4 +42,9 @@ Route::get('lab', [LaporanLabController::class, 'index'])->name('lab.index');
 Route::post('/lab/import', [LaporanLabController::class, 'import'])->name('lab.import');
 Route::get('/lab/eval', [EvalLabController::class, 'index'])->name('lab.eval');
 Route::get('/lab/table', [EvalLabController::class, 'table'])->name('lab.table');
+
+Route::get('kemahasiswaan', [LaporanKemahasiswaanController::class, 'index'])->name('kemahasiswaan.index');
+Route::post('/kemahasiswaan/import', [LaporanKemahasiswaanController::class, 'import'])->name('kemahasiswaan.import');
+Route::get('/kemahasiswaan/eval', [EvalKemahasiswaanController::class, 'index'])->name('kemahasiswaan.eval');
+Route::get('/kemahasiswaan/table', [EvalKemahasiswaanController::class, 'table'])->name('kemahasiswaan.table');
 

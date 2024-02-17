@@ -1,23 +1,24 @@
 @extends('layouts.master')
-@section('title', 'Evaluasi -> Pengguna Terhadap Kinerja Layanan Laboratorium')
-@section('page', 'Evaluasi -> Pengguna Terhadap Kinerja Layanan Laboratorium')
+@section('title', 'Evaluasi -> Pengguna Terhadap Kinerja Layanan Subbagian Kemahasiswaan')
+@section('page', 'Evaluasi -> Pengguna Terhadap Kinerja Layanan Subbagian Kemahasiswaan')
 {{-- java script --}}
 @section('js')
 
-@include('grafik.lab.d3farmasi.js')
-@include('grafik.lab.s1farmasi.js')
-@include('grafik.lab.s1matematika.js')
-@include('grafik.lab.s1geofisika.js')
-@include('grafik.lab.d3kebidanan.js')
-@include('grafik.lab.d3keperawatan.js')
-@include('grafik.lab.s1statistika.js') 
-@include('grafik.lab.s2statistika.js')
-@include('grafik.lab.s1biologi.js')
-@include('grafik.lab.d3labsains.js')
-@include('grafik.lab.s1kimia.js')
-@include('grafik.lab.s2kimia.js') 
-@include('grafik.lab.s1fisika.js')
-@include('grafik.lab.all.js')
+@include('grafik.kemahasiswaan.s1matematika.js')
+{{-- @include('grafik.kemahasiswaan.d3farmasi.js')
+@include('grafik.kemahasiswaan.s1farmasi.js')
+
+@include('grafik.kemahasiswaan.s1geofisika.js')
+@include('grafik.kemahasiswaan.d3kebidanan.js')
+@include('grafik.kemahasiswaan.d3keperawatan.js')
+@include('grafik.kemahasiswaan.s1statistika.js') 
+@include('grafik.kemahasiswaan.s2statistika.js')
+@include('grafik.kemahasiswaan.s1biologi.js')
+@include('grafik.kemahasiswaan.d3labsains.js')
+@include('grafik.kemahasiswaan.s1kimia.js')
+@include('grafik.kemahasiswaan.s2kimia.js') 
+@include('grafik.kemahasiswaan.s1fisika.js')
+@include('grafik.kemahasiswaan.all.js') --}}
 
     <script>
         document.getElementById('programStudi').addEventListener('change', function() {
@@ -107,7 +108,7 @@
 @section('content')
 <div class="row">
     <div class="container mt-1">
-        <a href="{{ route('lab.table') }}" class="btn btn-primary">Lihat Penjelasan Tiap Butir Pertanyaan</a>
+        <a href="{{ route('kemahasiswaan.table') }}" class="btn btn-primary">Lihat Penjelasan Tiap Butir Pertanyaan</a>
         <br><br>
         <select class="form-control" id="programStudi" name="programStudi">
             <option value="" disabled selected>Pilih</option>
@@ -128,20 +129,21 @@
         </select>
         <br>
     
-        @include('grafik.lab.s1matematika.view')
-        @include('grafik.lab.all.view')
-        @include('grafik.lab.d3keperawatan.view')
-        @include('grafik.lab.d3farmasi.view')
-        @include('grafik.lab.s1farmasi.view')
-        @include('grafik.lab.s1fisika.view') 
-        @include('grafik.lab.s1geofisika.view')
-        @include('grafik.lab.s1kimia.view')
-        @include('grafik.lab.s2kimia.view') 
-        @include('grafik.lab.d3kebidanan.view')
-        @include('grafik.lab.s1statistika.view')
-        @include('grafik.lab.s2statistika.view')
-        @include('grafik.lab.s1biologi.view')
-        @include('grafik.lab.d3labsains.view')
+        @include('grafik.kemahasiswaan.s1matematika.view')
+        {{-- 
+        @include('grafik.kemahasiswaan.all.view')
+        @include('grafik.kemahasiswaan.d3keperawatan.view')
+        @include('grafik.kemahasiswaan.d3farmasi.view')
+        @include('grafik.kemahasiswaan.s1farmasi.view')
+        @include('grafik.kemahasiswaan.s1fisika.view') 
+        @include('grafik.kemahasiswaan.s1geofisika.view')
+        @include('grafik.kemahasiswaan.s1kimia.view')
+        @include('grafik.kemahasiswaan.s2kimia.view') 
+        @include('grafik.kemahasiswaan.d3kebidanan.view')
+        @include('grafik.kemahasiswaan.s1statistika.view')
+        @include('grafik.kemahasiswaan.s2statistika.view')
+        @include('grafik.kemahasiswaan.s1biologi.view')
+        @include('grafik.kemahasiswaan.d3labsains.view') --}}
     </div>
 </div>
 @endsection
