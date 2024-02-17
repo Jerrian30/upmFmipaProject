@@ -1,0 +1,53 @@
+.custom-topbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    white-space: nowrap;
+    z-index: 1030;
+    background-color: #007bff;
+    overflow-x: auto; /* Mengizinkan scrolling horizontal */
+    overflow-y: visible; /* Memastikan dropdown dapat ditampilkan */
+    -webkit-overflow-scrolling: touch; /* Memperbaiki scrolling pada touch devices */
+}
+
+
+.custom-topbar .navbar-nav {
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    padding: 0;
+}
+
+.custom-topbar {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+}
+
+.card-title {
+    overflow-y: auto; /* Mengizinkan scrolling vertikal jika teks lebih panjang dari tinggi elemen */
+    height: 72px; /* Tinggi tetap untuk judul */
+    word-wrap: break-word; /* Memastikan kata-kata dapat dipisahkan untuk menghindari overflow horizontal */
+}
+
+/* Sembunyikan scrollbar untuk WebKit browsers seperti Chrome dan Safari */
+.card-title::-webkit-scrollbar {
+    display: none;
+}
+
+/* Opsi untuk Firefox */
+.card-title {
+    scrollbar-width: none; /* Firefox */
+}
+
+/* Untuk IE dan Edge */
+.card-title {
+    -ms-overflow-style: none; /* Internet Explorer 10+ */
+
+}
+
+@media (max-width: 768px) {
+    .navbar-nav .nav-link {
+        font-size: 12px;
+    }
+}

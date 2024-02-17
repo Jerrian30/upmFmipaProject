@@ -7,14 +7,14 @@ use Illuminate\Http\Request;
 use App\Models\Kemahasiswaan;
 
 
-// use App\Charts\Kemahasiswaan\All\PL1;
-// use App\Charts\Kemahasiswaan\All\PL2;
-// use App\Charts\Kemahasiswaan\All\PL3;
-// use App\Charts\Kemahasiswaan\All\PL4;
-// use App\Charts\Kemahasiswaan\All\PL5;
-// use App\Charts\Kemahasiswaan\All\PL6;
-// use App\Charts\Kemahasiswaan\All\PL7;
-// use App\Charts\Kemahasiswaan\All\PL8;
+use App\Charts\Kemahasiswaan\All\PL1;
+use App\Charts\Kemahasiswaan\All\PL2;
+use App\Charts\Kemahasiswaan\All\PL3;
+use App\Charts\Kemahasiswaan\All\PL4;
+use App\Charts\Kemahasiswaan\All\PL5;
+use App\Charts\Kemahasiswaan\All\PL6;
+use App\Charts\Kemahasiswaan\All\PL7;
+use App\Charts\Kemahasiswaan\All\PL8;
 
 
 
@@ -33,32 +33,26 @@ use App\Models\Kemahasiswaan;
 // use App\Charts\Kemahasiswaan\S1Geofisika\Geo12;
 
 // // // Class D3Farmasi
-// use App\Charts\Kemahasiswaan\D3Farmasi\Farm1;
-// use App\Charts\Kemahasiswaan\D3Farmasi\Farm2;
-// use App\Charts\Kemahasiswaan\D3Farmasi\Farm3;
-// use App\Charts\Kemahasiswaan\D3Farmasi\Farm4;
-// use App\Charts\Kemahasiswaan\D3Farmasi\Farm5;
-// use App\Charts\Kemahasiswaan\D3Farmasi\Farm6;
-// use App\Charts\Kemahasiswaan\D3Farmasi\Farm7;
-// use App\Charts\Kemahasiswaan\D3Farmasi\Farm8;
-// use App\Charts\Kemahasiswaan\D3Farmasi\Farm9;
-// use App\Charts\Kemahasiswaan\D3Farmasi\Farm10;
-// use App\Charts\Kemahasiswaan\D3Farmasi\Farm11;
-// use App\Charts\Kemahasiswaan\D3Farmasi\Farm12;
+use App\Charts\Kemahasiswaan\D3Farmasi\Farm1;
+use App\Charts\Kemahasiswaan\D3Farmasi\Farm2;
+use App\Charts\Kemahasiswaan\D3Farmasi\Farm3;
+use App\Charts\Kemahasiswaan\D3Farmasi\Farm4;
+use App\Charts\Kemahasiswaan\D3Farmasi\Farm5;
+use App\Charts\Kemahasiswaan\D3Farmasi\Farm6;
+use App\Charts\Kemahasiswaan\D3Farmasi\Farm7;
+use App\Charts\Kemahasiswaan\D3Farmasi\Farm8;
+
 
 // // // Class S1Farmasi
-// use App\Charts\Kemahasiswaan\S1Farmasi\S1Farm1;
-// use App\Charts\Kemahasiswaan\S1Farmasi\S1Farm2;
-// use App\Charts\Kemahasiswaan\S1Farmasi\S1Farm3;
-// use App\Charts\Kemahasiswaan\S1Farmasi\S1Farm4;
-// use App\Charts\Kemahasiswaan\S1Farmasi\S1Farm5;
-// use App\Charts\Kemahasiswaan\S1Farmasi\S1Farm6;
-// use App\Charts\Kemahasiswaan\S1Farmasi\S1Farm7;
-// use App\Charts\Kemahasiswaan\S1Farmasi\S1Farm8;
-// use App\Charts\Kemahasiswaan\S1Farmasi\S1Farm9;
-// use App\Charts\Kemahasiswaan\S1Farmasi\S1Farm10;
-// use App\Charts\Kemahasiswaan\S1Farmasi\S1Farm11;
-// use App\Charts\Kemahasiswaan\S1Farmasi\S1Farm12;
+use App\Charts\Kemahasiswaan\S1Farmasi\S1Farm1;
+use App\Charts\Kemahasiswaan\S1Farmasi\S1Farm2;
+use App\Charts\Kemahasiswaan\S1Farmasi\S1Farm3;
+use App\Charts\Kemahasiswaan\S1Farmasi\S1Farm4;
+use App\Charts\Kemahasiswaan\S1Farmasi\S1Farm5;
+use App\Charts\Kemahasiswaan\S1Farmasi\S1Farm6;
+use App\Charts\Kemahasiswaan\S1Farmasi\S1Farm7;
+use App\Charts\Kemahasiswaan\S1Farmasi\S1Farm8;
+
 
 // Class Matematika
 use App\Charts\Kemahasiswaan\S1Matematika\Math1;
@@ -86,46 +80,37 @@ use App\Charts\Kemahasiswaan\S1Matematika\Math8;
 // use App\Charts\Kemahasiswaan\S1Biologi\Bio12;
 
 // // Class Kebidanan
-// use App\Charts\Kemahasiswaan\D3Kebidanan\Bidan1;
-// use App\Charts\Kemahasiswaan\D3Kebidanan\Bidan2;
-// use App\Charts\Kemahasiswaan\D3Kebidanan\Bidan3;
-// use App\Charts\Kemahasiswaan\D3Kebidanan\Bidan4;
-// use App\Charts\Kemahasiswaan\D3Kebidanan\Bidan5;
-// use App\Charts\Kemahasiswaan\D3Kebidanan\Bidan6;
-// use App\Charts\Kemahasiswaan\D3Kebidanan\Bidan7;
-// use App\Charts\Kemahasiswaan\D3Kebidanan\Bidan8;
-// use App\Charts\Kemahasiswaan\D3Kebidanan\Bidan9;
-// use App\Charts\Kemahasiswaan\D3Kebidanan\Bidan10;
-// use App\Charts\Kemahasiswaan\D3Kebidanan\Bidan11;
-// use App\Charts\Kemahasiswaan\D3Kebidanan\Bidan12;
+use App\Charts\Kemahasiswaan\D3Kebidanan\Bidan1;
+use App\Charts\Kemahasiswaan\D3Kebidanan\Bidan2;
+use App\Charts\Kemahasiswaan\D3Kebidanan\Bidan3;
+use App\Charts\Kemahasiswaan\D3Kebidanan\Bidan4;
+use App\Charts\Kemahasiswaan\D3Kebidanan\Bidan5;
+use App\Charts\Kemahasiswaan\D3Kebidanan\Bidan6;
+use App\Charts\Kemahasiswaan\D3Kebidanan\Bidan7;
+use App\Charts\Kemahasiswaan\D3Kebidanan\Bidan8;
+
 
 // // // // Class Keperawatan
-// use App\Charts\Kemahasiswaan\D3Keperawatan\Rawat1;
-// use App\Charts\Kemahasiswaan\D3Keperawatan\Rawat2;
-// use App\Charts\Kemahasiswaan\D3Keperawatan\Rawat3;
-// use App\Charts\Kemahasiswaan\D3Keperawatan\Rawat4;
-// use App\Charts\Kemahasiswaan\D3Keperawatan\Rawat5;
-// use App\Charts\Kemahasiswaan\D3Keperawatan\Rawat6;
-// use App\Charts\Kemahasiswaan\D3Keperawatan\Rawat7;
-// use App\Charts\Kemahasiswaan\D3Keperawatan\Rawat8;
-// use App\Charts\Kemahasiswaan\D3Keperawatan\Rawat9;
-// use App\Charts\Kemahasiswaan\D3Keperawatan\Rawat10;
-// use App\Charts\Kemahasiswaan\D3Keperawatan\Rawat11;
-// use App\Charts\Kemahasiswaan\D3Keperawatan\Rawat12;
+use App\Charts\Kemahasiswaan\D3Keperawatan\Rawat1;
+use App\Charts\Kemahasiswaan\D3Keperawatan\Rawat2;
+use App\Charts\Kemahasiswaan\D3Keperawatan\Rawat3;
+use App\Charts\Kemahasiswaan\D3Keperawatan\Rawat4;
+use App\Charts\Kemahasiswaan\D3Keperawatan\Rawat5;
+use App\Charts\Kemahasiswaan\D3Keperawatan\Rawat6;
+use App\Charts\Kemahasiswaan\D3Keperawatan\Rawat7;
+use App\Charts\Kemahasiswaan\D3Keperawatan\Rawat8;
+
 
 // // Class Lab Sains
-// use App\Charts\Kemahasiswaan\D3LabSains\LabSains1;
-// use App\Charts\Kemahasiswaan\D3LabSains\LabSains2;
-// use App\Charts\Kemahasiswaan\D3LabSains\LabSains3;
-// use App\Charts\Kemahasiswaan\D3LabSains\LabSains4;
-// use App\Charts\Kemahasiswaan\D3LabSains\LabSains5;
-// use App\Charts\Kemahasiswaan\D3LabSains\LabSains6;
-// use App\Charts\Kemahasiswaan\D3LabSains\LabSains7;
-// use App\Charts\Kemahasiswaan\D3LabSains\LabSains8;
-// use App\Charts\Kemahasiswaan\D3LabSains\LabSains9;
-// use App\Charts\Kemahasiswaan\D3LabSains\LabSains10;
-// use App\Charts\Kemahasiswaan\D3LabSains\LabSains11;
-// use App\Charts\Kemahasiswaan\D3LabSains\LabSains12;
+use App\Charts\Kemahasiswaan\D3LabSains\LabSains1;
+use App\Charts\Kemahasiswaan\D3LabSains\LabSains2;
+use App\Charts\Kemahasiswaan\D3LabSains\LabSains3;
+use App\Charts\Kemahasiswaan\D3LabSains\LabSains4;
+use App\Charts\Kemahasiswaan\D3LabSains\LabSains5;
+use App\Charts\Kemahasiswaan\D3LabSains\LabSains6;
+use App\Charts\Kemahasiswaan\D3LabSains\LabSains7;
+use App\Charts\Kemahasiswaan\D3LabSains\LabSains8;
+
 
 // //Class Statistika
 // use App\Charts\Kemahasiswaan\S1Statistika\Statis1;
@@ -213,33 +198,27 @@ class EvalKemahasiswaanController extends Controller
         PL8 $pl8,
 
 
-        //  D3 Farmasi
-        // Farm1 $farm1,
-        // Farm2 $farm2,
-        // Farm3 $farm3,
-        // Farm4 $farm4,
-        // Farm5 $farm5,
-        // Farm6 $farm6,
-        // Farm7 $farm7,
-        // Farm8 $farm8,
-        // Farm9 $farm9,
-        // Farm10 $farm10,
-        // Farm11 $farm11,
-        // Farm12 $farm12,
+        // D3 Farmasi
+        Farm1 $farm1,
+        Farm2 $farm2,
+        Farm3 $farm3,
+        Farm4 $farm4,
+        Farm5 $farm5,
+        Farm6 $farm6,
+        Farm7 $farm7,
+        Farm8 $farm8,
+
 
          // S1 Farmasi
-        // S1Farm1 $s1farm1,
-        // S1Farm2 $s1farm2,
-        // S1Farm3 $s1farm3,
-        // S1Farm4 $s1farm4,
-        // S1Farm5 $s1farm5,
-        // S1Farm6 $s1farm6,
-        // S1Farm7 $s1farm7,
-        // S1Farm8 $s1farm8,
-        // S1Farm9 $s1farm9,
-        // S1Farm10 $s1farm10,
-        // S1Farm11 $s1farm11,
-        // S1Farm12 $s1farm12,
+        S1Farm1 $s1farm1,
+        S1Farm2 $s1farm2,
+        S1Farm3 $s1farm3,
+        S1Farm4 $s1farm4,
+        S1Farm5 $s1farm5,
+        S1Farm6 $s1farm6,
+        S1Farm7 $s1farm7,
+        S1Farm8 $s1farm8,
+
 
          // // S1 Matematika
         Math1 $math1,
@@ -267,46 +246,36 @@ class EvalKemahasiswaanController extends Controller
         // Bio12 $bio12,
 
         // // D3 Kebidanan
-        // Bidan1 $bidan1,
-        // Bidan2 $bidan2,
-        // Bidan3 $bidan3,
-        // Bidan4 $bidan4,
-        // Bidan5 $bidan5,
-        // Bidan6 $bidan6,
-        // Bidan7 $bidan7,
-        // Bidan8 $bidan8,
-        // Bidan9 $bidan9,
-        // Bidan10 $bidan10,
-        // Bidan11 $bidan11,
-        // Bidan12 $bidan12,
+        Bidan1 $bidan1,
+        Bidan2 $bidan2,
+        Bidan3 $bidan3,
+        Bidan4 $bidan4,
+        Bidan5 $bidan5,
+        Bidan6 $bidan6,
+        Bidan7 $bidan7,
+        Bidan8 $bidan8,
+
 
         // // //D3 Keperawatan
-        // Rawat1 $rawat1,
-        // Rawat2 $rawat2,
-        // Rawat3 $rawat3,
-        // Rawat4 $rawat4,
-        // Rawat5 $rawat5,
-        // Rawat6 $rawat6,
-        // Rawat7 $rawat7,
-        // Rawat8 $rawat8,
-        // Rawat9 $rawat9,
-        // Rawat10 $rawat10,
-        // Rawat11 $rawat11,
-        // Rawat12 $rawat12,
+        Rawat1 $rawat1,
+        Rawat2 $rawat2,
+        Rawat3 $rawat3,
+        Rawat4 $rawat4,
+        Rawat5 $rawat5,
+        Rawat6 $rawat6,
+        Rawat7 $rawat7,
+        Rawat8 $rawat8,
 
         // //D3 Lab Sains
-        // LabSains1 $labsains1,
-        // LabSains2 $labsains2,
-        // LabSains3 $labsains3,
-        // LabSains4 $labsains4,
-        // LabSains5 $labsains5,
-        // LabSains6 $labsains6,
-        // LabSains7 $labsains7,
-        // LabSains8 $labsains8,
-        // LabSains9 $labsains9,
-        // LabSains10 $labsains10,
-        // LabSains11 $labsains11,
-        // LabSains12 $labsains12,
+        LabSains1 $labsains1,
+        LabSains2 $labsains2,
+        LabSains3 $labsains3,
+        LabSains4 $labsains4,
+        LabSains5 $labsains5,
+        LabSains6 $labsains6,
+        LabSains7 $labsains7,
+        LabSains8 $labsains8,
+
 
         // // S1 Statistika
         // Statis1 $statis1,
@@ -397,33 +366,26 @@ class EvalKemahasiswaanController extends Controller
         $kemahasiswaan = Kemahasiswaan::all();
         return view('evaluasi.kemahasiswaan.index',
         [
-            // 'lab' => $Lab,
 
-            // 'farm1' => $farm1->build(),
-            // 'farm2' => $farm2->build(),
-            // 'farm3' => $farm3->build(),
-            // 'farm4' => $farm4->build(),
-            // 'farm5' => $farm5->build(),
-            // 'farm6' => $farm6->build(),
-            // 'farm7' => $farm7->build(),
-            // 'farm8' => $farm8->build(),
-            // 'farm9' => $farm9->build(),
-            // 'farm10' => $farm10->build(),
-            // 'farm11' => $farm11->build(),
-            // 'farm12' => $farm12->build(),
+            'farm1' => $farm1->build(),
+            'farm2' => $farm2->build(),
+            'farm3' => $farm3->build(),
+            'farm4' => $farm4->build(),
+            'farm5' => $farm5->build(),
+            'farm6' => $farm6->build(),
+            'farm7' => $farm7->build(),
+            'farm8' => $farm8->build(),
 
-            // 's1farm1' => $s1farm1->build(),
-            // 's1farm2' => $s1farm2->build(),
-            // 's1farm3' => $s1farm3->build(),
-            // 's1farm4' => $s1farm4->build(),
-            // 's1farm5' => $s1farm5->build(),
-            // 's1farm6' => $s1farm6->build(),
-            // 's1farm7' => $s1farm7->build(),
-            // 's1farm8' => $s1farm8->build(),
-            // 's1farm9' => $s1farm9->build(),
-            // 's1farm10' => $s1farm10->build(),
-            // 's1farm11' => $s1farm11->build(),
-            // 's1farm12' => $s1farm12->build(),
+
+            's1farm1' => $s1farm1->build(),
+            's1farm2' => $s1farm2->build(),
+            's1farm3' => $s1farm3->build(),
+            's1farm4' => $s1farm4->build(),
+            's1farm5' => $s1farm5->build(),
+            's1farm6' => $s1farm6->build(),
+            's1farm7' => $s1farm7->build(),
+            's1farm8' => $s1farm8->build(),
+
 
             'math1' => $math1->build(),
             'math2' => $math2->build(),
@@ -447,45 +409,35 @@ class EvalKemahasiswaanController extends Controller
             // 'bio11' => $bio11->build(),
             // 'bio12' => $bio12->build(),
 
-            // 'bidan1' => $bidan1->build(),
-            // 'bidan2' => $bidan2->build(),
-            // 'bidan3' => $bidan3->build(),
-            // 'bidan4' => $bidan4->build(),
-            // 'bidan5' => $bidan5->build(),
-            // 'bidan6' => $bidan6->build(),
-            // 'bidan7' => $bidan7->build(),
-            // 'bidan8' => $bidan8->build(),
-            // 'bidan9' => $bidan9->build(),
-            // 'bidan10' => $bidan10->build(),
-            // 'bidan11' => $bidan11->build(),
-            // 'bidan12' => $bidan12->build(),
+            'bidan1' => $bidan1->build(),
+            'bidan2' => $bidan2->build(),
+            'bidan3' => $bidan3->build(),
+            'bidan4' => $bidan4->build(),
+            'bidan5' => $bidan5->build(),
+            'bidan6' => $bidan6->build(),
+            'bidan7' => $bidan7->build(),
+            'bidan8' => $bidan8->build(),
 
-            // 'rawat1' => $rawat1->build(),
-            // 'rawat2' => $rawat2->build(),
-            // 'rawat3' => $rawat3->build(),
-            // 'rawat4' => $rawat4->build(),
-            // 'rawat5' => $rawat5->build(),
-            // 'rawat6' => $rawat6->build(),
-            // 'rawat7' => $rawat7->build(),
-            // 'rawat8' => $rawat8->build(),
-            // 'rawat9' => $rawat9->build(),
-            // 'rawat10' => $rawat10->build(),
-            // 'rawat11' => $rawat11->build(),
-            // 'rawat12' => $rawat12->build(),
 
-            // 'labsains1' => $labsains1->build(),
-            // 'labsains2' => $labsains2->build(),
-            // 'labsains3' => $labsains3->build(),
-            // 'labsains4' => $labsains4->build(),
-            // 'labsains5' => $labsains5->build(),
-            // 'labsains6' => $labsains6->build(),
-            // 'labsains7' => $labsains7->build(),
-            // 'labsains8' => $labsains8->build(),
-            // 'labsains9' => $labsains9->build(),
-            // 'labsains10' => $labsains10->build(),
-            // 'labsains11' => $labsains11->build(),
-            // 'labsains12' => $labsains12->build(),
-            
+            'rawat1' => $rawat1->build(),
+            'rawat2' => $rawat2->build(),
+            'rawat3' => $rawat3->build(),
+            'rawat4' => $rawat4->build(),
+            'rawat5' => $rawat5->build(),
+            'rawat6' => $rawat6->build(),
+            'rawat7' => $rawat7->build(),
+            'rawat8' => $rawat8->build(),
+
+
+            'labsains1' => $labsains1->build(),
+            'labsains2' => $labsains2->build(),
+            'labsains3' => $labsains3->build(),
+            'labsains4' => $labsains4->build(),
+            'labsains5' => $labsains5->build(),
+            'labsains6' => $labsains6->build(),
+            'labsains7' => $labsains7->build(),
+            'labsains8' => $labsains8->build(),
+    
             // 'statis1' => $statis1->build(),
             // 'statis2' => $statis2->build(),
             // 'statis3' => $statis3->build(),

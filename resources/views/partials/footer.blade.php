@@ -2,7 +2,7 @@
             <footer class="sticky-footer bg-white">
                 <div class="container my-auto">
                     <div class="copyright text-center my-auto">
-                        <span>Copyright &copy; UPM FMIPA 2024</span>
+                        <span>Copyright &copy; Jerrian</span>
                     </div>
                 </div>
             </footer>
@@ -56,6 +56,29 @@
     <script src="{{ asset('sbadmin/js/demo/chart-area-demo.js') }}"></script>
     <script src="{{ asset('sbadmin/js/demo/chart-pie-demo.js') }}"></script>
     @yield('js')
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+    var dropdowns = document.querySelectorAll('.dropdown-toggle');
+
+    dropdowns.forEach(function(dropdown) {
+        dropdown.addEventListener('click', function(event) {
+            var dropdownMenu = this.nextElementSibling;
+            if (dropdownMenu.classList.contains('show')) {
+                // Dropdown sedang dibuka, reset posisi
+                dropdownMenu.style.position = 'absolute';
+                dropdownMenu.style.top = '50%';
+            } else {
+                // Dropdown akan dibuka, atur posisi
+                var rect = dropdown.getBoundingClientRect();
+                dropdownMenu.style.position = 'fixed';
+                dropdownMenu.style.top = rect.bottom + 'px';
+                dropdownMenu.style.left = rect.left + 'px';
+            }
+        });
+    });
+});
+
+    </script>
 
 </body>
 

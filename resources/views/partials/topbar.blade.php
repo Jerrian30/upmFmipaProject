@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-lg navbar-light bg-primary topbar mb-4 fixed-top bg-body-tertiary">
+<nav class="navbar navbar-expand-lg navbar-light bg-primary topbar mb-4 fixed-top bg-body-tertiary custom-topbar">
     <!-- Logo or Image on the left side -->
 
 
@@ -7,7 +7,7 @@
     <ul class="navbar-nav ml-auto">
 
         <a class="navbar-brand" href="#">
-            <img src="{{ asset('sbadmin/img/logoUNIB.png') }}" height="60" alt="logo">
+            <img src="{{ asset('sbadmin/img/logoUNIB.png') }}" height="55" alt="logo">
         </a>
 
         <!-- Integrasi Item-Menu dari Sidebar ke Topbar -->

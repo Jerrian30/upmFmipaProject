@@ -1,8 +1,8 @@
 <?php
 
-namespace App\Charts\Lab\All;
+namespace App\Charts\Kemahasiswaan\All;
 
-use App\Models\Lab;
+use App\Models\Kemahasiswaan;
 use ArielMejiaDev\LarapexCharts\LarapexChart;
 
 class PL2
@@ -25,7 +25,7 @@ class PL2
 
     protected function calculatePercentages($columnName): array
     {
-        $dataTotal = Lab::selectRaw("COUNT(*) as count, $columnName")
+        $dataTotal = Kemahasiswaan::selectRaw("COUNT(*) as count, $columnName")
             ->groupBy($columnName)
             ->pluck('count', $columnName);
 

@@ -4,21 +4,24 @@
 {{-- java script --}}
 @section('js')
 
+@include('grafik.kemahasiswaan.all.js')
 @include('grafik.kemahasiswaan.s1matematika.js')
-{{-- @include('grafik.kemahasiswaan.d3farmasi.js')
+@include('grafik.kemahasiswaan.d3farmasi.js')
 @include('grafik.kemahasiswaan.s1farmasi.js')
 
-@include('grafik.kemahasiswaan.s1geofisika.js')
+@include('grafik.kemahasiswaan.d3labsains.js')
 @include('grafik.kemahasiswaan.d3kebidanan.js')
 @include('grafik.kemahasiswaan.d3keperawatan.js')
+{{-- @include('grafik.kemahasiswaan.s1geofisika.js')
+
 @include('grafik.kemahasiswaan.s1statistika.js') 
 @include('grafik.kemahasiswaan.s2statistika.js')
 @include('grafik.kemahasiswaan.s1biologi.js')
-@include('grafik.kemahasiswaan.d3labsains.js')
+
 @include('grafik.kemahasiswaan.s1kimia.js')
 @include('grafik.kemahasiswaan.s2kimia.js') 
 @include('grafik.kemahasiswaan.s1fisika.js')
-@include('grafik.kemahasiswaan.all.js') --}}
+ --}}
 
     <script>
         document.getElementById('programStudi').addEventListener('change', function() {
@@ -130,20 +133,21 @@
         <br>
     
         @include('grafik.kemahasiswaan.s1matematika.view')
-        {{-- 
         @include('grafik.kemahasiswaan.all.view')
         @include('grafik.kemahasiswaan.d3keperawatan.view')
         @include('grafik.kemahasiswaan.d3farmasi.view')
         @include('grafik.kemahasiswaan.s1farmasi.view')
-        @include('grafik.kemahasiswaan.s1fisika.view') 
+        @include('grafik.kemahasiswaan.d3kebidanan.view')
+        @include('grafik.kemahasiswaan.d3labsains.view')
+{{--    @include('grafik.kemahasiswaan.s1fisika.view') 
         @include('grafik.kemahasiswaan.s1geofisika.view')
         @include('grafik.kemahasiswaan.s1kimia.view')
-        @include('grafik.kemahasiswaan.s2kimia.view') 
-        @include('grafik.kemahasiswaan.d3kebidanan.view')
+        @include('grafik.kemahasiswaan.s2kimia.view')
+
         @include('grafik.kemahasiswaan.s1statistika.view')
         @include('grafik.kemahasiswaan.s2statistika.view')
-        @include('grafik.kemahasiswaan.s1biologi.view')
-        @include('grafik.kemahasiswaan.d3labsains.view') --}}
+        @include('grafik.kemahasiswaan.s1biologi.view') 
+--}}
     </div>
 </div>
 @endsection
