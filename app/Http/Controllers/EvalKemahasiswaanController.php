@@ -19,18 +19,15 @@ use App\Charts\Kemahasiswaan\All\PL8;
 
 
 // // Class Geofisika
-// use App\Charts\Kemahasiswaan\S1Geofisika\Geo1;
-// use App\Charts\Kemahasiswaan\S1Geofisika\Geo2;
-// use App\Charts\Kemahasiswaan\S1Geofisika\Geo3;
-// use App\Charts\Kemahasiswaan\S1Geofisika\Geo4;
-// use App\Charts\Kemahasiswaan\S1Geofisika\Geo5;
-// use App\Charts\Kemahasiswaan\S1Geofisika\Geo6;
-// use App\Charts\Kemahasiswaan\S1Geofisika\Geo7;
-// use App\Charts\Kemahasiswaan\S1Geofisika\Geo8;
-// use App\Charts\Kemahasiswaan\S1Geofisika\Geo9;
-// use App\Charts\Kemahasiswaan\S1Geofisika\Geo10;
-// use App\Charts\Kemahasiswaan\S1Geofisika\Geo11;
-// use App\Charts\Kemahasiswaan\S1Geofisika\Geo12;
+use App\Charts\Kemahasiswaan\S1Geofisika\Geo1;
+use App\Charts\Kemahasiswaan\S1Geofisika\Geo2;
+use App\Charts\Kemahasiswaan\S1Geofisika\Geo3;
+use App\Charts\Kemahasiswaan\S1Geofisika\Geo4;
+use App\Charts\Kemahasiswaan\S1Geofisika\Geo5;
+use App\Charts\Kemahasiswaan\S1Geofisika\Geo6;
+use App\Charts\Kemahasiswaan\S1Geofisika\Geo7;
+use App\Charts\Kemahasiswaan\S1Geofisika\Geo8;
+
 
 // // // Class D3Farmasi
 use App\Charts\Kemahasiswaan\D3Farmasi\Farm1;
@@ -113,59 +110,44 @@ use App\Charts\Kemahasiswaan\D3LabSains\LabSains8;
 
 
 // //Class Statistika
-// use App\Charts\Kemahasiswaan\S1Statistika\Statis1;
-// use App\Charts\Kemahasiswaan\S1Statistika\Statis2;
-// use App\Charts\Kemahasiswaan\S1Statistika\Statis3;
-// use App\Charts\Kemahasiswaan\S1Statistika\Statis4;
-// use App\Charts\Kemahasiswaan\S1Statistika\Statis5;
-// use App\Charts\Kemahasiswaan\S1Statistika\Statis6;
-// use App\Charts\Kemahasiswaan\S1Statistika\Statis7;
-// use App\Charts\Kemahasiswaan\S1Statistika\Statis8;
-// use App\Charts\Kemahasiswaan\S1Statistika\Statis9;
-// use App\Charts\Kemahasiswaan\S1Statistika\Statis10;
-// use App\Charts\Kemahasiswaan\S1Statistika\Statis11;
-// use App\Charts\Kemahasiswaan\S1Statistika\Statis12;
+use App\Charts\Kemahasiswaan\S1Statistika\Statis1;
+use App\Charts\Kemahasiswaan\S1Statistika\Statis2;
+use App\Charts\Kemahasiswaan\S1Statistika\Statis3;
+use App\Charts\Kemahasiswaan\S1Statistika\Statis4;
+use App\Charts\Kemahasiswaan\S1Statistika\Statis5;
+use App\Charts\Kemahasiswaan\S1Statistika\Statis6;
+use App\Charts\Kemahasiswaan\S1Statistika\Statis7;
+use App\Charts\Kemahasiswaan\S1Statistika\Statis8;
 
-// use App\Charts\Kemahasiswaan\S2Statistika\S2Statis1;
-// use App\Charts\Kemahasiswaan\S2Statistika\S2Statis2;
-// use App\Charts\Kemahasiswaan\S2Statistika\S2Statis3;
-// use App\Charts\Kemahasiswaan\S2Statistika\S2Statis4;
-// use App\Charts\Kemahasiswaan\S2Statistika\S2Statis5;
-// use App\Charts\Kemahasiswaan\S2Statistika\S2Statis6;
-// use App\Charts\Kemahasiswaan\S2Statistika\S2Statis7;
-// use App\Charts\Kemahasiswaan\S2Statistika\S2Statis8;
-// use App\Charts\Kemahasiswaan\S2Statistika\S2Statis9;
-// use App\Charts\Kemahasiswaan\S2Statistika\S2StatiS10;
-// use App\Charts\Kemahasiswaan\S2Statistika\S2StatiS11;
-// use App\Charts\Kemahasiswaan\S2Statistika\S2Statis12;
+use App\Charts\Kemahasiswaan\S2Statistika\S2Statis1;
+use App\Charts\Kemahasiswaan\S2Statistika\S2Statis2;
+use App\Charts\Kemahasiswaan\S2Statistika\S2Statis3;
+use App\Charts\Kemahasiswaan\S2Statistika\S2Statis4;
+use App\Charts\Kemahasiswaan\S2Statistika\S2Statis5;
+use App\Charts\Kemahasiswaan\S2Statistika\S2Statis6;
+use App\Charts\Kemahasiswaan\S2Statistika\S2Statis7;
+use App\Charts\Kemahasiswaan\S2Statistika\S2Statis8;
 
 // // // //Class S1 Kimia
-// use App\Charts\Kemahasiswaan\S1Kimia\S1Kim1;
-// use App\Charts\Kemahasiswaan\S1Kimia\S1Kim2;
-// use App\Charts\Kemahasiswaan\S1Kimia\S1Kim3;
-// use App\Charts\Kemahasiswaan\S1Kimia\S1Kim4;
-// use App\Charts\Kemahasiswaan\S1Kimia\S1Kim5;
-// use App\Charts\Kemahasiswaan\S1Kimia\S1Kim6;
-// use App\Charts\Kemahasiswaan\S1Kimia\S1Kim7;
-// use App\Charts\Kemahasiswaan\S1Kimia\S1Kim8;
-// use App\Charts\Kemahasiswaan\S1Kimia\S1Kim9;
-// use App\Charts\Kemahasiswaan\S1Kimia\S1Kim10;
-// use App\Charts\Kemahasiswaan\S1Kimia\S1Kim11;
-// use App\Charts\Kemahasiswaan\S1Kimia\S1Kim12;
+use App\Charts\Kemahasiswaan\S1Kimia\S1Kim1;
+use App\Charts\Kemahasiswaan\S1Kimia\S1Kim2;
+use App\Charts\Kemahasiswaan\S1Kimia\S1Kim3;
+use App\Charts\Kemahasiswaan\S1Kimia\S1Kim4;
+use App\Charts\Kemahasiswaan\S1Kimia\S1Kim5;
+use App\Charts\Kemahasiswaan\S1Kimia\S1Kim6;
+use App\Charts\Kemahasiswaan\S1Kimia\S1Kim7;
+use App\Charts\Kemahasiswaan\S1Kimia\S1Kim8;
 
-// // // //Class S2 Kimia
-// use App\Charts\Kemahasiswaan\S2Kimia\S2Kim1;
-// use App\Charts\Kemahasiswaan\S2Kimia\S2Kim2;
-// use App\Charts\Kemahasiswaan\S2Kimia\S2Kim3;
-// use App\Charts\Kemahasiswaan\S2Kimia\S2Kim4;
-// use App\Charts\Kemahasiswaan\S2Kimia\S2Kim5;
-// use App\Charts\Kemahasiswaan\S2Kimia\S2Kim6;
-// use App\Charts\Kemahasiswaan\S2Kimia\S2Kim7;
-// use App\Charts\Kemahasiswaan\S2Kimia\S2Kim8;
-// use App\Charts\Kemahasiswaan\S2Kimia\S2Kim9;
-// use App\Charts\Kemahasiswaan\S2Kimia\S2Kim10;
-// use App\Charts\Kemahasiswaan\S2Kimia\S2Kim11;
-// use App\Charts\Kemahasiswaan\S2Kimia\S2Kim12;
+//Class S2 Kimia
+use App\Charts\Kemahasiswaan\S2Kimia\S2Kim1;
+use App\Charts\Kemahasiswaan\S2Kimia\S2Kim2;
+use App\Charts\Kemahasiswaan\S2Kimia\S2Kim3;
+use App\Charts\Kemahasiswaan\S2Kimia\S2Kim4;
+use App\Charts\Kemahasiswaan\S2Kimia\S2Kim5;
+use App\Charts\Kemahasiswaan\S2Kimia\S2Kim6;
+use App\Charts\Kemahasiswaan\S2Kimia\S2Kim7;
+use App\Charts\Kemahasiswaan\S2Kimia\S2Kim8;
+
 
 // use App\Charts\Kemahasiswaan\S1Fisika\Fisika1;
 // use App\Charts\Kemahasiswaan\S1Fisika\Fisika2;
@@ -278,60 +260,47 @@ class EvalKemahasiswaanController extends Controller
 
 
         // // S1 Statistika
-        // Statis1 $statis1,
-        // Statis2 $statis2,
-        // Statis3 $statis3,
-        // Statis4 $statis4,
-        // Statis5 $statis5,
-        // Statis6 $statis6,
-        // Statis7 $statis7,
-        // Statis8 $statis8,
-        // Statis9 $statis9,
-        // Statis10 $statis10,
-        // Statis11 $statis11,
-        // Statis12 $statis12,
+        Statis1 $statis1,
+        Statis2 $statis2,
+        Statis3 $statis3,
+        Statis4 $statis4,
+        Statis5 $statis5,
+        Statis6 $statis6,
+        Statis7 $statis7,
+        Statis8 $statis8,
+
         
-        // S2Statis1 $s2statis1,
-        // S2Statis2 $s2statis2,
-        // S2Statis3 $s2statis3,
-        // S2Statis4 $s2statis4,
-        // S2Statis5 $s2statis5,
-        // S2Statis6 $s2statis6,
-        // S2Statis7 $s2statis7,
-        // S2Statis8 $s2statis8,
-        // S2Statis9 $s2statis9,
-        // S2Statis10 $s2statis10,
-        // S2Statis11 $s2statis11,
-        // S2Statis12 $s2statis12,
+        S2Statis1 $s2statis1,
+        S2Statis2 $s2statis2,
+        S2Statis3 $s2statis3,
+        S2Statis4 $s2statis4,
+        S2Statis5 $s2statis5,
+        S2Statis6 $s2statis6,
+        S2Statis7 $s2statis7,
+        S2Statis8 $s2statis8,
 
 
         // // S1 Kimia
-        // S1kim1 $s1kim1,
-        // S1kim2 $s1kim2,
-        // S1kim3 $s1kim3,
-        // S1kim4 $s1kim4,
-        // S1kim5 $s1kim5,
-        // S1kim6 $s1kim6,
-        // S1kim7 $s1kim7,
-        // S1kim8 $s1kim8,
-        // S1kim9 $s1kim9,
-        // S1kim10 $s1kim10,
-        // S1kim11 $s1kim11,
-        // S1kim12 $s1kim12,
+        S1kim1 $s1kim1,
+        S1kim2 $s1kim2,
+        S1kim3 $s1kim3,
+        S1kim4 $s1kim4,
+        S1kim5 $s1kim5,
+        S1kim6 $s1kim6,
+        S1kim7 $s1kim7,
+        S1kim8 $s1kim8,
+
 
         // // S2 Kimia
-        // S2Kim1 $s2kim1,
-        // S2Kim2 $s2kim2,
-        // S2Kim3 $s2kim3,
-        // S2Kim4 $s2kim4,
-        // S2Kim5 $s2kim5,
-        // S2Kim6 $s2kim6,
-        // S2Kim7 $s2kim7,
-        // S2Kim8 $s2kim8,
-        // S2Kim9 $s2kim9,
-        // S2Kim10 $s2kim10,
-        // S2Kim11 $s2kim11,
-        // S2Kim12 $s2kim12,
+        S2Kim1 $s2kim1,
+        S2Kim2 $s2kim2,
+        S2Kim3 $s2kim3,
+        S2Kim4 $s2kim4,
+        S2Kim5 $s2kim5,
+        S2Kim6 $s2kim6,
+        S2Kim7 $s2kim7,
+        S2Kim8 $s2kim8,
+
 
         // // Fisika
         // Fisika1 $fisika1,
@@ -347,19 +316,16 @@ class EvalKemahasiswaanController extends Controller
         // Fisika11 $fisika11,
         // Fisika12 $fisika12,
 
-        // // Geofisika
-        // Geo1 $geo1,
-        // Geo2 $geo2,
-        // Geo3 $geo3,
-        // Geo4 $geo4,
-        // Geo5 $geo5,
-        // Geo6 $geo6,
-        // Geo7 $geo7,
-        // Geo8 $geo8,
-        // Geo9 $geo9,
-        // Geo10 $geo10,
-        // Geo11 $geo11,
-        // Geo12 $geo12,
+        // Geofisika
+        Geo1 $geo1,
+        Geo2 $geo2,
+        Geo3 $geo3,
+        Geo4 $geo4,
+        Geo5 $geo5,
+        Geo6 $geo6,
+        Geo7 $geo7,
+        Geo8 $geo8,
+
 
     )
     {
@@ -438,58 +404,45 @@ class EvalKemahasiswaanController extends Controller
             'labsains7' => $labsains7->build(),
             'labsains8' => $labsains8->build(),
     
-            // 'statis1' => $statis1->build(),
-            // 'statis2' => $statis2->build(),
-            // 'statis3' => $statis3->build(),
-            // 'statis4' => $statis4->build(),
-            // 'statis5' => $statis5->build(),
-            // 'statis6' => $statis6->build(),
-            // 'statis7' => $statis7->build(),
-            // 'statis8' => $statis8->build(),
-            // 'statis9' => $statis9->build(),
-            // 'statis10' => $statis10->build(),
-            // 'statis11' => $statis11->build(),
-            // 'statis12' => $statis12->build(),
+            'statis1' => $statis1->build(),
+            'statis2' => $statis2->build(),
+            'statis3' => $statis3->build(),
+            'statis4' => $statis4->build(),
+            'statis5' => $statis5->build(),
+            'statis6' => $statis6->build(),
+            'statis7' => $statis7->build(),
+            'statis8' => $statis8->build(),
 
-            // 's2statis1' => $s2statis1->build(),
-            // 's2statis2' => $s2statis2->build(),
-            // 's2statis3' => $s2statis3->build(),
-            // 's2statis4' => $s2statis4->build(),
-            // 's2statis5' => $s2statis5->build(),
-            // 's2statis6' => $s2statis6->build(),
-            // 's2statis7' => $s2statis7->build(),
-            // 's2statis8' => $s2statis8->build(),
-            // 's2statis9' => $s2statis9->build(),
-            // 's2statis10' => $s2statis10->build(),
-            // 's2statis11' => $s2statis11->build(),
-            // 's2statis12' => $s2statis12->build(),
+            's2statis1' => $s2statis1->build(),
+            's2statis2' => $s2statis2->build(),
+            's2statis3' => $s2statis3->build(),
+            's2statis4' => $s2statis4->build(),
+            's2statis5' => $s2statis5->build(),
+            's2statis6' => $s2statis6->build(),
+            's2statis7' => $s2statis7->build(),
+            's2statis8' => $s2statis8->build(),
 
 
-            // 's1kim1' => $s1kim1->build(),
-            // 's1kim2' => $s1kim2->build(),
-            // 's1kim3' => $s1kim3->build(),
-            // 's1kim4' => $s1kim4->build(),
-            // 's1kim5' => $s1kim5->build(),
-            // 's1kim6' => $s1kim6->build(),
-            // 's1kim7' => $s1kim7->build(),
-            // 's1kim8' => $s1kim8->build(),
-            // 's1kim9' => $s1kim9->build(),
-            // 's1kim10' => $s1kim10->build(),
-            // 's1kim11' => $s1kim11->build(),
-            // 's1kim12' => $s1kim12->build(),
 
-            // 's2kim1' => $s2kim1->build(),
-            // 's2kim2' => $s2kim2->build(),
-            // 's2kim3' => $s2kim3->build(),
-            // 's2kim4' => $s2kim4->build(),
-            // 's2kim5' => $s2kim5->build(),
-            // 's2kim6' => $s2kim6->build(),
-            // 's2kim7' => $s2kim7->build(),
-            // 's2kim8' => $s2kim8->build(),
-            // 's2kim9' => $s2kim9->build(),
-            // 's2kim10' => $s2kim10->build(),
-            // 's2kim11' => $s2kim11->build(),
-            // 's2kim12' => $s2kim12->build(),
+            's1kim1' => $s1kim1->build(),
+            's1kim2' => $s1kim2->build(),
+            's1kim3' => $s1kim3->build(),
+            's1kim4' => $s1kim4->build(),
+            's1kim5' => $s1kim5->build(),
+            's1kim6' => $s1kim6->build(),
+            's1kim7' => $s1kim7->build(),
+            's1kim8' => $s1kim8->build(),
+
+
+            's2kim1' => $s2kim1->build(),
+            's2kim2' => $s2kim2->build(),
+            's2kim3' => $s2kim3->build(),
+            's2kim4' => $s2kim4->build(),
+            's2kim5' => $s2kim5->build(),
+            's2kim6' => $s2kim6->build(),
+            's2kim7' => $s2kim7->build(),
+            's2kim8' => $s2kim8->build(),
+
 
             
             // 'fisika1' => $fisika1->build(),
@@ -505,18 +458,15 @@ class EvalKemahasiswaanController extends Controller
             // 'fisika11' => $fisika11->build(),
             // 'fisika12' => $fisika12->build(),
 
-            // 'geo1' => $geo1->build(),
-            // 'geo2' => $geo2->build(),
-            // 'geo3' => $geo3->build(),
-            // 'geo4' => $geo4->build(),
-            // 'geo5' => $geo5->build(),
-            // 'geo6' => $geo6->build(),
-            // 'geo7' => $geo7->build(),
-            // 'geo8' => $geo8->build(),
-            // 'geo9' => $geo9->build(),
-            // 'geo10' => $geo10->build(),
-            // 'geo11' => $geo11->build(),
-            // 'geo12' => $geo12->build(),
+            'geo1' => $geo1->build(),
+            'geo2' => $geo2->build(),
+            'geo3' => $geo3->build(),
+            'geo4' => $geo4->build(),
+            'geo5' => $geo5->build(),
+            'geo6' => $geo6->build(),
+            'geo7' => $geo7->build(),
+            'geo8' => $geo8->build(),
+      
 
             'pl1' => $pl1->build(),
             'pl2' => $pl2->build(),
