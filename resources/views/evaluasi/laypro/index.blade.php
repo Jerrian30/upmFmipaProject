@@ -107,7 +107,7 @@
 @section('content')
 <div class="row">
     <div class="container mt-1">
-        <a href="{{ route('lab.table') }}" class="btn btn-primary">Lihat Penjelasan Tiap Butir Pertanyaan</a>
+        <a href="{{ route('laypro.table') }}" class="btn btn-primary">Lihat Penjelasan Tiap Butir Pertanyaan</a>
         <br><br>
         <select class="form-control" id="programStudi" name="programStudi">
             <option value="" disabled selected>Pilih</option>

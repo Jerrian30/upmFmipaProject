@@ -1,6 +1,6 @@
 @extends('layouts.master')
-@section('title', 'Evaluasi -> Dosen')
-@section('page', 'Evaluasi -> Dosen')
+@section('title', 'Evaluasi -> Pengguna Terhadap Kinerja Layanan Prodi')
+@section('page', 'Evaluasi -> Pengguna Terhadap Kinerja Layanan Prodi')
 
 
 {{-- content --}}
@@ -37,7 +37,7 @@
         </tfoot>
         <tbody>
             <tr>
-                <td>Ketersediaan, kejelasan dan kemudahan memperoleh informasi layanan</td>
+                <td>Kebersihan dan kenyamanan ruangan</td>
                 <td>{{ $percentages1['persen4'] }}%</td>
                 <td>{{ $percentages1['persen3'] }}%</td>
                 <td>{{ $percentages1['persen2'] }}%</td>
@@ -63,7 +63,7 @@
                 </td>
             </tr>
             <tr>
-                <td>Kebersihan dan kenyamanan laboratorium</td>
+                <td>Fasilitas Perkuliahan</td>
                 <td>{{ $percentages2['persen4'] }}%</td>
                 <td>{{ $percentages2['persen3'] }}%</td>
                 <td>{{ $percentages2['persen2'] }}%</td>
@@ -90,7 +90,7 @@
             </tr>
 
             <tr>
-                <td>Sarana / prasarana laboratorium terawat dan berfungsi baik</td>
+                <td>Fasilitas Laboratorium</td>
                 <td>{{ $percentages3['persen4'] }}%</td>
                 <td>{{ $percentages3['persen3'] }}%</td>
                 <td>{{ $percentages3['persen2'] }}%</td>
@@ -117,7 +117,7 @@
             </tr>
             
             <tr>
-                <td>Ketua dan staf laboratorium/bengkel/studio mampu memberikan pelayanan sesuai dengan kebutuhan pengguna</td>
+                <td>Kemudahan mendapatkan informasi perkuliahan</td>
                 <td>{{ $percentages4['persen4'] }}%</td>
                 <td>{{ $percentages4['persen3'] }}%</td>
                 <td>{{ $percentages4['persen2'] }}%</td>
@@ -144,7 +144,7 @@
             </tr>
 
             <tr>
-                <td>Ketua dan staf laboratorium/ bengkel/ studio terbuka dengan kritik dan saran terkait pelayanan yang diberikan</td>
+                <td>Kemudahan dalam mengurus transkrip nilai</td>
                 <td>{{ $percentages5['persen4'] }}%</td>
                 <td>{{ $percentages5['persen3'] }}%</td>
                 <td>{{ $percentages5['persen2'] }}%</td>
@@ -171,7 +171,7 @@
             </tr>
             
             <tr>
-                <td>Ketua dan staf laboratorium/ bengkel/ studio dapat menyelesaikan persoalan secara cepat dan tepat</td>
+                <td>Kemudahan dalam mengurus KRS dan KHS</td>
                 <td>{{ $percentages6['persen4'] }}%</td>
                 <td>{{ $percentages6['persen3'] }}%</td>
                 <td>{{ $percentages6['persen2'] }}%</td>
@@ -198,7 +198,7 @@
             </tr>
 
             <tr>
-                <td>Tersedia manual untuk setiap peralatan</td>
+                <td>Responsif terhadap keluhan mahasiswa</td>
                 <td>{{ $percentages7['persen4'] }}%</td>
                 <td>{{ $percentages7['persen3'] }}%</td>
                 <td>{{ $percentages7['persen2'] }}%</td>
@@ -225,7 +225,7 @@
             </tr>
 
             <tr>
-                <td>Staf laboratorium/bengkel/studio trampil mengoperasikan peralatan yang dimiliki</td>
+                <td>Penetapan dosen pengampu mata kuliah</td>
                 <td>{{ $percentages8['persen4'] }}%</td>
                 <td>{{ $percentages8['persen3'] }}%</td>
                 <td>{{ $percentages8['persen2'] }}%</td>
@@ -252,7 +252,7 @@
             </tr>
 
             <tr>
-                <td>Hasil analisis/produk dapat dipertanggungjawabkan</td>
+                <td>Dukungan jurusan/prodi terhadap kegiatan (organisasi) kemahasiswaan</td>
                 <td>{{ $percentages9['persen4'] }}%</td>
                 <td>{{ $percentages9['persen3'] }}%</td>
                 <td>{{ $percentages9['persen2'] }}%</td>
@@ -279,7 +279,7 @@
             </tr>
 
             <tr>
-                <td>Ketua dan staf laboratorium/bengkel/studio mudah ditemui/dihubungi</td>
+                <td>Dukungan jurusan/prodi terhadap penyelesaian stud</td>
                 <td>{{ $percentages10['persen4'] }}%</td>
                 <td>{{ $percentages10['persen3'] }}%</td>
                 <td>{{ $percentages10['persen2'] }}%</td>
@@ -306,7 +306,7 @@
             </tr>
 
             <tr>
-                <td>Ketua dan staf laboratorium/bengkel/studio menunjukkan sikap peduli dan responsif terhadap kebutuhan/ keluhan pengguna</td>
+                <td>Kemudahan informasi mengenai kegiatan ilmiah (seminar, kuliah umum, dll)</td>
                 <td>{{ $percentages11['persen4'] }}%</td>
                 <td>{{ $percentages11['persen3'] }}%</td>
                 <td>{{ $percentages11['persen2'] }}%</td>
@@ -333,7 +333,7 @@
             </tr>
 
             <tr>
-                <td>Sarana/prasarana laboratorium/bengkel/studio lengkap dan nyaman</td>
+                <td> Ketua Jurusan dan atau Program Studi berpakaian rapi dan memberi pelayanan administrasi dengan ramah</td>
                 <td>{{ $percentages12['persen4'] }}%</td>
                 <td>{{ $percentages12['persen3'] }}%</td>
                 <td>{{ $percentages12['persen2'] }}%</td>
@@ -358,6 +358,116 @@
                     {{ $kinerja }}
                 </td>
             </tr>
+
+            <tr>
+                <td> Ketua Jurusan dan atau Program Studi memberi pelayanan secara responsif dan sesuai SOP</td>
+                <td>{{ $percentages13['persen4'] }}%</td>
+                <td>{{ $percentages13['persen3'] }}%</td>
+                <td>{{ $percentages13['persen2'] }}%</td>
+                <td>{{ $percentages13['persen1'] }}%</td>
+                <td>
+                    {{
+                        number_format(
+                            ($percentages13['persen4']*4 + $percentages13['persen3']*3 + $percentages13['persen2']*2 + $percentages13['persen1']*1) / 
+                            ($percentages13['persen4'] + $percentages13['persen3'] + $percentages13['persen2'] + $percentages13['persen1']),
+                        2)
+                    }}
+                </td>
+                <td>
+                    @php
+                        $average = 
+                            ($percentages13['persen4']*4 + $percentages13['persen3']*3 + $percentages13['persen2']*2 + $percentages13['persen1']) / 
+                            ($percentages13['persen4'] + $percentages13['persen3'] + $percentages13['persen2'] + $percentages13['persen1']);
+                        $kinerja = $average > 3.5 ? 'Sangat Baik' :
+                                    ($average > 2.5 ? 'Baik' :
+                                    ($average > 1.5 ? 'Cukup' : 'Kurang'));
+                    @endphp
+                    {{ $kinerja }}
+                </td>
+            </tr>
+
+            <tr>
+                <td>Ketua Jurusan dan atau Program Studi mudah dihubungi ketika ingin menemuinya untuk menanyakan atau mendiskusikan persoalan akademik anda</td>
+                <td>{{ $percentages14['persen4'] }}%</td>
+                <td>{{ $percentages14['persen3'] }}%</td>
+                <td>{{ $percentages14['persen2'] }}%</td>
+                <td>{{ $percentages14['persen1'] }}%</td>
+                <td>
+                    {{
+                        number_format(
+                            ($percentages14['persen4']*4 + $percentages14['persen3']*3 + $percentages14['persen2']*2 + $percentages14['persen1']*1) / 
+                            ($percentages14['persen4'] + $percentages14['persen3'] + $percentages14['persen2'] + $percentages14['persen1']),
+                        2)
+                    }}
+                </td>
+                <td>
+                    @php
+                        $average = 
+                            ($percentages14['persen4']*4 + $percentages14['persen3']*3 + $percentages14['persen2']*2 + $percentages14['persen1']) / 
+                            ($percentages14['persen4'] + $percentages14['persen3'] + $percentages14['persen2'] + $percentages14['persen1']);
+                        $kinerja = $average > 3.5 ? 'Sangat Baik' :
+                                    ($average > 2.5 ? 'Baik' :
+                                    ($average > 1.5 ? 'Cukup' : 'Kurang'));
+                    @endphp
+                    {{ $kinerja }}
+                </td>
+            </tr>
+
+            <tr>
+                <td>Kerapihan, kesopanan dan keramahan petugas</td>
+                <td>{{ $percentages15['persen4'] }}%</td>
+                <td>{{ $percentages15['persen3'] }}%</td>
+                <td>{{ $percentages15['persen2'] }}%</td>
+                <td>{{ $percentages15['persen1'] }}%</td>
+                <td>
+                    {{
+                        number_format(
+                            ($percentages15['persen4']*4 + $percentages15['persen3']*3 + $percentages15['persen2']*2 + $percentages15['persen1']*1) / 
+                            ($percentages15['persen4'] + $percentages15['persen3'] + $percentages15['persen2'] + $percentages15['persen1']),
+                        2)
+                    }}
+                </td>
+                <td>
+                    @php
+                        $average = 
+                            ($percentages15['persen4']*4 + $percentages15['persen3']*3 + $percentages15['persen2']*2 + $percentages15['persen1']) / 
+                            ($percentages15['persen4'] + $percentages15['persen3'] + $percentages15['persen2'] + $percentages15['persen1']);
+                        $kinerja = $average > 3.5 ? 'Sangat Baik' :
+                                    ($average > 2.5 ? 'Baik' :
+                                    ($average > 1.5 ? 'Cukup' : 'Kurang'));
+                    @endphp
+                    {{ $kinerja }}
+                </td>
+            </tr>
+
+            <tr>
+                <td>Kemampuan petugas dalam menguasai IT terkait dengan pelayanan</td>
+                <td>{{ $percentages16['persen4'] }}%</td>
+                <td>{{ $percentages16['persen3'] }}%</td>
+                <td>{{ $percentages16['persen2'] }}%</td>
+                <td>{{ $percentages16['persen1'] }}%</td>
+                <td>
+                    {{
+                        number_format(
+                            ($percentages16['persen4']*4 + $percentages16['persen3']*3 + $percentages16['persen2']*2 + $percentages16['persen1']*1) / 
+                            ($percentages16['persen4'] + $percentages16['persen3'] + $percentages16['persen2'] + $percentages16['persen1']),
+                        2)
+                    }}
+                </td>
+                <td>
+                    @php
+                        $average = 
+                            ($percentages16['persen4']*4 + $percentages16['persen3']*3 + $percentages16['persen2']*2 + $percentages16['persen1']) / 
+                            ($percentages16['persen4'] + $percentages16['persen3'] + $percentages16['persen2'] + $percentages16['persen1']);
+                        $kinerja = $average > 3.5 ? 'Sangat Baik' :
+                                    ($average > 2.5 ? 'Baik' :
+                                    ($average > 1.5 ? 'Cukup' : 'Kurang'));
+                    @endphp
+                    {{ $kinerja }}
+                </td>
+            </tr>
+            
+            
         </tbody>
     </table>
    </div>

@@ -807,9 +807,13 @@ class EvalLayproController extends Controller
     $percentages10 = $pl10->getDetailedPercentages();
     $percentages11 = $pl11->getDetailedPercentages();
     $percentages12 = $pl12->getDetailedPercentages();
+    $percentages13 = $pl13->getDetailedPercentages();
+    $percentages14 = $pl14->getDetailedPercentages();
+    $percentages15 = $pl15->getDetailedPercentages();
+    $percentages16 = $pl16->getDetailedPercentages();
 
 
-    return view('evaluasi.Lab.table', [
+    return view('evaluasi.laypro.table', [
         'percentages1' => $percentages1,
         'percentages2' => $percentages2,
         'percentages3' => $percentages3,
@@ -822,6 +826,10 @@ class EvalLayproController extends Controller
         'percentages10' => $percentages10,
         'percentages11' => $percentages11,
         'percentages12' => $percentages12,
+        'percentages13' => $percentages13,
+        'percentages14' => $percentages14,
+        'percentages15' => $percentages15,
+        'percentages16' => $percentages16,
     ]);
 }
 
