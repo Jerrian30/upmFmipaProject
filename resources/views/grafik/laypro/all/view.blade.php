@@ -2,7 +2,7 @@
     <div class="col-lg-3 mb-4 allContainer" style="display: none;">
         <div class="card">
             <div class="card-body" >
-                <h6 class="card-title">1. Ketersediaan, kejelasan dan kemudahan memperoleh informasi layanan</h6>
+                <h6 class="card-title">1 Kebersihan dan kenyamanan ruangan</h6>
                 {!! $pl1->container() !!}
             </div>
         </div>
@@ -11,7 +11,7 @@
     <div class="col-lg-3 mb-4 allContainer" style="display: none;">
         <div class="card">
             <div class="card-body">
-                <h6 class="card-title">2. Kebersihan dan kenyamanan laboratorium</h6>
+                <h6 class="card-title">2 Fasilitas Perkuliahan</h6>
                 {!! $pl2->container() !!}
             </div>
         </div>
@@ -20,7 +20,7 @@
     <div class="col-lg-3 mb-4 allContainer" style="display: none;">
         <div class="card">
             <div class="card-body">
-                <h6 class="card-title">3. Sarana / prasarana laboratorium terawat dan berfungsi baik</h6>
+                <h6 class="card-title">3 Fasilitas Laboratorium</h6>
                 {!! $pl3->container() !!}
             </div>
         </div>
@@ -30,7 +30,7 @@
     <div class="col-lg-3 mb-4 allContainer" style="display: none;">
         <div class="card">
             <div class="card-body">
-                <h6 class="card-title">4. Ketua dan staf laboratorium/bengkel/studio mampu memberikan pelayanan sesuai dengan kebutuhan pengguna</h6>
+                <h6 class="card-title">4 Kemudahan mendapatkan informasi perkuliahan</h6>
                 {!! $pl4->container() !!}
             </div>
         </div>
@@ -39,7 +39,7 @@
     <div class="col-lg-3 mb-4 allContainer" style="display: none;">
         <div class="card">
             <div class="card-body">
-                <h6 class="card-title">5. Ketua dan staf laboratorium/ bengkel/ studio terbuka dengan kritik dan saran terkait pelayanan yang diberikan</h6>
+                <h6 class="card-title">5 Kemudahan dalam mengurus transkrip nilai</h6>
                 {!! $pl5->container() !!}
             </div>
         </div>
@@ -48,7 +48,7 @@
     <div class="col-lg-3 mb-4 allContainer" style="display: none;">
         <div class="card">
             <div class="card-body">
-                <h6 class="card-title">6. Ketua dan staf laboratorium/ bengkel/ studio dapat menyelesaikan persoalan secara cepat dan tepat</h6>
+                <h6 class="card-title">6 Kemudahan dalam mengurus KRS dan KHS</h6>
                 {!! $pl6->container() !!}
             </div>
         </div>
@@ -58,7 +58,7 @@
     <div class="col-lg-3 mb-4 allContainer" style="display: none;">
         <div class="card">
             <div class="card-body">
-                <h6 class="card-title">7. Tersedia manual untuk setiap peralatan</h6>
+                <h6 class="card-title">7 Responsif terhadap keluhan mahasiswa</h6>
                 {!! $pl7->container() !!}
             </div>
         </div>
@@ -67,7 +67,7 @@
     <div class="col-lg-3 mb-4 allContainer" style="display: none;">
         <div class="card">
             <div class="card-body">
-                <h6 class="card-title">8. Staf laboratorium/bengkel/studio trampil mengoperasikan peralatan yang dimiliki</h6>
+                <h6 class="card-title">8 Penetapan dosen pengampu mata kuliah</h6>
                 {!! $pl8->container() !!}
             </div>
         </div>
@@ -77,7 +77,7 @@
     <div class="col-lg-3 mb-4 allContainer" style="display: none;">
         <div class="card">
             <div class="card-body">
-                <h6 class="card-title">9. Hasil analisis/produk dapat dipertanggungjawabkan</h6>
+                <h6 class="card-title">9 Dukungan jurusan/prodi terhadap kegiatan (organisasi) kemahasiswaan</h6>
                 {!! $pl9->container() !!}
             </div>
         </div>
@@ -86,7 +86,7 @@
     <div class="col-lg-3 mb-4 allContainer" style="display: none;">
         <div class="card">
             <div class="card-body">
-                <h6 class="card-title">10. Ketua dan staf laboratorium/bengkel/studio mudah ditemui/dihubungi</h6>
+                <h6 class="card-title">10 Dukungan jurusan/prodi terhadap penyelesaian studi</h6>
                 {!! $pl10->container() !!}
             </div>
         </div>
@@ -95,7 +95,7 @@
     <div class="col-lg-3 mb-4 allContainer" style="display: none;">
         <div class="card">
             <div class="card-body">
-                <h6 class="card-title">11. Ketua dan staf laboratorium/bengkel/studio menunjukkan sikap peduli dan responsif terhadap kebutuhan/ keluhan pengguna</h6>
+                <h6 class="card-title">11 Kemudahan informasi mengenai kegiatan ilmiah (seminar, kuliah umum, dll)</h6>
                 {!! $pl11->container() !!}
             </div>
         </div>
@@ -104,8 +104,44 @@
     <div class="col-lg-3 mb-4 allContainer" style="display: none;">
         <div class="card">
             <div class="card-body">
-                <h6 class="card-title">12. Sarana/prasarana laboratorium/bengkel/studio lengkap dan nyaman</h6>
+                <h6 class="card-title">12 Ketua Jurusan dan atau Program Studi berpakaian rapi dan memberi pelayanan administrasi dengan ramah</h6>
                 {!! $pl12->container() !!}
+            </div>
+        </div>
+    </div>
+
+    <div class="col-lg-3 mb-4 allContainer" style="display: none;">
+        <div class="card">
+            <div class="card-body">
+                <h6 class="card-title">13 Ketua Jurusan dan atau Program Studi memberi pelayanan secara responsif dan sesuai SOP</h6>
+                {!! $pl13->container() !!}
+            </div>
+        </div>
+    </div>
+
+    <div class="col-lg-3 mb-4 allContainer" style="display: none;">
+        <div class="card">
+            <div class="card-body">
+                <h6 class="card-title">14 Ketua Jurusan dan atau Program Studi mudah dihubungi ketika ingin menemuinya untuk menanyakan atau mendiskusikan persoalan akademik anda</h6>
+                {!! $pl14->container() !!}
+            </div>
+        </div>
+    </div>
+
+    <div class="col-lg-3 mb-4 allContainer" style="display: none;">
+        <div class="card">
+            <div class="card-body">
+                <h6 class="card-title">15 Kerapihan, kesopanan dan keramahan petugas</h6>
+                {!! $pl15->container() !!}
+            </div>
+        </div>
+    </div>
+
+    <div class="col-lg-3 mb-4 allContainer" style="display: none;">
+        <div class="card">
+            <div class="card-body">
+                <h6 class="card-title">16 Kemampuan petugas dalam menguasai IT terkait dengan pelayanan</h6>
+                {!! $pl16->container() !!}
             </div>
         </div>
     </div>

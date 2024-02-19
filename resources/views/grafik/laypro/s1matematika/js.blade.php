@@ -10,6 +10,10 @@
 <script src="{{ $math10->cdn() }}"></script>
 <script src="{{ $math11->cdn() }}"></script>
 <script src="{{ $math12->cdn() }}"></script>
+<script src="{{ $math13->cdn() }}"></script>
+<script src="{{ $math14->cdn() }}"></script>
+<script src="{{ $math15->cdn() }}"></script>
+<script src="{{ $math16->cdn() }}"></script>
 
 {{ $math1->script() }}
 {{ $math2->script() }}
@@ -23,3 +27,7 @@
 {{ $math10->script() }}
 {{ $math11->script() }}
 {{ $math12->script() }}
+{{ $math13->script() }}
+{{ $math14->script() }}
+{{ $math15->script() }}
+{{ $math16->script() }}

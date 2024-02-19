@@ -10,6 +10,10 @@
 <script src="{{ $pl10->cdn() }}"></script>
 <script src="{{ $pl11->cdn() }}"></script>
 <script src="{{ $pl12->cdn() }}"></script>
+<script src="{{ $pl13->cdn() }}"></script>
+<script src="{{ $pl14->cdn() }}"></script>
+<script src="{{ $pl15->cdn() }}"></script>
+<script src="{{ $pl16->cdn() }}"></script>
 
 {{ $pl1->script() }}
 {{ $pl2->script() }}
@@ -23,3 +27,7 @@
 {{ $pl10->script() }}
 {{ $pl11->script() }}
 {{ $pl12->script() }}
+{{ $pl13->script() }}
+{{ $pl14->script() }}
+{{ $pl15->script() }}
+{{ $pl16->script() }}

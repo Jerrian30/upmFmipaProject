@@ -41,32 +41,40 @@ use App\Charts\Laypro\All\PL16;
 // use App\Charts\Laypro\S1Geofisika\Geo12;
 
 // // // Class D3Farmasi
-// use App\Charts\Laypro\D3Farmasi\Farm1;
-// use App\Charts\Laypro\D3Farmasi\Farm2;
-// use App\Charts\Laypro\D3Farmasi\Farm3;
-// use App\Charts\Laypro\D3Farmasi\Farm4;
-// use App\Charts\Laypro\D3Farmasi\Farm5;
-// use App\Charts\Laypro\D3Farmasi\Farm6;
-// use App\Charts\Laypro\D3Farmasi\Farm7;
-// use App\Charts\Laypro\D3Farmasi\Farm8;
-// use App\Charts\Laypro\D3Farmasi\Farm9;
-// use App\Charts\Laypro\D3Farmasi\Farm10;
-// use App\Charts\Laypro\D3Farmasi\Farm11;
-// use App\Charts\Laypro\D3Farmasi\Farm12;
+use App\Charts\Laypro\D3Farmasi\Farm1;
+use App\Charts\Laypro\D3Farmasi\Farm2;
+use App\Charts\Laypro\D3Farmasi\Farm3;
+use App\Charts\Laypro\D3Farmasi\Farm4;
+use App\Charts\Laypro\D3Farmasi\Farm5;
+use App\Charts\Laypro\D3Farmasi\Farm6;
+use App\Charts\Laypro\D3Farmasi\Farm7;
+use App\Charts\Laypro\D3Farmasi\Farm8;
+use App\Charts\Laypro\D3Farmasi\Farm9;
+use App\Charts\Laypro\D3Farmasi\Farm10;
+use App\Charts\Laypro\D3Farmasi\Farm11;
+use App\Charts\Laypro\D3Farmasi\Farm12;
+use App\Charts\Laypro\D3Farmasi\Farm13;
+use App\Charts\Laypro\D3Farmasi\Farm14;
+use App\Charts\Laypro\D3Farmasi\Farm15;
+use App\Charts\Laypro\D3Farmasi\Farm16;
 
-// // // Class S1Farmasi
-// use App\Charts\Laypro\S1Farmasi\S1Farm1;
-// use App\Charts\Laypro\S1Farmasi\S1Farm2;
-// use App\Charts\Laypro\S1Farmasi\S1Farm3;
-// use App\Charts\Laypro\S1Farmasi\S1Farm4;
-// use App\Charts\Laypro\S1Farmasi\S1Farm5;
-// use App\Charts\Laypro\S1Farmasi\S1Farm6;
-// use App\Charts\Laypro\S1Farmasi\S1Farm7;
-// use App\Charts\Laypro\S1Farmasi\S1Farm8;
-// use App\Charts\Laypro\S1Farmasi\S1Farm9;
-// use App\Charts\Laypro\S1Farmasi\S1Farm10;
-// use App\Charts\Laypro\S1Farmasi\S1Farm11;
-// use App\Charts\Laypro\S1Farmasi\S1Farm12;
+//Class S1Farmasi
+use App\Charts\Laypro\S1Farmasi\S1Farm1;
+use App\Charts\Laypro\S1Farmasi\S1Farm2;
+use App\Charts\Laypro\S1Farmasi\S1Farm3;
+use App\Charts\Laypro\S1Farmasi\S1Farm4;
+use App\Charts\Laypro\S1Farmasi\S1Farm5;
+use App\Charts\Laypro\S1Farmasi\S1Farm6;
+use App\Charts\Laypro\S1Farmasi\S1Farm7;
+use App\Charts\Laypro\S1Farmasi\S1Farm8;
+use App\Charts\Laypro\S1Farmasi\S1Farm9;
+use App\Charts\Laypro\S1Farmasi\S1Farm10;
+use App\Charts\Laypro\S1Farmasi\S1Farm11;
+use App\Charts\Laypro\S1Farmasi\S1Farm12;
+use App\Charts\Laypro\S1Farmasi\S1Farm13;
+use App\Charts\Laypro\S1Farmasi\S1Farm14;
+use App\Charts\Laypro\S1Farmasi\S1Farm15;
+use App\Charts\Laypro\S1Farmasi\S1Farm16;
 
 // Class Matematika
 use App\Charts\Laypro\S1Matematika\Math1;
@@ -143,31 +151,40 @@ use App\Charts\Laypro\S1Matematika\Math16;
 // use App\Charts\Laypro\D3LabSains\LabSains12;
 
 // //Class Statistika
-// use App\Charts\Laypro\S1Statistika\Statis1;
-// use App\Charts\Laypro\S1Statistika\Statis2;
-// use App\Charts\Laypro\S1Statistika\Statis3;
-// use App\Charts\Laypro\S1Statistika\Statis4;
-// use App\Charts\Laypro\S1Statistika\Statis5;
-// use App\Charts\Laypro\S1Statistika\Statis6;
-// use App\Charts\Laypro\S1Statistika\Statis7;
-// use App\Charts\Laypro\S1Statistika\Statis8;
-// use App\Charts\Laypro\S1Statistika\Statis9;
-// use App\Charts\Laypro\S1Statistika\Statis10;
-// use App\Charts\Laypro\S1Statistika\Statis11;
-// use App\Charts\Laypro\S1Statistika\Statis12;
+use App\Charts\Laypro\S1Statistika\Statis1;
+use App\Charts\Laypro\S1Statistika\Statis2;
+use App\Charts\Laypro\S1Statistika\Statis3;
+use App\Charts\Laypro\S1Statistika\Statis4;
+use App\Charts\Laypro\S1Statistika\Statis5;
+use App\Charts\Laypro\S1Statistika\Statis6;
+use App\Charts\Laypro\S1Statistika\Statis7;
+use App\Charts\Laypro\S1Statistika\Statis8;
+use App\Charts\Laypro\S1Statistika\Statis9;
+use App\Charts\Laypro\S1Statistika\Statis10;
+use App\Charts\Laypro\S1Statistika\Statis11;
+use App\Charts\Laypro\S1Statistika\Statis12;
+use App\Charts\Laypro\S1Statistika\Statis13;
+use App\Charts\Laypro\S1Statistika\Statis14;
+use App\Charts\Laypro\S1Statistika\Statis15;
+use App\Charts\Laypro\S1Statistika\Statis16;
 
-// use App\Charts\Laypro\S2Statistika\S2Statis1;
-// use App\Charts\Laypro\S2Statistika\S2Statis2;
-// use App\Charts\Laypro\S2Statistika\S2Statis3;
-// use App\Charts\Laypro\S2Statistika\S2Statis4;
-// use App\Charts\Laypro\S2Statistika\S2Statis5;
-// use App\Charts\Laypro\S2Statistika\S2Statis6;
-// use App\Charts\Laypro\S2Statistika\S2Statis7;
-// use App\Charts\Laypro\S2Statistika\S2Statis8;
-// use App\Charts\Laypro\S2Statistika\S2Statis9;
-// use App\Charts\Laypro\S2Statistika\S2StatiS10;
-// use App\Charts\Laypro\S2Statistika\S2StatiS11;
-// use App\Charts\Laypro\S2Statistika\S2Statis12;
+use App\Charts\Laypro\S2Statistika\S2Statis1;
+use App\Charts\Laypro\S2Statistika\S2Statis2;
+use App\Charts\Laypro\S2Statistika\S2Statis3;
+use App\Charts\Laypro\S2Statistika\S2Statis4;
+use App\Charts\Laypro\S2Statistika\S2Statis5;
+use App\Charts\Laypro\S2Statistika\S2Statis6;
+use App\Charts\Laypro\S2Statistika\S2Statis7;
+use App\Charts\Laypro\S2Statistika\S2Statis8;
+use App\Charts\Laypro\S2Statistika\S2Statis9;
+use App\Charts\Laypro\S2Statistika\S2Statis10;
+use App\Charts\Laypro\S2Statistika\S2Statis11;
+use App\Charts\Laypro\S2Statistika\S2Statis12;
+use App\Charts\Laypro\S2Statistika\S2Statis13;
+use App\Charts\Laypro\S2Statistika\S2Statis14;
+use App\Charts\Laypro\S2Statistika\S2Statis15;
+use App\Charts\Laypro\S2Statistika\S2Statis16;
+
 
 // // // //Class S1 Kimia
 // use App\Charts\Laypro\S1Kimia\S1Kim1;
@@ -237,32 +254,40 @@ class EvalLayproController extends Controller
 
 
         // // D3 Farmasi
-        // Farm1 $farm1,
-        // Farm2 $farm2,
-        // Farm3 $farm3,
-        // Farm4 $farm4,
-        // Farm5 $farm5,
-        // Farm6 $farm6,
-        // Farm7 $farm7,
-        // Farm8 $farm8,
-        // Farm9 $farm9,
-        // Farm10 $farm10,
-        // Farm11 $farm11,
-        // Farm12 $farm12,
+        Farm1 $farm1,
+        Farm2 $farm2,
+        Farm3 $farm3,
+        Farm4 $farm4,
+        Farm5 $farm5,
+        Farm6 $farm6,
+        Farm7 $farm7,
+        Farm8 $farm8,
+        Farm9 $farm9,
+        Farm10 $farm10,
+        Farm11 $farm11,
+        Farm12 $farm12,
+        Farm13 $farm13,
+        Farm14 $farm14,
+        Farm15 $farm15,
+        Farm16 $farm16,
 
-        // // // S1 Farmasi
-        // S1Farm1 $s1farm1,
-        // S1Farm2 $s1farm2,
-        // S1Farm3 $s1farm3,
-        // S1Farm4 $s1farm4,
-        // S1Farm5 $s1farm5,
-        // S1Farm6 $s1farm6,
-        // S1Farm7 $s1farm7,
-        // S1Farm8 $s1farm8,
-        // S1Farm9 $s1farm9,
-        // S1Farm10 $s1farm10,
-        // S1Farm11 $s1farm11,
-        // S1Farm12 $s1farm12,
+        // S1 Farmasi
+        S1Farm1 $s1farm1,
+        S1Farm2 $s1farm2,
+        S1Farm3 $s1farm3,
+        S1Farm4 $s1farm4,
+        S1Farm5 $s1farm5,
+        S1Farm6 $s1farm6,
+        S1Farm7 $s1farm7,
+        S1Farm8 $s1farm8,
+        S1Farm9 $s1farm9,
+        S1Farm10 $s1farm10,
+        S1Farm11 $s1farm11,
+        S1Farm12 $s1farm12,
+        S1Farm13 $s1farm13,
+        S1Farm14 $s1farm14,
+        S1Farm15 $s1farm15,
+        S1Farm16 $s1farm16,
 
         // S1 Matematika
         Math1 $math1,
@@ -340,31 +365,39 @@ class EvalLayproController extends Controller
         // LabSains12 $labsains12,
 
         // // S1 Statistika
-        // Statis1 $statis1,
-        // Statis2 $statis2,
-        // Statis3 $statis3,
-        // Statis4 $statis4,
-        // Statis5 $statis5,
-        // Statis6 $statis6,
-        // Statis7 $statis7,
-        // Statis8 $statis8,
-        // Statis9 $statis9,
-        // Statis10 $statis10,
-        // Statis11 $statis11,
-        // Statis12 $statis12,
+        Statis1 $statis1,
+        Statis2 $statis2,
+        Statis3 $statis3,
+        Statis4 $statis4,
+        Statis5 $statis5,
+        Statis6 $statis6,
+        Statis7 $statis7,
+        Statis8 $statis8,
+        Statis9 $statis9,
+        Statis10 $statis10,
+        Statis11 $statis11,
+        Statis12 $statis12,
+        Statis13 $statis13,
+        Statis14 $statis14,
+        Statis15 $statis15,
+        Statis16 $statis16,
         
-        // S2Statis1 $s2statis1,
-        // S2Statis2 $s2statis2,
-        // S2Statis3 $s2statis3,
-        // S2Statis4 $s2statis4,
-        // S2Statis5 $s2statis5,
-        // S2Statis6 $s2statis6,
-        // S2Statis7 $s2statis7,
-        // S2Statis8 $s2statis8,
-        // S2Statis9 $s2statis9,
-        // S2Statis10 $s2statis10,
-        // S2Statis11 $s2statis11,
-        // S2Statis12 $s2statis12,
+        S2Statis1 $s2statis1,
+        S2Statis2 $s2statis2,
+        S2Statis3 $s2statis3,
+        S2Statis4 $s2statis4,
+        S2Statis5 $s2statis5,
+        S2Statis6 $s2statis6,
+        S2Statis7 $s2statis7,
+        S2Statis8 $s2statis8,
+        S2Statis9 $s2statis9,
+        S2Statis10 $s2statis10,
+        S2Statis11 $s2statis11,
+        S2Statis12 $s2statis12,
+        S2Statis13 $s2statis13,
+        S2Statis14 $s2statis14,
+        S2Statis15 $s2statis15,
+        S2Statis16 $s2statis16,
 
 
         // // S1 Kimia
@@ -430,31 +463,39 @@ class EvalLayproController extends Controller
         [
             // 'lab' => $Lab,
 
-            // 'farm1' => $farm1->build(),
-            // 'farm2' => $farm2->build(),
-            // 'farm3' => $farm3->build(),
-            // 'farm4' => $farm4->build(),
-            // 'farm5' => $farm5->build(),
-            // 'farm6' => $farm6->build(),
-            // 'farm7' => $farm7->build(),
-            // 'farm8' => $farm8->build(),
-            // 'farm9' => $farm9->build(),
-            // 'farm10' => $farm10->build(),
-            // 'farm11' => $farm11->build(),
-            // 'farm12' => $farm12->build(),
+            'farm1' => $farm1->build(),
+            'farm2' => $farm2->build(),
+            'farm3' => $farm3->build(),
+            'farm4' => $farm4->build(),
+            'farm5' => $farm5->build(),
+            'farm6' => $farm6->build(),
+            'farm7' => $farm7->build(),
+            'farm8' => $farm8->build(),
+            'farm9' => $farm9->build(),
+            'farm10' => $farm10->build(),
+            'farm11' => $farm11->build(),
+            'farm12' => $farm12->build(),
+            'farm13' => $farm13->build(),
+            'farm14' => $farm14->build(),
+            'farm15' => $farm15->build(),
+            'farm16' => $farm16->build(),
 
-            // 's1farm1' => $s1farm1->build(),
-            // 's1farm2' => $s1farm2->build(),
-            // 's1farm3' => $s1farm3->build(),
-            // 's1farm4' => $s1farm4->build(),
-            // 's1farm5' => $s1farm5->build(),
-            // 's1farm6' => $s1farm6->build(),
-            // 's1farm7' => $s1farm7->build(),
-            // 's1farm8' => $s1farm8->build(),
-            // 's1farm9' => $s1farm9->build(),
-            // 's1farm10' => $s1farm10->build(),
-            // 's1farm11' => $s1farm11->build(),
-            // 's1farm12' => $s1farm12->build(),
+            's1farm1' => $s1farm1->build(),
+            's1farm2' => $s1farm2->build(),
+            's1farm3' => $s1farm3->build(),
+            's1farm4' => $s1farm4->build(),
+            's1farm5' => $s1farm5->build(),
+            's1farm6' => $s1farm6->build(),
+            's1farm7' => $s1farm7->build(),
+            's1farm8' => $s1farm8->build(),
+            's1farm9' => $s1farm9->build(),
+            's1farm10' => $s1farm10->build(),
+            's1farm11' => $s1farm11->build(),
+            's1farm12' => $s1farm12->build(),
+            's1farm13' => $s1farm13->build(),
+            's1farm14' => $s1farm14->build(),
+            's1farm15' => $s1farm15->build(),
+            's1farm16' => $s1farm16->build(),
 
             'math1' => $math1->build(),
             'math2' => $math2->build(),
@@ -525,31 +566,39 @@ class EvalLayproController extends Controller
             // 'labsains11' => $labsains11->build(),
             // 'labsains12' => $labsains12->build(),
             
-            // 'statis1' => $statis1->build(),
-            // 'statis2' => $statis2->build(),
-            // 'statis3' => $statis3->build(),
-            // 'statis4' => $statis4->build(),
-            // 'statis5' => $statis5->build(),
-            // 'statis6' => $statis6->build(),
-            // 'statis7' => $statis7->build(),
-            // 'statis8' => $statis8->build(),
-            // 'statis9' => $statis9->build(),
-            // 'statis10' => $statis10->build(),
-            // 'statis11' => $statis11->build(),
-            // 'statis12' => $statis12->build(),
+            'statis1' => $statis1->build(),
+            'statis2' => $statis2->build(),
+            'statis3' => $statis3->build(),
+            'statis4' => $statis4->build(),
+            'statis5' => $statis5->build(),
+            'statis6' => $statis6->build(),
+            'statis7' => $statis7->build(),
+            'statis8' => $statis8->build(),
+            'statis9' => $statis9->build(),
+            'statis10' => $statis10->build(),
+            'statis11' => $statis11->build(),
+            'statis12' => $statis12->build(),
+            'statis13' => $statis13->build(),
+            'statis14' => $statis14->build(),
+            'statis15' => $statis15->build(),
+            'statis16' => $statis16->build(),
 
-            // 's2statis1' => $s2statis1->build(),
-            // 's2statis2' => $s2statis2->build(),
-            // 's2statis3' => $s2statis3->build(),
-            // 's2statis4' => $s2statis4->build(),
-            // 's2statis5' => $s2statis5->build(),
-            // 's2statis6' => $s2statis6->build(),
-            // 's2statis7' => $s2statis7->build(),
-            // 's2statis8' => $s2statis8->build(),
-            // 's2statis9' => $s2statis9->build(),
-            // 's2statis10' => $s2statis10->build(),
-            // 's2statis11' => $s2statis11->build(),
-            // 's2statis12' => $s2statis12->build(),
+            's2statis1' => $s2statis1->build(),
+            's2statis2' => $s2statis2->build(),
+            's2statis3' => $s2statis3->build(),
+            's2statis4' => $s2statis4->build(),
+            's2statis5' => $s2statis5->build(),
+            's2statis6' => $s2statis6->build(),
+            's2statis7' => $s2statis7->build(),
+            's2statis8' => $s2statis8->build(),
+            's2statis9' => $s2statis9->build(),
+            's2statis10' => $s2statis10->build(),
+            's2statis11' => $s2statis11->build(),
+            's2statis12' => $s2statis12->build(),
+            's2statis13' => $s2statis13->build(),
+            's2statis14' => $s2statis14->build(),
+            's2statis15' => $s2statis15->build(),
+            's2statis16' => $s2statis16->build(),
 
 
             // 's1kim1' => $s1kim1->build(),
