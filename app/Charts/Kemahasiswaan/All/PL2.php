@@ -53,7 +53,7 @@ class PL2
     public function getDetailedPercentages()
     {
         
-        $percentages = $this->calculatePercentages('kebersihan_laboratorium');
+        $percentages = $this->calculatePercentages('suasana_ruangan');
         return [
             'persen1' => $percentages[1] ?? 0,
             'persen2' => $percentages[2] ?? 0,

@@ -53,7 +53,7 @@ class PL5
     public function getDetailedPercentages()
     {
         
-        $percentages = $this->calculatePercentages('terbuka_kritik_saran');
+        $percentages = $this->calculatePercentages('staff_sop');
         return [
             'persen1' => $percentages[1] ?? 0,
             'persen2' => $percentages[2] ?? 0,

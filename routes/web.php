@@ -13,6 +13,9 @@ use App\Http\Controllers\EvalLabController;
 use App\Http\Controllers\LaporanKemahasiswaanController;
 use App\Http\Controllers\EvalKemahasiswaanController;
 
+use App\Http\Controllers\LaporanLayproController;
+use App\Http\Controllers\EvalLayproController;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -48,3 +51,8 @@ Route::post('/kemahasiswaan/import', [LaporanKemahasiswaanController::class, 'im
 Route::get('/kemahasiswaan/eval', [EvalKemahasiswaanController::class, 'index'])->name('kemahasiswaan.eval');
 Route::get('/kemahasiswaan/table', [EvalKemahasiswaanController::class, 'table'])->name('kemahasiswaan.table');
 
+
+Route::get('laypro', [LaporanLayproController::class, 'index'])->name('laypro.index');
+Route::post('/laypro/import', [LaporanLayproController::class, 'import'])->name('laypro.import');
+Route::get('/laypro/eval', [EvalLayproController::class, 'index'])->name('laypro.eval');
+Route::get('/laypro/table', [EvalLayproController::class, 'table'])->name('laypro.table');

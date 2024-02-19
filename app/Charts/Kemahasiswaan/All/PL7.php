@@ -53,7 +53,7 @@ class PL7
     public function getDetailedPercentages()
     {
         
-        $percentages = $this->calculatePercentages('manual_peralatan');
+        $percentages = $this->calculatePercentages('staff_dapat_dihubungi');
         return [
             'persen1' => $percentages[1] ?? 0,
             'persen2' => $percentages[2] ?? 0,
