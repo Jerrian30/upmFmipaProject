@@ -27,18 +27,22 @@ use App\Charts\Laypro\All\PL16;
 
 
 // Class Geofisika
-// use App\Charts\Laypro\S1Geofisika\Geo1;
-// use App\Charts\Laypro\S1Geofisika\Geo2;
-// use App\Charts\Laypro\S1Geofisika\Geo3;
-// use App\Charts\Laypro\S1Geofisika\Geo4;
-// use App\Charts\Laypro\S1Geofisika\Geo5;
-// use App\Charts\Laypro\S1Geofisika\Geo6;
-// use App\Charts\Laypro\S1Geofisika\Geo7;
-// use App\Charts\Laypro\S1Geofisika\Geo8;
-// use App\Charts\Laypro\S1Geofisika\Geo9;
-// use App\Charts\Laypro\S1Geofisika\Geo10;
-// use App\Charts\Laypro\S1Geofisika\Geo11;
-// use App\Charts\Laypro\S1Geofisika\Geo12;
+use App\Charts\Laypro\S1Geofisika\Geo1;
+use App\Charts\Laypro\S1Geofisika\Geo2;
+use App\Charts\Laypro\S1Geofisika\Geo3;
+use App\Charts\Laypro\S1Geofisika\Geo4;
+use App\Charts\Laypro\S1Geofisika\Geo5;
+use App\Charts\Laypro\S1Geofisika\Geo6;
+use App\Charts\Laypro\S1Geofisika\Geo7;
+use App\Charts\Laypro\S1Geofisika\Geo8;
+use App\Charts\Laypro\S1Geofisika\Geo9;
+use App\Charts\Laypro\S1Geofisika\Geo10;
+use App\Charts\Laypro\S1Geofisika\Geo11;
+use App\Charts\Laypro\S1Geofisika\Geo12;
+use App\Charts\Laypro\S1Geofisika\Geo13;
+use App\Charts\Laypro\S1Geofisika\Geo14;
+use App\Charts\Laypro\S1Geofisika\Geo15;
+use App\Charts\Laypro\S1Geofisika\Geo16;
 
 // // // Class D3Farmasi
 use App\Charts\Laypro\D3Farmasi\Farm1;
@@ -94,61 +98,81 @@ use App\Charts\Laypro\S1Matematika\Math14;
 use App\Charts\Laypro\S1Matematika\Math15;
 use App\Charts\Laypro\S1Matematika\Math16;
 
-// // Class Biologi
-// use App\Charts\Laypro\S1Biologi\Bio1;
-// use App\Charts\Laypro\S1Biologi\Bio2;
-// use App\Charts\Laypro\S1Biologi\Bio3;
-// use App\Charts\Laypro\S1Biologi\Bio4;
-// use App\Charts\Laypro\S1Biologi\Bio5;
-// use App\Charts\Laypro\S1Biologi\Bio6;
-// use App\Charts\Laypro\S1Biologi\Bio7;
-// use App\Charts\Laypro\S1Biologi\Bio8;
-// use App\Charts\Laypro\S1Biologi\Bio9;
-// use App\Charts\Laypro\S1Biologi\Bio10;
-// use App\Charts\Laypro\S1Biologi\Bio11;
-// use App\Charts\Laypro\S1Biologi\Bio12;
+// Class Biologi
+use App\Charts\Laypro\S1Biologi\Bio1;
+use App\Charts\Laypro\S1Biologi\Bio2;
+use App\Charts\Laypro\S1Biologi\Bio3;
+use App\Charts\Laypro\S1Biologi\Bio4;
+use App\Charts\Laypro\S1Biologi\Bio5;
+use App\Charts\Laypro\S1Biologi\Bio6;
+use App\Charts\Laypro\S1Biologi\Bio7;
+use App\Charts\Laypro\S1Biologi\Bio8;
+use App\Charts\Laypro\S1Biologi\Bio9;
+use App\Charts\Laypro\S1Biologi\Bio10;
+use App\Charts\Laypro\S1Biologi\Bio11;
+use App\Charts\Laypro\S1Biologi\Bio12;
+use App\Charts\Laypro\S1Biologi\Bio13;
+use App\Charts\Laypro\S1Biologi\Bio14;
+use App\Charts\Laypro\S1Biologi\Bio15;
+use App\Charts\Laypro\S1Biologi\Bio16;
+
 
 // // Class Kebidanan
-// use App\Charts\Laypro\D3Kebidanan\Bidan1;
-// use App\Charts\Laypro\D3Kebidanan\Bidan2;
-// use App\Charts\Laypro\D3Kebidanan\Bidan3;
-// use App\Charts\Laypro\D3Kebidanan\Bidan4;
-// use App\Charts\Laypro\D3Kebidanan\Bidan5;
-// use App\Charts\Laypro\D3Kebidanan\Bidan6;
-// use App\Charts\Laypro\D3Kebidanan\Bidan7;
-// use App\Charts\Laypro\D3Kebidanan\Bidan8;
-// use App\Charts\Laypro\D3Kebidanan\Bidan9;
-// use App\Charts\Laypro\D3Kebidanan\Bidan10;
-// use App\Charts\Laypro\D3Kebidanan\Bidan11;
-// use App\Charts\Laypro\D3Kebidanan\Bidan12;
+use App\Charts\Laypro\D3Kebidanan\Bidan1;
+use App\Charts\Laypro\D3Kebidanan\Bidan2;
+use App\Charts\Laypro\D3Kebidanan\Bidan3;
+use App\Charts\Laypro\D3Kebidanan\Bidan4;
+use App\Charts\Laypro\D3Kebidanan\Bidan5;
+use App\Charts\Laypro\D3Kebidanan\Bidan6;
+use App\Charts\Laypro\D3Kebidanan\Bidan7;
+use App\Charts\Laypro\D3Kebidanan\Bidan8;
+use App\Charts\Laypro\D3Kebidanan\Bidan9;
+use App\Charts\Laypro\D3Kebidanan\Bidan10;
+use App\Charts\Laypro\D3Kebidanan\Bidan11;
+use App\Charts\Laypro\D3Kebidanan\Bidan12;
+use App\Charts\Laypro\D3Kebidanan\Bidan13;
+use App\Charts\Laypro\D3Kebidanan\Bidan14;
+use App\Charts\Laypro\D3Kebidanan\Bidan15;
+use App\Charts\Laypro\D3Kebidanan\Bidan16;
 
-// // // // Class Keperawatan
-// use App\Charts\Laypro\D3Keperawatan\Rawat1;
-// use App\Charts\Laypro\D3Keperawatan\Rawat2;
-// use App\Charts\Laypro\D3Keperawatan\Rawat3;
-// use App\Charts\Laypro\D3Keperawatan\Rawat4;
-// use App\Charts\Laypro\D3Keperawatan\Rawat5;
-// use App\Charts\Laypro\D3Keperawatan\Rawat6;
-// use App\Charts\Laypro\D3Keperawatan\Rawat7;
-// use App\Charts\Laypro\D3Keperawatan\Rawat8;
-// use App\Charts\Laypro\D3Keperawatan\Rawat9;
-// use App\Charts\Laypro\D3Keperawatan\Rawat10;
-// use App\Charts\Laypro\D3Keperawatan\Rawat11;
-// use App\Charts\Laypro\D3Keperawatan\Rawat12;
+// Class Keperawatan
+use App\Charts\Laypro\D3Keperawatan\Rawat1;
+use App\Charts\Laypro\D3Keperawatan\Rawat2;
+use App\Charts\Laypro\D3Keperawatan\Rawat3;
+use App\Charts\Laypro\D3Keperawatan\Rawat4;
+use App\Charts\Laypro\D3Keperawatan\Rawat5;
+use App\Charts\Laypro\D3Keperawatan\Rawat6;
+use App\Charts\Laypro\D3Keperawatan\Rawat7;
+use App\Charts\Laypro\D3Keperawatan\Rawat8;
+use App\Charts\Laypro\D3Keperawatan\Rawat9;
+use App\Charts\Laypro\D3Keperawatan\Rawat10;
+use App\Charts\Laypro\D3Keperawatan\Rawat11;
+use App\Charts\Laypro\D3Keperawatan\Rawat12;
+use App\Charts\Laypro\D3Keperawatan\Rawat13;
+use App\Charts\Laypro\D3Keperawatan\Rawat14;
+use App\Charts\Laypro\D3Keperawatan\Rawat15;
+use App\Charts\Laypro\D3Keperawatan\Rawat16;
 
-// // Class Lab Sains
-// use App\Charts\Laypro\D3LabSains\LabSains1;
-// use App\Charts\Laypro\D3LabSains\LabSains2;
-// use App\Charts\Laypro\D3LabSains\LabSains3;
-// use App\Charts\Laypro\D3LabSains\LabSains4;
-// use App\Charts\Laypro\D3LabSains\LabSains5;
-// use App\Charts\Laypro\D3LabSains\LabSains6;
-// use App\Charts\Laypro\D3LabSains\LabSains7;
-// use App\Charts\Laypro\D3LabSains\LabSains8;
-// use App\Charts\Laypro\D3LabSains\LabSains9;
-// use App\Charts\Laypro\D3LabSains\LabSains10;
-// use App\Charts\Laypro\D3LabSains\LabSains11;
-// use App\Charts\Laypro\D3LabSains\LabSains12;
+
+// Class Lab Sains
+use App\Charts\Laypro\D3LabSains\LabSains1;
+use App\Charts\Laypro\D3LabSains\LabSains2;
+use App\Charts\Laypro\D3LabSains\LabSains3;
+use App\Charts\Laypro\D3LabSains\LabSains4;
+use App\Charts\Laypro\D3LabSains\LabSains5;
+use App\Charts\Laypro\D3LabSains\LabSains6;
+use App\Charts\Laypro\D3LabSains\LabSains7;
+use App\Charts\Laypro\D3LabSains\LabSains8;
+use App\Charts\Laypro\D3LabSains\LabSains9;
+use App\Charts\Laypro\D3LabSains\LabSains10;
+use App\Charts\Laypro\D3LabSains\LabSains11;
+use App\Charts\Laypro\D3LabSains\LabSains12;
+use App\Charts\Laypro\D3LabSains\LabSains13;
+use App\Charts\Laypro\D3LabSains\LabSains14;
+use App\Charts\Laypro\D3LabSains\LabSains15;
+use App\Charts\Laypro\D3LabSains\LabSains16;
+
+
 
 // //Class Statistika
 use App\Charts\Laypro\S1Statistika\Statis1;
@@ -186,46 +210,58 @@ use App\Charts\Laypro\S2Statistika\S2Statis15;
 use App\Charts\Laypro\S2Statistika\S2Statis16;
 
 
-// // // //Class S1 Kimia
-// use App\Charts\Laypro\S1Kimia\S1Kim1;
-// use App\Charts\Laypro\S1Kimia\S1Kim2;
-// use App\Charts\Laypro\S1Kimia\S1Kim3;
-// use App\Charts\Laypro\S1Kimia\S1Kim4;
-// use App\Charts\Laypro\S1Kimia\S1Kim5;
-// use App\Charts\Laypro\S1Kimia\S1Kim6;
-// use App\Charts\Laypro\S1Kimia\S1Kim7;
-// use App\Charts\Laypro\S1Kimia\S1Kim8;
-// use App\Charts\Laypro\S1Kimia\S1Kim9;
-// use App\Charts\Laypro\S1Kimia\S1Kim10;
-// use App\Charts\Laypro\S1Kimia\S1Kim11;
-// use App\Charts\Laypro\S1Kimia\S1Kim12;
+// //Class S1 Kimia
+use App\Charts\Laypro\S1Kimia\S1Kim1;
+use App\Charts\Laypro\S1Kimia\S1Kim2;
+use App\Charts\Laypro\S1Kimia\S1Kim3;
+use App\Charts\Laypro\S1Kimia\S1Kim4;
+use App\Charts\Laypro\S1Kimia\S1Kim5;
+use App\Charts\Laypro\S1Kimia\S1Kim6;
+use App\Charts\Laypro\S1Kimia\S1Kim7;
+use App\Charts\Laypro\S1Kimia\S1Kim8;
+use App\Charts\Laypro\S1Kimia\S1Kim9;
+use App\Charts\Laypro\S1Kimia\S1Kim10;
+use App\Charts\Laypro\S1Kimia\S1Kim11;
+use App\Charts\Laypro\S1Kimia\S1Kim12;
+use App\Charts\Laypro\S1Kimia\S1Kim13;
+use App\Charts\Laypro\S1Kimia\S1Kim14;
+use App\Charts\Laypro\S1Kimia\S1Kim15;
+use App\Charts\Laypro\S1Kimia\S1Kim16;
 
-// // // //Class S2 Kimia
-// use App\Charts\Laypro\S2Kimia\S2Kim1;
-// use App\Charts\Laypro\S2Kimia\S2Kim2;
-// use App\Charts\Laypro\S2Kimia\S2Kim3;
-// use App\Charts\Laypro\S2Kimia\S2Kim4;
-// use App\Charts\Laypro\S2Kimia\S2Kim5;
-// use App\Charts\Laypro\S2Kimia\S2Kim6;
-// use App\Charts\Laypro\S2Kimia\S2Kim7;
-// use App\Charts\Laypro\S2Kimia\S2Kim8;
-// use App\Charts\Laypro\S2Kimia\S2Kim9;
-// use App\Charts\Laypro\S2Kimia\S2Kim10;
-// use App\Charts\Laypro\S2Kimia\S2Kim11;
-// use App\Charts\Laypro\S2Kimia\S2Kim12;
+//Class S2 Kimia
+use App\Charts\Laypro\S2Kimia\S2Kim1;
+use App\Charts\Laypro\S2Kimia\S2Kim2;
+use App\Charts\Laypro\S2Kimia\S2Kim3;
+use App\Charts\Laypro\S2Kimia\S2Kim4;
+use App\Charts\Laypro\S2Kimia\S2Kim5;
+use App\Charts\Laypro\S2Kimia\S2Kim6;
+use App\Charts\Laypro\S2Kimia\S2Kim7;
+use App\Charts\Laypro\S2Kimia\S2Kim8;
+use App\Charts\Laypro\S2Kimia\S2Kim9;
+use App\Charts\Laypro\S2Kimia\S2Kim10;
+use App\Charts\Laypro\S2Kimia\S2Kim11;
+use App\Charts\Laypro\S2Kimia\S2Kim12;
+use App\Charts\Laypro\S2Kimia\S2Kim13;
+use App\Charts\Laypro\S2Kimia\S2Kim14;
+use App\Charts\Laypro\S2Kimia\S2Kim15;
+use App\Charts\Laypro\S2Kimia\S2Kim16;
 
-// use App\Charts\Laypro\S1Fisika\Fisika1;
-// use App\Charts\Laypro\S1Fisika\Fisika2;
-// use App\Charts\Laypro\S1Fisika\Fisika3;
-// use App\Charts\Laypro\S1Fisika\Fisika4;
-// use App\Charts\Laypro\S1Fisika\Fisika5;
-// use App\Charts\Laypro\S1Fisika\Fisika6;
-// use App\Charts\Laypro\S1Fisika\Fisika7;
-// use App\Charts\Laypro\S1Fisika\Fisika8;
-// use App\Charts\Laypro\S1Fisika\Fisika9;
-// use App\Charts\Laypro\S1Fisika\Fisika10;
-// use App\Charts\Laypro\S1Fisika\Fisika11;
-// use App\Charts\Laypro\S1Fisika\Fisika12;
+use App\Charts\Laypro\S1Fisika\Fisika1;
+use App\Charts\Laypro\S1Fisika\Fisika2;
+use App\Charts\Laypro\S1Fisika\Fisika3;
+use App\Charts\Laypro\S1Fisika\Fisika4;
+use App\Charts\Laypro\S1Fisika\Fisika5;
+use App\Charts\Laypro\S1Fisika\Fisika6;
+use App\Charts\Laypro\S1Fisika\Fisika7;
+use App\Charts\Laypro\S1Fisika\Fisika8;
+use App\Charts\Laypro\S1Fisika\Fisika9;
+use App\Charts\Laypro\S1Fisika\Fisika10;
+use App\Charts\Laypro\S1Fisika\Fisika11;
+use App\Charts\Laypro\S1Fisika\Fisika12;
+use App\Charts\Laypro\S1Fisika\Fisika13;
+use App\Charts\Laypro\S1Fisika\Fisika14;
+use App\Charts\Laypro\S1Fisika\Fisika15;
+use App\Charts\Laypro\S1Fisika\Fisika16;
 
 
 
@@ -308,61 +344,77 @@ class EvalLayproController extends Controller
         Math16 $math16,
 
 
-        // // S1 Biologi
-        // Bio1 $bio1,
-        // Bio2 $bio2,
-        // Bio3 $bio3,
-        // Bio4 $bio4,
-        // Bio5 $bio5,
-        // Bio6 $bio6,
-        // Bio7 $bio7,
-        // Bio8 $bio8,
-        // Bio9 $bio9,
-        // Bio10 $bio10,
-        // Bio11 $bio11,
-        // Bio12 $bio12,
+        // S1 Biologi
+        Bio1 $bio1,
+        Bio2 $bio2,
+        Bio3 $bio3,
+        Bio4 $bio4,
+        Bio5 $bio5,
+        Bio6 $bio6,
+        Bio7 $bio7,
+        Bio8 $bio8,
+        Bio9 $bio9,
+        Bio10 $bio10,
+        Bio11 $bio11,
+        Bio12 $bio12,
+        Bio13 $bio13,
+        Bio14 $bio14,
+        Bio15 $bio15,
+        Bio16 $bio16,  
 
-        // // D3 Kebidanan
-        // Bidan1 $bidan1,
-        // Bidan2 $bidan2,
-        // Bidan3 $bidan3,
-        // Bidan4 $bidan4,
-        // Bidan5 $bidan5,
-        // Bidan6 $bidan6,
-        // Bidan7 $bidan7,
-        // Bidan8 $bidan8,
-        // Bidan9 $bidan9,
-        // Bidan10 $bidan10,
-        // Bidan11 $bidan11,
-        // Bidan12 $bidan12,
+        // D3 Kebidanan
+        Bidan1 $bidan1,
+        Bidan2 $bidan2,
+        Bidan3 $bidan3,
+        Bidan4 $bidan4,
+        Bidan5 $bidan5,
+        Bidan6 $bidan6,
+        Bidan7 $bidan7,
+        Bidan8 $bidan8,
+        Bidan9 $bidan9,
+        Bidan10 $bidan10,
+        Bidan11 $bidan11,
+        Bidan12 $bidan12,
+        Bidan13 $bidan13,
+        Bidan14 $bidan14,
+        Bidan15 $bidan15,
+        Bidan16 $bidan16,
 
-        // // //D3 Keperawatan
-        // Rawat1 $rawat1,
-        // Rawat2 $rawat2,
-        // Rawat3 $rawat3,
-        // Rawat4 $rawat4,
-        // Rawat5 $rawat5,
-        // Rawat6 $rawat6,
-        // Rawat7 $rawat7,
-        // Rawat8 $rawat8,
-        // Rawat9 $rawat9,
-        // Rawat10 $rawat10,
-        // Rawat11 $rawat11,
-        // Rawat12 $rawat12,
+        //D3 Keperawatan
+        Rawat1 $rawat1,
+        Rawat2 $rawat2,
+        Rawat3 $rawat3,
+        Rawat4 $rawat4,
+        Rawat5 $rawat5,
+        Rawat6 $rawat6,
+        Rawat7 $rawat7,
+        Rawat8 $rawat8,
+        Rawat9 $rawat9,
+        Rawat10 $rawat10,
+        Rawat11 $rawat11,
+        Rawat12 $rawat12,
+        Rawat13 $rawat13,
+        Rawat14 $rawat14,
+        Rawat15 $rawat15,
+        Rawat16 $rawat16,
 
         // //D3 Lab Sains
-        // LabSains1 $labsains1,
-        // LabSains2 $labsains2,
-        // LabSains3 $labsains3,
-        // LabSains4 $labsains4,
-        // LabSains5 $labsains5,
-        // LabSains6 $labsains6,
-        // LabSains7 $labsains7,
-        // LabSains8 $labsains8,
-        // LabSains9 $labsains9,
-        // LabSains10 $labsains10,
-        // LabSains11 $labsains11,
-        // LabSains12 $labsains12,
+        LabSains1 $labsains1,
+        LabSains2 $labsains2,
+        LabSains3 $labsains3,
+        LabSains4 $labsains4,
+        LabSains5 $labsains5,
+        LabSains6 $labsains6,
+        LabSains7 $labsains7,
+        LabSains8 $labsains8,
+        LabSains9 $labsains9,
+        LabSains10 $labsains10,
+        LabSains11 $labsains11,
+        LabSains12 $labsains12,
+        LabSains13 $labsains13,
+        LabSains14 $labsains14,
+        LabSains15 $labsains15,
+        LabSains16 $labsains16,
 
         // // S1 Statistika
         Statis1 $statis1,
@@ -401,60 +453,76 @@ class EvalLayproController extends Controller
 
 
         // // S1 Kimia
-        // S1kim1 $s1kim1,
-        // S1kim2 $s1kim2,
-        // S1kim3 $s1kim3,
-        // S1kim4 $s1kim4,
-        // S1kim5 $s1kim5,
-        // S1kim6 $s1kim6,
-        // S1kim7 $s1kim7,
-        // S1kim8 $s1kim8,
-        // S1kim9 $s1kim9,
-        // S1kim10 $s1kim10,
-        // S1kim11 $s1kim11,
-        // S1kim12 $s1kim12,
+        S1kim1 $s1kim1,
+        S1kim2 $s1kim2,
+        S1kim3 $s1kim3,
+        S1kim4 $s1kim4,
+        S1kim5 $s1kim5,
+        S1kim6 $s1kim6,
+        S1kim7 $s1kim7,
+        S1kim8 $s1kim8,
+        S1kim9 $s1kim9,
+        S1kim10 $s1kim10,
+        S1kim11 $s1kim11,
+        S1kim12 $s1kim12,
+        S1kim13 $s1kim13,
+        S1kim14 $s1kim14,
+        S1kim15 $s1kim15,
+        S1kim16 $s1kim16,
 
         // // S2 Kimia
-        // S2Kim1 $s2kim1,
-        // S2Kim2 $s2kim2,
-        // S2Kim3 $s2kim3,
-        // S2Kim4 $s2kim4,
-        // S2Kim5 $s2kim5,
-        // S2Kim6 $s2kim6,
-        // S2Kim7 $s2kim7,
-        // S2Kim8 $s2kim8,
-        // S2Kim9 $s2kim9,
-        // S2Kim10 $s2kim10,
-        // S2Kim11 $s2kim11,
-        // S2Kim12 $s2kim12,
+        S2Kim1 $s2kim1,
+        S2Kim2 $s2kim2,
+        S2Kim3 $s2kim3,
+        S2Kim4 $s2kim4,
+        S2Kim5 $s2kim5,
+        S2Kim6 $s2kim6,
+        S2Kim7 $s2kim7,
+        S2Kim8 $s2kim8,
+        S2Kim9 $s2kim9,
+        S2Kim10 $s2kim10,
+        S2Kim11 $s2kim11,
+        S2Kim12 $s2kim12,
+        S2Kim13 $s2kim13,
+        S2Kim14 $s2kim14,
+        S2Kim15 $s2kim15,
+        S2Kim16 $s2kim16,
 
-        // // Fisika
-        // Fisika1 $fisika1,
-        // Fisika2 $fisika2,
-        // Fisika3 $fisika3,
-        // Fisika4 $fisika4,
-        // Fisika5 $fisika5,
-        // Fisika6 $fisika6,
-        // Fisika7 $fisika7,
-        // Fisika8 $fisika8,
-        // Fisika9 $fisika9,
-        // Fisika10 $fisika10,
-        // Fisika11 $fisika11,
-        // Fisika12 $fisika12,
+        // Fisika
+        Fisika1 $fisika1,
+        Fisika2 $fisika2,
+        Fisika3 $fisika3,
+        Fisika4 $fisika4,
+        Fisika5 $fisika5,
+        Fisika6 $fisika6,
+        Fisika7 $fisika7,
+        Fisika8 $fisika8,
+        Fisika9 $fisika9,
+        Fisika10 $fisika10,
+        Fisika11 $fisika11,
+        Fisika12 $fisika12,
+        Fisika13 $fisika13,
+        Fisika14 $fisika14,
+        Fisika15 $fisika15,
+        Fisika16 $fisika16,
 
-        // // Geofisika
-        // Geo1 $geo1,
-        // Geo2 $geo2,
-        // Geo3 $geo3,
-        // Geo4 $geo4,
-        // Geo5 $geo5,
-        // Geo6 $geo6,
-        // Geo7 $geo7,
-        // Geo8 $geo8,
-        // Geo9 $geo9,
-        // Geo10 $geo10,
-        // Geo11 $geo11,
-        // Geo12 $geo12,
+        // Geofisika
+        Geo1 $geo1,
+        Geo2 $geo2,
+        Geo3 $geo3,
+        Geo4 $geo4,
+        Geo5 $geo5,
+        Geo6 $geo6,
+        Geo7 $geo7,
+        Geo8 $geo8,
+        Geo9 $geo9,
+        Geo10 $geo10,
+        Geo11 $geo11,
+        Geo12 $geo12,
+        Geo13 $geo13,
+        Geo14 $geo14,
+        Geo15 $geo15,
+        Geo16 $geo16,
 
     )
     {
@@ -514,57 +582,73 @@ class EvalLayproController extends Controller
             'math15' => $math15->build(),
             'math16' => $math16->build(),
 
-            // 'bio1' => $bio1->build(),
-            // 'bio2' => $bio2->build(),
-            // 'bio3' => $bio3->build(),
-            // 'bio4' => $bio4->build(),
-            // 'bio5' => $bio5->build(),
-            // 'bio6' => $bio6->build(),
-            // 'bio7' => $bio7->build(),
-            // 'bio8' => $bio8->build(),
-            // 'bio9' => $bio9->build(),
-            // 'bio10' => $bio10->build(),
-            // 'bio11' => $bio11->build(),
-            // 'bio12' => $bio12->build(),
+            'bio1' => $bio1->build(),
+            'bio2' => $bio2->build(),
+            'bio3' => $bio3->build(),
+            'bio4' => $bio4->build(),
+            'bio5' => $bio5->build(),
+            'bio6' => $bio6->build(),
+            'bio7' => $bio7->build(),
+            'bio8' => $bio8->build(),
+            'bio9' => $bio9->build(),
+            'bio10' => $bio10->build(),
+            'bio11' => $bio11->build(),
+            'bio12' => $bio12->build(),
+            'bio13' => $bio13->build(),
+            'bio14' => $bio14->build(),
+            'bio15' => $bio15->build(),
+            'bio16' => $bio16->build(),
 
-            // 'bidan1' => $bidan1->build(),
-            // 'bidan2' => $bidan2->build(),
-            // 'bidan3' => $bidan3->build(),
-            // 'bidan4' => $bidan4->build(),
-            // 'bidan5' => $bidan5->build(),
-            // 'bidan6' => $bidan6->build(),
-            // 'bidan7' => $bidan7->build(),
-            // 'bidan8' => $bidan8->build(),
-            // 'bidan9' => $bidan9->build(),
-            // 'bidan10' => $bidan10->build(),
-            // 'bidan11' => $bidan11->build(),
-            // 'bidan12' => $bidan12->build(),
+            'bidan1' => $bidan1->build(),
+            'bidan2' => $bidan2->build(),
+            'bidan3' => $bidan3->build(),
+            'bidan4' => $bidan4->build(),
+            'bidan5' => $bidan5->build(),
+            'bidan6' => $bidan6->build(),
+            'bidan7' => $bidan7->build(),
+            'bidan8' => $bidan8->build(),
+            'bidan9' => $bidan9->build(),
+            'bidan10' => $bidan10->build(),
+            'bidan11' => $bidan11->build(),
+            'bidan12' => $bidan12->build(),
+            'bidan13' => $bidan13->build(),
+            'bidan14' => $bidan14->build(),
+            'bidan15' => $bidan15->build(),
+            'bidan16' => $bidan16->build(),
 
-            // 'rawat1' => $rawat1->build(),
-            // 'rawat2' => $rawat2->build(),
-            // 'rawat3' => $rawat3->build(),
-            // 'rawat4' => $rawat4->build(),
-            // 'rawat5' => $rawat5->build(),
-            // 'rawat6' => $rawat6->build(),
-            // 'rawat7' => $rawat7->build(),
-            // 'rawat8' => $rawat8->build(),
-            // 'rawat9' => $rawat9->build(),
-            // 'rawat10' => $rawat10->build(),
-            // 'rawat11' => $rawat11->build(),
-            // 'rawat12' => $rawat12->build(),
+            'rawat1' => $rawat1->build(),
+            'rawat2' => $rawat2->build(),
+            'rawat3' => $rawat3->build(),
+            'rawat4' => $rawat4->build(),
+            'rawat5' => $rawat5->build(),
+            'rawat6' => $rawat6->build(),
+            'rawat7' => $rawat7->build(),
+            'rawat8' => $rawat8->build(),
+            'rawat9' => $rawat9->build(),
+            'rawat10' => $rawat10->build(),
+            'rawat11' => $rawat11->build(),
+            'rawat12' => $rawat12->build(),
+            'rawat13' => $rawat13->build(),
+            'rawat14' => $rawat14->build(),
+            'rawat15' => $rawat15->build(),
+            'rawat16' => $rawat16->build(),
 
-            // 'labsains1' => $labsains1->build(),
-            // 'labsains2' => $labsains2->build(),
-            // 'labsains3' => $labsains3->build(),
-            // 'labsains4' => $labsains4->build(),
-            // 'labsains5' => $labsains5->build(),
-            // 'labsains6' => $labsains6->build(),
-            // 'labsains7' => $labsains7->build(),
-            // 'labsains8' => $labsains8->build(),
-            // 'labsains9' => $labsains9->build(),
-            // 'labsains10' => $labsains10->build(),
-            // 'labsains11' => $labsains11->build(),
-            // 'labsains12' => $labsains12->build(),
+            'labsains1' => $labsains1->build(),
+            'labsains2' => $labsains2->build(),
+            'labsains3' => $labsains3->build(),
+            'labsains4' => $labsains4->build(),
+            'labsains5' => $labsains5->build(),
+            'labsains6' => $labsains6->build(),
+            'labsains7' => $labsains7->build(),
+            'labsains8' => $labsains8->build(),
+            'labsains9' => $labsains9->build(),
+            'labsains10' => $labsains10->build(),
+            'labsains11' => $labsains11->build(),
+            'labsains12' => $labsains12->build(),
+            'labsains13' => $labsains13->build(),
+            'labsains14' => $labsains14->build(),
+            'labsains15' => $labsains15->build(),
+            'labsains16' => $labsains16->build(),
             
             'statis1' => $statis1->build(),
             'statis2' => $statis2->build(),
@@ -601,58 +685,74 @@ class EvalLayproController extends Controller
             's2statis16' => $s2statis16->build(),
 
 
-            // 's1kim1' => $s1kim1->build(),
-            // 's1kim2' => $s1kim2->build(),
-            // 's1kim3' => $s1kim3->build(),
-            // 's1kim4' => $s1kim4->build(),
-            // 's1kim5' => $s1kim5->build(),
-            // 's1kim6' => $s1kim6->build(),
-            // 's1kim7' => $s1kim7->build(),
-            // 's1kim8' => $s1kim8->build(),
-            // 's1kim9' => $s1kim9->build(),
-            // 's1kim10' => $s1kim10->build(),
-            // 's1kim11' => $s1kim11->build(),
-            // 's1kim12' => $s1kim12->build(),
+            's1kim1' => $s1kim1->build(),
+            's1kim2' => $s1kim2->build(),
+            's1kim3' => $s1kim3->build(),
+            's1kim4' => $s1kim4->build(),
+            's1kim5' => $s1kim5->build(),
+            's1kim6' => $s1kim6->build(),
+            's1kim7' => $s1kim7->build(),
+            's1kim8' => $s1kim8->build(),
+            's1kim9' => $s1kim9->build(),
+            's1kim10' => $s1kim10->build(),
+            's1kim11' => $s1kim11->build(),
+            's1kim12' => $s1kim12->build(),
+            's1kim13' => $s1kim13->build(),
+            's1kim14' => $s1kim14->build(),
+            's1kim15' => $s1kim15->build(),
+            's1kim16' => $s1kim16->build(),
 
-            // 's2kim1' => $s2kim1->build(),
-            // 's2kim2' => $s2kim2->build(),
-            // 's2kim3' => $s2kim3->build(),
-            // 's2kim4' => $s2kim4->build(),
-            // 's2kim5' => $s2kim5->build(),
-            // 's2kim6' => $s2kim6->build(),
-            // 's2kim7' => $s2kim7->build(),
-            // 's2kim8' => $s2kim8->build(),
-            // 's2kim9' => $s2kim9->build(),
-            // 's2kim10' => $s2kim10->build(),
-            // 's2kim11' => $s2kim11->build(),
-            // 's2kim12' => $s2kim12->build(),
+            's2kim1' => $s2kim1->build(),
+            's2kim2' => $s2kim2->build(),
+            's2kim3' => $s2kim3->build(),
+            's2kim4' => $s2kim4->build(),
+            's2kim5' => $s2kim5->build(),
+            's2kim6' => $s2kim6->build(),
+            's2kim7' => $s2kim7->build(),
+            's2kim8' => $s2kim8->build(),
+            's2kim9' => $s2kim9->build(),
+            's2kim10' => $s2kim10->build(),
+            's2kim11' => $s2kim11->build(),
+            's2kim12' => $s2kim12->build(),
+            's2kim13' => $s2kim13->build(),
+            's2kim14' => $s2kim14->build(),
+            's2kim15' => $s2kim15->build(),
+            's2kim16' => $s2kim16->build(),
 
             
-            // 'fisika1' => $fisika1->build(),
-            // 'fisika2' => $fisika2->build(),
-            // 'fisika3' => $fisika3->build(),
-            // 'fisika4' => $fisika4->build(),
-            // 'fisika5' => $fisika5->build(),
-            // 'fisika6' => $fisika6->build(),
-            // 'fisika7' => $fisika7->build(),
-            // 'fisika8' => $fisika8->build(),
-            // 'fisika9' => $fisika9->build(),
-            // 'fisika10' => $fisika10->build(),
-            // 'fisika11' => $fisika11->build(),
-            // 'fisika12' => $fisika12->build(),
+            'fisika1' => $fisika1->build(),
+            'fisika2' => $fisika2->build(),
+            'fisika3' => $fisika3->build(),
+            'fisika4' => $fisika4->build(),
+            'fisika5' => $fisika5->build(),
+            'fisika6' => $fisika6->build(),
+            'fisika7' => $fisika7->build(),
+            'fisika8' => $fisika8->build(),
+            'fisika9' => $fisika9->build(),
+            'fisika10' => $fisika10->build(),
+            'fisika11' => $fisika11->build(),
+            'fisika12' => $fisika12->build(),
+            'fisika13' => $fisika13->build(),
+            'fisika14' => $fisika14->build(),
+            'fisika15' => $fisika15->build(),
+            'fisika16' => $fisika16->build(),
 
-            // 'geo1' => $geo1->build(),
-            // 'geo2' => $geo2->build(),
-            // 'geo3' => $geo3->build(),
-            // 'geo4' => $geo4->build(),
-            // 'geo5' => $geo5->build(),
-            // 'geo6' => $geo6->build(),
-            // 'geo7' => $geo7->build(),
-            // 'geo8' => $geo8->build(),
-            // 'geo9' => $geo9->build(),
-            // 'geo10' => $geo10->build(),
-            // 'geo11' => $geo11->build(),
-            // 'geo12' => $geo12->build(),
+            'geo1' => $geo1->build(),
+            'geo2' => $geo2->build(),
+            'geo3' => $geo3->build(),
+            'geo4' => $geo4->build(),
+            'geo5' => $geo5->build(),
+            'geo6' => $geo6->build(),
+            'geo7' => $geo7->build(),
+            'geo8' => $geo8->build(),
+            'geo9' => $geo9->build(),
+            'geo10' => $geo10->build(),
+            'geo11' => $geo11->build(),
+            'geo12' => $geo12->build(),
+            'geo13' => $geo13->build(),
+            'geo14' => $geo14->build(),
+            'geo15' => $geo15->build(),
+            'geo16' => $geo16->build(),
 
             'pl1' => $pl1->build(),
             'pl2' => $pl2->build(),

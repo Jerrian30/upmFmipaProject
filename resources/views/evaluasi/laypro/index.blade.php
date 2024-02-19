@@ -9,16 +9,14 @@
 @include('grafik.laypro.s1matematika.js')
 @include('grafik.laypro.s1statistika.js') 
 @include('grafik.laypro.s2statistika.js')
-{{-- @include('grafik.laypro.s1geofisika.js')
 @include('grafik.laypro.d3kebidanan.js')
 @include('grafik.laypro.d3keperawatan.js')
-
-
-@include('grafik.laypro.s1biologi.js')
 @include('grafik.laypro.d3labsains.js')
 @include('grafik.laypro.s1kimia.js')
 @include('grafik.laypro.s2kimia.js') 
-@include('grafik.laypro.s1fisika.js') --}}
+@include('grafik.laypro.s1geofisika.js')
+@include('grafik.laypro.s1biologi.js')
+@include('grafik.laypro.s1fisika.js')
 @include('grafik.laypro.all.js')
 
     <script>
@@ -136,17 +134,15 @@
         @include('grafik.laypro.s2statistika.view')
         @include('grafik.laypro.d3farmasi.view')
         @include('grafik.laypro.s1farmasi.view')
-        {{-- @include('grafik.laypro.d3keperawatan.view')
-
-        @include('grafik.laypro.s1fisika.view') 
-        @include('grafik.laypro.s1geofisika.view')
         @include('grafik.laypro.s1kimia.view')
         @include('grafik.laypro.s2kimia.view') 
         @include('grafik.laypro.d3kebidanan.view')
-
-
+        @include('grafik.laypro.d3keperawatan.view')
+        @include('grafik.laypro.d3labsains.view')  
+        @include('grafik.laypro.s1fisika.view') 
+        @include('grafik.laypro.s1geofisika.view')
         @include('grafik.laypro.s1biologi.view')
-        @include('grafik.laypro.d3labsains.view') --}}
+       
     </div>
 </div>
 @endsection
