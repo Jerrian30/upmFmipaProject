@@ -20,6 +20,9 @@ use App\Http\Controllers\EvalLayproController;
 use App\Http\Controllers\LaporanKeuanganController;
 use App\Http\Controllers\EvalKeuanganController;
 
+use App\Http\Controllers\LaporanTurtpController;
+use App\Http\Controllers\EvalTurtpController;
+
 use App\Http\Controllers\FormulirController;
 
 /*
@@ -67,5 +70,10 @@ Route::get('keuangan', [LaporanKeuanganController::class, 'index'])->name('keuan
 Route::post('/keuangan/import', [LaporanKeuanganController::class, 'import'])->name('keuangan.import');
 Route::get('/keuangan/eval', [EvalKeuanganController::class, 'index'])->name('keuangan.eval');
 Route::get('/keuangan/table', [EvalKeuanganController::class, 'table'])->name('keuangan.table');
+
+Route::get('turtp', [LaporanTurtpController::class, 'index'])->name('turtp.index');
+Route::post('/turtp/import', [LaporanTurtpController::class, 'import'])->name('turtp.import');
+Route::get('/turtp/eval', [EvalTurtpController::class, 'index'])->name('turtp.eval');
+Route::get('/turtp/table', [EvalTurtpController::class, 'table'])->name('turtp.table');
 
 Route::get('formullir', [FormulirController::class, 'index'])->name('formullir.index');

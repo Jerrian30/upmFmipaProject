@@ -44,55 +44,60 @@
                 <tr>
                     <th>#</th>
                     <th>Timestamp</th>
-                    <th>Status</th>
-                    <th>Info Layanan</th>
+                    <th>Status Responden</th>
+                    <th>Ketersediaan Informasi</th>
                     <th>Suasana Ruangan</th>
                     <th>Penampilan Staff</th>
                     <th>Pengetahuan Staff</th>
                     <th>Pelayanan SOP</th>
-                    <th>Sikap Staff</th>
-                    <th>Akses Staff</th>
-                    <th>Terbuka Kritik</th>
+                    <th>Responsivitas Staff</th>
+                    <th>Kemudahan Menghubungi Staff</th>
+                    <th>Keterbukaan Terhadap Kritik/Saran</th>
                     <th>Saran/Kritik</th>
                     <th>Jenis Kelamin</th>
-                    <th>Program Studi</th>
+                    <th>Program Studi/Unit Kerja/Lainnya</th>
                 </tr>
+                
             </thead>
             <tfoot class="text-center">
                 <tr>
-                    <th>#</th>
-                    <th>Timestamp</th>
-                    <th>Status</th>
-                    <th>Info Layanan</th>
-                    <th>Suasana Ruangan</th>
-                    <th>Penampilan Staff</th>
-                    <th>Pengetahuan Staff</th>
-                    <th>Pelayanan SOP</th>
-                    <th>Sikap Staff</th>
-                    <th>Akses Staff</th>
-                    <th>Terbuka Kritik</th>
-                    <th>Saran/Kritik</th>
-                    <th>Jenis Kelamin</th>
-                    <th>Program Studi</th>
+                    <tr>
+                        <th>#</th>
+                        <th>Timestamp</th>
+                        <th>Status Responden</th>
+                        <th>Ketersediaan Informasi</th>
+                        <th>Suasana Ruangan</th>
+                        <th>Penampilan Staff</th>
+                        <th>Pengetahuan Staff</th>
+                        <th>Pelayanan SOP</th>
+                        <th>Responsivitas Staff</th>
+                        <th>Kemudahan Menghubungi Staff</th>
+                        <th>Keterbukaan Terhadap Kritik/Saran</th>
+                        <th>Saran/Kritik</th>
+                        <th>Jenis Kelamin</th>
+                        <th>Program Studi/Unit Kerja/Lainnya</th>
+                    </tr>
+                    
+
                 </tr>
             </tfoot>
             <tbody>
                 @foreach($keuangans as $keuangan)
-                    <tr>
-                        <td>{{ $loop->iteration }}</td>
-                        <td>{{ $keuangan->timestamp }}</td>
-                        <td>{{ $keuangan->status }}</td>
-                        <td>{{ $keuangan->info_layanan }}</td>
-                        <td>{{ $keuangan->suasana_ruangan }}</td>
-                        <td>{{ $keuangan->penampilan_staff }}</td>
-                        <td>{{ $keuangan->pengetahuan_staff }}</td>
-                        <td>{{ $keuangan->pelayanan_sop }}</td>
-                        <td>{{ $keuangan->sikap_staff }}</td>
-                        <td>{{ $keuangan->akses_staff }}</td>
-                        <td>{{ $keuangan->terbuka_kritik }}</td>
-                        <td>{{ $keuangan->saran_kritik }}</td>
-                        <td>{{ $keuangan->jenis_kelamin }}</td>
-                        <td>{{ $keuangan->program_studi }}</td>
+                <tr>
+                    <td>{{ $loop->iteration }}</td>
+                    <td>{{ $keuangan->timestamp }}</td>
+                    <td>{{ $keuangan->status }}</td>
+                    <td>{{ $keuangan->info_layanan }}</td>
+                    <td>{{ $keuangan->suasana_ruangan }}</td>
+                    <td>{{ $keuangan->staff_penampilan }}</td>
+                    <td>{{ $keuangan->staff_pengetahuan }}</td>
+                    <td>{{ $keuangan->staff_sop }}</td>
+                    <td>{{ $keuangan->staff_responsive }}</td>
+                    <td>{{ $keuangan->staff_dapat_dihubungi }}</td>
+                    <td>{{ $keuangan->staff_terbuka_kritik }}</td>
+                    <td>{{ $keuangan->saran_kritik }}</td>
+                    <td>{{ $keuangan->jenis_kelamin }}</td>
+                    <td>{{ $keuangan->program_studi}}</td>
                     </tr>
                 @endforeach
             </tbody>

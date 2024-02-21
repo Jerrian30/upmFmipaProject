@@ -7,161 +7,161 @@ use Illuminate\Http\Request;
 use App\Models\Keuangan;
 
 
-// use App\Charts\Keuangan\All\PL1;
-// use App\Charts\Keuangan\All\PL2;
-// use App\Charts\Keuangan\All\PL3;
-// use App\Charts\Keuangan\All\PL4;
-// use App\Charts\Keuangan\All\PL5;
-// use App\Charts\Keuangan\All\PL6;
-// use App\Charts\Keuangan\All\PL7;
-// use App\Charts\Keuangan\All\PL8;
+use App\Charts\Keuangan\All\PL1;
+use App\Charts\Keuangan\All\PL2;
+use App\Charts\Keuangan\All\PL3;
+use App\Charts\Keuangan\All\PL4;
+use App\Charts\Keuangan\All\PL5;
+use App\Charts\Keuangan\All\PL6;
+use App\Charts\Keuangan\All\PL7;
+use App\Charts\Keuangan\All\PL8;
 
 
 
-// // // Class Geofisika
-// use App\Charts\Keuangan\S1Geofisika\Geo1;
-// use App\Charts\Keuangan\S1Geofisika\Geo2;
-// use App\Charts\Keuangan\S1Geofisika\Geo3;
-// use App\Charts\Keuangan\S1Geofisika\Geo4;
-// use App\Charts\Keuangan\S1Geofisika\Geo5;
-// use App\Charts\Keuangan\S1Geofisika\Geo6;
-// use App\Charts\Keuangan\S1Geofisika\Geo7;
-// use App\Charts\Keuangan\S1Geofisika\Geo8;
+// // Class Geofisika
+use App\Charts\Keuangan\S1Geofisika\Geo1;
+use App\Charts\Keuangan\S1Geofisika\Geo2;
+use App\Charts\Keuangan\S1Geofisika\Geo3;
+use App\Charts\Keuangan\S1Geofisika\Geo4;
+use App\Charts\Keuangan\S1Geofisika\Geo5;
+use App\Charts\Keuangan\S1Geofisika\Geo6;
+use App\Charts\Keuangan\S1Geofisika\Geo7;
+use App\Charts\Keuangan\S1Geofisika\Geo8;
 
 
-// // // // Class D3Farmasi
-// use App\Charts\Keuangan\D3Farmasi\Farm1;
-// use App\Charts\Keuangan\D3Farmasi\Farm2;
-// use App\Charts\Keuangan\D3Farmasi\Farm3;
-// use App\Charts\Keuangan\D3Farmasi\Farm4;
-// use App\Charts\Keuangan\D3Farmasi\Farm5;
-// use App\Charts\Keuangan\D3Farmasi\Farm6;
-// use App\Charts\Keuangan\D3Farmasi\Farm7;
-// use App\Charts\Keuangan\D3Farmasi\Farm8;
+// // // Class D3Farmasi
+use App\Charts\Keuangan\D3Farmasi\Farm1;
+use App\Charts\Keuangan\D3Farmasi\Farm2;
+use App\Charts\Keuangan\D3Farmasi\Farm3;
+use App\Charts\Keuangan\D3Farmasi\Farm4;
+use App\Charts\Keuangan\D3Farmasi\Farm5;
+use App\Charts\Keuangan\D3Farmasi\Farm6;
+use App\Charts\Keuangan\D3Farmasi\Farm7;
+use App\Charts\Keuangan\D3Farmasi\Farm8;
 
 
-// // // // Class S1Farmasi
-// use App\Charts\Keuangan\S1Farmasi\S1Farm1;
-// use App\Charts\Keuangan\S1Farmasi\S1Farm2;
-// use App\Charts\Keuangan\S1Farmasi\S1Farm3;
-// use App\Charts\Keuangan\S1Farmasi\S1Farm4;
-// use App\Charts\Keuangan\S1Farmasi\S1Farm5;
-// use App\Charts\Keuangan\S1Farmasi\S1Farm6;
-// use App\Charts\Keuangan\S1Farmasi\S1Farm7;
-// use App\Charts\Keuangan\S1Farmasi\S1Farm8;
+// // // Class S1Farmasi
+use App\Charts\Keuangan\S1Farmasi\S1Farm1;
+use App\Charts\Keuangan\S1Farmasi\S1Farm2;
+use App\Charts\Keuangan\S1Farmasi\S1Farm3;
+use App\Charts\Keuangan\S1Farmasi\S1Farm4;
+use App\Charts\Keuangan\S1Farmasi\S1Farm5;
+use App\Charts\Keuangan\S1Farmasi\S1Farm6;
+use App\Charts\Keuangan\S1Farmasi\S1Farm7;
+use App\Charts\Keuangan\S1Farmasi\S1Farm8;
 
 
-// // Class Matematika
-// use App\Charts\Keuangan\S1Matematika\Math1;
-// use App\Charts\Keuangan\S1Matematika\Math2;
-// use App\Charts\Keuangan\S1Matematika\Math3;
-// use App\Charts\Keuangan\S1Matematika\Math4;
-// use App\Charts\Keuangan\S1Matematika\Math5;
-// use App\Charts\Keuangan\S1Matematika\Math6;
-// use App\Charts\Keuangan\S1Matematika\Math7;
-// use App\Charts\Keuangan\S1Matematika\Math8;
+// Class Matematika
+use App\Charts\Keuangan\S1Matematika\Math1;
+use App\Charts\Keuangan\S1Matematika\Math2;
+use App\Charts\Keuangan\S1Matematika\Math3;
+use App\Charts\Keuangan\S1Matematika\Math4;
+use App\Charts\Keuangan\S1Matematika\Math5;
+use App\Charts\Keuangan\S1Matematika\Math6;
+use App\Charts\Keuangan\S1Matematika\Math7;
+use App\Charts\Keuangan\S1Matematika\Math8;
 
 
-// // // Class Biologi
-// use App\Charts\Keuangan\S1Biologi\Bio1;
-// use App\Charts\Keuangan\S1Biologi\Bio2;
-// use App\Charts\Keuangan\S1Biologi\Bio3;
-// use App\Charts\Keuangan\S1Biologi\Bio4;
-// use App\Charts\Keuangan\S1Biologi\Bio5;
-// use App\Charts\Keuangan\S1Biologi\Bio6;
-// use App\Charts\Keuangan\S1Biologi\Bio7;
-// use App\Charts\Keuangan\S1Biologi\Bio8;
+// // Class Biologi
+use App\Charts\Keuangan\S1Biologi\Bio1;
+use App\Charts\Keuangan\S1Biologi\Bio2;
+use App\Charts\Keuangan\S1Biologi\Bio3;
+use App\Charts\Keuangan\S1Biologi\Bio4;
+use App\Charts\Keuangan\S1Biologi\Bio5;
+use App\Charts\Keuangan\S1Biologi\Bio6;
+use App\Charts\Keuangan\S1Biologi\Bio7;
+use App\Charts\Keuangan\S1Biologi\Bio8;
 
-// use App\Charts\Keuangan\S2Biologi\S2Bio1;
-// use App\Charts\Keuangan\S2Biologi\S2Bio2;
-// use App\Charts\Keuangan\S2Biologi\S2Bio3;
-// use App\Charts\Keuangan\S2Biologi\S2Bio4;
-// use App\Charts\Keuangan\S2Biologi\S2Bio5;
-// use App\Charts\Keuangan\S2Biologi\S2Bio6;
-// use App\Charts\Keuangan\S2Biologi\S2Bio7;
-// use App\Charts\Keuangan\S2Biologi\S2Bio8;
+use App\Charts\Keuangan\S2Biologi\S2Bio1;
+use App\Charts\Keuangan\S2Biologi\S2Bio2;
+use App\Charts\Keuangan\S2Biologi\S2Bio3;
+use App\Charts\Keuangan\S2Biologi\S2Bio4;
+use App\Charts\Keuangan\S2Biologi\S2Bio5;
+use App\Charts\Keuangan\S2Biologi\S2Bio6;
+use App\Charts\Keuangan\S2Biologi\S2Bio7;
+use App\Charts\Keuangan\S2Biologi\S2Bio8;
 
-// // // Class Kebidanan
-// use App\Charts\Keuangan\D3Kebidanan\Bidan1;
-// use App\Charts\Keuangan\D3Kebidanan\Bidan2;
-// use App\Charts\Keuangan\D3Kebidanan\Bidan3;
-// use App\Charts\Keuangan\D3Kebidanan\Bidan4;
-// use App\Charts\Keuangan\D3Kebidanan\Bidan5;
-// use App\Charts\Keuangan\D3Kebidanan\Bidan6;
-// use App\Charts\Keuangan\D3Kebidanan\Bidan7;
-// use App\Charts\Keuangan\D3Kebidanan\Bidan8;
-
-
-// // // // // Class Keperawatan
-// use App\Charts\Keuangan\D3Keperawatan\Rawat1;
-// use App\Charts\Keuangan\D3Keperawatan\Rawat2;
-// use App\Charts\Keuangan\D3Keperawatan\Rawat3;
-// use App\Charts\Keuangan\D3Keperawatan\Rawat4;
-// use App\Charts\Keuangan\D3Keperawatan\Rawat5;
-// use App\Charts\Keuangan\D3Keperawatan\Rawat6;
-// use App\Charts\Keuangan\D3Keperawatan\Rawat7;
-// use App\Charts\Keuangan\D3Keperawatan\Rawat8;
+// // Class Kebidanan
+use App\Charts\Keuangan\D3Kebidanan\Bidan1;
+use App\Charts\Keuangan\D3Kebidanan\Bidan2;
+use App\Charts\Keuangan\D3Kebidanan\Bidan3;
+use App\Charts\Keuangan\D3Kebidanan\Bidan4;
+use App\Charts\Keuangan\D3Kebidanan\Bidan5;
+use App\Charts\Keuangan\D3Kebidanan\Bidan6;
+use App\Charts\Keuangan\D3Kebidanan\Bidan7;
+use App\Charts\Keuangan\D3Kebidanan\Bidan8;
 
 
-// // // Class Lab Sains
-// use App\Charts\Keuangan\D3LabSains\LabSains1;
-// use App\Charts\Keuangan\D3LabSains\LabSains2;
-// use App\Charts\Keuangan\D3LabSains\LabSains3;
-// use App\Charts\Keuangan\D3LabSains\LabSains4;
-// use App\Charts\Keuangan\D3LabSains\LabSains5;
-// use App\Charts\Keuangan\D3LabSains\LabSains6;
-// use App\Charts\Keuangan\D3LabSains\LabSains7;
-// use App\Charts\Keuangan\D3LabSains\LabSains8;
+// // // // Class Keperawatan
+use App\Charts\Keuangan\D3Keperawatan\Rawat1;
+use App\Charts\Keuangan\D3Keperawatan\Rawat2;
+use App\Charts\Keuangan\D3Keperawatan\Rawat3;
+use App\Charts\Keuangan\D3Keperawatan\Rawat4;
+use App\Charts\Keuangan\D3Keperawatan\Rawat5;
+use App\Charts\Keuangan\D3Keperawatan\Rawat6;
+use App\Charts\Keuangan\D3Keperawatan\Rawat7;
+use App\Charts\Keuangan\D3Keperawatan\Rawat8;
 
 
-// // //Class Statistika
-// use App\Charts\Keuangan\S1Statistika\Statis1;
-// use App\Charts\Keuangan\S1Statistika\Statis2;
-// use App\Charts\Keuangan\S1Statistika\Statis3;
-// use App\Charts\Keuangan\S1Statistika\Statis4;
-// use App\Charts\Keuangan\S1Statistika\Statis5;
-// use App\Charts\Keuangan\S1Statistika\Statis6;
-// use App\Charts\Keuangan\S1Statistika\Statis7;
-// use App\Charts\Keuangan\S1Statistika\Statis8;
-
-// use App\Charts\Keuangan\S2Statistika\S2Statis1;
-// use App\Charts\Keuangan\S2Statistika\S2Statis2;
-// use App\Charts\Keuangan\S2Statistika\S2Statis3;
-// use App\Charts\Keuangan\S2Statistika\S2Statis4;
-// use App\Charts\Keuangan\S2Statistika\S2Statis5;
-// use App\Charts\Keuangan\S2Statistika\S2Statis6;
-// use App\Charts\Keuangan\S2Statistika\S2Statis7;
-// use App\Charts\Keuangan\S2Statistika\S2Statis8;
-
-// // // // //Class S1 Kimia
-// use App\Charts\Keuangan\S1Kimia\S1Kim1;
-// use App\Charts\Keuangan\S1Kimia\S1Kim2;
-// use App\Charts\Keuangan\S1Kimia\S1Kim3;
-// use App\Charts\Keuangan\S1Kimia\S1Kim4;
-// use App\Charts\Keuangan\S1Kimia\S1Kim5;
-// use App\Charts\Keuangan\S1Kimia\S1Kim6;
-// use App\Charts\Keuangan\S1Kimia\S1Kim7;
-// use App\Charts\Keuangan\S1Kimia\S1Kim8;
-
-// //Class S2 Kimia
-// use App\Charts\Keuangan\S2Kimia\S2Kim1;
-// use App\Charts\Keuangan\S2Kimia\S2Kim2;
-// use App\Charts\Keuangan\S2Kimia\S2Kim3;
-// use App\Charts\Keuangan\S2Kimia\S2Kim4;
-// use App\Charts\Keuangan\S2Kimia\S2Kim5;
-// use App\Charts\Keuangan\S2Kimia\S2Kim6;
-// use App\Charts\Keuangan\S2Kimia\S2Kim7;
-// use App\Charts\Keuangan\S2Kimia\S2Kim8;
+// // Class Lab Sains
+use App\Charts\Keuangan\D3LabSains\LabSains1;
+use App\Charts\Keuangan\D3LabSains\LabSains2;
+use App\Charts\Keuangan\D3LabSains\LabSains3;
+use App\Charts\Keuangan\D3LabSains\LabSains4;
+use App\Charts\Keuangan\D3LabSains\LabSains5;
+use App\Charts\Keuangan\D3LabSains\LabSains6;
+use App\Charts\Keuangan\D3LabSains\LabSains7;
+use App\Charts\Keuangan\D3LabSains\LabSains8;
 
 
-// use App\Charts\Keuangan\S1Fisika\Fisika1;
-// use App\Charts\Keuangan\S1Fisika\Fisika2;
-// use App\Charts\Keuangan\S1Fisika\Fisika3;
-// use App\Charts\Keuangan\S1Fisika\Fisika4;
-// use App\Charts\Keuangan\S1Fisika\Fisika5;
-// use App\Charts\Keuangan\S1Fisika\Fisika6;
-// use App\Charts\Keuangan\S1Fisika\Fisika7;
-// use App\Charts\Keuangan\S1Fisika\Fisika8;
+// //Class Statistika
+use App\Charts\Keuangan\S1Statistika\Statis1;
+use App\Charts\Keuangan\S1Statistika\Statis2;
+use App\Charts\Keuangan\S1Statistika\Statis3;
+use App\Charts\Keuangan\S1Statistika\Statis4;
+use App\Charts\Keuangan\S1Statistika\Statis5;
+use App\Charts\Keuangan\S1Statistika\Statis6;
+use App\Charts\Keuangan\S1Statistika\Statis7;
+use App\Charts\Keuangan\S1Statistika\Statis8;
+
+use App\Charts\Keuangan\S2Statistika\S2Statis1;
+use App\Charts\Keuangan\S2Statistika\S2Statis2;
+use App\Charts\Keuangan\S2Statistika\S2Statis3;
+use App\Charts\Keuangan\S2Statistika\S2Statis4;
+use App\Charts\Keuangan\S2Statistika\S2Statis5;
+use App\Charts\Keuangan\S2Statistika\S2Statis6;
+use App\Charts\Keuangan\S2Statistika\S2Statis7;
+use App\Charts\Keuangan\S2Statistika\S2Statis8;
+
+// // // //Class S1 Kimia
+use App\Charts\Keuangan\S1Kimia\S1Kim1;
+use App\Charts\Keuangan\S1Kimia\S1Kim2;
+use App\Charts\Keuangan\S1Kimia\S1Kim3;
+use App\Charts\Keuangan\S1Kimia\S1Kim4;
+use App\Charts\Keuangan\S1Kimia\S1Kim5;
+use App\Charts\Keuangan\S1Kimia\S1Kim6;
+use App\Charts\Keuangan\S1Kimia\S1Kim7;
+use App\Charts\Keuangan\S1Kimia\S1Kim8;
+
+//Class S2 Kimia
+use App\Charts\Keuangan\S2Kimia\S2Kim1;
+use App\Charts\Keuangan\S2Kimia\S2Kim2;
+use App\Charts\Keuangan\S2Kimia\S2Kim3;
+use App\Charts\Keuangan\S2Kimia\S2Kim4;
+use App\Charts\Keuangan\S2Kimia\S2Kim5;
+use App\Charts\Keuangan\S2Kimia\S2Kim6;
+use App\Charts\Keuangan\S2Kimia\S2Kim7;
+use App\Charts\Keuangan\S2Kimia\S2Kim8;
+
+
+use App\Charts\Keuangan\S1Fisika\Fisika1;
+use App\Charts\Keuangan\S1Fisika\Fisika2;
+use App\Charts\Keuangan\S1Fisika\Fisika3;
+use App\Charts\Keuangan\S1Fisika\Fisika4;
+use App\Charts\Keuangan\S1Fisika\Fisika5;
+use App\Charts\Keuangan\S1Fisika\Fisika6;
+use App\Charts\Keuangan\S1Fisika\Fisika7;
+use App\Charts\Keuangan\S1Fisika\Fisika8;
 
 
 
@@ -332,7 +332,6 @@ class EvalKeuanganController extends Controller
 
     )
     {
-        $Keuangan = Keuangan::all();
         return view('evaluasi.Keuangan.index',
         [
 
