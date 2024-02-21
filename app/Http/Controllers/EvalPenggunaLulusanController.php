@@ -29,6 +29,17 @@ use App\Charts\PenggunaLulusan\D3Farmasi\Farm8;
 use App\Charts\PenggunaLulusan\D3Farmasi\Farm9;
 use App\Charts\PenggunaLulusan\D3Farmasi\Farm10;
 
+use App\Charts\PenggunaLulusan\S1Farmasi\S1Farm1;
+use App\Charts\PenggunaLulusan\S1Farmasi\S1Farm2;
+use App\Charts\PenggunaLulusan\S1Farmasi\S1Farm3;
+use App\Charts\PenggunaLulusan\S1Farmasi\S1Farm4;
+use App\Charts\PenggunaLulusan\S1Farmasi\S1Farm5;
+use App\Charts\PenggunaLulusan\S1Farmasi\S1Farm6;
+use App\Charts\PenggunaLulusan\S1Farmasi\S1Farm7;
+use App\Charts\PenggunaLulusan\S1Farmasi\S1Farm8;
+use App\Charts\PenggunaLulusan\S1Farmasi\S1Farm9;
+use App\Charts\PenggunaLulusan\S1Farmasi\S1Farm10;
+
 // Class Matematika
 use App\Charts\PenggunaLulusan\S1Matematika\Math1;
 use App\Charts\PenggunaLulusan\S1Matematika\Math2;
@@ -53,6 +64,17 @@ use App\Charts\PenggunaLulusan\S1Biologi\Bio8;
 use App\Charts\PenggunaLulusan\S1Biologi\Bio9;
 use App\Charts\PenggunaLulusan\S1Biologi\Bio10;
 
+use App\Charts\PenggunaLulusan\S2Biologi\S2Bio1;
+use App\Charts\PenggunaLulusan\S2Biologi\S2Bio2;
+use App\Charts\PenggunaLulusan\S2Biologi\S2Bio3;
+use App\Charts\PenggunaLulusan\S2Biologi\S2Bio4;
+use App\Charts\PenggunaLulusan\S2Biologi\S2Bio5;
+use App\Charts\PenggunaLulusan\S2Biologi\S2Bio6;
+use App\Charts\PenggunaLulusan\S2Biologi\S2Bio7;
+use App\Charts\PenggunaLulusan\S2Biologi\S2Bio8;
+use App\Charts\PenggunaLulusan\S2Biologi\S2Bio9;
+use App\Charts\PenggunaLulusan\S2Biologi\S2Bio10;
+
 // Class Kebidanan
 use App\Charts\PenggunaLulusan\D3Kebidanan\Bidan1;
 use App\Charts\PenggunaLulusan\D3Kebidanan\Bidan2;
@@ -64,6 +86,28 @@ use App\Charts\PenggunaLulusan\D3Kebidanan\Bidan7;
 use App\Charts\PenggunaLulusan\D3Kebidanan\Bidan8;
 use App\Charts\PenggunaLulusan\D3Kebidanan\Bidan9;
 use App\Charts\PenggunaLulusan\D3Kebidanan\Bidan10;
+
+use App\Charts\PenggunaLulusan\S1Fisika\Fisika1;
+use App\Charts\PenggunaLulusan\S1Fisika\Fisika2;
+use App\Charts\PenggunaLulusan\S1Fisika\Fisika3;
+use App\Charts\PenggunaLulusan\S1Fisika\Fisika4;
+use App\Charts\PenggunaLulusan\S1Fisika\Fisika5;
+use App\Charts\PenggunaLulusan\S1Fisika\Fisika6;
+use App\Charts\PenggunaLulusan\S1Fisika\Fisika7;
+use App\Charts\PenggunaLulusan\S1Fisika\Fisika8;
+use App\Charts\PenggunaLulusan\S1Fisika\Fisika9;
+use App\Charts\PenggunaLulusan\S1Fisika\Fisika10;
+
+use App\Charts\PenggunaLulusan\S1Geofisika\Geo1;
+use App\Charts\PenggunaLulusan\S1Geofisika\Geo2;
+use App\Charts\PenggunaLulusan\S1Geofisika\Geo3;
+use App\Charts\PenggunaLulusan\S1Geofisika\Geo4;
+use App\Charts\PenggunaLulusan\S1Geofisika\Geo5;
+use App\Charts\PenggunaLulusan\S1Geofisika\Geo6;
+use App\Charts\PenggunaLulusan\S1Geofisika\Geo7;
+use App\Charts\PenggunaLulusan\S1Geofisika\Geo8;
+use App\Charts\PenggunaLulusan\S1Geofisika\Geo9;
+use App\Charts\PenggunaLulusan\S1Geofisika\Geo10;
 
 // Class Keperawatan
 use App\Charts\PenggunaLulusan\D3Keperawatan\Rawat1;
@@ -100,6 +144,18 @@ use App\Charts\PenggunaLulusan\S1Statistika\Statis7;
 use App\Charts\PenggunaLulusan\S1Statistika\Statis8;
 use App\Charts\PenggunaLulusan\S1Statistika\Statis9;
 use App\Charts\PenggunaLulusan\S1Statistika\Statis10;
+
+use App\Charts\PenggunaLulusan\S2Statistika\S2Statis1;
+use App\Charts\PenggunaLulusan\S2Statistika\S2Statis2;
+use App\Charts\PenggunaLulusan\S2Statistika\S2Statis3;
+use App\Charts\PenggunaLulusan\S2Statistika\S2Statis4;
+use App\Charts\PenggunaLulusan\S2Statistika\S2Statis5;
+use App\Charts\PenggunaLulusan\S2Statistika\S2Statis6;
+use App\Charts\PenggunaLulusan\S2Statistika\S2Statis7;
+use App\Charts\PenggunaLulusan\S2Statistika\S2Statis8;
+use App\Charts\PenggunaLulusan\S2Statistika\S2Statis9;
+use App\Charts\PenggunaLulusan\S2Statistika\S2Statis10;
+
 
 //Class S1 Kimia
 use App\Charts\PenggunaLulusan\S1Kimia\S1kim1;
@@ -143,6 +199,17 @@ class EvalPenggunaLulusanController extends Controller
         Farm9 $farm9,
         Farm10 $farm10,
 
+        S1Farm1 $s1farm1,
+        S1Farm2 $s1farm2,
+        S1Farm3 $s1farm3,
+        S1Farm4 $s1farm4,
+        S1Farm5 $s1farm5,
+        S1Farm6 $s1farm6,
+        S1Farm7 $s1farm7,
+        S1Farm8 $s1farm8,
+        S1Farm9 $s1farm9,
+        S1Farm10 $s1farm10,
+
         // S1 Matematika
         Math1 $math1,
         Math2 $math2,
@@ -166,6 +233,17 @@ class EvalPenggunaLulusanController extends Controller
         Bio8 $bio8,
         Bio9 $bio9,
         Bio10 $bio10,
+
+        S2Bio1 $s2bio1,
+        S2Bio2 $s2bio2,
+        S2Bio3 $s2bio3,
+        S2Bio4 $s2bio4,
+        S2Bio5 $s2bio5,
+        S2Bio6 $s2bio6,
+        S2Bio7 $s2bio7,
+        S2Bio8 $s2bio8,
+        S2Bio9 $s2bio9,
+        S2Bio10 $s2bio10,
 
         //D3 Kebidanan
         Bidan1 $bidan1,
@@ -191,6 +269,28 @@ class EvalPenggunaLulusanController extends Controller
         Rawat9 $rawat9,
         Rawat10 $rawat10,
 
+        Fisika1 $fisika1,
+        Fisika2 $fisika2,
+        Fisika3 $fisika3,
+        Fisika4 $fisika4,
+        Fisika5 $fisika5,
+        Fisika6 $fisika6,
+        Fisika7 $fisika7,
+        Fisika8 $fisika8,
+        Fisika9 $fisika9,
+        Fisika10 $fisika10,
+
+        Geo1 $geo1,
+        Geo2 $geo2,
+        Geo3 $geo3,
+        Geo4 $geo4,
+        Geo5 $geo5,
+        Geo6 $geo6,
+        Geo7 $geo7,
+        Geo8 $geo8,
+        Geo9 $geo9,
+        Geo10 $geo10,
+
         //D3 Lab Sains
         LabSains1 $labsains1,
         LabSains2 $labsains2,
@@ -214,6 +314,17 @@ class EvalPenggunaLulusanController extends Controller
         Statis8 $statis8,
         Statis9 $statis9,
         Statis10 $statis10,
+
+        S2Statis1 $s2statis1,
+        S2Statis2 $s2statis2,
+        S2Statis3 $s2statis3,
+        S2Statis4 $s2statis4,
+        S2Statis5 $s2statis5,
+        S2Statis6 $s2statis6,
+        S2Statis7 $s2statis7,
+        S2Statis8 $s2statis8,
+        S2Statis9 $s2statis9,
+        S2Statis10 $s2statis10,
 
         //S1 Kimia
         S1kim1 $s1kim1,
@@ -251,10 +362,8 @@ class EvalPenggunaLulusanController extends Controller
         PL10 $pl10,
     )
     {
-        $penggunaLulusan = PenggunaLulusan::all();
         return view('evaluasi.penggunaLulusan.index',
         [
-            'penggunaLulusan' => $penggunaLulusan,
             'farm1' => $farm1->build(),
             'farm2' => $farm2->build(),
             'farm3' => $farm3->build(),
@@ -265,6 +374,17 @@ class EvalPenggunaLulusanController extends Controller
             'farm8' => $farm8->build(),
             'farm9' => $farm9->build(),
             'farm10' => $farm10->build(),
+
+            's1farm1' => $s1farm1->build(),
+            's1farm2' => $s1farm2->build(),
+            's1farm3' => $s1farm3->build(),
+            's1farm4' => $s1farm4->build(),
+            's1farm5' => $s1farm5->build(),
+            's1farm6' => $s1farm6->build(),
+            's1farm7' => $s1farm7->build(),
+            's1farm8' => $s1farm8->build(),
+            's1farm9' => $s1farm9->build(),
+            's1farm10' => $s1farm10->build(),
 
             'math1' => $math1->build(),
             'math2' => $math2->build(),
@@ -287,6 +407,39 @@ class EvalPenggunaLulusanController extends Controller
             'bio8' => $bio8->build(),
             'bio9' => $bio9->build(),
             'bio10' => $bio10->build(),
+
+            's2bio1' => $s2bio1->build(),
+            's2bio2' => $s2bio2->build(),
+            's2bio3' => $s2bio3->build(),
+            's2bio4' => $s2bio4->build(),
+            's2bio5' => $s2bio5->build(),
+            's2bio6' => $s2bio6->build(),
+            's2bio7' => $s2bio7->build(),
+            's2bio8' => $s2bio8->build(),
+            's2bio9' => $s2bio9->build(),
+            's2bio10' => $s2bio10->build(),
+
+            'fisika1' => $fisika1->build(),
+            'fisika2' => $fisika2->build(),
+            'fisika3' => $fisika3->build(),
+            'fisika4' => $fisika4->build(),
+            'fisika5' => $fisika5->build(),
+            'fisika6' => $fisika6->build(),
+            'fisika7' => $fisika7->build(),
+            'fisika8' => $fisika8->build(),
+            'fisika9' => $fisika9->build(),
+            'fisika10' => $fisika10->build(),
+
+            'geo1' => $geo1->build(),
+            'geo2' => $geo2->build(),
+            'geo3' => $geo3->build(),
+            'geo4' => $geo4->build(),
+            'geo5' => $geo5->build(),
+            'geo6' => $geo6->build(),
+            'geo7' => $geo7->build(),
+            'geo8' => $geo8->build(),
+            'geo9' => $geo9->build(),
+            'geo10' => $geo10->build(),
 
             'bidan1' => $bidan1->build(),
             'bidan2' => $bidan2->build(),
@@ -331,6 +484,17 @@ class EvalPenggunaLulusanController extends Controller
             'statis8' => $statis8->build(),
             'statis9' => $statis9->build(),
             'statis10' => $statis10->build(),
+
+            's2statis1' => $s2statis1->build(),
+            's2statis2' => $s2statis2->build(),
+            's2statis3' => $s2statis3->build(),
+            's2statis4' => $s2statis4->build(),
+            's2statis5' => $s2statis5->build(),
+            's2statis6' => $s2statis6->build(),
+            's2statis7' => $s2statis7->build(),
+            's2statis8' => $s2statis8->build(),
+            's2statis9' => $s2statis9->build(),
+            's2statis10' => $s2statis10->build(),
 
             's1kim1' => $s1kim1->build(),
             's1kim2' => $s1kim2->build(),

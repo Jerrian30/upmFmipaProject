@@ -79,6 +79,16 @@ use App\Charts\Dosen\S1Biologi\Bio8;
 use App\Charts\Dosen\S1Biologi\Bio9;
 use App\Charts\Dosen\S1Biologi\Bio10;
 
+use App\Charts\Dosen\S2Biologi\S2Bio1;
+use App\Charts\Dosen\S2Biologi\S2Bio2;
+use App\Charts\Dosen\S2Biologi\S2Bio3;
+use App\Charts\Dosen\S2Biologi\S2Bio4;
+use App\Charts\Dosen\S2Biologi\S2Bio5;
+use App\Charts\Dosen\S2Biologi\S2Bio6;
+use App\Charts\Dosen\S2Biologi\S2Bio7;
+use App\Charts\Dosen\S2Biologi\S2Bio8;
+use App\Charts\Dosen\S2Biologi\S2Bio9;
+use App\Charts\Dosen\S2Biologi\S2Bio10;
 // // Class Kebidanan
 use App\Charts\Dosen\D3Kebidanan\Bidan1;
 use App\Charts\Dosen\D3Kebidanan\Bidan2;
@@ -126,6 +136,17 @@ use App\Charts\Dosen\S1Statistika\Statis7;
 use App\Charts\Dosen\S1Statistika\Statis8;
 use App\Charts\Dosen\S1Statistika\Statis9;
 use App\Charts\Dosen\S1Statistika\Statis10;
+
+use App\Charts\Dosen\S2Statistika\S2Statis1;
+use App\Charts\Dosen\S2Statistika\S2Statis2;
+use App\Charts\Dosen\S2Statistika\S2Statis3;
+use App\Charts\Dosen\S2Statistika\S2Statis4;
+use App\Charts\Dosen\S2Statistika\S2Statis5;
+use App\Charts\Dosen\S2Statistika\S2Statis6;
+use App\Charts\Dosen\S2Statistika\S2Statis7;
+use App\Charts\Dosen\S2Statistika\S2Statis8;
+use App\Charts\Dosen\S2Statistika\S2Statis9;
+use App\Charts\Dosen\S2Statistika\S2Statis10;
 
 // //Class S1 Kimia
 use App\Charts\Dosen\S1Kimia\S1kim1;
@@ -230,6 +251,17 @@ class EvalDosenController extends Controller
         Bio9 $bio9,
         Bio10 $bio10,
 
+        S2Bio1 $s2bio1,
+        S2Bio2 $s2bio2,
+        S2Bio3 $s2bio3,
+        S2Bio4 $s2bio4,
+        S2Bio5 $s2bio5,
+        S2Bio6 $s2bio6,
+        S2Bio7 $s2bio7,
+        S2Bio8 $s2bio8,
+        S2Bio9 $s2bio9,
+        S2Bio10 $s2bio10,
+
         // //D3 Kebidanan
         Bidan1 $bidan1,
         Bidan2 $bidan2,
@@ -277,6 +309,17 @@ class EvalDosenController extends Controller
         Statis8 $statis8,
         Statis9 $statis9,
         Statis10 $statis10,
+
+        S2Statis1 $s2statis1,
+        S2Statis2 $s2statis2,
+        S2Statis3 $s2statis3,
+        S2Statis4 $s2statis4,
+        S2Statis5 $s2statis5,
+        S2Statis6 $s2statis6,
+        S2Statis7 $s2statis7,
+        S2Statis8 $s2statis8,
+        S2Statis9 $s2statis9,
+        S2Statis10 $s2statis10,
 
         // //S1 Kimia
         S1kim1 $s1kim1,
@@ -377,6 +420,17 @@ class EvalDosenController extends Controller
             'bio9' => $bio9->build(),
             'bio10' => $bio10->build(),
 
+            's2bio1' => $s2bio1->build(),
+            's2bio2' => $s2bio2->build(),
+            's2bio3' => $s2bio3->build(),
+            's2bio4' => $s2bio4->build(),
+            's2bio5' => $s2bio5->build(),
+            's2bio6' => $s2bio6->build(),
+            's2bio7' => $s2bio7->build(),
+            's2bio8' => $s2bio8->build(),
+            's2bio9' => $s2bio9->build(),
+            's2bio10' => $s2bio10->build(),
+
             'bidan1' => $bidan1->build(),
             'bidan2' => $bidan2->build(),
             'bidan3' => $bidan3->build(),
@@ -420,6 +474,17 @@ class EvalDosenController extends Controller
             'statis8' => $statis8->build(),
             'statis9' => $statis9->build(),
             'statis10' => $statis10->build(),
+
+            's2statis1' => $s2statis1->build(),
+            's2statis2' => $s2statis2->build(),
+            's2statis3' => $s2statis3->build(),
+            's2statis4' => $s2statis4->build(),
+            's2statis5' => $s2statis5->build(),
+            's2statis6' => $s2statis6->build(),
+            's2statis7' => $s2statis7->build(),
+            's2statis8' => $s2statis8->build(),
+            's2statis9' => $s2statis9->build(),
+            's2statis10' => $s2statis10->build(),
 
             's1kim1' => $s1kim1->build(),
             's1kim2' => $s1kim2->build(),

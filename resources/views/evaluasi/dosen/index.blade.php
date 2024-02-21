@@ -4,19 +4,21 @@
 {{-- java script --}}
 @section('js')
 
+@include('grafik.dosen.s1matematika.js')
+@include('grafik.dosen.all.js')
+@include('grafik.dosen.s1statistika.js') 
+@include('grafik.dosen.s2statistika.js')
+@include('grafik.dosen.d3keperawatan.js')
+@include('grafik.dosen.d3kebidanan.js')
+@include('grafik.dosen.d3labsains.js')
 @include('grafik.dosen.d3farmasi.js')
 @include('grafik.dosen.s1farmasi.js')
-@include('grafik.dosen.s1matematika.js')
-@include('grafik.dosen.d3kebidanan.js')
-@include('grafik.dosen.d3keperawatan.js')
-@include('grafik.dosen.s1biologi.js')
-@include('grafik.dosen.d3labsains.js')
-@include('grafik.dosen.s1statistika.js') 
 @include('grafik.dosen.s1kimia.js')
 @include('grafik.dosen.s2kimia.js') 
-@include('grafik.dosen.s1fisika.js')
 @include('grafik.dosen.s1geofisika.js')
-@include('grafik.dosen.all.js')
+@include('grafik.dosen.s1biologi.js')
+@include('grafik.dosen.s2biologi.js')
+@include('grafik.dosen.s1fisika.js')
 
     <script>
         document.getElementById('programStudi').addEventListener('change', function() {
@@ -57,6 +59,11 @@
                 container.style.display = (value === 's1biologi') ? 'block' : 'none';
             });
 
+            var s2biologiContainers = document.querySelectorAll('.s2biologiContainer');
+            s2biologiContainers.forEach(function(container) {
+                container.style.display = (value === 's2biologi') ? 'block' : 'none';
+            });
+
             var kebidananContainer = document.querySelectorAll('.kebidananContainer');
             kebidananContainer.forEach(function(container) {
                 container.style.display = (value === 'd3kebidanan') ? 'block' : 'none';
@@ -75,6 +82,11 @@
             var statistikaContainer = document.querySelectorAll('.statistikaContainer');
             statistikaContainer.forEach(function(container) {
                 container.style.display = (value === 's1statistika') ? 'block' : 'none';
+            });
+
+            var s2statistikaContainer = document.querySelectorAll('.s2statistikaContainer');
+            s2statistikaContainer.forEach(function(container) {
+                container.style.display = (value === 's2statistika') ? 'block' : 'none';
             });
 
             var s1kimiaContainer = document.querySelectorAll('.s1kimiaContainer');
@@ -106,7 +118,9 @@
         <select class="form-control" id="programStudi" name="programStudi">
             <option value="" disabled selected>Pilih</option>
             <option value="all">Semua</option>
+            <option value="s2biologi">S2 Biologi</option>
             <option value="s2kimia">S2 Kimia</option>
+            <option value="s2statistika">S2 Statistika</option>
             <option value="s1biologi">S1 Biologi</option>
             <option value="s1farmasi">S1 Farmasi</option>
             <option value="s1fisika">S1 Fisika</option>
@@ -121,19 +135,21 @@
         </select>
         <br>
     
+        @include('grafik.dosen.s1matematika.view')
+        @include('grafik.dosen.all.view')
+        @include('grafik.dosen.s1statistika.view')
+        @include('grafik.dosen.s2statistika.view')
+        @include('grafik.dosen.d3keperawatan.view')
+        @include('grafik.dosen.d3kebidanan.view')
+        @include('grafik.dosen.d3labsains.view')
         @include('grafik.dosen.d3farmasi.view')
         @include('grafik.dosen.s1farmasi.view')
         @include('grafik.dosen.s1kimia.view')
-        @include('grafik.dosen.s1statistika.view')
-        @include('grafik.dosen.d3labsains.view')
-        @include('grafik.dosen.s1matematika.view')
-        @include('grafik.dosen.d3kebidanan.view')
-        @include('grafik.dosen.d3keperawatan.view')
-        @include('grafik.dosen.s1biologi.view')
         @include('grafik.dosen.s2kimia.view') 
+        @include('grafik.dosen.s1geofisika.view')
+        @include('grafik.dosen.s1biologi.view')
+        @include('grafik.dosen.s2biologi.view')
         @include('grafik.dosen.s1fisika.view') 
-        @include('grafik.dosen.s1geofisika.view') 
-        @include('grafik.dosen.all.view')
     </div>
 </div>
 @endsection

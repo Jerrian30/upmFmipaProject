@@ -1,4 +1,4 @@
-<div class="row" style="margin-left: 20px; margin-right: 20px;">
+<div class="row" >
     <div class="col-lg-3 mb-4 biologiContainer" style="display: none;">
         <div class="card">
             <div class="card-body" >

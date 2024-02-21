@@ -44,8 +44,8 @@
         <li class="nav-item dropdown no-arrow">
             <a class="nav-link dropdown-toggle" href="#" style="font-size: 14px;" id="laporanSurveiDropdown" role="button"
                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                <i class="fas fa-chart-line"></i>
-                <span>Evaluasi<i class="fas fa-chevron-down"></i></span>
+                <i class="fas fa-file-alt fa-fw"></i>
+                <span>Hasil Laporan<i class="fas fa-chevron-down"></i></span>
             </a>
             <!-- Dropdown - Laporan Survei -->
             <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in"
@@ -59,7 +59,7 @@
                 <a class="dropdown-item" href="{{ route('laypro.eval') }}" style="font-size: 14px;">Pengguna Terhadap Kinerja Layanan Prodi</a>
                 <a class="dropdown-item" href="{{ route('lab.eval') }}" style="font-size: 14px;">Pengguna Terhadap Kinerja Layanan Laboratorium</a>
                 <a class="dropdown-item" href="{{ route('kemahasiswaan.eval') }}" style="font-size: 14px;">Pengguna Terhadap Kinerja Layanan Subbagian Kemahasiswaan</a>
-                <a class="dropdown-item" href="#" style="font-size: 14px;">Pengguna Terhadap Kinerja Layanan Subbagian Keuangan</a>
+                <a class="dropdown-item" href="{{ route('keuangan.eval') }}" style="font-size: 14px;">Pengguna Terhadap Kinerja Layanan Subbagian Keuangan</a>
                 <a class="dropdown-item" href="#" style="font-size: 14px;">Pengguna Terhadap Kinerja Layanan Subbagian TURTP</a>
                 <a class="dropdown-item" href="#" style="font-size: 14px;">Pengguna Terhadap Kinerja Layanan Subbagian Akademik</a>
                 <a class="dropdown-item" href="#" style="font-size: 14px;">VMTS</a>
@@ -67,7 +67,7 @@
         </li>
 
         <li class="nav-item active">
-            <a class="nav-link" href="#" style="font-size: 14px;">
+            <a class="nav-link" href="{{ route('formullir.index') }}" style="font-size: 14px;">
                 <i class="fas fa-poll"></i>
                 <span>Formulir Survei</span>
             </a>
@@ -77,7 +77,7 @@
             <a class="nav-link dropdown-toggle" href="#" style="font-size: 14px;" id="laporanSurveiDropdown" role="button"
                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 <i class="fas fa-file-alt fa-fw"></i>
-                <span>Laporan Survei <i class="fas fa-chevron-down"></i></span>
+                <span>Laporan Survei<i class="fas fa-chevron-down"></i></span>
             </a>
             <!-- Dropdown - Laporan Survei -->
             <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in"
@@ -91,7 +91,7 @@
                 <a class="dropdown-item" href="{{ route('laypro.index') }}" style="font-size: 14px;">Pengguna Terhadap Kinerja Layanan Prodi</a>
                 <a class="dropdown-item" href="{{ route('lab.index') }}" style="font-size: 14px;">Pengguna Terhadap Kinerja Layanan Laboratorium</a>
                 <a class="dropdown-item" href="{{ route('kemahasiswaan.index') }}" style="font-size: 14px;">Pengguna Terhadap Kinerja Layanan Subbagian Kemahasiswaan</a>
-                <a class="dropdown-item" href="#" style="font-size: 14px;">Pengguna Terhadap Kinerja Layanan Subbagian Keuangan</a>
+                <a class="dropdown-item" href="{{ route('keuangan.index') }}" style="font-size: 14px;">Pengguna Terhadap Kinerja Layanan Subbagian Keuangan</a>
                 <a class="dropdown-item" href="#" style="font-size: 14px;">Pengguna Terhadap Kinerja Layanan Subbagian TURTP</a>
                 <a class="dropdown-item" href="#" style="font-size: 14px;">Pengguna Terhadap Kinerja Layanan Subbagian Akademik</a>
                 <a class="dropdown-item" href="#" style="font-size: 14px;">VMTS</a>

@@ -1,4 +1,4 @@
-
+<div class="row">
     <div class="col-lg-3 mb-4 labsainsContainer" style="display: none;">
         <div class="card">
             <div class="card-body" >
@@ -91,3 +91,4 @@
             </div>
         </div>
     </div>
+</div>

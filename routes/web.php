@@ -16,6 +16,12 @@ use App\Http\Controllers\EvalKemahasiswaanController;
 use App\Http\Controllers\LaporanLayproController;
 use App\Http\Controllers\EvalLayproController;
 
+
+use App\Http\Controllers\LaporanKeuanganController;
+use App\Http\Controllers\EvalKeuanganController;
+
+use App\Http\Controllers\FormulirController;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -56,3 +62,10 @@ Route::get('laypro', [LaporanLayproController::class, 'index'])->name('laypro.in
 Route::post('/laypro/import', [LaporanLayproController::class, 'import'])->name('laypro.import');
 Route::get('/laypro/eval', [EvalLayproController::class, 'index'])->name('laypro.eval');
 Route::get('/laypro/table', [EvalLayproController::class, 'table'])->name('laypro.table');
+
+Route::get('keuangan', [LaporanKeuanganController::class, 'index'])->name('keuangan.index');
+Route::post('/keuangan/import', [LaporanKeuanganController::class, 'import'])->name('keuangan.import');
+Route::get('/keuangan/eval', [EvalKeuanganController::class, 'index'])->name('keuangan.eval');
+Route::get('/keuangan/table', [EvalKeuanganController::class, 'table'])->name('keuangan.table');
+
+Route::get('formullir', [FormulirController::class, 'index'])->name('formullir.index');
