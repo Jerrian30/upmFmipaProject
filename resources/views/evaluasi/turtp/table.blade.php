@@ -1,6 +1,6 @@
 @extends('layouts.master')
-@section('title', 'Evaluasi -> Pengguna Terhadap Kinerja Layanan Subbagian Kemahasiswaan')
-@section('page', 'Evaluasi -> Pengguna Terhadap Kinerja Layanan Subbagian Kemahasiswaan')
+@section('title', 'Evaluasi -> Pengguna Terhadap Kinerja Layanan Subbagian TURTP')
+@section('page', 'Evaluasi -> Pengguna Terhadap Kinerja Layanan Subbagian TURTP')
 
 
 {{-- content --}}

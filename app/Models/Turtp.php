@@ -8,4 +8,6 @@ use Illuminate\Database\Eloquent\Model;
 class Turtp extends Model
 {
     use HasFactory;
+
+    protected $guarded = ['1'];
 }

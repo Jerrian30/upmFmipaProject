@@ -15,7 +15,7 @@ class LaporanTurtpController extends Controller
      */
     public function index()
     {
-        $Turtps = Turtp::all();
+        $turtps = Turtp::all();
         return view('laporanSurvei.turtp.index', compact('turtps'));
     }
 
@@ -32,7 +32,7 @@ class LaporanTurtpController extends Controller
 
         Excel::import(new TurtpImport, $file);
 
-        return redirect()->route('Turtp.index')->with('success', 'Data berhasil diimpor.');
+        return redirect()->route('turtp.index')->with('success', 'Data berhasil diimpor.');
     }
 
 }

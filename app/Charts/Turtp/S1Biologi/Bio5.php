@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Charts\KeuangTurtpan\S1Biologi;
+namespace App\Charts\Turtp\S1Biologi;
 
 use App\Models\Turtp;
 use ArielMejiaDev\LarapexCharts\LarapexChart;
