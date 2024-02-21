@@ -13,7 +13,7 @@ return new class extends Migration
     {
         Schema::create('kemahasiswaans', function (Blueprint $table) {
             $table->id();
-            $table->timestamp('timestamp');
+            $table->datetime('timestamp');
             $table->string('status')->nullable(); // Misalnya: Bapak/Ibu/Sdr/i
             $table->unsignedTinyInteger('info_layanan')->nullable(); // 1. Ketersediaan, kejelasan dan kemudahan memperoleh informasi layanan
             $table->unsignedTinyInteger('suasana_ruangan')->nullable(); // 2. Suasana ruangan yang bersih dan nyaman

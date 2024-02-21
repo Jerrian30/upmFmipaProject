@@ -13,16 +13,16 @@ return new class extends Migration
     {
         Schema::create('keuangans', function (Blueprint $table) {
             $table->id();
-            $table->datetime('timestamp')->useCurrent(); // Menggunakan timestamp untuk kolom waktu
-            $table->string('status')->nullable(); // Status Bapak/Ibu/Sdr/i
+            $table->datetime('timestamp');
+            $table->string('status')->nullable(); // Misalnya: Bapak/Ibu/Sdr/i
             $table->unsignedTinyInteger('info_layanan')->nullable(); // 1. Ketersediaan, kejelasan dan kemudahan memperoleh informasi layanan
             $table->unsignedTinyInteger('suasana_ruangan')->nullable(); // 2. Suasana ruangan yang bersih dan nyaman
-            $table->unsignedTinyInteger('penampilan_staff')->nullable(); // 3. Staff berpenampilan bersih dan rapih serta berperilaku sopan dan ramah
-            $table->unsignedTinyInteger('pengetahuan_staff')->nullable(); // 4. Staf memiliki pengetahuan yang baik tentang layanan yang dibutuhkan
-            $table->unsignedTinyInteger('pelayanan_sop')->nullable(); // 5. Staf mampu memberikan pelayanan sesuai dengan Standar Operasional Procedure (SOP)
-            $table->unsignedTinyInteger('sikap_staff')->nullable(); // 6. Staf menunjukkan sikap responsive dan bertanggung jawab terhadap data yang dibutuhkan
-            $table->unsignedTinyInteger('akses_staff')->nullable(); // 7. Staf dapat ditemui/dihubungi dengan mudah
-            $table->unsignedTinyInteger('terbuka_kritik')->nullable(); // 8. Staf terbuka dengan kritik/saran yang disampaikan
+            $table->unsignedTinyInteger('staff_penampilan')->nullable(); // 3. Staff berpenampilan bersih dan rapih serta berperilaku sopan dan ramah
+            $table->unsignedTinyInteger('staff_pengetahuan')->nullable(); // 4. Staf memiliki pengetahuan yang baik tentang layanan yang dibutuhkan
+            $table->unsignedTinyInteger('staff_sop')->nullable(); // 5. Staf mampu memberikan pelayanan sesuai dengan SOP
+            $table->unsignedTinyInteger('staff_responsive')->nullable(); // 6. Staf menunjukkan sikap responsive dan bertanggung jawab
+            $table->unsignedTinyInteger('staff_dapat_dihubungi')->nullable(); // 7. Staf dapat ditemui/dihubungi dengan mudah
+            $table->unsignedTinyInteger('staff_terbuka_kritik')->nullable(); // 8. Staf terbuka dengan kritik/saran
             $table->text('saran_kritik')->nullable(); // Saran/Kritik
             $table->string('jenis_kelamin', 10)->nullable(); // Jenis Kelamin
             $table->string('program_studi')->nullable(); // Program Studi/Unit Kerja/Lainnya

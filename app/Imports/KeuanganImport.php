@@ -22,18 +22,18 @@ class KeuanganImport implements ToModel
 
         return new Keuangan([
             'timestamp'                 => $timestamp,
-            'status'                => $row[1], 
-            'info_layanan'          => $row[2], 
-            'suasana_ruangan'       => $row[3],
-            'penampilan_staff'      => $row[4],
-            'pengetahuan_staff'     => $row[5],
-            'pelayanan_sop'         => $row[6],
-            'sikap_staff'           => $row[7],
-            'akses_staff'           => $row[8],
-            'terbuka_kritik'        => $row[9],
-            'saran_kritik'          => $row[10],
-            'jenis_kelamin'         => $row[11],
-            'program_studi'            => $row[12],
+            'status'                    => $row[1], 
+            'info_layanan'              => $row[2], 
+            'suasana_ruangan'           => $row[3],
+            'staff_penampilan'          => $row[4],
+            'staff_pengetahuan'         => $row[5],
+            'staff_sop'                 => $row[6],
+            'staff_responsive'          => $row[7],
+            'staff_dapat_dihubungi'     => $row[8],
+            'staff_terbuka_kritik'      => $row[9],
+            'saran_kritik'              => $row[10], 
+            'jenis_kelamin'             => $row[11], 
+            'program_studi'             => $row[12], 
         ]);
     }
 }
