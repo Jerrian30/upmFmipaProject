@@ -23,6 +23,9 @@ use App\Http\Controllers\EvalKeuanganController;
 use App\Http\Controllers\LaporanTurtpController;
 use App\Http\Controllers\EvalTurtpController;
 
+use App\Http\Controllers\LaporanAkademikController;
+use App\Http\Controllers\EvalAkademikController;
+
 use App\Http\Controllers\FormulirController;
 
 /*
@@ -75,5 +78,10 @@ Route::get('turtp', [LaporanTurtpController::class, 'index'])->name('turtp.index
 Route::post('/turtp/import', [LaporanTurtpController::class, 'import'])->name('turtp.import');
 Route::get('/turtp/eval', [EvalTurtpController::class, 'index'])->name('turtp.eval');
 Route::get('/turtp/table', [EvalTurtpController::class, 'table'])->name('turtp.table');
+
+Route::get('akademik', [LaporanAkademikController::class, 'index'])->name('akademik.index');
+Route::post('/akademik/import', [LaporanAkademikController::class, 'import'])->name('akademik.import');
+Route::get('/akademik/eval', [EvalAkademikController::class, 'index'])->name('akademik.eval');
+Route::get('/akademik/table', [EvalAkademikController::class, 'table'])->name('akademik.table');
 
 Route::get('formullir', [FormulirController::class, 'index'])->name('formullir.index');

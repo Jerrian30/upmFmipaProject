@@ -61,7 +61,7 @@
                 <a class="dropdown-item" href="{{ route('kemahasiswaan.eval') }}" style="font-size: 14px;">Pengguna Terhadap Kinerja Layanan Subbagian Kemahasiswaan</a>
                 <a class="dropdown-item" href="{{ route('keuangan.eval') }}" style="font-size: 14px;">Pengguna Terhadap Kinerja Layanan Subbagian Keuangan</a>
                 <a class="dropdown-item" href="{{ route('turtp.eval') }}" style="font-size: 14px;">Pengguna Terhadap Kinerja Layanan Subbagian TURTP</a>
-                <a class="dropdown-item" href="#" style="font-size: 14px;">Pengguna Terhadap Kinerja Layanan Subbagian Akademik</a>
+                <a class="dropdown-item" href="{{ route('akademik.eval') }}" style="font-size: 14px;">Pengguna Terhadap Kinerja Layanan Subbagian Akademik</a>
                 <a class="dropdown-item" href="#" style="font-size: 14px;">VMTS</a>
             </div>
         </li>
@@ -93,7 +93,7 @@
                 <a class="dropdown-item" href="{{ route('kemahasiswaan.index') }}" style="font-size: 14px;">Pengguna Terhadap Kinerja Layanan Subbagian Kemahasiswaan</a>
                 <a class="dropdown-item" href="{{ route('keuangan.index') }}" style="font-size: 14px;">Pengguna Terhadap Kinerja Layanan Subbagian Keuangan</a>
                 <a class="dropdown-item" href="{{ route('turtp.index') }}" style="font-size: 14px;">Pengguna Terhadap Kinerja Layanan Subbagian TURTP</a>
-                <a class="dropdown-item" href="#" style="font-size: 14px;">Pengguna Terhadap Kinerja Layanan Subbagian Akademik</a>
+                <a class="dropdown-item" href="{{ route('akademik.index') }}" style="font-size: 14px;">Pengguna Terhadap Kinerja Layanan Subbagian Akademik</a>
                 <a class="dropdown-item" href="#" style="font-size: 14px;">VMTS</a>
             </div>
         </li>
