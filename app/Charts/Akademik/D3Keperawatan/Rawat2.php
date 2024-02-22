@@ -1,8 +1,8 @@
 <?php
 
-namespace App\Charts\Turtp\D3Keperawatan;
+namespace App\Charts\Akademik\D3Keperawatan;
 
-use App\Models\Turtp;
+use App\Models\Akademik;
 use ArielMejiaDev\LarapexCharts\LarapexChart;
 
 class Rawat2
@@ -16,7 +16,7 @@ class Rawat2
 
     protected function calculatePercentages()
     {
-        $dataD3Farmasi = Turtp::where('program_studi','D3 Keperawatan')
+        $dataD3Farmasi = Akademik::where('program_studi','D3 Keperawatan')
             ->selectRaw('COUNT(*) as count, suasana_ruangan')
             ->groupBy('suasana_ruangan')
             ->pluck('count', 'suasana_ruangan');

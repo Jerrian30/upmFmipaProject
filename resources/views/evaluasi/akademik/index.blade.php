@@ -1,24 +1,24 @@
 @extends('layouts.master')
-@section('title', 'Evaluasi -> Pengguna Terhadap Kinerja Layanan Subbagian TURTP')
-@section('page', 'Evaluasi -> Pengguna Terhadap Kinerja Layanan Subbagian TURTP')
+@section('title', 'Evaluasi -> Pengguna Terhadap Kinerja Layanan Subbagian Akademik')
+@section('page', 'Evaluasi -> Pengguna Terhadap Kinerja Layanan Subbagian Akademik')
 {{-- java script --}}
 @section('js')
 
-@include('grafik.TURTP.s1matematika.js')
-@include('grafik.turtp.all.js')
-@include('grafik.turtp.s1statistika.js') 
-@include('grafik.turtp.s2statistika.js')
-@include('grafik.turtp.d3keperawatan.js')
-@include('grafik.turtp.d3kebidanan.js')
-@include('grafik.turtp.d3labsains.js')
-@include('grafik.turtp.d3farmasi.js')
-@include('grafik.turtp.s1farmasi.js')
-@include('grafik.turtp.s1kimia.js')
-@include('grafik.turtp.s2kimia.js') 
-@include('grafik.turtp.s1geofisika.js')
-@include('grafik.turtp.s1biologi.js')
-@include('grafik.turtp.s2biologi.js')
-@include('grafik.turtp.s1fisika.js')
+@include('grafik.akademik.s1matematika.js')
+@include('grafik.akademik.all.js')
+@include('grafik.akademik.s1statistika.js') 
+@include('grafik.akademik.s2statistika.js')
+@include('grafik.akademik.d3keperawatan.js')
+@include('grafik.akademik.d3kebidanan.js')
+@include('grafik.akademik.d3labsains.js')
+@include('grafik.akademik.d3farmasi.js')
+@include('grafik.akademik.s1farmasi.js')
+@include('grafik.akademik.s1kimia.js')
+@include('grafik.akademik.s2kimia.js') 
+@include('grafik.akademik.s1geofisika.js')
+@include('grafik.akademik.s1biologi.js')
+@include('grafik.akademik.s2biologi.js')
+@include('grafik.akademik.s1fisika.js')
 
     <script>
         document.getElementById('programStudi').addEventListener('change', function() {
@@ -113,7 +113,7 @@
 @section('content')
 <div class="row">
     <div class="container mt-1">
-        <a href="{{ route('turtp.table') }}" class="btn btn-primary">Lihat Penjelasan Tiap Butir Pertanyaan</a>
+        <a href="{{ route('akademik.table') }}" class="btn btn-primary">Lihat Penjelasan Tiap Butir Pertanyaan</a>
         <br><br>
         <select class="form-control" id="programStudi" name="programStudi">
             <option value="" disabled selected>Pilih</option>
@@ -135,21 +135,21 @@
         </select>
         <br>
     
-        @include('grafik.turtp.s1matematika.view')
-        @include('grafik.turtp.all.view')
-        @include('grafik.turtp.s1statistika.view')
-        @include('grafik.turtp.s2statistika.view')
-        @include('grafik.turtp.d3keperawatan.view')
-        @include('grafik.turtp.d3kebidanan.view')
-        @include('grafik.turtp.d3labsains.view')
-        @include('grafik.turtp.d3farmasi.view')
-        @include('grafik.turtp.s1farmasi.view')
-        @include('grafik.turtp.s1kimia.view')
-        @include('grafik.turtp.s2kimia.view') 
-        @include('grafik.turtp.s1geofisika.view')
-        @include('grafik.turtp.s1biologi.view')
-        @include('grafik.turtp.s2biologi.view')
-        @include('grafik.turtp.s1fisika.view') 
+        @include('grafik.akademik.s1matematika.view')
+        @include('grafik.akademik.all.view')
+        @include('grafik.akademik.s1statistika.view')
+        @include('grafik.akademik.s2statistika.view')
+        @include('grafik.akademik.d3keperawatan.view')
+        @include('grafik.akademik.d3kebidanan.view')
+        @include('grafik.akademik.d3labsains.view')
+        @include('grafik.akademik.d3farmasi.view')
+        @include('grafik.akademik.s1farmasi.view')
+        @include('grafik.akademik.s1kimia.view')
+        @include('grafik.akademik.s2kimia.view') 
+        @include('grafik.akademik.s1geofisika.view')
+        @include('grafik.akademik.s1biologi.view')
+        @include('grafik.akademik.s2biologi.view')
+        @include('grafik.akademik.s1fisika.view') 
     </div>
 </div>
 @endsection

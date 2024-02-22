@@ -1,8 +1,8 @@
 <?php
 
-namespace App\Charts\Turtp\S1Geofisika;
+namespace App\Charts\Akademik\S1Geofisika;
 
-use App\Models\Turtp;
+use App\Models\Akademik;
 use ArielMejiaDev\LarapexCharts\LarapexChart;
 
 class Geo2
@@ -16,7 +16,7 @@ class Geo2
 
     protected function calculatePercentages()
     {
-        $dataD3Farmasi = Turtp::where('program_studi', 'S1 Geofisika')
+        $dataD3Farmasi = Akademik::where('program_studi', 'S1 Geofisika')
             ->selectRaw('COUNT(*) as count, suasana_ruangan')
             ->groupBy('suasana_ruangan')
             ->pluck('count', 'suasana_ruangan');

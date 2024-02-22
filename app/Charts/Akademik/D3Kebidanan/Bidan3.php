@@ -1,8 +1,8 @@
 <?php
 
-namespace App\Charts\Turtp\D3Kebidanan;
+namespace App\Charts\Akademik\D3Kebidanan;
 
-use App\Models\Turtp;
+use App\Models\Akademik;
 use ArielMejiaDev\LarapexCharts\LarapexChart;
 
 class Bidan3
@@ -16,7 +16,7 @@ class Bidan3
 
     protected function calculatePercentages()
     {
-        $dataD3Farmasi = Turtp::where('program_studi','D3 Kebidanan')
+        $dataD3Farmasi = Akademik::where('program_studi','D3 Kebidanan')
             ->selectRaw('COUNT(*) as count, staff_penampilan')
             ->groupBy('staff_penampilan')
             ->pluck('count', 'staff_penampilan');

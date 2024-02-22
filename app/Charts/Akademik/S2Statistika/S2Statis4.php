@@ -1,8 +1,8 @@
 <?php
 
-namespace App\Charts\Turtp\S2Statistika;
+namespace App\Charts\Akademik\S2Statistika;
 
-use App\Models\Turtp;
+use App\Models\Akademik;
 use ArielMejiaDev\LarapexCharts\LarapexChart;
 
 class S2Statis4
@@ -16,7 +16,7 @@ class S2Statis4
 
     protected function calculatePercentages()
     {
-        $dataD3Farmasi = Turtp::where('program_studi', 'S2 Statistika')
+        $dataD3Farmasi = Akademik::where('program_studi', 'S2 Statistika')
             ->selectRaw('COUNT(*) as count, ketepatan_layanan')
             ->groupBy('ketepatan_layanan')
             ->pluck('count', 'ketepatan_layanan');

@@ -1,8 +1,8 @@
 <?php
 
-namespace App\Charts\Turtp\S1Fisika;
+namespace App\Charts\Akademik\S1Fisika;
 
-use App\Models\Turtp;
+use App\Models\Akademik;
 use ArielMejiaDev\LarapexCharts\LarapexChart;
 
 class Fisika7
@@ -16,7 +16,7 @@ class Fisika7
 
     protected function calculatePercentages()
     {
-        $dataD3Farmasi = Turtp::where('program_studi', 'S1 Fisika')
+        $dataD3Farmasi = Akademik::where('program_studi', 'S1 Fisika')
             ->selectRaw('COUNT(*) as count, staff_terbuka_kritik')
             ->groupBy('staff_terbuka_kritik')
             ->pluck('count', 'staff_terbuka_kritik');

@@ -1,8 +1,8 @@
 <?php
 
-namespace App\Charts\Turtp\S1Kimia;
+namespace App\Charts\Akademik\S1Kimia;
 
-use App\Models\Turtp;
+use App\Models\Akademik;
 use ArielMejiaDev\LarapexCharts\LarapexChart;
 
 class S1Kim7
@@ -16,7 +16,7 @@ class S1Kim7
 
     protected function calculatePercentages()
     {
-        $dataD3Farmasi = Turtp::where('program_studi', 'S1 Kimia')
+        $dataD3Farmasi = Akademik::where('program_studi', 'S1 Kimia')
             ->selectRaw('COUNT(*) as count, staff_terbuka_kritik')
             ->groupBy('staff_terbuka_kritik')
             ->pluck('count', 'staff_terbuka_kritik');
