@@ -1,8 +1,8 @@
 <?php
 
-namespace App\Charts\Turtp\All;
+namespace App\Charts\Akademik\All;
 
-use App\Models\Turtp;
+use App\Models\Akademik;
 use ArielMejiaDev\LarapexCharts\LarapexChart;
 
 class PL4
@@ -16,7 +16,7 @@ class PL4
 
     public function build(): \ArielMejiaDev\LarapexCharts\DonutChart
     {
-        $dataPercentages = $this->calculatePercentages('ketepatan');
+        $dataPercentages = $this->calculatePercentages('ketepatan_layanan');
         
         return $this->chart->donutChart()
             ->addData(array_values($dataPercentages))
@@ -25,7 +25,7 @@ class PL4
 
     protected function calculatePercentages($columnName): array
     {
-        $dataTotal = Turtp::selectRaw("COUNT(*) as count, $columnName")
+        $dataTotal = Akademik::selectRaw("COUNT(*) as count, $columnName")
             ->groupBy($columnName)
             ->pluck('count', $columnName);
 
@@ -53,7 +53,7 @@ class PL4
     public function getDetailedPercentages()
     {
         
-        $percentages = $this->calculatePercentages('ketepatan');
+        $percentages = $this->calculatePercentages('ketepatan_layanan');
         return [
             'persen1' => $percentages[1] ?? 0,
             'persen2' => $percentages[2] ?? 0,

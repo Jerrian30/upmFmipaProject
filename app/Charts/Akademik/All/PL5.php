@@ -1,8 +1,8 @@
 <?php
 
-namespace App\Charts\Turtp\All;
+namespace App\Charts\Akademik\All;
 
-use App\Models\Turtp;
+use App\Models\Akademik;
 use ArielMejiaDev\LarapexCharts\LarapexChart;
 
 class PL5
@@ -25,7 +25,7 @@ class PL5
 
     protected function calculatePercentages($columnName): array
     {
-        $dataTotal = Turtp::selectRaw("COUNT(*) as count, $columnName")
+        $dataTotal = Akademik::selectRaw("COUNT(*) as count, $columnName")
             ->groupBy($columnName)
             ->pluck('count', $columnName);
 
