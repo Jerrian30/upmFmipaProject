@@ -1,8 +1,8 @@
 <?php
 
-namespace App\Charts\Dosen\S2Biologi;
+namespace App\Charts\Pimpinan\S2Biologi;
 
-use App\Models\Dosen;
+use App\Models\Pimpinan;
 use ArielMejiaDev\LarapexCharts\LarapexChart;
 
 class S2Bio6
@@ -16,7 +16,7 @@ class S2Bio6
 
     protected function calculatePercentages()
     {
-        $dataD3Farmasi = Dosen::where('program_studi', 'S2 Biologi')
+        $dataD3Farmasi = Pimpinan::where('program_studi', 'S2 Biologi')
             ->selectRaw('COUNT(*) as count, pengelolaan_prinsip')
             ->groupBy('pengelolaan_prinsip')
             ->pluck('count', 'pengelolaan_prinsip');

@@ -1,8 +1,8 @@
 <?php
 
-namespace App\Charts\Dosen\S1Geofisika;
+namespace App\Charts\Pimpinan\S1Geofisika;
 
-use App\Models\Dosen;
+use App\Models\Pimpinan;
 use ArielMejiaDev\LarapexCharts\LarapexChart;
 
 class Geo2
@@ -16,7 +16,7 @@ class Geo2
 
     protected function calculatePercentages()
     {
-        $dataD3Farmasi = Dosen::where('program_studi', 'S1 Geofisika')
+        $dataD3Farmasi = Pimpinan::where('program_studi', 'S1 Geofisika')
             ->selectRaw('COUNT(*) as count, ramah_dan_sopan')
             ->groupBy('ramah_dan_sopan')
             ->pluck('count', 'ramah_dan_sopan');

@@ -1,8 +1,8 @@
 <?php
 
-namespace App\Charts\Dosen\S1Statistika;
+namespace App\Charts\Pimpinan\S1Statistika;
 
-use App\Models\Dosen;
+use App\Models\Pimpinan;
 use ArielMejiaDev\LarapexCharts\LarapexChart;
 
 class Statis7
@@ -16,7 +16,7 @@ class Statis7
 
     protected function calculatePercentages()
     {
-        $dataD3Farmasi = Dosen::where('program_studi',  'S1 Statistika')
+        $dataD3Farmasi = Pimpinan::where('program_studi',  'S1 Statistika')
             ->selectRaw('COUNT(*) as count, karakteristik_kepemimpinan')
             ->groupBy('karakteristik_kepemimpinan')
             ->pluck('count', 'karakteristik_kepemimpinan');

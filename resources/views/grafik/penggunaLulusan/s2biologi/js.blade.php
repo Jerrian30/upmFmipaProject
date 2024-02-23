@@ -1,30 +1,30 @@
-<script src="{{ $bio1->cdn() }}"></script>
-{{ $bio1->script() }}
+<script src="{{ $s2bio1->cdn() }}"></script>
+{{ $s2bio1->script() }}
 
-<script src="{{ $bio2->cdn() }}"></script>
-{{ $bio2->script() }}
+<script src="{{ $s2bio2->cdn() }}"></script>
+{{ $s2bio2->script() }}
 
-<script src="{{ $bio3->cdn() }}"></script>
-{{ $bio3->script() }}
+<script src="{{ $s2bio3->cdn() }}"></script>
+{{ $s2bio3->script() }}
 
-<script src="{{ $bio4->cdn() }}"></script>
-{{ $bio4->script() }}
+<script src="{{ $s2bio4->cdn() }}"></script>
+{{ $s2bio4->script() }}
 
-<script src="{{ $bio5->cdn() }}"></script>
-{{ $bio5->script() }}
+<script src="{{ $s2bio5->cdn() }}"></script>
+{{ $s2bio5->script() }}
 
-<script src="{{ $bio6->cdn() }}"></script>
-{{ $bio6->script() }}
+<script src="{{ $s2bio6->cdn() }}"></script>
+{{ $s2bio6->script() }}
 
-<script src="{{ $bio7->cdn() }}"></script>
-{{ $bio7->script() }}
+<script src="{{ $s2bio7->cdn() }}"></script>
+{{ $s2bio7->script() }}
 
-<script src="{{ $bio8->cdn() }}"></script>
-{{ $bio8->script() }}
+<script src="{{ $s2bio8->cdn() }}"></script>
+{{ $s2bio8->script() }}
 
-<script src="{{ $bio9->cdn() }}"></script>
-{{ $bio9->script() }}
+<script src="{{ $s2bio9->cdn() }}"></script>
+{{ $s2bio9->script() }}
 
-<script src="{{ $bio10->cdn() }}"></script>
-{{ $bio10->script() }}
+<script src="{{ $s2bio10->cdn() }}"></script>
+{{ $s2bio10->script() }}
 

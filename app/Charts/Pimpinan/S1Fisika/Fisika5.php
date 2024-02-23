@@ -1,8 +1,8 @@
 <?php
 
-namespace App\Charts\Dosen\S1Fisika;
+namespace App\Charts\Pimpinan\S1Fisika;
 
-use App\Models\Dosen;
+use App\Models\Pimpinan;
 use ArielMejiaDev\LarapexCharts\LarapexChart;
 
 class Fisika5
@@ -16,7 +16,7 @@ class Fisika5
 
     protected function calculatePercentages()
     {
-        $dataD3Farmasi = Dosen::where('program_studi', 'S1 Fisika')
+        $dataD3Farmasi = Pimpinan::where('program_studi', 'S1 Fisika')
             ->selectRaw('COUNT(*) as count, menegakkan_kebijakan')
             ->groupBy('menegakkan_kebijakan')
             ->pluck('count', 'menegakkan_kebijakan');

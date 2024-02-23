@@ -1,8 +1,8 @@
 <?php
 
-namespace App\Charts\Dosen\D3Keperawatan;
+namespace App\Charts\Pimpinan\D3Keperawatan;
 
-use App\Models\Dosen;
+use App\Models\Pimpinan;
 use ArielMejiaDev\LarapexCharts\LarapexChart;
 
 class Rawat7
@@ -16,7 +16,7 @@ class Rawat7
 
     protected function calculatePercentages()
     {
-        $dataD3Farmasi = Dosen::where('program_studi','D3 Keperawatan')
+        $dataD3Farmasi = Pimpinan::where('program_studi','D3 Keperawatan')
             ->selectRaw('COUNT(*) as count, karakteristik_kepemimpinan')
             ->groupBy('karakteristik_kepemimpinan')
             ->pluck('count', 'karakteristik_kepemimpinan');
