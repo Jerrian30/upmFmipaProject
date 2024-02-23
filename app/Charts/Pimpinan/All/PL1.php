@@ -1,8 +1,8 @@
 <?php
 
-namespace App\Charts\Dosen\All;
+namespace App\Charts\Pimpinan\All;
 
-use App\Models\Dosen;
+use App\Models\Pimpinan;
 use ArielMejiaDev\LarapexCharts\LarapexChart;
 
 class PL1
@@ -25,7 +25,7 @@ class PL1
 
     protected function calculatePercentages($columnName): array
     {
-        $dataTotal = Dosen::selectRaw("COUNT(*) as count, $columnName")
+        $dataTotal = Pimpinan::selectRaw("COUNT(*) as count, $columnName")
             ->groupBy($columnName)
             ->pluck('count', $columnName);
 

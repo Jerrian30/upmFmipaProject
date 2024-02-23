@@ -17,9 +17,9 @@ class Geo8
     protected function calculatePercentages()
     {
         $dataD3Farmasi = Dosen::where('program_studi', 'S1 Geofisika')
-            ->selectRaw('COUNT(*) as count, kesempatan_pengembangan_karir')
-            ->groupBy('kesempatan_pengembangan_karir')
-            ->pluck('count', 'kesempatan_pengembangan_karir');
+            ->selectRaw('COUNT(*) as count, memberikan_solusi')
+            ->groupBy('memberikan_solusi')
+            ->pluck('count', 'memberikan_solusi');
 
         $dataValues = [1 => 0, 2 => 0, 3 => 0, 4 => 0];
 

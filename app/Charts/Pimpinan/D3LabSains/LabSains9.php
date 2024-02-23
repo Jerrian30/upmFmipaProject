@@ -17,9 +17,9 @@ class LabSains9
     protected function calculatePercentages()
     {
         $dataD3Farmasi = Dosen::where('program_studi',  'D3 Lab Sains')
-            ->selectRaw('COUNT(*) as count, pembagian_beban_kerja')
-            ->groupBy('pembagian_beban_kerja')
-            ->pluck('count', 'pembagian_beban_kerja');
+            ->selectRaw('COUNT(*) as count, terbuka_kritik_saran')
+            ->groupBy('terbuka_kritik_saran')
+            ->pluck('count', 'terbuka_kritik_saran');
 
         $dataValues = [1 => 0, 2 => 0, 3 => 0, 4 => 0];
 

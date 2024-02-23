@@ -1,8 +1,8 @@
 <?php
 
-namespace App\Charts\Dosen\All;
+namespace App\Charts\Pimpinan\All;
 
-use App\Models\Dosen;
+use App\Models\Pimpinan;
 use ArielMejiaDev\LarapexCharts\LarapexChart;
 
 class PL8
@@ -16,7 +16,7 @@ class PL8
 
     public function build(): \ArielMejiaDev\LarapexCharts\DonutChart
     {
-        $dataPercentages = $this->calculatePercentages('kesempatan_pengembangan_karir');
+        $dataPercentages = $this->calculatePercentages('memberikan_solusi');
         
         return $this->chart->donutChart()
             ->addData(array_values($dataPercentages))
@@ -25,7 +25,7 @@ class PL8
 
     protected function calculatePercentages($columnName): array
     {
-        $dataTotal = Dosen::selectRaw("COUNT(*) as count, $columnName")
+        $dataTotal = Pimpinan::selectRaw("COUNT(*) as count, $columnName")
             ->groupBy($columnName)
             ->pluck('count', $columnName);
 
@@ -53,7 +53,7 @@ class PL8
     public function getDetailedPercentages()
     {
         
-        $percentages = $this->calculatePercentages('kesempatan_pengembangan_karir');
+        $percentages = $this->calculatePercentages('memberikan_solusi');
         return [
             'persen1' => $percentages[1] ?? 0,
             'persen2' => $percentages[2] ?? 0,

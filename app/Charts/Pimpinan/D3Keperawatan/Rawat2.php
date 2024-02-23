@@ -17,9 +17,9 @@ class Rawat2
     protected function calculatePercentages()
     {
         $dataD3Farmasi = Dosen::where('program_studi', 'D3 Keperawatan')
-            ->selectRaw('COUNT(*) as count, efektivitas_pembagian_tugas')
-            ->groupBy('efektivitas_pembagian_tugas')
-            ->pluck('count', 'efektivitas_pembagian_tugas');
+            ->selectRaw('COUNT(*) as count, ramah_dan_sopan')
+            ->groupBy('ramah_dan_sopan')
+            ->pluck('count', 'ramah_dan_sopan');
 
         $dataValues = [1 => 0, 2 => 0, 3 => 0, 4 => 0];
 

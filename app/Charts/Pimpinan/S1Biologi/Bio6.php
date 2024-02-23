@@ -17,9 +17,9 @@ class Bio6
     protected function calculatePercentages()
     {
         $dataD3Farmasi = Dosen::where('program_studi', 'S1 Biologi')
-            ->selectRaw('COUNT(*) as count, fasilitas_penelitian_pengabdian')
-            ->groupBy('fasilitas_penelitian_pengabdian')
-            ->pluck('count', 'fasilitas_penelitian_pengabdian');
+            ->selectRaw('COUNT(*) as count, pengelolaan_prinsip')
+            ->groupBy('pengelolaan_prinsip')
+            ->pluck('count', 'pengelolaan_prinsip');
 
         $dataValues = [1 => 0, 2 => 0, 3 => 0, 4 => 0];
 

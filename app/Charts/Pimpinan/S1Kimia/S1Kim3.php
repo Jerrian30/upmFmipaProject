@@ -17,9 +17,9 @@ class S1Kim3
     protected function calculatePercentages()
     {
         $dataD3Farmasi = Dosen::where('program_studi', 'S1 Kimia')
-            ->selectRaw('COUNT(*) as count, kebijakan_pimpinan')
-            ->groupBy('kebijakan_pimpinan')
-            ->pluck('count', 'kebijakan_pimpinan');
+            ->selectRaw('COUNT(*) as count, rencana_kerja_jelas')
+            ->groupBy('rencana_kerja_jelas')
+            ->pluck('count', 'rencana_kerja_jelas');
 
         $dataValues = [1 => 0, 2 => 0, 3 => 0, 4 => 0];
 

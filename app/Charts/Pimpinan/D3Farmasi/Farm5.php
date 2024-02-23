@@ -1,8 +1,8 @@
 <?php
 
-namespace App\Charts\Dosen\D3Farmasi;
+namespace App\Charts\Pimpinan\D3Farmasi;
 
-use App\Models\Dosen;
+use App\Models\Pimpinan;
 use ArielMejiaDev\LarapexCharts\LarapexChart;
 
 class Farm5
@@ -16,10 +16,10 @@ class Farm5
 
     protected function calculatePercentages()
     {
-        $dataD3Farmasi = Dosen::where('program_studi', 'D3 Farmasi')
-            ->selectRaw('COUNT(*) as count, ketersediaan_fasilitas_sarana')
-            ->groupBy('ketersediaan_fasilitas_sarana')
-            ->pluck('count', 'ketersediaan_fasilitas_sarana');
+        $dataD3Farmasi = Pimpinan::where('program_studi', 'D3 Farmasi')
+            ->selectRaw('COUNT(*) as count, menegakkan_kebijakan')
+            ->groupBy('menegakkan_kebijakan')
+            ->pluck('count', 'menegakkan_kebijakan');
 
         $dataValues = [1 => 0, 2 => 0, 3 => 0, 4 => 0];
 
