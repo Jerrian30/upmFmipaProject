@@ -26,6 +26,9 @@ use App\Http\Controllers\EvalTurtpController;
 use App\Http\Controllers\LaporanAkademikController;
 use App\Http\Controllers\EvalAkademikController;
 
+use App\Http\Controllers\LaporanPimpinanController;
+use App\Http\Controllers\EvalPimpinanController;
+
 use App\Http\Controllers\FormulirController;
 
 /*
@@ -83,5 +86,10 @@ Route::get('akademik', [LaporanAkademikController::class, 'index'])->name('akade
 Route::post('/akademik/import', [LaporanAkademikController::class, 'import'])->name('akademik.import');
 Route::get('/akademik/eval', [EvalAkademikController::class, 'index'])->name('akademik.eval');
 Route::get('/akademik/table', [EvalAkademikController::class, 'table'])->name('akademik.table');
+
+Route::get('pimpinan', [LaporanPimpinanController::class, 'index'])->name('pimpinan.index');
+Route::post('/pimpinan/import', [LaporanPimpinanController::class, 'import'])->name('pimpinan.import');
+Route::get('/pimpinan/eval', [EvalPimpinanController::class, 'index'])->name('pimpinan.eval');
+Route::get('/pimpinan/table', [EvalPimpinanController::class, 'table'])->name('pimpinan.table');
 
 Route::get('formullir', [FormulirController::class, 'index'])->name('formullir.index');

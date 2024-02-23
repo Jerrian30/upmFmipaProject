@@ -55,7 +55,7 @@
                 <a class="dropdown-item" href="#" style="font-size: 14px;">Mahasiswa</a>
                 <a class="dropdown-item" href="#" style="font-size: 14px;">Mitra Kerja Sama</a>
                 <a class="dropdown-item" href="#" style="font-size: 14px;">Tracer Studi</a>
-                <a class="dropdown-item" href="#" style="font-size: 14px;">Pengguna Terhadap Kinerja Pimpinan Fakultas</a>
+                <a class="dropdown-item" href="{{ route('pimpinan.eval') }}" style="font-size: 14px;">Pengguna Terhadap Kinerja Pimpinan Fakultas</a>
                 <a class="dropdown-item" href="{{ route('laypro.eval') }}" style="font-size: 14px;">Pengguna Terhadap Kinerja Layanan Prodi</a>
                 <a class="dropdown-item" href="{{ route('lab.eval') }}" style="font-size: 14px;">Pengguna Terhadap Kinerja Layanan Laboratorium</a>
                 <a class="dropdown-item" href="{{ route('kemahasiswaan.eval') }}" style="font-size: 14px;">Pengguna Terhadap Kinerja Layanan Subbagian Kemahasiswaan</a>
@@ -87,7 +87,7 @@
                 <a class="dropdown-item" href="#" style="font-size: 14px;">Mahasiswa</a>
                 <a class="dropdown-item" href="#" style="font-size: 14px;">Mitra Kerja Sama</a>
                 <a class="dropdown-item" href="#" style="font-size: 14px;">Tracer Studi</a>
-                <a class="dropdown-item" href="#" style="font-size: 14px;">Pengguna Terhadap Kinerja Pimpinan Fakultas</a>
+                <a class="dropdown-item" href="{{ route('pimpinan.index') }}" style="font-size: 14px;">Pengguna Terhadap Kinerja Pimpinan Fakultas</a>
                 <a class="dropdown-item" href="{{ route('laypro.index') }}" style="font-size: 14px;">Pengguna Terhadap Kinerja Layanan Prodi</a>
                 <a class="dropdown-item" href="{{ route('lab.index') }}" style="font-size: 14px;">Pengguna Terhadap Kinerja Layanan Laboratorium</a>
                 <a class="dropdown-item" href="{{ route('kemahasiswaan.index') }}" style="font-size: 14px;">Pengguna Terhadap Kinerja Layanan Subbagian Kemahasiswaan</a>
