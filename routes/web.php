@@ -30,6 +30,7 @@ use App\Http\Controllers\LaporanPimpinanController;
 use App\Http\Controllers\EvalPimpinanController;
 
 use App\Http\Controllers\FormulirController;
+use App\Http\Controllers\BerandaController;
 
 /*
 |--------------------------------------------------------------------------
@@ -42,10 +43,20 @@ use App\Http\Controllers\FormulirController;
 |
 */
 
-Route::get('/', function () {
-    return view('layouts/master');
-});
 
+
+
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+// Route Autentikasi Login
+Route::group(['middleware' => ['auth']], function () {
+    Route::get('/formulir', [FormulirController::class, 'index'])->name('formulir.index');
+    Route::get('/', [BerandaController::class, 'index'])->name('beranda');
+
+    Route::group(['middleware' => ['cek_login:admin']], function () {
 Route::get('penggunaLulusan', [LaporanPenggunaLulusanController::class, 'index'])->name('penggunaLulusan.index');
 Route::post('/penggunaLulusan/import', [LaporanPenggunaLulusanController::class, 'import'])->name('penggunaLulusan.import');
 Route::get('/penggunaLulusan/eval', [EvalPenggunaLulusanController::class, 'index'])->name('penggunaLulusan.eval');
@@ -92,4 +103,10 @@ Route::post('/pimpinan/import', [LaporanPimpinanController::class, 'import'])->n
 Route::get('/pimpinan/eval', [EvalPimpinanController::class, 'index'])->name('pimpinan.eval');
 Route::get('/pimpinan/table', [EvalPimpinanController::class, 'table'])->name('pimpinan.table');
 
-Route::get('formullir', [FormulirController::class, 'index'])->name('formullir.index');
+
+    });
+
+    Route::group(['middleware' => ['cek_login:user']], function () {
+    
+    });
+});

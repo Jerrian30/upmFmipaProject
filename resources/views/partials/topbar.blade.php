@@ -4,7 +4,7 @@
 
     <!-- Sidebar Toggle (Topbar) for Mobile View -->
     <!-- Topbar Navbar -->
-    <ul class="navbar-nav ml-auto">
+    <ul class="navbar-nav mr-auto">
 
         <a class="navbar-brand" href="#">
             <img src="{{ asset('sbadmin/img/logoUNIB.png') }}" height="55" alt="logo">
@@ -12,24 +12,19 @@
 
         <!-- Integrasi Item-Menu dari Sidebar ke Topbar -->
         <!-- Home -->
+
+
         <li class="nav-item active">
             <a class="nav-link" href="#" style="font-size: 14px;" >
-                <i class="fas fa-home"></i>
+                <i class="fas fa-home"></i>&nbsp;
                 <span>Beranda</span>
             </a>
         </li>
 
-        <!-- Profil -->
+@if (auth()->user()->role == 'admin')
         <li class="nav-item active">
             <a class="nav-link" href="#" style="font-size: 14px;">
-                <i class="fas fa-user"></i>
-                <span>Profil</span>
-            </a>
-        </li>
-
-        <li class="nav-item active">
-            <a class="nav-link" href="#" style="font-size: 14px;">
-                <i class="fas fa-file-alt"></i>
+                <i class="fas fa-file-alt"></i>&nbsp;
                 <span>Dokumen SPMI</span>
             </a>
         </li>
@@ -65,14 +60,15 @@
                 <a class="dropdown-item" href="#" style="font-size: 14px;">VMTS</a>
             </div>
         </li>
-
+ @endif
         <li class="nav-item active">
-            <a class="nav-link" href="{{ route('formullir.index') }}" style="font-size: 14px;">
+            <a class="nav-link" href="{{ route('formulir.index') }}" style="font-size: 14px;">
                 <i class="fas fa-poll"></i>
+                &nbsp;
                 <span>Formulir Survei</span>
             </a>
         </li>
-
+@if (auth()->user()->role == 'admin')
         <li class="nav-item dropdown no-arrow">
             <a class="nav-link dropdown-toggle" href="#" style="font-size: 14px;" id="laporanSurveiDropdown" role="button"
                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -111,14 +107,17 @@
                 <span>SOP</span>
             </a>
         </li>
-
+@endif
         <!-- ... Lanjutkan dengan item-menu lain sesuai kebutuhan ... -->
 
         <!-- Pengaturan Dropdown User yang sudah ada di Topbar -->
+
+    </ul>
+    <ul class="navbar-nav ml-auto">
         <div class="topbar-divider d-none d-sm-block"></div>
 
         <!-- Nav Item - User Information -->
-        <li class="nav-item dropdown no-arrow">
+        <li class="nav-item dropdown no-arrow ml-auto">
             <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 <span class="mr-2 d-none d-lg-inline text-gray-600 small">Jerrian</span>
                 <img class="img-profile rounded-circle" src="{{ asset('sbadmin/img/jerot.jpg') }}">
@@ -143,8 +142,6 @@
                     Logout
                 </a>
             </div>
-        </li>
     </ul>
-
 </nav>
 <!-- End of Topbar -->
