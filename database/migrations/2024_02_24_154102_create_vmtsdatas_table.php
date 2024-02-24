@@ -11,12 +11,12 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('vmts', function (Blueprint $table) {
+        Schema::create('vmtsdatas', function (Blueprint $table) {
             $table->id();
             $table->datetime('timestamp');
             $table->string('program_studi')->nullable();
             $table->string('status_di_universitas')->nullable();
-            $table->integer('lama_bergabung')->nullable(); // asumsi dalam tahun
+            $table->string('lama_bergabung')->nullable(); // asumsi dalam tahun
             $table->string('mengetahui_vmts')->nullable();
             $table->string('sumber_informasi_vmts')->nullable();
             $table->string('ikut_sosialisasi_vmts')->nullable();
@@ -38,6 +38,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('vmts');
+        Schema::dropIfExists('vmtsdatas');
     }
 };

@@ -29,6 +29,9 @@ use App\Http\Controllers\EvalAkademikController;
 use App\Http\Controllers\LaporanPimpinanController;
 use App\Http\Controllers\EvalPimpinanController;
 
+use App\Http\Controllers\LaporanVmtsController;
+use App\Http\Controllers\EvalVmtsController;
+
 use App\Http\Controllers\FormulirController;
 use App\Http\Controllers\BerandaController;
 
@@ -102,6 +105,11 @@ Route::get('pimpinan', [LaporanPimpinanController::class, 'index'])->name('pimpi
 Route::post('/pimpinan/import', [LaporanPimpinanController::class, 'import'])->name('pimpinan.import');
 Route::get('/pimpinan/eval', [EvalPimpinanController::class, 'index'])->name('pimpinan.eval');
 Route::get('/pimpinan/table', [EvalPimpinanController::class, 'table'])->name('pimpinan.table');
+
+Route::get('vmts', [LaporanVmtsController::class, 'index'])->name('vmts.index');
+Route::post('/vmts/import', [LaporanVmtsController::class, 'import'])->name('vmts.import');
+Route::get('/vmts/eval', [EvalVmtsController::class, 'index'])->name('vmts.eval');
+Route::get('/vmts/table', [EvalVmtsController::class, 'table'])->name('vmts.table');
 
 
     });
