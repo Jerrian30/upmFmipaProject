@@ -23,7 +23,7 @@
 
 @if (auth()->user()->role == 'admin')
         <li class="nav-item active">
-            <a class="nav-link" href="#" style="font-size: 14px;">
+            <a class="nav-link" href="{{ route('dokumen.index') }}" style="font-size: 14px;">
                 <i class="fas fa-file-alt"></i>&nbsp;
                 <span>Dokumen SPMI</span>
             </a>
@@ -31,7 +31,7 @@
 
         <li class="nav-item active">
             <a class="nav-link" href="#" style="font-size: 14px;">
-                <i class="fas fa-shield-alt"></i>
+                <i class="fas fa-shield-alt"></i>&nbsp;
                 <span>Gugus Penjaminan Mutu</span>
             </a>
         </li>
@@ -96,15 +96,22 @@
 
         <li class="nav-item active">
             <a class="nav-link" href="#" style="font-size: 14px;">
-                <i class="fas fa-download"></i>
+                <i class="fas fa-download"></i>&nbsp;
                 <span>Unduh</span>
             </a>
         </li>
 
         <li class="nav-item active">
             <a class="nav-link" href="#" style="font-size: 14px;">
-                <i class="fas fa-clipboard-list"></i>
+                <i class="fas fa-clipboard-list"></i>&nbsp;
                 <span>SOP</span>
+            </a>
+        </li>
+        
+        <li class="nav-item active">
+            <a class="nav-link" href="{{ route('user_roles.index') }}" style="font-size: 14px;">
+                <i class="fas fa-users"></i>&nbsp;
+                <span>Manajemen User</span>
             </a>
         </li>
 @endif
