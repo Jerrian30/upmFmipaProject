@@ -106,8 +106,10 @@ Route::group(['middleware' => ['cek_login:admin']], function () {
 
     Route::get('akademik', [LaporanAkademikController::class, 'index'])->name('akademik.index');
     Route::post('/akademik/import', [LaporanAkademikController::class, 'import'])->name('akademik.import');
+    Route::post('/akademik/delete', [LaporanAkademikController::class, 'delete'])->name('akademik.delete');
     Route::get('/akademik/eval', [EvalAkademikController::class, 'index'])->name('akademik.eval');
     Route::get('/akademik/table', [EvalAkademikController::class, 'table'])->name('akademik.table');
+    
 
     Route::get('pimpinan', [LaporanPimpinanController::class, 'index'])->name('pimpinan.index');
     Route::post('/pimpinan/import', [LaporanPimpinanController::class, 'import'])->name('pimpinan.import');

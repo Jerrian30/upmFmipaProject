@@ -35,4 +35,17 @@ class LaporanAkademikController extends Controller
         return redirect()->route('akademik.index')->with('success', 'Data berhasil diimpor.');
     }
 
+    public function delete(Request $request)
+    {
+        $request->validate([
+            'ids' => 'required|array',
+            'ids.*' => 'exists:akademiks,id',
+        ]);
+
+        Akademik::destroy($request->ids);
+
+        return back()->with('success', 'Data berhasil dihapus.');
+    }
+
+
 }
