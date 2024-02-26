@@ -1,8 +1,8 @@
 <?php
 
-namespace App\Charts\Laypro\All;
+namespace App\Charts\Mahasiswa\All;
 
-use App\Models\Laypro;
+use App\Models\Mahasiswa;
 use ArielMejiaDev\LarapexCharts\LarapexChart;
 
 class PL12
@@ -16,7 +16,7 @@ class PL12
 
     public function build(): \ArielMejiaDev\LarapexCharts\DonutChart
     {
-        $dataPercentages = $this->calculatePercentages('ketua_berpakaian_rapi');
+        $dataPercentages = $this->calculatePercentages('fasilitas_internet');
         
         return $this->chart->donutChart()
             ->addData(array_values($dataPercentages))
@@ -25,7 +25,7 @@ class PL12
 
     protected function calculatePercentages($columnName): array
     {
-        $dataTotal = Laypro::selectRaw("COUNT(*) as count, $columnName")
+        $dataTotal = Mahasiswa::selectRaw("COUNT(*) as count, $columnName")
             ->groupBy($columnName)
             ->pluck('count', $columnName);
 
@@ -53,7 +53,7 @@ class PL12
     public function getDetailedPercentages()
     {
         
-        $percentages = $this->calculatePercentages('ketua_berpakaian_rapi');
+        $percentages = $this->calculatePercentages('fasilitas_internet');
         return [
             'persen1' => $percentages[1] ?? 0,
             'persen2' => $percentages[2] ?? 0,

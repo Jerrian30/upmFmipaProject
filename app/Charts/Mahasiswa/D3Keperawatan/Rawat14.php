@@ -1,8 +1,8 @@
 <?php
 
-namespace App\Charts\Laypro\D3Keperawatan;
+namespace App\Charts\Mahasiswa\D3Keperawatan;
 
-use App\Models\Laypro;
+use App\Models\Mahasiswa;
 use ArielMejiaDev\LarapexCharts\LarapexChart;
 
 class Rawat14
@@ -16,10 +16,10 @@ class Rawat14
 
     protected function calculatePercentages()
     {
-        $dataD3Farmasi = Laypro::where('program_studi', 'D3 Keperawatan')
-            ->selectRaw('COUNT(*) as count, ketua_mudah_dihubungi')
-            ->groupBy('ketua_mudah_dihubungi')
-            ->pluck('count', 'ketua_mudah_dihubungi');
+        $dataD3Farmasi = Mahasiswa::where('program_studi', 'D3 Keperawatan')
+            ->selectRaw('COUNT(*) as count, keamanan_kampus')
+            ->groupBy('keamanan_kampus')
+            ->pluck('count', 'keamanan_kampus');
 
         $dataValues = [1 => 0, 2 => 0, 3 => 0, 4 => 0];
 

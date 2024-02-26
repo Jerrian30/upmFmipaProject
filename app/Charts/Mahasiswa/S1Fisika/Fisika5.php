@@ -17,9 +17,9 @@ class Fisika5
     protected function calculatePercentages()
     {
         $dataD3Farmasi = Laypro::where('program_studi', 'S1 Fisika')
-            ->selectRaw('COUNT(*) as count, urus_transkrip')
-            ->groupBy('urus_transkrip')
-            ->pluck('count', 'urus_transkrip');
+            ->selectRaw('COUNT(*) as count, materi_kuliah_jelas')
+            ->groupBy('materi_kuliah_jelas')
+            ->pluck('count', 'materi_kuliah_jelas');
 
         $dataValues = [1 => 0, 2 => 0, 3 => 0, 4 => 0];
 

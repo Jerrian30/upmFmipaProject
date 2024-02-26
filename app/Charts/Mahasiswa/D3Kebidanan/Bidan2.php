@@ -1,8 +1,8 @@
 <?php
 
-namespace App\Charts\Laypro\D3Kebidanan;
+namespace App\Charts\Mahasiswa\D3Kebidanan;
 
-use App\Models\Laypro;
+use App\Models\Mahasiswa;
 use ArielMejiaDev\LarapexCharts\LarapexChart;
 
 class Bidan2
@@ -16,10 +16,10 @@ class Bidan2
 
     protected function calculatePercentages()
     {
-        $dataD3Farmasi = Laypro::where('program_studi', 'D3 Kebidanan')
-            ->selectRaw('COUNT(*) as count, fasil_perkuliahan')
-            ->groupBy('fasil_perkuliahan')
-            ->pluck('count', 'fasil_perkuliahan');
+        $dataD3Farmasi = Mahasiswa::where('program_studi', 'D3 Kebidanan')
+            ->selectRaw('COUNT(*) as count, dosen_pembina_kegiatan')
+            ->groupBy('dosen_pembina_kegiatan')
+            ->pluck('count', 'dosen_pembina_kegiatan');
 
         $dataValues = [1 => 0, 2 => 0, 3 => 0, 4 => 0];
 

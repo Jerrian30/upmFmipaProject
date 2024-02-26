@@ -17,9 +17,9 @@ class Math15
     protected function calculatePercentages()
     {
         $dataD3Farmasi = Laypro::where('program_studi', 'S1 Matematika')
-            ->selectRaw('COUNT(*) as count, petugas_ramah')
-            ->groupBy('petugas_ramah')
-            ->pluck('count', 'petugas_ramah');
+            ->selectRaw('COUNT(*) as count, penanganan_keluhan_mahasiswa')
+            ->groupBy('penanganan_keluhan_mahasiswa')
+            ->pluck('count', 'penanganan_keluhan_mahasiswa');
 
         $dataValues = [1 => 0, 2 => 0, 3 => 0, 4 => 0];
 

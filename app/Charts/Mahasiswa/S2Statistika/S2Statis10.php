@@ -17,9 +17,9 @@ class S2Statis10
     protected function calculatePercentages()
     {
         $dataD3Farmasi = Laypro::where('program_studi', 'S2 Statistika')
-            ->selectRaw('COUNT(*) as count, dukung_studi')
-            ->groupBy('dukung_studi')
-            ->pluck('count', 'dukung_studi');
+            ->selectRaw('COUNT(*) as count, koleksi_akses_perpustakaan')
+            ->groupBy('koleksi_akses_perpustakaan')
+            ->pluck('count', 'koleksi_akses_perpustakaan');
 
         $dataValues = [1 => 0, 2 => 0, 3 => 0, 4 => 0];
 

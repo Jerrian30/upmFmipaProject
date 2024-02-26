@@ -1,8 +1,8 @@
 <?php
 
-namespace App\Charts\Laypro\All;
+namespace App\Charts\Mahasiswa\All;
 
-use App\Models\Laypro;
+use App\Models\Mahasiswa;
 use ArielMejiaDev\LarapexCharts\LarapexChart;
 
 class PL1
@@ -25,7 +25,7 @@ class PL1
 
     protected function calculatePercentages($columnName): array
     {
-        $dataTotal = Laypro::selectRaw("COUNT(*) as count, $columnName")
+        $dataTotal = Mahasiswa::selectRaw("COUNT(*) as count, $columnName")
             ->groupBy($columnName)
             ->pluck('count', $columnName);
 

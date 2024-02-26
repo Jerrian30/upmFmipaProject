@@ -17,9 +17,9 @@ class Statis6
     protected function calculatePercentages()
     {
         $dataD3Farmasi = Laypro::where('program_studi', 'S1 Statistika')
-            ->selectRaw('COUNT(*) as count, urus_krs_khs')
-            ->groupBy('urus_krs_khs')
-            ->pluck('count', 'urus_krs_khs');
+            ->selectRaw('COUNT(*) as count, dosen_ramah_empati')
+            ->groupBy('dosen_ramah_empati')
+            ->pluck('count', 'dosen_ramah_empati');
 
         $dataValues = [1 => 0, 2 => 0, 3 => 0, 4 => 0];
 
