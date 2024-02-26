@@ -324,6 +324,29 @@ use App\Charts\Mahasiswa\S2Kimia\S2Kim20;
 use App\Charts\Mahasiswa\S2Kimia\S2Kim21;
 use App\Charts\Mahasiswa\S2Kimia\S2Kim22;
 
+use App\Charts\Mahasiswa\S2Biologi\S2Bio1;
+use App\Charts\Mahasiswa\S2Biologi\S2Bio2;
+use App\Charts\Mahasiswa\S2Biologi\S2Bio3;
+use App\Charts\Mahasiswa\S2Biologi\S2Bio4;
+use App\Charts\Mahasiswa\S2Biologi\S2Bio5;
+use App\Charts\Mahasiswa\S2Biologi\S2Bio6;
+use App\Charts\Mahasiswa\S2Biologi\S2Bio7;
+use App\Charts\Mahasiswa\S2Biologi\S2Bio8;
+use App\Charts\Mahasiswa\S2Biologi\S2Bio9;
+use App\Charts\Mahasiswa\S2Biologi\S2Bio10;
+use App\Charts\Mahasiswa\S2Biologi\S2Bio11;
+use App\Charts\Mahasiswa\S2Biologi\S2Bio12;
+use App\Charts\Mahasiswa\S2Biologi\S2Bio13;
+use App\Charts\Mahasiswa\S2Biologi\S2Bio14;
+use App\Charts\Mahasiswa\S2Biologi\S2Bio15;
+use App\Charts\Mahasiswa\S2Biologi\S2Bio16;
+use App\Charts\Mahasiswa\S2Biologi\S2Bio17;
+use App\Charts\Mahasiswa\S2Biologi\S2Bio18;
+use App\Charts\Mahasiswa\S2Biologi\S2Bio19;
+use App\Charts\Mahasiswa\S2Biologi\S2Bio20;
+use App\Charts\Mahasiswa\S2Biologi\S2Bio21;
+use App\Charts\Mahasiswa\S2Biologi\S2Bio22;
+
 use App\Charts\Mahasiswa\S1Fisika\Fisika1;
 use App\Charts\Mahasiswa\S1Fisika\Fisika2;
 use App\Charts\Mahasiswa\S1Fisika\Fisika3;
@@ -619,6 +642,7 @@ class EvalMahasiswaController extends Controller
         S1kim20 $s1kim20,
         S1kim21 $s1kim21,
         S1kim22 $s1kim22,
+        
 
         // // S2 Kimia
         S2Kim1 $s2kim1,
@@ -643,6 +667,29 @@ class EvalMahasiswaController extends Controller
         S2Kim20 $s2kim20,
         S2Kim21 $s2kim21,
         S2Kim22 $s2kim22,
+
+        S2Bio1 $s2bio1,
+        S2Bio2 $s2bio2,
+        S2Bio3 $s2bio3,
+        S2Bio4 $s2bio4,
+        S2Bio5 $s2bio5,
+        S2Bio6 $s2bio6,
+        S2Bio7 $s2bio7,
+        S2Bio8 $s2bio8,
+        S2Bio9 $s2bio9,
+        S2Bio10 $s2bio10,
+        S2Bio11 $s2bio11,
+        S2Bio12 $s2bio12,
+        S2Bio13 $s2bio13,
+        S2Bio14 $s2bio14,
+        S2Bio15 $s2bio15,
+        S2Bio16 $s2bio16,
+        S2Bio17 $s2bio17,
+        S2Bio18 $s2bio18,
+        S2Bio19 $s2bio19,
+        S2Bio20 $s2bio20,
+        S2Bio21 $s2bio21,
+        S2Bio22 $s2bio22,
 
         // Fisika
         Fisika1 $fisika1,
@@ -899,10 +946,11 @@ class EvalMahasiswaController extends Controller
             's2statis15' => $s2statis15->build(),
             's2statis16' => $s2statis16->build(),
             's2statis17' => $s2statis17->build(),
-           's2statis18' => $s2statis18->build(),
-           's2statis19' => $s2statis19->build(),
-           's2statis20' => $s2statis20->build(),
-           's2statis21' => $s2statis21->build(),
+            's2statis18' => $s2statis18->build(),
+            's2statis19' => $s2statis19->build(),
+            's2statis20' => $s2statis20->build(),
+            's2statis21' => $s2statis21->build(),
+            's2statis22' => $s2statis22->build(),
 
             's1kim1' => $s1kim1->build(),
             's1kim2' => $s1kim2->build(),
@@ -921,11 +969,11 @@ class EvalMahasiswaController extends Controller
             's1kim15' => $s1kim15->build(),
             's1kim16' => $s1kim16->build(),
             's1kim17' => $s1kim17->build(),
-           's1kim18' => $s1kim18->build(),
-           's1kim19' => $s1kim19->build(),
-           's1kim20' => $s1kim20->build(),
-           's1kim21' => $s1kim21->build(),
-           's1kim22' => $s1kim22->build(),
+            's1kim18' => $s1kim18->build(),
+            's1kim19' => $s1kim19->build(),
+            's1kim20' => $s1kim20->build(),
+            's1kim21' => $s1kim21->build(),
+            's1kim22' => $s1kim22->build(),
 
             's2kim1' => $s2kim1->build(),
             's2kim2' => $s2kim2->build(),
@@ -943,12 +991,35 @@ class EvalMahasiswaController extends Controller
             's2kim14' => $s2kim14->build(),
             's2kim15' => $s2kim15->build(),
             's2kim16' => $s2kim16->build(),
-           's2kim17' => $s2kim17->build(),
-          's2kim18' => $s2kim18->build(),
-          's2kim19' => $s2kim19->build(),
-          's2kim20' => $s2kim20->build(),
-          's2kim21' => $s2kim21->build(),
-          's2kim22' => $s2kim22->build(),
+            's2kim17' => $s2kim17->build(),
+            's2kim18' => $s2kim18->build(),
+            's2kim19' => $s2kim19->build(),
+            's2kim20' => $s2kim20->build(),
+            's2kim21' => $s2kim21->build(),
+            's2kim22' => $s2kim22->build(),
+
+            's2bio1' => $s2bio1->build(),
+            's2bio2' => $s2bio2->build(),
+            's2bio3' => $s2bio3->build(),
+            's2bio4' => $s2bio4->build(),
+            's2bio5' => $s2bio5->build(),
+            's2bio6' => $s2bio6->build(),
+            's2bio7' => $s2bio7->build(),
+            's2bio8' => $s2bio8->build(),
+            's2bio9' => $s2bio9->build(),
+            's2bio10' => $s2bio10->build(),
+            's2bio11' => $s2bio11->build(),
+            's2bio12' => $s2bio12->build(),
+            's2bio13' => $s2bio13->build(),
+            's2bio14' => $s2bio14->build(),
+            's2bio15' => $s2bio15->build(),
+            's2bio16' => $s2bio16->build(),
+            's2bio17' => $s2bio17->build(),
+            's2bio18' => $s2bio18->build(),
+            's2bio19' => $s2bio19->build(),
+            's2bio20' => $s2bio20->build(),
+            's2bio21' => $s2bio21->build(),
+            's2bio22' => $s2bio22->build(),
 
             
             'fisika1' => $fisika1->build(),

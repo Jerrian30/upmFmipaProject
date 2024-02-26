@@ -14,6 +14,12 @@
 <script src="{{ $fisika14->cdn() }}"></script>
 <script src="{{ $fisika15->cdn() }}"></script>
 <script src="{{ $fisika16->cdn() }}"></script>
+<script src="{{ $fisika17->cdn() }}"></script>
+<script src="{{ $fisika18->cdn() }}"></script>
+<script src="{{ $fisika19->cdn() }}"></script>
+<script src="{{ $fisika20->cdn() }}"></script>
+<script src="{{ $fisika21->cdn() }}"></script>
+<script src="{{ $fisika22->cdn() }}"></script>
 
 {{ $fisika1->script() }}
 {{ $fisika2->script() }}
@@ -31,3 +37,9 @@
 {{ $fisika14->script() }}
 {{ $fisika15->script() }}
 {{ $fisika16->script() }}
+{{ $fisika17->script() }}
+{{ $fisika18->script() }}
+{{ $fisika19->script() }}
+{{ $fisika20->script() }}
+{{ $fisika21->script() }}
+{{ $fisika22->script() }}

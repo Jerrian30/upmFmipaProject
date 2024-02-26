@@ -14,6 +14,12 @@
 <script src="{{ $math14->cdn() }}"></script>
 <script src="{{ $math15->cdn() }}"></script>
 <script src="{{ $math16->cdn() }}"></script>
+<script src="{{ $math17->cdn() }}"></script>
+<script src="{{ $math18->cdn() }}"></script>
+<script src="{{ $math19->cdn() }}"></script>
+<script src="{{ $math20->cdn() }}"></script>
+<script src="{{ $math21->cdn() }}"></script>
+<script src="{{ $math22->cdn() }}"></script>
 
 {{ $math1->script() }}
 {{ $math2->script() }}
@@ -31,3 +37,9 @@
 {{ $math14->script() }}
 {{ $math15->script() }}
 {{ $math16->script() }}
+{{ $math17->script() }}
+{{ $math18->script() }}
+{{ $math19->script() }}
+{{ $math20->script() }}
+{{ $math21->script() }}
+{{ $math22->script() }}

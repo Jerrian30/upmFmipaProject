@@ -14,6 +14,12 @@
 <script src="{{ $bidan14->cdn() }}"></script>
 <script src="{{ $bidan15->cdn() }}"></script>
 <script src="{{ $bidan16->cdn() }}"></script>
+<script src="{{ $bidan17->cdn() }}"></script>
+<script src="{{ $bidan18->cdn() }}"></script>
+<script src="{{ $bidan19->cdn() }}"></script>
+<script src="{{ $bidan20->cdn() }}"></script>
+<script src="{{ $bidan21->cdn() }}"></script>
+<script src="{{ $bidan22->cdn() }}"></script>
 
 {{ $bidan1->script() }}
 {{ $bidan2->script() }}
@@ -31,3 +37,9 @@
 {{ $bidan14->script() }}
 {{ $bidan15->script() }}
 {{ $bidan16->script() }}
+{{ $bidan17->script() }}
+{{ $bidan18->script() }}
+{{ $bidan19->script() }}
+{{ $bidan20->script() }}
+{{ $bidan21->script() }}
+{{ $bidan22->script() }}

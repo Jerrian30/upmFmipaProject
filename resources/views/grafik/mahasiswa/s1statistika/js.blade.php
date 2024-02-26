@@ -14,6 +14,12 @@
 <script src="{{ $statis14->cdn() }}"></script>
 <script src="{{ $statis15->cdn() }}"></script>
 <script src="{{ $statis16->cdn() }}"></script>
+<script src="{{ $statis17->cdn() }}"></script>
+<script src="{{ $statis18->cdn() }}"></script>
+<script src="{{ $statis19->cdn() }}"></script>
+<script src="{{ $statis20->cdn() }}"></script>
+<script src="{{ $statis21->cdn() }}"></script>
+<script src="{{ $statis22->cdn() }}"></script>
 
 {{ $statis1->script() }}
 {{ $statis2->script() }}
@@ -31,3 +37,9 @@
 {{ $statis14->script() }}
 {{ $statis15->script() }}
 {{ $statis16->script() }}
+{{ $statis17->script() }}
+{{ $statis18->script() }}
+{{ $statis19->script() }}
+{{ $statis20->script() }}
+{{ $statis21->script() }}
+{{ $statis22->script() }}

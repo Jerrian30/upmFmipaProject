@@ -14,6 +14,12 @@
 <script src="{{ $s1kim14->cdn() }}"></script>
 <script src="{{ $s1kim15->cdn() }}"></script>
 <script src="{{ $s1kim16->cdn() }}"></script>
+<script src="{{ $s1kim17->cdn() }}"></script>
+<script src="{{ $s1kim18->cdn() }}"></script>
+<script src="{{ $s1kim19->cdn() }}"></script>
+<script src="{{ $s1kim20->cdn() }}"></script>
+<script src="{{ $s1kim21->cdn() }}"></script>
+<script src="{{ $s1kim22->cdn() }}"></script>
 
 {{ $s1kim1->script() }}
 {{ $s1kim2->script() }}
@@ -31,3 +37,9 @@
 {{ $s1kim14->script() }}
 {{ $s1kim15->script() }}
 {{ $s1kim16->script() }}
+{{ $s1kim17->script() }}
+{{ $s1kim18->script() }}
+{{ $s1kim19->script() }}
+{{ $s1kim20->script() }}
+{{ $s1kim21->script() }}
+{{ $s1kim22->script() }}

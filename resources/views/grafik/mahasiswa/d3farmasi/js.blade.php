@@ -14,6 +14,12 @@
 <script src="{{ $farm14->cdn() }}"></script>
 <script src="{{ $farm15->cdn() }}"></script>
 <script src="{{ $farm16->cdn() }}"></script>
+<script src="{{ $farm17->cdn() }}"></script>
+<script src="{{ $farm18->cdn() }}"></script>
+<script src="{{ $farm19->cdn() }}"></script>
+<script src="{{ $farm20->cdn() }}"></script>
+<script src="{{ $farm21->cdn() }}"></script>
+<script src="{{ $farm22->cdn() }}"></script>
 
 {{ $farm1->script() }}
 {{ $farm2->script() }}
@@ -31,3 +37,9 @@
 {{ $farm14->script() }}
 {{ $farm15->script() }}
 {{ $farm16->script() }}
+{{ $farm17->script() }}
+{{ $farm18->script() }}
+{{ $farm19->script() }}
+{{ $farm20->script() }}
+{{ $farm21->script() }}
+{{ $farm22->script() }}

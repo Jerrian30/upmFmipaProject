@@ -14,6 +14,12 @@
 <script src="{{ $geo14->cdn() }}"></script>
 <script src="{{ $geo15->cdn() }}"></script>
 <script src="{{ $geo16->cdn() }}"></script>
+<script src="{{ $geo17->cdn() }}"></script>
+<script src="{{ $geo18->cdn() }}"></script>
+<script src="{{ $geo19->cdn() }}"></script>
+<script src="{{ $geo20->cdn() }}"></script>
+<script src="{{ $geo21->cdn() }}"></script>
+<script src="{{ $geo22->cdn() }}"></script>
 
 {{ $geo1->script() }}
 {{ $geo2->script() }}
@@ -31,3 +37,9 @@
 {{ $geo14->script() }}
 {{ $geo15->script() }}
 {{ $geo16->script() }}
+{{ $geo17->script() }}
+{{ $geo18->script() }}
+{{ $geo19->script() }}
+{{ $geo20->script() }}
+{{ $geo21->script() }}
+{{ $geo22->script() }}

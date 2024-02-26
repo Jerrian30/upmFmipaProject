@@ -1,148 +1,45 @@
-<div class="row">
-    <div class="col-lg-3 mb-4 allContainer" style="display: none;">
-        <div class="card">
-            <div class="card-body" >
-                <h6 class="card-title">1 Kebersihan dan kenyamanan ruangan</h6>
-                {!! $pl1->container() !!}
-            </div>
-        </div>
-    </div>
+<script src="{{ $farm1->cdn() }}"></script>
+<script src="{{ $farm2->cdn() }}"></script>
+<script src="{{ $farm3->cdn() }}"></script>
+<script src="{{ $farm4->cdn() }}"></script>
+<script src="{{ $farm5->cdn() }}"></script>
+<script src="{{ $farm6->cdn() }}"></script>
+<script src="{{ $farm7->cdn() }}"></script>
+<script src="{{ $farm8->cdn() }}"></script>
+<script src="{{ $farm9->cdn() }}"></script>
+<script src="{{ $farm10->cdn() }}"></script>
+<script src="{{ $farm11->cdn() }}"></script>
+<script src="{{ $farm12->cdn() }}"></script>
+<script src="{{ $farm13->cdn() }}"></script>
+<script src="{{ $farm14->cdn() }}"></script>
+<script src="{{ $farm15->cdn() }}"></script>
+<script src="{{ $farm16->cdn() }}"></script>
+<script src="{{ $farm17->cdn() }}"></script>
+<script src="{{ $farm18->cdn() }}"></script>
+<script src="{{ $farm19->cdn() }}"></script>
+<script src="{{ $farm20->cdn() }}"></script>
+<script src="{{ $farm21->cdn() }}"></script>
+<script src="{{ $farm22->cdn() }}"></script>
 
-    <div class="col-lg-3 mb-4 allContainer" style="display: none;">
-        <div class="card">
-            <div class="card-body">
-                <h6 class="card-title">2 Fasilitas Perkuliahan</h6>
-                {!! $pl2->container() !!}
-            </div>
-        </div>
-    </div>
-    
-    <div class="col-lg-3 mb-4 allContainer" style="display: none;">
-        <div class="card">
-            <div class="card-body">
-                <h6 class="card-title">3 Fasilitas Laboratorium</h6>
-                {!! $pl3->container() !!}
-            </div>
-        </div>
-    </div>
-
-    <!-- Grafik Kedua -->
-    <div class="col-lg-3 mb-4 allContainer" style="display: none;">
-        <div class="card">
-            <div class="card-body">
-                <h6 class="card-title">4 Kemudahan mendapatkan informasi perkuliahan</h6>
-                {!! $pl4->container() !!}
-            </div>
-        </div>
-    </div>
-
-    <div class="col-lg-3 mb-4 allContainer" style="display: none;">
-        <div class="card">
-            <div class="card-body">
-                <h6 class="card-title">5 Kemudahan dalam mengurus transkrip nilai</h6>
-                {!! $pl5->container() !!}
-            </div>
-        </div>
-    </div>
-
-    <div class="col-lg-3 mb-4 allContainer" style="display: none;">
-        <div class="card">
-            <div class="card-body">
-                <h6 class="card-title">6 Kemudahan dalam mengurus KRS dan KHS</h6>
-                {!! $pl6->container() !!}
-            </div>
-        </div>
-    </div>
-
-    <!-- Grafik Kedua -->
-    <div class="col-lg-3 mb-4 allContainer" style="display: none;">
-        <div class="card">
-            <div class="card-body">
-                <h6 class="card-title">7 Responsif terhadap keluhan mahasiswa</h6>
-                {!! $pl7->container() !!}
-            </div>
-        </div>
-    </div>
-    
-    <div class="col-lg-3 mb-4 allContainer" style="display: none;">
-        <div class="card">
-            <div class="card-body">
-                <h6 class="card-title">8 Penetapan dosen pengampu mata kuliah</h6>
-                {!! $pl8->container() !!}
-            </div>
-        </div>
-    </div>
-
-    <!-- Grafik Kedua -->
-    <div class="col-lg-3 mb-4 allContainer" style="display: none;">
-        <div class="card">
-            <div class="card-body">
-                <h6 class="card-title">9 Dukungan jurusan/prodi terhadap kegiatan (organisasi) kemahasiswaan</h6>
-                {!! $pl9->container() !!}
-            </div>
-        </div>
-    </div>
-
-    <div class="col-lg-3 mb-4 allContainer" style="display: none;">
-        <div class="card">
-            <div class="card-body">
-                <h6 class="card-title">10 Dukungan jurusan/prodi terhadap penyelesaian studi</h6>
-                {!! $pl10->container() !!}
-            </div>
-        </div>
-    </div>
-    
-    <div class="col-lg-3 mb-4 allContainer" style="display: none;">
-        <div class="card">
-            <div class="card-body">
-                <h6 class="card-title">11 Kemudahan informasi mengenai kegiatan ilmiah (seminar, kuliah umum, dll)</h6>
-                {!! $pl11->container() !!}
-            </div>
-        </div>
-    </div>
-
-    <div class="col-lg-3 mb-4 allContainer" style="display: none;">
-        <div class="card">
-            <div class="card-body">
-                <h6 class="card-title">12 Ketua Jurusan dan atau Program Studi berpakaian rapi dan memberi pelayanan administrasi dengan ramah</h6>
-                {!! $pl12->container() !!}
-            </div>
-        </div>
-    </div>
-
-    <div class="col-lg-3 mb-4 allContainer" style="display: none;">
-        <div class="card">
-            <div class="card-body">
-                <h6 class="card-title">13 Ketua Jurusan dan atau Program Studi memberi pelayanan secara responsif dan sesuai SOP</h6>
-                {!! $pl13->container() !!}
-            </div>
-        </div>
-    </div>
-
-    <div class="col-lg-3 mb-4 allContainer" style="display: none;">
-        <div class="card">
-            <div class="card-body">
-                <h6 class="card-title">14 Ketua Jurusan dan atau Program Studi mudah dihubungi ketika ingin menemuinya untuk menanyakan atau mendiskusikan persoalan akademik anda</h6>
-                {!! $pl14->container() !!}
-            </div>
-        </div>
-    </div>
-
-    <div class="col-lg-3 mb-4 allContainer" style="display: none;">
-        <div class="card">
-            <div class="card-body">
-                <h6 class="card-title">15 Kerapihan, kesopanan dan keramahan petugas</h6>
-                {!! $pl15->container() !!}
-            </div>
-        </div>
-    </div>
-
-    <div class="col-lg-3 mb-4 allContainer" style="display: none;">
-        <div class="card">
-            <div class="card-body">
-                <h6 class="card-title">16 Kemampuan petugas dalam menguasai IT terkait dengan pelayanan</h6>
-                {!! $pl16->container() !!}
-            </div>
-        </div>
-    </div>
-</div>
+{{ $farm1->script() }}
+{{ $farm2->script() }}
+{{ $farm3->script() }}
+{{ $farm4->script() }}
+{{ $farm5->script() }}
+{{ $farm6->script() }}
+{{ $farm7->script() }}
+{{ $farm8->script() }}
+{{ $farm9->script() }}
+{{ $farm10->script() }}
+{{ $farm11->script() }}
+{{ $farm12->script() }}
+{{ $farm13->script() }}
+{{ $farm14->script() }}
+{{ $farm15->script() }}
+{{ $farm16->script() }}
+{{ $farm17->script() }}
+{{ $farm18->script() }}
+{{ $farm19->script() }}
+{{ $farm20->script() }}
+{{ $farm21->script() }}
+{{ $farm22->script() }}

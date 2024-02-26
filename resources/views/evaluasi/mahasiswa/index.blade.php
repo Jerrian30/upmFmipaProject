@@ -16,6 +16,7 @@
 @include('grafik.mahasiswa.s2kimia.js') 
 @include('grafik.mahasiswa.s1geofisika.js')
 @include('grafik.mahasiswa.s1biologi.js')
+@include('grafik.mahasiswa.s2biologi.js')
 @include('grafik.mahasiswa.s1fisika.js')
 @include('grafik.mahasiswa.all.js')
 
@@ -92,6 +93,11 @@
             s2kimiaContainer.forEach(function(container) {
                 container.style.display = (value === 's2kimia') ? 'block' : 'none';
             });
+
+            var s2biologiContainer = document.querySelectorAll('.s2biologiContainer');
+            s2biologiContainer.forEach(function(container) {
+                container.style.display = (value === 's2biologi') ? 'block' : 'none';
+            });
         });
 
     </script>
@@ -112,6 +118,7 @@
         <select class="form-control" id="programStudi" name="programStudi">
             <option value="" disabled selected>Pilih</option>
             <option value="all">Semua</option>
+            <option value="s2biologi">S2 Biologi</option>
             <option value="s2kimia">S2 Kimia</option>
             <option value="s2statistika">S2 Statistika</option>
             <option value="s1biologi">S1 Biologi</option>
@@ -132,6 +139,7 @@
         @include('grafik.mahasiswa.all.view')
         @include('grafik.mahasiswa.s1statistika.view')
         @include('grafik.mahasiswa.s2statistika.view')
+        @include('grafik.mahasiswa.s2biologi.view')
         @include('grafik.mahasiswa.d3farmasi.view')
         @include('grafik.mahasiswa.s1farmasi.view')
         @include('grafik.mahasiswa.s1kimia.view')

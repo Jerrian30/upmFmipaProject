@@ -1,195 +1,195 @@
 <div class="row">
-    <div class="col-lg-3 mb-4 kebidananContainer" style="display: none;">
+    <div class="col-lg-3 mb-4 s2biologiContainer" style="display: none;">
         <div class="card">
             <div class="card-body" >
                 <h6 class="card-title">1. Prodi menetapkan dosen pembimbing akademik bagi mahasiswa</h6>
-                {!! $bidan1->container() !!}
+                {!! $s2bio1->container() !!}
             </div>
         </div>
     </div>
 
-    <div class="col-lg-3 mb-4 kebidananContainer" style="display: none;">
+    <div class="col-lg-3 mb-4 s2biologiContainer" style="display: none;">
         <div class="card">
             <div class="card-body">
-                <h6 class="card-title">2.	Prodi menetapkan dosen pembina/pembimbing kegiatan kemahasiswaan di bidang akademik dan non akademik</h6>
-                {!! $bidan2->container() !!}
+                <h6 class="card-title">2.	Prodi menetapkan dosen pembina/pembimbing kegiatan kemahasiswaan di s2biologig akademik dan non akademik</h6>
+                {!! $s2bio2->container() !!}
             </div>
         </div>
     </div>
     
-    <div class="col-lg-3 mb-4 kebidananContainer" style="display: none;">
+    <div class="col-lg-3 mb-4 s2biologiContainer" style="display: none;">
         <div class="card">
             <div class="card-body">
                 <h6 class="card-title">3.	Prodi menyediakan layanan bimbingan dan konseling/ pengembangan karir/ kesehatan bagi mahasiswa	</h6>
-                {!! $bidan3->container() !!}
+                {!! $s2bio3->container() !!}
             </div>
         </div>
     </div>
 
     <!-- Grafik Kedua -->
-    <div class="col-lg-3 mb-4 kebidananContainer" style="display: none;">
+    <div class="col-lg-3 mb-4 s2biologiContainer" style="display: none;">
         <div class="card">
             <div class="card-body">
                 <h6 class="card-title">4.	Prodi menyediakan reward/ apresiasi/ beasiswa bagi mahasiswa</h6>
-                {!! $bidan4->container() !!}
+                {!! $s2bio4->container() !!}
             </div>
         </div>
     </div>
 
-    <div class="col-lg-3 mb-4 kebidananContainer" style="display: none;">
+    <div class="col-lg-3 mb-4 s2biologiContainer" style="display: none;">
         <div class="card">
             <div class="card-body">
                 <h6 class="card-title">5. Dosen memberikan materi kuliah dengan jelas</h6>
-                {!! $bidan5->container() !!}
+                {!! $s2bio5->container() !!}
             </div>
         </div>
     </div>
 
-    <div class="col-lg-3 mb-4 kebidananContainer" style="display: none;">
+    <div class="col-lg-3 mb-4 s2biologiContainer" style="display: none;">
         <div class="card">
             <div class="card-body">
                 <h6 class="card-title">6. Dosen yang ramah, empati, responsif, datang tepat waktu dan mudah ditemui</h6>
-                {!! $bidan6->container() !!}
+                {!! $s2bio6->container() !!}
             </div>
         </div>
     </div>
 
     <!-- Grafik Kedua -->
-    <div class="col-lg-3 mb-4 kebidananContainer" style="display: none;">
+    <div class="col-lg-3 mb-4 s2biologiContainer" style="display: none;">
         <div class="card">
             <div class="card-body">
                 <h6 class="card-title">7.	Kemampuan staf akademik untuk melayani administrasi kemahasiswaan</h6>
-                {!! $bidan7->container() !!}
+                {!! $s2bio7->container() !!}
             </div>
         </div>
     </div>
     
-    <div class="col-lg-3 mb-4 kebidananContainer" style="display: none;">
+    <div class="col-lg-3 mb-4 s2biologiContainer" style="display: none;">
         <div class="card">
             <div class="card-body">
                 <h6 class="card-title">8.	Ruang kuliah tertata bersih, rapi dan nyaman</h6>
-                {!! $bidan8->container() !!}
+                {!! $s2bio8->container() !!}
             </div>
         </div>
     </div>
 
     <!-- Grafik Kedua -->
-    <div class="col-lg-3 mb-4 kebidananContainer" style="display: none;">
+    <div class="col-lg-3 mb-4 s2biologiContainer" style="display: none;">
         <div class="card">
             <div class="card-body">
                 <h6 class="card-title">9. Ruang laboratorium dan peralatannya menunjang proses belajar mahasiswa</h6>
-                {!! $bidan9->container() !!}
+                {!! $s2bio9->container() !!}
             </div>
         </div>
     </div>
 
-    <div class="col-lg-3 mb-4 kebidananContainer" style="display: none;">
+    <div class="col-lg-3 mb-4 s2biologiContainer" style="display: none;">
         <div class="card">
             <div class="card-body">
                 <h6 class="card-title">10.	Koleksi dan akses perpustakaan melengkapi sumber belajar mahasiswa	</h6>
-                {!! $bidan10->container() !!}
+                {!! $s2bio10->container() !!}
             </div>
         </div>
     </div>
     
-    <div class="col-lg-3 mb-4 kebidananContainer" style="display: none;">
+    <div class="col-lg-3 mb-4 s2biologiContainer" style="display: none;">
         <div class="card">
             <div class="card-body">
                 <h6 class="card-title">11.	Fasilitas ibadah/ olahraga/ kantin/ klinik/ toilet/ jalan dan akses transportasi tersedia untuk digunakan mahasiswa</h6>
-                {!! $bidan11->container() !!}
+                {!! $s2bio11->container() !!}
             </div>
         </div>
     </div>
 
-    <div class="col-lg-3 mb-4 kebidananContainer" style="display: none;">
+    <div class="col-lg-3 mb-4 s2biologiContainer" style="display: none;">
         <div class="card">
             <div class="card-body">
                 <h6 class="card-title">12.	Prodi memberikan fasilitas internet (website, media sosial dan poster) untuk kegiatan mahasiswa</h6>
-                {!! $bidan12->container() !!}
+                {!! $s2bio12->container() !!}
             </div>
         </div>
     </div>
 
-    <div class="col-lg-3 mb-4 kebidananContainer" style="display: none;">
+    <div class="col-lg-3 mb-4 s2biologiContainer" style="display: none;">
         <div class="card">
             <div class="card-body">
                 <h6 class="card-title">13.	Prodi memberikan fasilitas untuk organisasi kemahasiswaan</h6>
-                {!! $bidan13->container() !!}
+                {!! $s2bio13->container() !!}
             </div>
         </div>
     </div>
 
-    <div class="col-lg-3 mb-4 kebidananContainer" style="display: none;">
+    <div class="col-lg-3 mb-4 s2biologiContainer" style="display: none;">
         <div class="card">
             <div class="card-body">
                 <h6 class="card-title">14.	Prodi memberikan keamanan kampus bagi mahasiswa</h6>
-                {!! $bidan14->container() !!}
+                {!! $s2bio14->container() !!}
             </div>
         </div>
     </div>
 
-    <div class="col-lg-3 mb-4 kebidananContainer" style="display: none;">
+    <div class="col-lg-3 mb-4 s2biologiContainer" style="display: none;">
         <div class="card">
             <div class="card-body">
                 <h6 class="card-title">15	Prodi menangani keluhan mahasiswa melalui dosen wali</h6>
-                {!! $bidan15->container() !!}
+                {!! $s2bio15->container() !!}
             </div>
         </div>
     </div>
 
-    <div class="col-lg-3 mb-4 kebidananContainer" style="display: none;">
+    <div class="col-lg-3 mb-4 s2biologiContainer" style="display: none;">
         <div class="card">
             <div class="card-body">
                 <h6 class="card-title">16.	Prodi memberikan sanksi bagi mahasiswa yang melanggar peraturan</h6>
-                {!! $bidan16->container() !!}
+                {!! $s2bio16->container() !!}
             </div>
         </div>
     </div>
-    <div class="col-lg-3 mb-4 kebidananContainer" style="display: none;">
+    <div class="col-lg-3 mb-4 s2biologiContainer" style="display: none;">
         <div class="card">
             <div class="card-body">
                 <h6 class="card-title">17.	Kejelasan rencana pembelajaran/ kontrak perkuliahan</h6>
-                {!! $bidan17->container() !!}
+                {!! $s2bio17->container() !!}
             </div>
         </div>
     </div>
-    <div class="col-lg-3 mb-4 kebidananContainer" style="display: none;">
+    <div class="col-lg-3 mb-4 s2biologiContainer" style="display: none;">
         <div class="card">
             <div class="card-body">
                 <h6 class="card-title">18.	Setiap pekerjaan/ tugas selalu dikembalikan kepada mahasiswa</h6>
-                {!! $bidan18->container() !!}
+                {!! $s2bio18->container() !!}
             </div>
         </div>
     </div>
-    <div class="col-lg-3 mb-4 kebidananContainer" style="display: none;">
+    <div class="col-lg-3 mb-4 s2biologiContainer" style="display: none;">
         <div class="card">
             <div class="card-body">
                 <h6 class="card-title">19.	Sistem penilaian dan evaluasi (UAS/ UTS/ Ujian modul/ Tugas terstruktur) yang diberikan kepada mahasiswa</h6>
-                {!! $bidan19->container() !!}
+                {!! $s2bio19->container() !!}
             </div>
         </div>
     </div>
-    <div class="col-lg-3 mb-4 kebidananContainer" style="display: none;">
+    <div class="col-lg-3 mb-4 s2biologiContainer" style="display: none;">
         <div class="card">
             <div class="card-body">
                 <h6 class="card-title">20.	Suasana akademik yang mendukung pengembangan kompetensi mahasiswa</h6>
-                {!! $bidan20->container() !!}
+                {!! $s2bio20->container() !!}
             </div>
         </div>
     </div>
-    <div class="col-lg-3 mb-4 kebidananContainer" style="display: none;">
+    <div class="col-lg-3 mb-4 s2biologiContainer" style="display: none;">
         <div class="card">
             <div class="card-body">
                 <h6 class="card-title">21.	Prodi memonitor terhadap kemajuan mahasiswa melalui dosen pembimbing akademik dan dosen pembimbing tugas akhir</h6>
-                {!! $bidan21->container() !!}
+                {!! $s2bio21->container() !!}
             </div>
         </div>
     </div>
-    <div class="col-lg-3 mb-4 kebidananContainer" style="display: none;">
+    <div class="col-lg-3 mb-4 s2biologiContainer" style="display: none;">
         <div class="card">
             <div class="card-body">
                 <h6 class="card-title">22.	Prodi memahami minat/ bakat/ keluhan/ kepentingan/ kesulitan mahasiswa</h6>
-                {!! $bidan22->container() !!}
+                {!! $s2bio22->container() !!}
             </div>
         </div>
     </div>

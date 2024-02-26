@@ -14,6 +14,12 @@
 <script src="{{ $rawat14->cdn() }}"></script>
 <script src="{{ $rawat15->cdn() }}"></script>
 <script src="{{ $rawat16->cdn() }}"></script>
+<script src="{{ $rawat17->cdn() }}"></script>
+<script src="{{ $rawat18->cdn() }}"></script>
+<script src="{{ $rawat19->cdn() }}"></script>
+<script src="{{ $rawat20->cdn() }}"></script>
+<script src="{{ $rawat21->cdn() }}"></script>
+<script src="{{ $rawat22->cdn() }}"></script>
 
 {{ $rawat1->script() }}
 {{ $rawat2->script() }}
@@ -31,3 +37,9 @@
 {{ $rawat14->script() }}
 {{ $rawat15->script() }}
 {{ $rawat16->script() }}
+{{ $rawat17->script() }}
+{{ $rawat18->script() }}
+{{ $rawat19->script() }}
+{{ $rawat20->script() }}
+{{ $rawat21->script() }}
+{{ $rawat22->script() }}
