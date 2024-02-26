@@ -1,8 +1,8 @@
 <?php
 
-namespace App\Charts\Laypro\S1Geofisika;
+namespace App\Charts\Mahasiswa\S1Geofisika;
 
-use App\Models\Laypro;
+use App\Models\Mahasiswa;
 use ArielMejiaDev\LarapexCharts\LarapexChart;
 
 class Geo8
@@ -16,7 +16,7 @@ class Geo8
 
     protected function calculatePercentages()
     {
-        $dataD3Farmasi = Laypro::where('program_studi', 'S1 Geofisika')
+        $dataD3Farmasi = Mahasiswa::where('program_studi', 'S1 Geofisika')
             ->selectRaw('COUNT(*) as count, ruang_kuliah_nyaman')
             ->groupBy('ruang_kuliah_nyaman')
             ->pluck('count', 'ruang_kuliah_nyaman');

@@ -1,8 +1,8 @@
 <?php
 
-namespace App\Charts\Laypro\S1Fisika;
+namespace App\Charts\Mahasiswa\S1Fisika;
 
-use App\Models\Laypro;
+use App\Models\Mahasiswa;
 use ArielMejiaDev\LarapexCharts\LarapexChart;
 
 class Fisika4
@@ -16,7 +16,7 @@ class Fisika4
 
     protected function calculatePercentages()
     {
-        $dataD3Farmasi = Laypro::where('program_studi', 'S1 Fisika')
+        $dataD3Farmasi = Mahasiswa::where('program_studi', 'S1 Fisika')
             ->selectRaw('COUNT(*) as count, reward_apresiasi_beasiswa')
             ->groupBy('reward_apresiasi_beasiswa')
             ->pluck('count', 'reward_apresiasi_beasiswa');

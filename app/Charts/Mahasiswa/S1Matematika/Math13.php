@@ -1,8 +1,8 @@
 <?php
 
-namespace App\Charts\Laypro\S1Matematika;
+namespace App\Charts\Mahasiswa\S1Matematika;
 
-use App\Models\Laypro;
+use App\Models\Mahasiswa;
 use ArielMejiaDev\LarapexCharts\LarapexChart;
 
 class Math13
@@ -16,7 +16,7 @@ class Math13
 
     protected function calculatePercentages()
     {
-        $dataD3Farmasi = Laypro::where('program_studi', 'S1 Matematika')
+        $dataD3Farmasi = Mahasiswa::where('program_studi', 'S1 Matematika')
             ->selectRaw('COUNT(*) as count, fasilitas_organisasi_kemahasiswaan')
             ->groupBy('fasilitas_organisasi_kemahasiswaan')
             ->pluck('count', 'fasilitas_organisasi_kemahasiswaan');

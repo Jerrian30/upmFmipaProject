@@ -4,269 +4,269 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-use App\Models\Laypro;
+use App\Models\Mahasiswa;
 
 
-use App\Charts\Laypro\All\PL1;
-use App\Charts\Laypro\All\PL2;
-use App\Charts\Laypro\All\PL3;
-use App\Charts\Laypro\All\PL4;
-use App\Charts\Laypro\All\PL5;
-use App\Charts\Laypro\All\PL6;
-use App\Charts\Laypro\All\PL7;
-use App\Charts\Laypro\All\PL8;
-use App\Charts\Laypro\All\PL9;
-use App\Charts\Laypro\All\PL10;
-use App\Charts\Laypro\All\PL11;
-use App\Charts\Laypro\All\PL12;
-use App\Charts\Laypro\All\PL13;
-use App\Charts\Laypro\All\PL14;
-use App\Charts\Laypro\All\PL15;
-use App\Charts\Laypro\All\PL16;
+use App\Charts\Mahasiswa\All\PL1;
+use App\Charts\Mahasiswa\All\PL2;
+use App\Charts\Mahasiswa\All\PL3;
+use App\Charts\Mahasiswa\All\PL4;
+use App\Charts\Mahasiswa\All\PL5;
+use App\Charts\Mahasiswa\All\PL6;
+use App\Charts\Mahasiswa\All\PL7;
+use App\Charts\Mahasiswa\All\PL8;
+use App\Charts\Mahasiswa\All\PL9;
+use App\Charts\Mahasiswa\All\PL10;
+use App\Charts\Mahasiswa\All\PL11;
+use App\Charts\Mahasiswa\All\PL12;
+use App\Charts\Mahasiswa\All\PL13;
+use App\Charts\Mahasiswa\All\PL14;
+use App\Charts\Mahasiswa\All\PL15;
+use App\Charts\Mahasiswa\All\PL16;
 
 
 
 // Class Geofisika
-use App\Charts\Laypro\S1Geofisika\Geo1;
-use App\Charts\Laypro\S1Geofisika\Geo2;
-use App\Charts\Laypro\S1Geofisika\Geo3;
-use App\Charts\Laypro\S1Geofisika\Geo4;
-use App\Charts\Laypro\S1Geofisika\Geo5;
-use App\Charts\Laypro\S1Geofisika\Geo6;
-use App\Charts\Laypro\S1Geofisika\Geo7;
-use App\Charts\Laypro\S1Geofisika\Geo8;
-use App\Charts\Laypro\S1Geofisika\Geo9;
-use App\Charts\Laypro\S1Geofisika\Geo10;
-use App\Charts\Laypro\S1Geofisika\Geo11;
-use App\Charts\Laypro\S1Geofisika\Geo12;
-use App\Charts\Laypro\S1Geofisika\Geo13;
-use App\Charts\Laypro\S1Geofisika\Geo14;
-use App\Charts\Laypro\S1Geofisika\Geo15;
-use App\Charts\Laypro\S1Geofisika\Geo16;
+use App\Charts\Mahasiswa\S1Geofisika\Geo1;
+use App\Charts\Mahasiswa\S1Geofisika\Geo2;
+use App\Charts\Mahasiswa\S1Geofisika\Geo3;
+use App\Charts\Mahasiswa\S1Geofisika\Geo4;
+use App\Charts\Mahasiswa\S1Geofisika\Geo5;
+use App\Charts\Mahasiswa\S1Geofisika\Geo6;
+use App\Charts\Mahasiswa\S1Geofisika\Geo7;
+use App\Charts\Mahasiswa\S1Geofisika\Geo8;
+use App\Charts\Mahasiswa\S1Geofisika\Geo9;
+use App\Charts\Mahasiswa\S1Geofisika\Geo10;
+use App\Charts\Mahasiswa\S1Geofisika\Geo11;
+use App\Charts\Mahasiswa\S1Geofisika\Geo12;
+use App\Charts\Mahasiswa\S1Geofisika\Geo13;
+use App\Charts\Mahasiswa\S1Geofisika\Geo14;
+use App\Charts\Mahasiswa\S1Geofisika\Geo15;
+use App\Charts\Mahasiswa\S1Geofisika\Geo16;
 
 // // // Class D3Farmasi
-use App\Charts\Laypro\D3Farmasi\Farm1;
-use App\Charts\Laypro\D3Farmasi\Farm2;
-use App\Charts\Laypro\D3Farmasi\Farm3;
-use App\Charts\Laypro\D3Farmasi\Farm4;
-use App\Charts\Laypro\D3Farmasi\Farm5;
-use App\Charts\Laypro\D3Farmasi\Farm6;
-use App\Charts\Laypro\D3Farmasi\Farm7;
-use App\Charts\Laypro\D3Farmasi\Farm8;
-use App\Charts\Laypro\D3Farmasi\Farm9;
-use App\Charts\Laypro\D3Farmasi\Farm10;
-use App\Charts\Laypro\D3Farmasi\Farm11;
-use App\Charts\Laypro\D3Farmasi\Farm12;
-use App\Charts\Laypro\D3Farmasi\Farm13;
-use App\Charts\Laypro\D3Farmasi\Farm14;
-use App\Charts\Laypro\D3Farmasi\Farm15;
-use App\Charts\Laypro\D3Farmasi\Farm16;
+use App\Charts\Mahasiswa\D3Farmasi\Farm1;
+use App\Charts\Mahasiswa\D3Farmasi\Farm2;
+use App\Charts\Mahasiswa\D3Farmasi\Farm3;
+use App\Charts\Mahasiswa\D3Farmasi\Farm4;
+use App\Charts\Mahasiswa\D3Farmasi\Farm5;
+use App\Charts\Mahasiswa\D3Farmasi\Farm6;
+use App\Charts\Mahasiswa\D3Farmasi\Farm7;
+use App\Charts\Mahasiswa\D3Farmasi\Farm8;
+use App\Charts\Mahasiswa\D3Farmasi\Farm9;
+use App\Charts\Mahasiswa\D3Farmasi\Farm10;
+use App\Charts\Mahasiswa\D3Farmasi\Farm11;
+use App\Charts\Mahasiswa\D3Farmasi\Farm12;
+use App\Charts\Mahasiswa\D3Farmasi\Farm13;
+use App\Charts\Mahasiswa\D3Farmasi\Farm14;
+use App\Charts\Mahasiswa\D3Farmasi\Farm15;
+use App\Charts\Mahasiswa\D3Farmasi\Farm16;
 
 //Class S1Farmasi
-use App\Charts\Laypro\S1Farmasi\S1Farm1;
-use App\Charts\Laypro\S1Farmasi\S1Farm2;
-use App\Charts\Laypro\S1Farmasi\S1Farm3;
-use App\Charts\Laypro\S1Farmasi\S1Farm4;
-use App\Charts\Laypro\S1Farmasi\S1Farm5;
-use App\Charts\Laypro\S1Farmasi\S1Farm6;
-use App\Charts\Laypro\S1Farmasi\S1Farm7;
-use App\Charts\Laypro\S1Farmasi\S1Farm8;
-use App\Charts\Laypro\S1Farmasi\S1Farm9;
-use App\Charts\Laypro\S1Farmasi\S1Farm10;
-use App\Charts\Laypro\S1Farmasi\S1Farm11;
-use App\Charts\Laypro\S1Farmasi\S1Farm12;
-use App\Charts\Laypro\S1Farmasi\S1Farm13;
-use App\Charts\Laypro\S1Farmasi\S1Farm14;
-use App\Charts\Laypro\S1Farmasi\S1Farm15;
-use App\Charts\Laypro\S1Farmasi\S1Farm16;
+use App\Charts\Mahasiswa\S1Farmasi\S1Farm1;
+use App\Charts\Mahasiswa\S1Farmasi\S1Farm2;
+use App\Charts\Mahasiswa\S1Farmasi\S1Farm3;
+use App\Charts\Mahasiswa\S1Farmasi\S1Farm4;
+use App\Charts\Mahasiswa\S1Farmasi\S1Farm5;
+use App\Charts\Mahasiswa\S1Farmasi\S1Farm6;
+use App\Charts\Mahasiswa\S1Farmasi\S1Farm7;
+use App\Charts\Mahasiswa\S1Farmasi\S1Farm8;
+use App\Charts\Mahasiswa\S1Farmasi\S1Farm9;
+use App\Charts\Mahasiswa\S1Farmasi\S1Farm10;
+use App\Charts\Mahasiswa\S1Farmasi\S1Farm11;
+use App\Charts\Mahasiswa\S1Farmasi\S1Farm12;
+use App\Charts\Mahasiswa\S1Farmasi\S1Farm13;
+use App\Charts\Mahasiswa\S1Farmasi\S1Farm14;
+use App\Charts\Mahasiswa\S1Farmasi\S1Farm15;
+use App\Charts\Mahasiswa\S1Farmasi\S1Farm16;
 
 // Class Matematika
-use App\Charts\Laypro\S1Matematika\Math1;
-use App\Charts\Laypro\S1Matematika\Math2;
-use App\Charts\Laypro\S1Matematika\Math3;
-use App\Charts\Laypro\S1Matematika\Math4;
-use App\Charts\Laypro\S1Matematika\Math5;
-use App\Charts\Laypro\S1Matematika\Math6;
-use App\Charts\Laypro\S1Matematika\Math7;
-use App\Charts\Laypro\S1Matematika\Math8;
-use App\Charts\Laypro\S1Matematika\Math9;
-use App\Charts\Laypro\S1Matematika\Math10;
-use App\Charts\Laypro\S1Matematika\Math11;
-use App\Charts\Laypro\S1Matematika\Math12;
-use App\Charts\Laypro\S1Matematika\Math13;
-use App\Charts\Laypro\S1Matematika\Math14;
-use App\Charts\Laypro\S1Matematika\Math15;
-use App\Charts\Laypro\S1Matematika\Math16;
+use App\Charts\Mahasiswa\S1Matematika\Math1;
+use App\Charts\Mahasiswa\S1Matematika\Math2;
+use App\Charts\Mahasiswa\S1Matematika\Math3;
+use App\Charts\Mahasiswa\S1Matematika\Math4;
+use App\Charts\Mahasiswa\S1Matematika\Math5;
+use App\Charts\Mahasiswa\S1Matematika\Math6;
+use App\Charts\Mahasiswa\S1Matematika\Math7;
+use App\Charts\Mahasiswa\S1Matematika\Math8;
+use App\Charts\Mahasiswa\S1Matematika\Math9;
+use App\Charts\Mahasiswa\S1Matematika\Math10;
+use App\Charts\Mahasiswa\S1Matematika\Math11;
+use App\Charts\Mahasiswa\S1Matematika\Math12;
+use App\Charts\Mahasiswa\S1Matematika\Math13;
+use App\Charts\Mahasiswa\S1Matematika\Math14;
+use App\Charts\Mahasiswa\S1Matematika\Math15;
+use App\Charts\Mahasiswa\S1Matematika\Math16;
 
 // Class Biologi
-use App\Charts\Laypro\S1Biologi\Bio1;
-use App\Charts\Laypro\S1Biologi\Bio2;
-use App\Charts\Laypro\S1Biologi\Bio3;
-use App\Charts\Laypro\S1Biologi\Bio4;
-use App\Charts\Laypro\S1Biologi\Bio5;
-use App\Charts\Laypro\S1Biologi\Bio6;
-use App\Charts\Laypro\S1Biologi\Bio7;
-use App\Charts\Laypro\S1Biologi\Bio8;
-use App\Charts\Laypro\S1Biologi\Bio9;
-use App\Charts\Laypro\S1Biologi\Bio10;
-use App\Charts\Laypro\S1Biologi\Bio11;
-use App\Charts\Laypro\S1Biologi\Bio12;
-use App\Charts\Laypro\S1Biologi\Bio13;
-use App\Charts\Laypro\S1Biologi\Bio14;
-use App\Charts\Laypro\S1Biologi\Bio15;
-use App\Charts\Laypro\S1Biologi\Bio16;
+use App\Charts\Mahasiswa\S1Biologi\Bio1;
+use App\Charts\Mahasiswa\S1Biologi\Bio2;
+use App\Charts\Mahasiswa\S1Biologi\Bio3;
+use App\Charts\Mahasiswa\S1Biologi\Bio4;
+use App\Charts\Mahasiswa\S1Biologi\Bio5;
+use App\Charts\Mahasiswa\S1Biologi\Bio6;
+use App\Charts\Mahasiswa\S1Biologi\Bio7;
+use App\Charts\Mahasiswa\S1Biologi\Bio8;
+use App\Charts\Mahasiswa\S1Biologi\Bio9;
+use App\Charts\Mahasiswa\S1Biologi\Bio10;
+use App\Charts\Mahasiswa\S1Biologi\Bio11;
+use App\Charts\Mahasiswa\S1Biologi\Bio12;
+use App\Charts\Mahasiswa\S1Biologi\Bio13;
+use App\Charts\Mahasiswa\S1Biologi\Bio14;
+use App\Charts\Mahasiswa\S1Biologi\Bio15;
+use App\Charts\Mahasiswa\S1Biologi\Bio16;
 
 
 // // Class Kebidanan
-use App\Charts\Laypro\D3Kebidanan\Bidan1;
-use App\Charts\Laypro\D3Kebidanan\Bidan2;
-use App\Charts\Laypro\D3Kebidanan\Bidan3;
-use App\Charts\Laypro\D3Kebidanan\Bidan4;
-use App\Charts\Laypro\D3Kebidanan\Bidan5;
-use App\Charts\Laypro\D3Kebidanan\Bidan6;
-use App\Charts\Laypro\D3Kebidanan\Bidan7;
-use App\Charts\Laypro\D3Kebidanan\Bidan8;
-use App\Charts\Laypro\D3Kebidanan\Bidan9;
-use App\Charts\Laypro\D3Kebidanan\Bidan10;
-use App\Charts\Laypro\D3Kebidanan\Bidan11;
-use App\Charts\Laypro\D3Kebidanan\Bidan12;
-use App\Charts\Laypro\D3Kebidanan\Bidan13;
-use App\Charts\Laypro\D3Kebidanan\Bidan14;
-use App\Charts\Laypro\D3Kebidanan\Bidan15;
-use App\Charts\Laypro\D3Kebidanan\Bidan16;
+use App\Charts\Mahasiswa\D3Kebidanan\Bidan1;
+use App\Charts\Mahasiswa\D3Kebidanan\Bidan2;
+use App\Charts\Mahasiswa\D3Kebidanan\Bidan3;
+use App\Charts\Mahasiswa\D3Kebidanan\Bidan4;
+use App\Charts\Mahasiswa\D3Kebidanan\Bidan5;
+use App\Charts\Mahasiswa\D3Kebidanan\Bidan6;
+use App\Charts\Mahasiswa\D3Kebidanan\Bidan7;
+use App\Charts\Mahasiswa\D3Kebidanan\Bidan8;
+use App\Charts\Mahasiswa\D3Kebidanan\Bidan9;
+use App\Charts\Mahasiswa\D3Kebidanan\Bidan10;
+use App\Charts\Mahasiswa\D3Kebidanan\Bidan11;
+use App\Charts\Mahasiswa\D3Kebidanan\Bidan12;
+use App\Charts\Mahasiswa\D3Kebidanan\Bidan13;
+use App\Charts\Mahasiswa\D3Kebidanan\Bidan14;
+use App\Charts\Mahasiswa\D3Kebidanan\Bidan15;
+use App\Charts\Mahasiswa\D3Kebidanan\Bidan16;
 
 // Class Keperawatan
-use App\Charts\Laypro\D3Keperawatan\Rawat1;
-use App\Charts\Laypro\D3Keperawatan\Rawat2;
-use App\Charts\Laypro\D3Keperawatan\Rawat3;
-use App\Charts\Laypro\D3Keperawatan\Rawat4;
-use App\Charts\Laypro\D3Keperawatan\Rawat5;
-use App\Charts\Laypro\D3Keperawatan\Rawat6;
-use App\Charts\Laypro\D3Keperawatan\Rawat7;
-use App\Charts\Laypro\D3Keperawatan\Rawat8;
-use App\Charts\Laypro\D3Keperawatan\Rawat9;
-use App\Charts\Laypro\D3Keperawatan\Rawat10;
-use App\Charts\Laypro\D3Keperawatan\Rawat11;
-use App\Charts\Laypro\D3Keperawatan\Rawat12;
-use App\Charts\Laypro\D3Keperawatan\Rawat13;
-use App\Charts\Laypro\D3Keperawatan\Rawat14;
-use App\Charts\Laypro\D3Keperawatan\Rawat15;
-use App\Charts\Laypro\D3Keperawatan\Rawat16;
+use App\Charts\Mahasiswa\D3Keperawatan\Rawat1;
+use App\Charts\Mahasiswa\D3Keperawatan\Rawat2;
+use App\Charts\Mahasiswa\D3Keperawatan\Rawat3;
+use App\Charts\Mahasiswa\D3Keperawatan\Rawat4;
+use App\Charts\Mahasiswa\D3Keperawatan\Rawat5;
+use App\Charts\Mahasiswa\D3Keperawatan\Rawat6;
+use App\Charts\Mahasiswa\D3Keperawatan\Rawat7;
+use App\Charts\Mahasiswa\D3Keperawatan\Rawat8;
+use App\Charts\Mahasiswa\D3Keperawatan\Rawat9;
+use App\Charts\Mahasiswa\D3Keperawatan\Rawat10;
+use App\Charts\Mahasiswa\D3Keperawatan\Rawat11;
+use App\Charts\Mahasiswa\D3Keperawatan\Rawat12;
+use App\Charts\Mahasiswa\D3Keperawatan\Rawat13;
+use App\Charts\Mahasiswa\D3Keperawatan\Rawat14;
+use App\Charts\Mahasiswa\D3Keperawatan\Rawat15;
+use App\Charts\Mahasiswa\D3Keperawatan\Rawat16;
 
 
 // Class Lab Sains
-use App\Charts\Laypro\D3LabSains\LabSains1;
-use App\Charts\Laypro\D3LabSains\LabSains2;
-use App\Charts\Laypro\D3LabSains\LabSains3;
-use App\Charts\Laypro\D3LabSains\LabSains4;
-use App\Charts\Laypro\D3LabSains\LabSains5;
-use App\Charts\Laypro\D3LabSains\LabSains6;
-use App\Charts\Laypro\D3LabSains\LabSains7;
-use App\Charts\Laypro\D3LabSains\LabSains8;
-use App\Charts\Laypro\D3LabSains\LabSains9;
-use App\Charts\Laypro\D3LabSains\LabSains10;
-use App\Charts\Laypro\D3LabSains\LabSains11;
-use App\Charts\Laypro\D3LabSains\LabSains12;
-use App\Charts\Laypro\D3LabSains\LabSains13;
-use App\Charts\Laypro\D3LabSains\LabSains14;
-use App\Charts\Laypro\D3LabSains\LabSains15;
-use App\Charts\Laypro\D3LabSains\LabSains16;
+use App\Charts\Mahasiswa\D3LabSains\LabSains1;
+use App\Charts\Mahasiswa\D3LabSains\LabSains2;
+use App\Charts\Mahasiswa\D3LabSains\LabSains3;
+use App\Charts\Mahasiswa\D3LabSains\LabSains4;
+use App\Charts\Mahasiswa\D3LabSains\LabSains5;
+use App\Charts\Mahasiswa\D3LabSains\LabSains6;
+use App\Charts\Mahasiswa\D3LabSains\LabSains7;
+use App\Charts\Mahasiswa\D3LabSains\LabSains8;
+use App\Charts\Mahasiswa\D3LabSains\LabSains9;
+use App\Charts\Mahasiswa\D3LabSains\LabSains10;
+use App\Charts\Mahasiswa\D3LabSains\LabSains11;
+use App\Charts\Mahasiswa\D3LabSains\LabSains12;
+use App\Charts\Mahasiswa\D3LabSains\LabSains13;
+use App\Charts\Mahasiswa\D3LabSains\LabSains14;
+use App\Charts\Mahasiswa\D3LabSains\LabSains15;
+use App\Charts\Mahasiswa\D3LabSains\LabSains16;
 
 
 
 // //Class Statistika
-use App\Charts\Laypro\S1Statistika\Statis1;
-use App\Charts\Laypro\S1Statistika\Statis2;
-use App\Charts\Laypro\S1Statistika\Statis3;
-use App\Charts\Laypro\S1Statistika\Statis4;
-use App\Charts\Laypro\S1Statistika\Statis5;
-use App\Charts\Laypro\S1Statistika\Statis6;
-use App\Charts\Laypro\S1Statistika\Statis7;
-use App\Charts\Laypro\S1Statistika\Statis8;
-use App\Charts\Laypro\S1Statistika\Statis9;
-use App\Charts\Laypro\S1Statistika\Statis10;
-use App\Charts\Laypro\S1Statistika\Statis11;
-use App\Charts\Laypro\S1Statistika\Statis12;
-use App\Charts\Laypro\S1Statistika\Statis13;
-use App\Charts\Laypro\S1Statistika\Statis14;
-use App\Charts\Laypro\S1Statistika\Statis15;
-use App\Charts\Laypro\S1Statistika\Statis16;
+use App\Charts\Mahasiswa\S1Statistika\Statis1;
+use App\Charts\Mahasiswa\S1Statistika\Statis2;
+use App\Charts\Mahasiswa\S1Statistika\Statis3;
+use App\Charts\Mahasiswa\S1Statistika\Statis4;
+use App\Charts\Mahasiswa\S1Statistika\Statis5;
+use App\Charts\Mahasiswa\S1Statistika\Statis6;
+use App\Charts\Mahasiswa\S1Statistika\Statis7;
+use App\Charts\Mahasiswa\S1Statistika\Statis8;
+use App\Charts\Mahasiswa\S1Statistika\Statis9;
+use App\Charts\Mahasiswa\S1Statistika\Statis10;
+use App\Charts\Mahasiswa\S1Statistika\Statis11;
+use App\Charts\Mahasiswa\S1Statistika\Statis12;
+use App\Charts\Mahasiswa\S1Statistika\Statis13;
+use App\Charts\Mahasiswa\S1Statistika\Statis14;
+use App\Charts\Mahasiswa\S1Statistika\Statis15;
+use App\Charts\Mahasiswa\S1Statistika\Statis16;
 
-use App\Charts\Laypro\S2Statistika\S2Statis1;
-use App\Charts\Laypro\S2Statistika\S2Statis2;
-use App\Charts\Laypro\S2Statistika\S2Statis3;
-use App\Charts\Laypro\S2Statistika\S2Statis4;
-use App\Charts\Laypro\S2Statistika\S2Statis5;
-use App\Charts\Laypro\S2Statistika\S2Statis6;
-use App\Charts\Laypro\S2Statistika\S2Statis7;
-use App\Charts\Laypro\S2Statistika\S2Statis8;
-use App\Charts\Laypro\S2Statistika\S2Statis9;
-use App\Charts\Laypro\S2Statistika\S2Statis10;
-use App\Charts\Laypro\S2Statistika\S2Statis11;
-use App\Charts\Laypro\S2Statistika\S2Statis12;
-use App\Charts\Laypro\S2Statistika\S2Statis13;
-use App\Charts\Laypro\S2Statistika\S2Statis14;
-use App\Charts\Laypro\S2Statistika\S2Statis15;
-use App\Charts\Laypro\S2Statistika\S2Statis16;
+use App\Charts\Mahasiswa\S2Statistika\S2Statis1;
+use App\Charts\Mahasiswa\S2Statistika\S2Statis2;
+use App\Charts\Mahasiswa\S2Statistika\S2Statis3;
+use App\Charts\Mahasiswa\S2Statistika\S2Statis4;
+use App\Charts\Mahasiswa\S2Statistika\S2Statis5;
+use App\Charts\Mahasiswa\S2Statistika\S2Statis6;
+use App\Charts\Mahasiswa\S2Statistika\S2Statis7;
+use App\Charts\Mahasiswa\S2Statistika\S2Statis8;
+use App\Charts\Mahasiswa\S2Statistika\S2Statis9;
+use App\Charts\Mahasiswa\S2Statistika\S2Statis10;
+use App\Charts\Mahasiswa\S2Statistika\S2Statis11;
+use App\Charts\Mahasiswa\S2Statistika\S2Statis12;
+use App\Charts\Mahasiswa\S2Statistika\S2Statis13;
+use App\Charts\Mahasiswa\S2Statistika\S2Statis14;
+use App\Charts\Mahasiswa\S2Statistika\S2Statis15;
+use App\Charts\Mahasiswa\S2Statistika\S2Statis16;
 
 
 // //Class S1 Kimia
-use App\Charts\Laypro\S1Kimia\S1Kim1;
-use App\Charts\Laypro\S1Kimia\S1Kim2;
-use App\Charts\Laypro\S1Kimia\S1Kim3;
-use App\Charts\Laypro\S1Kimia\S1Kim4;
-use App\Charts\Laypro\S1Kimia\S1Kim5;
-use App\Charts\Laypro\S1Kimia\S1Kim6;
-use App\Charts\Laypro\S1Kimia\S1Kim7;
-use App\Charts\Laypro\S1Kimia\S1Kim8;
-use App\Charts\Laypro\S1Kimia\S1Kim9;
-use App\Charts\Laypro\S1Kimia\S1Kim10;
-use App\Charts\Laypro\S1Kimia\S1Kim11;
-use App\Charts\Laypro\S1Kimia\S1Kim12;
-use App\Charts\Laypro\S1Kimia\S1Kim13;
-use App\Charts\Laypro\S1Kimia\S1Kim14;
-use App\Charts\Laypro\S1Kimia\S1Kim15;
-use App\Charts\Laypro\S1Kimia\S1Kim16;
+use App\Charts\Mahasiswa\S1Kimia\S1Kim1;
+use App\Charts\Mahasiswa\S1Kimia\S1Kim2;
+use App\Charts\Mahasiswa\S1Kimia\S1Kim3;
+use App\Charts\Mahasiswa\S1Kimia\S1Kim4;
+use App\Charts\Mahasiswa\S1Kimia\S1Kim5;
+use App\Charts\Mahasiswa\S1Kimia\S1Kim6;
+use App\Charts\Mahasiswa\S1Kimia\S1Kim7;
+use App\Charts\Mahasiswa\S1Kimia\S1Kim8;
+use App\Charts\Mahasiswa\S1Kimia\S1Kim9;
+use App\Charts\Mahasiswa\S1Kimia\S1Kim10;
+use App\Charts\Mahasiswa\S1Kimia\S1Kim11;
+use App\Charts\Mahasiswa\S1Kimia\S1Kim12;
+use App\Charts\Mahasiswa\S1Kimia\S1Kim13;
+use App\Charts\Mahasiswa\S1Kimia\S1Kim14;
+use App\Charts\Mahasiswa\S1Kimia\S1Kim15;
+use App\Charts\Mahasiswa\S1Kimia\S1Kim16;
 
 //Class S2 Kimia
-use App\Charts\Laypro\S2Kimia\S2Kim1;
-use App\Charts\Laypro\S2Kimia\S2Kim2;
-use App\Charts\Laypro\S2Kimia\S2Kim3;
-use App\Charts\Laypro\S2Kimia\S2Kim4;
-use App\Charts\Laypro\S2Kimia\S2Kim5;
-use App\Charts\Laypro\S2Kimia\S2Kim6;
-use App\Charts\Laypro\S2Kimia\S2Kim7;
-use App\Charts\Laypro\S2Kimia\S2Kim8;
-use App\Charts\Laypro\S2Kimia\S2Kim9;
-use App\Charts\Laypro\S2Kimia\S2Kim10;
-use App\Charts\Laypro\S2Kimia\S2Kim11;
-use App\Charts\Laypro\S2Kimia\S2Kim12;
-use App\Charts\Laypro\S2Kimia\S2Kim13;
-use App\Charts\Laypro\S2Kimia\S2Kim14;
-use App\Charts\Laypro\S2Kimia\S2Kim15;
-use App\Charts\Laypro\S2Kimia\S2Kim16;
+use App\Charts\Mahasiswa\S2Kimia\S2Kim1;
+use App\Charts\Mahasiswa\S2Kimia\S2Kim2;
+use App\Charts\Mahasiswa\S2Kimia\S2Kim3;
+use App\Charts\Mahasiswa\S2Kimia\S2Kim4;
+use App\Charts\Mahasiswa\S2Kimia\S2Kim5;
+use App\Charts\Mahasiswa\S2Kimia\S2Kim6;
+use App\Charts\Mahasiswa\S2Kimia\S2Kim7;
+use App\Charts\Mahasiswa\S2Kimia\S2Kim8;
+use App\Charts\Mahasiswa\S2Kimia\S2Kim9;
+use App\Charts\Mahasiswa\S2Kimia\S2Kim10;
+use App\Charts\Mahasiswa\S2Kimia\S2Kim11;
+use App\Charts\Mahasiswa\S2Kimia\S2Kim12;
+use App\Charts\Mahasiswa\S2Kimia\S2Kim13;
+use App\Charts\Mahasiswa\S2Kimia\S2Kim14;
+use App\Charts\Mahasiswa\S2Kimia\S2Kim15;
+use App\Charts\Mahasiswa\S2Kimia\S2Kim16;
 
-use App\Charts\Laypro\S1Fisika\Fisika1;
-use App\Charts\Laypro\S1Fisika\Fisika2;
-use App\Charts\Laypro\S1Fisika\Fisika3;
-use App\Charts\Laypro\S1Fisika\Fisika4;
-use App\Charts\Laypro\S1Fisika\Fisika5;
-use App\Charts\Laypro\S1Fisika\Fisika6;
-use App\Charts\Laypro\S1Fisika\Fisika7;
-use App\Charts\Laypro\S1Fisika\Fisika8;
-use App\Charts\Laypro\S1Fisika\Fisika9;
-use App\Charts\Laypro\S1Fisika\Fisika10;
-use App\Charts\Laypro\S1Fisika\Fisika11;
-use App\Charts\Laypro\S1Fisika\Fisika12;
-use App\Charts\Laypro\S1Fisika\Fisika13;
-use App\Charts\Laypro\S1Fisika\Fisika14;
-use App\Charts\Laypro\S1Fisika\Fisika15;
-use App\Charts\Laypro\S1Fisika\Fisika16;
-
-
+use App\Charts\Mahasiswa\S1Fisika\Fisika1;
+use App\Charts\Mahasiswa\S1Fisika\Fisika2;
+use App\Charts\Mahasiswa\S1Fisika\Fisika3;
+use App\Charts\Mahasiswa\S1Fisika\Fisika4;
+use App\Charts\Mahasiswa\S1Fisika\Fisika5;
+use App\Charts\Mahasiswa\S1Fisika\Fisika6;
+use App\Charts\Mahasiswa\S1Fisika\Fisika7;
+use App\Charts\Mahasiswa\S1Fisika\Fisika8;
+use App\Charts\Mahasiswa\S1Fisika\Fisika9;
+use App\Charts\Mahasiswa\S1Fisika\Fisika10;
+use App\Charts\Mahasiswa\S1Fisika\Fisika11;
+use App\Charts\Mahasiswa\S1Fisika\Fisika12;
+use App\Charts\Mahasiswa\S1Fisika\Fisika13;
+use App\Charts\Mahasiswa\S1Fisika\Fisika14;
+use App\Charts\Mahasiswa\S1Fisika\Fisika15;
+use App\Charts\Mahasiswa\S1Fisika\Fisika16;
 
 
-class EvalLayproController extends Controller
+
+
+class EvalMahasiswaController extends Controller
 {
     public function index(
 
@@ -526,8 +526,7 @@ class EvalLayproController extends Controller
 
     )
     {
-        $laypro = Laypro::all();
-        return view('evaluasi.laypro.index',
+        return view('evaluasi.mahasiswa.index',
         [
             // 'lab' => $Lab,
 
@@ -813,7 +812,7 @@ class EvalLayproController extends Controller
     $percentages16 = $pl16->getDetailedPercentages();
 
 
-    return view('evaluasi.laypro.table', [
+    return view('evaluasi.mahasiswa.table', [
         'percentages1' => $percentages1,
         'percentages2' => $percentages2,
         'percentages3' => $percentages3,
