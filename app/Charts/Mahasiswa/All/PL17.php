@@ -5,7 +5,7 @@ namespace App\Charts\Mahasiswa\All;
 use App\Models\Mahasiswa;
 use ArielMejiaDev\LarapexCharts\LarapexChart;
 
-class PL16
+class PL17
 {
     protected $chart;
 
@@ -16,7 +16,7 @@ class PL16
 
     public function build(): \ArielMejiaDev\LarapexCharts\DonutChart
     {
-        $dataPercentages = $this->calculatePercentages('sanksi_pelanggaran_mahasiswa');
+        $dataPercentages = $this->calculatePercentages('kejelasan_rencana_pembelajaran');
         
         return $this->chart->donutChart()
             ->addData(array_values($dataPercentages))
@@ -53,7 +53,7 @@ class PL16
     public function getDetailedPercentages()
     {
         
-        $percentages = $this->calculatePercentages('sanksi_pelanggaran_mahasiswa');
+        $percentages = $this->calculatePercentages('kejelasan_rencana_pembelajaran');
         return [
             'persen1' => $percentages[1] ?? 0,
             'persen2' => $percentages[2] ?? 0,

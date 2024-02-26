@@ -23,6 +23,12 @@ use App\Charts\Mahasiswa\All\PL13;
 use App\Charts\Mahasiswa\All\PL14;
 use App\Charts\Mahasiswa\All\PL15;
 use App\Charts\Mahasiswa\All\PL16;
+use App\Charts\Mahasiswa\All\PL17;
+use App\Charts\Mahasiswa\All\PL18;  
+use App\Charts\Mahasiswa\All\PL19;
+use App\Charts\Mahasiswa\All\PL20;
+use App\Charts\Mahasiswa\All\PL21;
+use App\Charts\Mahasiswa\All\PL22;
 
 
 
@@ -43,6 +49,12 @@ use App\Charts\Mahasiswa\S1Geofisika\Geo13;
 use App\Charts\Mahasiswa\S1Geofisika\Geo14;
 use App\Charts\Mahasiswa\S1Geofisika\Geo15;
 use App\Charts\Mahasiswa\S1Geofisika\Geo16;
+use App\Charts\Mahasiswa\S1Geofisika\Geo17;
+use App\Charts\Mahasiswa\S1Geofisika\Geo18;
+use App\Charts\Mahasiswa\S1Geofisika\Geo19;
+use App\Charts\Mahasiswa\S1Geofisika\Geo20;
+use App\Charts\Mahasiswa\S1Geofisika\Geo21;
+use App\Charts\Mahasiswa\S1Geofisika\Geo22;
 
 // // // Class D3Farmasi
 use App\Charts\Mahasiswa\D3Farmasi\Farm1;
@@ -61,6 +73,12 @@ use App\Charts\Mahasiswa\D3Farmasi\Farm13;
 use App\Charts\Mahasiswa\D3Farmasi\Farm14;
 use App\Charts\Mahasiswa\D3Farmasi\Farm15;
 use App\Charts\Mahasiswa\D3Farmasi\Farm16;
+use App\Charts\Mahasiswa\D3Farmasi\Farm17;
+use App\Charts\Mahasiswa\D3Farmasi\Farm18;
+use App\Charts\Mahasiswa\D3Farmasi\Farm19;
+use App\Charts\Mahasiswa\D3Farmasi\Farm20;
+use App\Charts\Mahasiswa\D3Farmasi\Farm21;
+use App\Charts\Mahasiswa\D3Farmasi\Farm22;
 
 //Class S1Farmasi
 use App\Charts\Mahasiswa\S1Farmasi\S1Farm1;
@@ -79,6 +97,12 @@ use App\Charts\Mahasiswa\S1Farmasi\S1Farm13;
 use App\Charts\Mahasiswa\S1Farmasi\S1Farm14;
 use App\Charts\Mahasiswa\S1Farmasi\S1Farm15;
 use App\Charts\Mahasiswa\S1Farmasi\S1Farm16;
+use App\Charts\Mahasiswa\S1Farmasi\S1Farm17;
+use App\Charts\Mahasiswa\S1Farmasi\S1Farm18;
+use App\Charts\Mahasiswa\S1Farmasi\S1Farm19;
+use App\Charts\Mahasiswa\S1Farmasi\S1Farm20;
+use App\Charts\Mahasiswa\S1Farmasi\S1Farm21;
+use App\Charts\Mahasiswa\S1Farmasi\S1Farm22;
 
 // Class Matematika
 use App\Charts\Mahasiswa\S1Matematika\Math1;
@@ -97,6 +121,12 @@ use App\Charts\Mahasiswa\S1Matematika\Math13;
 use App\Charts\Mahasiswa\S1Matematika\Math14;
 use App\Charts\Mahasiswa\S1Matematika\Math15;
 use App\Charts\Mahasiswa\S1Matematika\Math16;
+use App\Charts\Mahasiswa\S1Matematika\Math17;
+use App\Charts\Mahasiswa\S1Matematika\Math18;
+use App\Charts\Mahasiswa\S1Matematika\Math19;
+use App\Charts\Mahasiswa\S1Matematika\Math20;
+use App\Charts\Mahasiswa\S1Matematika\Math21;
+use App\Charts\Mahasiswa\S1Matematika\Math22;
 
 // Class Biologi
 use App\Charts\Mahasiswa\S1Biologi\Bio1;
@@ -115,6 +145,12 @@ use App\Charts\Mahasiswa\S1Biologi\Bio13;
 use App\Charts\Mahasiswa\S1Biologi\Bio14;
 use App\Charts\Mahasiswa\S1Biologi\Bio15;
 use App\Charts\Mahasiswa\S1Biologi\Bio16;
+use App\Charts\Mahasiswa\S1Biologi\Bio17;
+use App\Charts\Mahasiswa\S1Biologi\Bio18;
+use App\Charts\Mahasiswa\S1Biologi\Bio19;
+use App\Charts\Mahasiswa\S1Biologi\Bio20;
+use App\Charts\Mahasiswa\S1Biologi\Bio21;
+use App\Charts\Mahasiswa\S1Biologi\Bio22;
 
 
 // // Class Kebidanan
@@ -134,6 +170,12 @@ use App\Charts\Mahasiswa\D3Kebidanan\Bidan13;
 use App\Charts\Mahasiswa\D3Kebidanan\Bidan14;
 use App\Charts\Mahasiswa\D3Kebidanan\Bidan15;
 use App\Charts\Mahasiswa\D3Kebidanan\Bidan16;
+use App\Charts\Mahasiswa\D3Kebidanan\Bidan17;
+use App\Charts\Mahasiswa\D3Kebidanan\Bidan18;
+use App\Charts\Mahasiswa\D3Kebidanan\Bidan19;
+use App\Charts\Mahasiswa\D3Kebidanan\Bidan20;
+use App\Charts\Mahasiswa\D3Kebidanan\Bidan21;
+use App\Charts\Mahasiswa\D3Kebidanan\Bidan22;
 
 // Class Keperawatan
 use App\Charts\Mahasiswa\D3Keperawatan\Rawat1;
@@ -152,6 +194,12 @@ use App\Charts\Mahasiswa\D3Keperawatan\Rawat13;
 use App\Charts\Mahasiswa\D3Keperawatan\Rawat14;
 use App\Charts\Mahasiswa\D3Keperawatan\Rawat15;
 use App\Charts\Mahasiswa\D3Keperawatan\Rawat16;
+use App\Charts\Mahasiswa\D3Keperawatan\Rawat17;
+use App\Charts\Mahasiswa\D3Keperawatan\Rawat18;
+use App\Charts\Mahasiswa\D3Keperawatan\Rawat19;
+use App\Charts\Mahasiswa\D3Keperawatan\Rawat20;
+use App\Charts\Mahasiswa\D3Keperawatan\Rawat21;
+use App\Charts\Mahasiswa\D3Keperawatan\Rawat22;
 
 
 // Class Lab Sains
@@ -171,6 +219,12 @@ use App\Charts\Mahasiswa\D3LabSains\LabSains13;
 use App\Charts\Mahasiswa\D3LabSains\LabSains14;
 use App\Charts\Mahasiswa\D3LabSains\LabSains15;
 use App\Charts\Mahasiswa\D3LabSains\LabSains16;
+use App\Charts\Mahasiswa\D3LabSains\LabSains17;
+use App\Charts\Mahasiswa\D3LabSains\LabSains18;
+use App\Charts\Mahasiswa\D3LabSains\LabSains19;
+use App\Charts\Mahasiswa\D3LabSains\LabSains20;
+use App\Charts\Mahasiswa\D3LabSains\LabSains21;
+use App\Charts\Mahasiswa\D3LabSains\LabSains22;
 
 
 
@@ -191,6 +245,12 @@ use App\Charts\Mahasiswa\S1Statistika\Statis13;
 use App\Charts\Mahasiswa\S1Statistika\Statis14;
 use App\Charts\Mahasiswa\S1Statistika\Statis15;
 use App\Charts\Mahasiswa\S1Statistika\Statis16;
+use App\Charts\Mahasiswa\S1Statistika\Statis17;
+use App\Charts\Mahasiswa\S1Statistika\Statis18;
+use App\Charts\Mahasiswa\S1Statistika\Statis19;
+use App\Charts\Mahasiswa\S1Statistika\Statis20;
+use App\Charts\Mahasiswa\S1Statistika\Statis21;
+use App\Charts\Mahasiswa\S1Statistika\Statis22;
 
 use App\Charts\Mahasiswa\S2Statistika\S2Statis1;
 use App\Charts\Mahasiswa\S2Statistika\S2Statis2;
@@ -208,6 +268,12 @@ use App\Charts\Mahasiswa\S2Statistika\S2Statis13;
 use App\Charts\Mahasiswa\S2Statistika\S2Statis14;
 use App\Charts\Mahasiswa\S2Statistika\S2Statis15;
 use App\Charts\Mahasiswa\S2Statistika\S2Statis16;
+use App\Charts\Mahasiswa\S2Statistika\S2Statis17;
+use App\Charts\Mahasiswa\S2Statistika\S2Statis18;
+use App\Charts\Mahasiswa\S2Statistika\S2Statis19;
+use App\Charts\Mahasiswa\S2Statistika\S2Statis20;
+use App\Charts\Mahasiswa\S2Statistika\S2Statis21;
+use App\Charts\Mahasiswa\S2Statistika\S2Statis22;
 
 
 // //Class S1 Kimia
@@ -227,6 +293,12 @@ use App\Charts\Mahasiswa\S1Kimia\S1Kim13;
 use App\Charts\Mahasiswa\S1Kimia\S1Kim14;
 use App\Charts\Mahasiswa\S1Kimia\S1Kim15;
 use App\Charts\Mahasiswa\S1Kimia\S1Kim16;
+use App\Charts\Mahasiswa\S1Kimia\S1Kim17;
+use App\Charts\Mahasiswa\S1Kimia\S1Kim18;
+use App\Charts\Mahasiswa\S1Kimia\S1Kim19;
+use App\Charts\Mahasiswa\S1Kimia\S1Kim20;
+use App\Charts\Mahasiswa\S1Kimia\S1Kim21;
+use App\Charts\Mahasiswa\S1Kimia\S1Kim22;
 
 //Class S2 Kimia
 use App\Charts\Mahasiswa\S2Kimia\S2Kim1;
@@ -245,6 +317,12 @@ use App\Charts\Mahasiswa\S2Kimia\S2Kim13;
 use App\Charts\Mahasiswa\S2Kimia\S2Kim14;
 use App\Charts\Mahasiswa\S2Kimia\S2Kim15;
 use App\Charts\Mahasiswa\S2Kimia\S2Kim16;
+use App\Charts\Mahasiswa\S2Kimia\S2Kim17;
+use App\Charts\Mahasiswa\S2Kimia\S2Kim18;
+use App\Charts\Mahasiswa\S2Kimia\S2Kim19;
+use App\Charts\Mahasiswa\S2Kimia\S2Kim20;
+use App\Charts\Mahasiswa\S2Kimia\S2Kim21;
+use App\Charts\Mahasiswa\S2Kimia\S2Kim22;
 
 use App\Charts\Mahasiswa\S1Fisika\Fisika1;
 use App\Charts\Mahasiswa\S1Fisika\Fisika2;
@@ -262,6 +340,12 @@ use App\Charts\Mahasiswa\S1Fisika\Fisika13;
 use App\Charts\Mahasiswa\S1Fisika\Fisika14;
 use App\Charts\Mahasiswa\S1Fisika\Fisika15;
 use App\Charts\Mahasiswa\S1Fisika\Fisika16;
+use App\Charts\Mahasiswa\S1Fisika\Fisika17;
+use App\Charts\Mahasiswa\S1Fisika\Fisika18;
+use App\Charts\Mahasiswa\S1Fisika\Fisika19;
+use App\Charts\Mahasiswa\S1Fisika\Fisika20;
+use App\Charts\Mahasiswa\S1Fisika\Fisika21;
+use App\Charts\Mahasiswa\S1Fisika\Fisika22;
 
 
 
@@ -287,6 +371,12 @@ class EvalMahasiswaController extends Controller
         PL14 $pl14,
         PL15 $pl15,
         PL16 $pl16,
+        PL17 $pl17,
+        PL18 $pl18,
+        PL19 $pl19,
+        PL20 $pl20,
+        PL21 $pl21,
+        PL22 $pl22,
 
 
         // // D3 Farmasi
@@ -306,6 +396,12 @@ class EvalMahasiswaController extends Controller
         Farm14 $farm14,
         Farm15 $farm15,
         Farm16 $farm16,
+        Farm17 $farm17,
+        Farm18 $farm18,
+        Farm19 $farm19,
+        Farm20 $farm20,
+        Farm21 $farm21,
+        Farm22 $farm22,
 
         // S1 Farmasi
         S1Farm1 $s1farm1,
@@ -324,6 +420,12 @@ class EvalMahasiswaController extends Controller
         S1Farm14 $s1farm14,
         S1Farm15 $s1farm15,
         S1Farm16 $s1farm16,
+        S1Farm17 $s1farm17,
+        S1Farm18 $s1farm18,
+        S1Farm19 $s1farm19,
+        S1Farm20 $s1farm20,
+        S1Farm21 $s1farm21,
+        S1Farm22 $s1farm22,
 
         // S1 Matematika
         Math1 $math1,
@@ -342,6 +444,12 @@ class EvalMahasiswaController extends Controller
         Math14 $math14,
         Math15 $math15,
         Math16 $math16,
+        Math17 $math17,
+        Math18 $math18,
+        Math19 $math19,
+        Math20 $math20,
+        Math21 $math21,
+        Math22 $math22,
 
 
         // S1 Biologi
@@ -360,7 +468,13 @@ class EvalMahasiswaController extends Controller
         Bio13 $bio13,
         Bio14 $bio14,
         Bio15 $bio15,
-        Bio16 $bio16,  
+        Bio16 $bio16,
+        Bio17 $bio17,
+        Bio18 $bio18,
+        Bio19 $bio19,
+        Bio20 $bio20,
+        Bio21 $bio21,
+        Bio22 $bio22,
 
         // D3 Kebidanan
         Bidan1 $bidan1,
@@ -379,6 +493,12 @@ class EvalMahasiswaController extends Controller
         Bidan14 $bidan14,
         Bidan15 $bidan15,
         Bidan16 $bidan16,
+        Bidan17 $bidan17,
+        Bidan18 $bidan18,
+        Bidan19 $bidan19,
+        Bidan20 $bidan20,
+        Bidan21 $bidan21,
+        Bidan22 $bidan22,
 
         //D3 Keperawatan
         Rawat1 $rawat1,
@@ -397,6 +517,12 @@ class EvalMahasiswaController extends Controller
         Rawat14 $rawat14,
         Rawat15 $rawat15,
         Rawat16 $rawat16,
+        Rawat17 $rawat17,
+        Rawat18 $rawat18,
+        Rawat19 $rawat19,
+        Rawat20 $rawat20,
+        Rawat21 $rawat21,
+        Rawat22 $rawat22,
 
         // //D3 Lab Sains
         LabSains1 $labsains1,
@@ -415,6 +541,12 @@ class EvalMahasiswaController extends Controller
         LabSains14 $labsains14,
         LabSains15 $labsains15,
         LabSains16 $labsains16,
+        LabSains17 $labsains17,
+        LabSains18 $labsains18,
+        LabSains19 $labsains19,
+        LabSains20 $labsains20,
+        LabSains21 $labsains21,
+        LabSains22 $labsains22,
 
         // // S1 Statistika
         Statis1 $statis1,
@@ -433,6 +565,12 @@ class EvalMahasiswaController extends Controller
         Statis14 $statis14,
         Statis15 $statis15,
         Statis16 $statis16,
+        Statis17 $statis17,
+        Statis18 $statis18,
+        Statis19 $statis19,
+        Statis20 $statis20,
+        Statis21 $statis21,
+        Statis22 $statis22,
         
         S2Statis1 $s2statis1,
         S2Statis2 $s2statis2,
@@ -450,6 +588,12 @@ class EvalMahasiswaController extends Controller
         S2Statis14 $s2statis14,
         S2Statis15 $s2statis15,
         S2Statis16 $s2statis16,
+        S2Statis17 $s2statis17,
+        S2Statis18 $s2statis18,
+        S2Statis19 $s2statis19,
+        S2Statis20 $s2statis20,
+        S2Statis21 $s2statis21,
+        S2Statis22 $s2statis22,
 
 
         // // S1 Kimia
@@ -469,6 +613,12 @@ class EvalMahasiswaController extends Controller
         S1kim14 $s1kim14,
         S1kim15 $s1kim15,
         S1kim16 $s1kim16,
+        S1kim17 $s1kim17,
+        S1kim18 $s1kim18,
+        S1kim19 $s1kim19,
+        S1kim20 $s1kim20,
+        S1kim21 $s1kim21,
+        S1kim22 $s1kim22,
 
         // // S2 Kimia
         S2Kim1 $s2kim1,
@@ -487,6 +637,12 @@ class EvalMahasiswaController extends Controller
         S2Kim14 $s2kim14,
         S2Kim15 $s2kim15,
         S2Kim16 $s2kim16,
+        S2Kim17 $s2kim17,
+        S2Kim18 $s2kim18,
+        S2Kim19 $s2kim19,
+        S2Kim20 $s2kim20,
+        S2Kim21 $s2kim21,
+        S2Kim22 $s2kim22,
 
         // Fisika
         Fisika1 $fisika1,
@@ -505,6 +661,12 @@ class EvalMahasiswaController extends Controller
         Fisika14 $fisika14,
         Fisika15 $fisika15,
         Fisika16 $fisika16,
+        Fisika17 $fisika17,
+        Fisika18 $fisika18,
+        Fisika19 $fisika19,
+        Fisika20 $fisika20,
+        Fisika21 $fisika21,
+        Fisika22 $fisika22,
 
         // Geofisika
         Geo1 $geo1,
@@ -523,6 +685,12 @@ class EvalMahasiswaController extends Controller
         Geo14 $geo14,
         Geo15 $geo15,
         Geo16 $geo16,
+        Geo17 $geo17,
+        Geo18 $geo18,
+        Geo19 $geo19,
+        Geo20 $geo20,
+        Geo21 $geo21,
+        Geo22 $geo22,
 
     )
     {
@@ -546,6 +714,12 @@ class EvalMahasiswaController extends Controller
             'farm14' => $farm14->build(),
             'farm15' => $farm15->build(),
             'farm16' => $farm16->build(),
+            'farm17' => $farm17->build(),
+            'farm18' => $farm18->build(),
+            'farm19' => $farm19->build(),
+            'farm20' => $farm20->build(),
+            'farm21' => $farm21->build(),
+            'farm22' => $farm22->build(),
 
             's1farm1' => $s1farm1->build(),
             's1farm2' => $s1farm2->build(),
@@ -563,6 +737,12 @@ class EvalMahasiswaController extends Controller
             's1farm14' => $s1farm14->build(),
             's1farm15' => $s1farm15->build(),
             's1farm16' => $s1farm16->build(),
+            's1farm17' => $s1farm17->build(),
+            's1farm18' => $s1farm18->build(),
+            's1farm19' => $s1farm19->build(),
+            's1farm20' => $s1farm20->build(),
+            's1farm21' => $s1farm21->build(),
+            's1farm22' => $s1farm22->build(),
 
             'math1' => $math1->build(),
             'math2' => $math2->build(),
@@ -580,6 +760,12 @@ class EvalMahasiswaController extends Controller
             'math14' => $math14->build(),
             'math15' => $math15->build(),
             'math16' => $math16->build(),
+            'math17' => $math17->build(),
+            'math18' => $math18->build(),
+            'math19' => $math19->build(),
+            'math20' => $math20->build(),
+            'math21' => $math21->build(),
+            'math22' => $math22->build(),
 
             'bio1' => $bio1->build(),
             'bio2' => $bio2->build(),
@@ -597,6 +783,12 @@ class EvalMahasiswaController extends Controller
             'bio14' => $bio14->build(),
             'bio15' => $bio15->build(),
             'bio16' => $bio16->build(),
+            'bio17' => $bio17->build(),
+            'bio18' => $bio18->build(),
+            'bio19' => $bio19->build(),
+            'bio20' => $bio20->build(),
+            'bio21' => $bio21->build(),
+            'bio22' => $bio22->build(),
 
             'bidan1' => $bidan1->build(),
             'bidan2' => $bidan2->build(),
@@ -614,6 +806,12 @@ class EvalMahasiswaController extends Controller
             'bidan14' => $bidan14->build(),
             'bidan15' => $bidan15->build(),
             'bidan16' => $bidan16->build(),
+            'bidan17' => $bidan17->build(),
+            'bidan18' => $bidan18->build(),
+            'bidan19' => $bidan19->build(),
+            'bidan20' => $bidan20->build(),
+            'bidan21' => $bidan21->build(),
+            'bidan22' => $bidan22->build(),
 
             'rawat1' => $rawat1->build(),
             'rawat2' => $rawat2->build(),
@@ -631,6 +829,12 @@ class EvalMahasiswaController extends Controller
             'rawat14' => $rawat14->build(),
             'rawat15' => $rawat15->build(),
             'rawat16' => $rawat16->build(),
+            'rawat17' => $rawat17->build(),
+            'rawat18' => $rawat18->build(),
+            'rawat19' => $rawat19->build(),
+            'rawat20' => $rawat20->build(),
+            'rawat21' => $rawat21->build(),
+            'rawat22' => $rawat22->build(),
 
             'labsains1' => $labsains1->build(),
             'labsains2' => $labsains2->build(),
@@ -648,6 +852,12 @@ class EvalMahasiswaController extends Controller
             'labsains14' => $labsains14->build(),
             'labsains15' => $labsains15->build(),
             'labsains16' => $labsains16->build(),
+            'labsains17' => $labsains17->build(),
+            'labsains18' => $labsains18->build(),
+            'labsains19' => $labsains19->build(),
+            'labsains20' => $labsains20->build(),
+            'labsains21' => $labsains21->build(),
+            'labsains22' => $labsains22->build(),
             
             'statis1' => $statis1->build(),
             'statis2' => $statis2->build(),
@@ -665,6 +875,12 @@ class EvalMahasiswaController extends Controller
             'statis14' => $statis14->build(),
             'statis15' => $statis15->build(),
             'statis16' => $statis16->build(),
+            'statis17' => $statis17->build(), 
+            'statis18' => $statis18->build(),
+            'statis19' => $statis19->build(),
+            'statis20' => $statis20->build(),
+            'statis21' => $statis21->build(),
+            'statis22' => $statis22->build(),
 
             's2statis1' => $s2statis1->build(),
             's2statis2' => $s2statis2->build(),
@@ -682,7 +898,11 @@ class EvalMahasiswaController extends Controller
             's2statis14' => $s2statis14->build(),
             's2statis15' => $s2statis15->build(),
             's2statis16' => $s2statis16->build(),
-
+            's2statis17' => $s2statis17->build(),
+           's2statis18' => $s2statis18->build(),
+           's2statis19' => $s2statis19->build(),
+           's2statis20' => $s2statis20->build(),
+           's2statis21' => $s2statis21->build(),
 
             's1kim1' => $s1kim1->build(),
             's1kim2' => $s1kim2->build(),
@@ -700,6 +920,12 @@ class EvalMahasiswaController extends Controller
             's1kim14' => $s1kim14->build(),
             's1kim15' => $s1kim15->build(),
             's1kim16' => $s1kim16->build(),
+            's1kim17' => $s1kim17->build(),
+           's1kim18' => $s1kim18->build(),
+           's1kim19' => $s1kim19->build(),
+           's1kim20' => $s1kim20->build(),
+           's1kim21' => $s1kim21->build(),
+           's1kim22' => $s1kim22->build(),
 
             's2kim1' => $s2kim1->build(),
             's2kim2' => $s2kim2->build(),
@@ -717,6 +943,12 @@ class EvalMahasiswaController extends Controller
             's2kim14' => $s2kim14->build(),
             's2kim15' => $s2kim15->build(),
             's2kim16' => $s2kim16->build(),
+           's2kim17' => $s2kim17->build(),
+          's2kim18' => $s2kim18->build(),
+          's2kim19' => $s2kim19->build(),
+          's2kim20' => $s2kim20->build(),
+          's2kim21' => $s2kim21->build(),
+          's2kim22' => $s2kim22->build(),
 
             
             'fisika1' => $fisika1->build(),
@@ -735,6 +967,12 @@ class EvalMahasiswaController extends Controller
             'fisika14' => $fisika14->build(),
             'fisika15' => $fisika15->build(),
             'fisika16' => $fisika16->build(),
+            'fisika17' => $fisika17->build(),
+            'fisika18' => $fisika18->build(),
+            'fisika19' => $fisika19->build(),
+            'fisika20' => $fisika20->build(),
+            'fisika21' => $fisika21->build(),
+            'fisika22' => $fisika22->build(),
 
             'geo1' => $geo1->build(),
             'geo2' => $geo2->build(),
@@ -752,6 +990,12 @@ class EvalMahasiswaController extends Controller
             'geo14' => $geo14->build(),
             'geo15' => $geo15->build(),
             'geo16' => $geo16->build(),
+            'geo17' => $geo17->build(),
+            'geo18' => $geo18->build(),
+            'geo19' => $geo19->build(),
+            'geo20' => $geo20->build(),
+            'geo21' => $geo21->build(),
+            'geo22' => $geo22->build(),
 
             'pl1' => $pl1->build(),
             'pl2' => $pl2->build(),
@@ -769,6 +1013,12 @@ class EvalMahasiswaController extends Controller
             'pl14' => $pl14->build(),
             'pl15' => $pl15->build(),
             'pl16' => $pl16->build(),
+            'pl17' => $pl17->build(),
+            'pl18' => $pl18->build(),
+            'pl19' => $pl19->build(),
+            'pl20' => $pl20->build(),
+            'pl21' => $pl21->build(),
+            'pl22' => $pl22->build(),
 
 
 
@@ -792,6 +1042,12 @@ class EvalMahasiswaController extends Controller
         PL14 $pl14,
         PL15 $pl15,
         PL16 $pl16,
+        PL17 $pl17,
+        PL18 $pl18,
+        PL19 $pl19,
+        PL20 $pl20,
+        PL21 $pl21,
+        PL22 $pl22,
         )
 {
     $percentages1 = $pl1->getDetailedPercentages();
@@ -810,6 +1066,12 @@ class EvalMahasiswaController extends Controller
     $percentages14 = $pl14->getDetailedPercentages();
     $percentages15 = $pl15->getDetailedPercentages();
     $percentages16 = $pl16->getDetailedPercentages();
+    $percentages17 = $pl17->getDetailedPercentages();
+    $percentages18 = $pl17->getDetailedPercentages();
+    $percentages19 = $pl19->getDetailedPercentages();
+    $percentages20 = $pl20->getDetailedPercentages();
+    $percentages21 = $pl21->getDetailedPercentages();
+    $percentages22 = $pl22->getDetailedPercentages();
 
 
     return view('evaluasi.mahasiswa.table', [
@@ -829,6 +1091,12 @@ class EvalMahasiswaController extends Controller
         'percentages14' => $percentages14,
         'percentages15' => $percentages15,
         'percentages16' => $percentages16,
+        'percentages17' => $percentages17,
+        'percentages18' => $percentages18,
+        'percentages19' => $percentages19,
+        'percentages20' => $percentages20,
+        'percentages21' => $percentages21,
+        'percentages22' => $percentages22,
     ]);
 }
 
