@@ -14,12 +14,11 @@ return new class extends Migration
         Schema::create('mahasiswas', function (Blueprint $table) {
             $table->id();
             $table->datetime('timestamp');
-            $table->char('jenis_kelamin', 1);
+            $table->string('jenis_kelamin');
             $table->string('program_studi');
-            $table->year('angkatan_tahun_masuk'); // Menambahkan kolom angkatan/tahun masuk
+            $table->string('angkatan_tahun_masuk'); // Menambahkan kolom angkatan/tahun masuk
             $table->unsignedTinyInteger('semester_saat_ini'); // Menambahkan kolom semester saat ini
-            $table->decimal('ipk', 3, 2)->nullable(); // Menambahkan kolom IPK
-            // Menambahkan kolom untuk item survey dengan asumsi penilaian numerik atau teks
+            $table->string('ipk')->nullable(); // Menambahkan kolom IPK
             $table->unsignedTinyInteger('dosen_pembimbing_akademik')->nullable();
             $table->unsignedTinyInteger('dosen_pembina_kegiatan')->nullable();
             $table->unsignedTinyInteger('layanan_bimbingan_konseling')->nullable();

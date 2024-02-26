@@ -47,7 +47,7 @@
                 aria-labelledby="laporanSurveiDropdown">
                 <a class="dropdown-item" href="{{ route('penggunaLulusan.eval') }}" style="font-size: 14px;">Pengguna Lulusan</a>
                 <a class="dropdown-item" href="{{ route('dosen.eval') }}" style="font-size: 14px;">Dosen</a>
-                <a class="dropdown-item" href="#" style="font-size: 14px;">Mahasiswa</a>
+                <a class="dropdown-item" href="{{ route('mahasiswa.eval') }}" style="font-size: 14px;">Mahasiswa</a>
                 <a class="dropdown-item" href="#" style="font-size: 14px;">Mitra Kerja Sama</a>
                 <a class="dropdown-item" href="#" style="font-size: 14px;">Tracer Studi</a>
                 <a class="dropdown-item" href="{{ route('pimpinan.eval') }}" style="font-size: 14px;">Pengguna Terhadap Kinerja Pimpinan Fakultas</a>
@@ -80,7 +80,7 @@
                 aria-labelledby="laporanSurveiDropdown">
                 <a class="dropdown-item" href="{{ route('penggunaLulusan.index') }}" style="font-size: 14px;">Pengguna Lulusan</a>
                 <a class="dropdown-item" href="{{ route('dosen.index') }}" style="font-size: 14px;">Dosen</a>
-                <a class="dropdown-item" href="#" style="font-size: 14px;">Mahasiswa</a>
+                <a class="dropdown-item" href="{{ route('mahasiswa.index') }}" style="font-size: 14px;">Mahasiswa</a>
                 <a class="dropdown-item" href="#" style="font-size: 14px;">Mitra Kerja Sama</a>
                 <a class="dropdown-item" href="#" style="font-size: 14px;">Tracer Studi</a>
                 <a class="dropdown-item" href="{{ route('pimpinan.index') }}" style="font-size: 14px;">Pengguna Terhadap Kinerja Pimpinan Fakultas</a>

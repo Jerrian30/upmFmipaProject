@@ -32,6 +32,9 @@ use App\Http\Controllers\EvalPimpinanController;
 use App\Http\Controllers\LaporanVmtsController;
 use App\Http\Controllers\EvalVmtsController;
 
+use App\Http\Controllers\LaporanMahasiswaController;
+use App\Http\Controllers\EvalMahasiswaController;
+
 use App\Http\Controllers\FormulirController;
 
 use App\Http\Controllers\DokumenController;
@@ -109,6 +112,12 @@ Route::group(['middleware' => ['cek_login:admin']], function () {
     Route::post('/akademik/delete', [LaporanAkademikController::class, 'delete'])->name('akademik.delete');
     Route::get('/akademik/eval', [EvalAkademikController::class, 'index'])->name('akademik.eval');
     Route::get('/akademik/table', [EvalAkademikController::class, 'table'])->name('akademik.table');
+
+    Route::get('mahasiswa', [LaporanMahasiswaController::class, 'index'])->name('mahasiswa.index');
+    Route::post('/mahasiswa/import', [LaporanMahasiswaController::class, 'import'])->name('mahasiswa.import');
+    Route::post('/mahasiswa/delete', [LaporanMahasiswaController::class, 'delete'])->name('mahasiswa.delete');
+    Route::get('/mahasiswa/eval', [EvalMahasiswaController::class, 'index'])->name('mahasiswa.eval');
+    Route::get('/mahasiswa/table', [EvalMahasiswaController::class, 'table'])->name('mahasiswa.table');
     
 
     Route::get('pimpinan', [LaporanPimpinanController::class, 'index'])->name('pimpinan.index');
