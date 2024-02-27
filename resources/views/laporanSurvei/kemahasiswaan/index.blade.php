@@ -47,10 +47,10 @@
             </div>
         </div>
     </form>
+    <form action="{{ route('kemahasiswaan.delete') }}" method="POST" id="deleteForm">
+        @csrf <!-- Token CSRF untuk keamanan -->
+        <button type="button" class="btn btn-danger" onclick="confirmDelete()">Hapus</button>
     <div class="table-responsive">
-        <form id="deleteForm" action="{{ route('kemahasiswaan.delete') }}" method="POST">
-            @csrf <!-- Sesuaikan dengan teknologi backend Anda, contoh ini menggunakan Blade Laravel -->
-            <button type="submit" class="btn btn-danger" onclick="return confirm('Yakin ingin menghapus data?')">Hapus</button>
             <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
                 <thead class="text-center">
                 <tr>
@@ -112,22 +112,11 @@
                     <td>{{ $kemahasiswaan->jenis_kelamin }}</td>
                     <td>{{ $kemahasiswaan->program_studi}}</td>
                     <td>{{ $kemahasiswaan->lama_bergabung }}</td>
-
-                    {{--             $table->unsignedTinyInteger('info_layanan')->nullable(); // 1. Ketersediaan, kejelasan dan kemudahan memperoleh informasi layanan
-            $table->unsignedTinyInteger('suasana_ruangan')->nullable(); // 2. Suasana ruangan yang bersih dan nyaman
-            $table->unsignedTinyInteger('staff_penampilan')->nullable(); // 3. Staff berpenampilan bersih dan rapih serta berperilaku sopan dan ramah
-            $table->unsignedTinyInteger('staff_pengetahuan')->nullable(); // 4. Staf memiliki pengetahuan yang baik tentang layanan yang dibutuhkan
-            $table->unsignedTinyInteger('staff_sop')->nullable(); // 5. Staf mampu memberikan pelayanan sesuai dengan SOP
-            $table->unsignedTinyInteger('staff_responsive')->nullable(); // 6. Staf menunjukkan sikap responsive dan bertanggung jawab
-            $table->unsignedTinyInteger('staff_dapat_dihubungi')->nullable(); // 7. Staf dapat ditemui/dihubungi dengan mudah
-            $table->unsignedTinyInteger('staff_terbuka_kritik')->nullable(); // 8. Staf terbuka dengan kritik/saran
-            $table->text('saran_kritik')->nullable(); // Saran/Kritik
-            $table->string('jenis_kelamin', 10)->nullable(); // Jenis Kelamin
-            $table->string('program_studi_unit_kerja')->nullable(); // Program Studi/Unit Kerja/Lainnya
-            $table->string('lama_bergabung')->nullable(); // Berapa lama sudah bergabung/mengenal UNIB --}}
                 </tr>
                 @endforeach
             </tbody>
+        </table>
+    </form>
     </div>
 </div>
 

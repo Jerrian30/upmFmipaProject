@@ -82,8 +82,102 @@
         });
     });
 });
+</script>
 
-    </script>
+<script>
+    document.getElementById('checkAll').onclick = function() {
+        var checkboxes = document.querySelectorAll('#dataTable input[type="checkbox"]');
+        for (var checkbox of checkboxes) {
+            checkbox.checked = this.checked;
+        }
+    }
+
+    function confirmDelete() {
+        Swal.fire({
+            title: "Are you sure?",
+            text: "You won't be able to revert this!",
+            icon: "warning",
+            showCancelButton: true,
+            confirmButtonColor: "#3085d6",
+            cancelButtonColor: "#d33",
+            confirmButtonText: "Yes, delete it!"
+        }).then((result) => {
+            if (result.isConfirmed) {
+                document.getElementById('deleteForm').submit();
+            }
+        });
+    }
+</script>
+
+<script>
+    document.querySelector('.delete-confirm').addEventListener('click', function(event) {
+    event.preventDefault();
+
+    Swal.fire({
+        title: "Apakah Anda yakin?",
+        text: "Anda tidak akan dapat mengembalikan ini!",
+        icon: "warning",
+        showCancelButton: true,
+        confirmButtonColor: "#3085d6",
+        cancelButtonColor: "#d33",
+        confirmButtonText: "Ya, hapus saja!"
+    }).then((result) => {
+        if (result.isConfirmed) {
+            document.getElementById('deleteForm').submit(); // Submit form jika konfirmasi di-klik
+        }
+    });
+});
+
+</script>
+
+<script>
+        // Pastikan DOM telah siap sebelum menjalankan script
+        document.addEventListener('DOMContentLoaded', function () {
+        // Cek jika ada session flash message 'success'
+        @if(session('success'))
+            Swal.fire({
+            position: 'center',
+            icon: 'success',
+            title: "{{ session('success') }}",
+            showConfirmButton: false,
+            timer: 1500
+            });
+        @endif
+        });
+</script>
+
+<script>
+    function confirmDelete() {
+    // Cek apakah ada checkbox yang dipilih
+    var selected = document.querySelectorAll('#dataTable input[type="checkbox"]:checked').length;
+
+    // Jika tidak ada yang dipilih, tampilkan SweetAlert
+    if(selected === 0) {
+        Swal.fire({
+            title: 'Peringatan!',
+            text: 'Tidak ada data yang dipilih untuk dihapus.',
+            icon: 'warning',
+            confirmButtonText: 'OK'
+        });
+    } else {
+        // Jika ada yang dipilih, tampilkan konfirmasi penghapusan
+        Swal.fire({
+            title: "Kamu yakin ingin hapus data?",
+            text: "Anda tidak akan dapat mengembalikan ini!",
+            icon: "warning",
+            showCancelButton: true,
+            confirmButtonColor: "#3085d6",
+            cancelButtonColor: "#d33",
+            confirmButtonText: "Ya, Hapus data"
+        }).then((result) => {
+            if (result.isConfirmed) {
+                document.getElementById('deleteForm').submit();
+            }
+        });
+    }
+}
+
+</script>
 
 </body>
 

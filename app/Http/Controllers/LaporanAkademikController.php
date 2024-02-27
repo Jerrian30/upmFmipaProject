@@ -37,13 +37,16 @@ class LaporanAkademikController extends Controller
 
     public function delete(Request $request)
     {
+        // Validasi request
         $request->validate([
             'ids' => 'required|array',
             'ids.*' => 'exists:akademiks,id',
         ]);
 
+        // Menghapus data berdasarkan array IDs
         Akademik::destroy($request->ids);
 
+        // Redirect ke halaman sebelumnya dengan pesan sukses
         return back()->with('success', 'Data berhasil dihapus.');
     }
 

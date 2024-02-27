@@ -2,29 +2,6 @@
 @section('title', 'Unduh')
 @section('page', 'Unduh')
 
-@section('js')
-<script>
-    document.querySelector('.delete-confirm').addEventListener('click', function(event) {
-    event.preventDefault();
-
-    Swal.fire({
-        title: "Apakah Anda yakin?",
-        text: "Anda tidak akan dapat mengembalikan ini!",
-        icon: "warning",
-        showCancelButton: true,
-        confirmButtonColor: "#3085d6",
-        cancelButtonColor: "#d33",
-        confirmButtonText: "Ya, hapus saja!"
-    }).then((result) => {
-        if (result.isConfirmed) {
-            document.getElementById('deleteForm').submit(); // Submit form jika konfirmasi di-klik
-        }
-    });
-});
-
-</script>
-@endsection
-
 @section('content')
 
 <div class="container mt-5">

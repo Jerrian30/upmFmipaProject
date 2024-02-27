@@ -23,6 +23,31 @@
     }
     // Jika Anda menambahkan checkbox di footer, duplikat dan sesuaikan script untuk 'checkAllFooter'
 </script>
+
+<script>
+    function confirmDelete() {
+        Swal.fire({
+            title: "Are you sure?",
+            text: "You won't be able to revert this!",
+            icon: "warning",
+            showCancelButton: true,
+            confirmButtonColor: "#3085d6",
+            cancelButtonColor: "#d33",
+            confirmButtonText: "Yes, delete it!"
+        }).then((result) => {
+            if (result.isConfirmed) {
+                // Submit form secara programatik jika pengguna mengonfirmasi
+                document.querySelector('form').submit();
+                
+                Swal.fire({
+                    title: "Deleted!",
+                    text: "Your file has been deleted.",
+                    icon: "success"
+                });
+            }
+        });
+    }
+</script>
 @endsection
 
 @section('content')
@@ -47,10 +72,10 @@
             </div>
         </div>
     </form>
+    <form action="{{ route('akademik.delete') }}" method="POST" id="deleteForm">
+        @csrf <!-- Token CSRF untuk keamanan -->
+        <button type="button" class="btn btn-danger" onclick="confirmDelete()">Hapus</button>
     <div class="table-responsive">
-        <form id="deleteForm" action="{{ route('akademik.delete') }}" method="POST">
-            @csrf <!-- Sesuaikan dengan teknologi backend Anda, contoh ini menggunakan Blade Laravel -->
-            <button type="submit" class="btn btn-danger" onclick="return confirm('Yakin ingin menghapus data?')">Hapus</button>
             <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
                 <thead class="text-center">
                 <tr>
@@ -74,7 +99,7 @@
             <tfoot class="text-center">
                 <tr>
                     <tr>
-                        <th><input type="checkbox" id="checkAllFooter"></th>
+                        <th><input type="checkbox" id="checkAll"></th>
                         <th>#</th>
                         <th>Timestamp</th>
                         <th>Status Responden</th>

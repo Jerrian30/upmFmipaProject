@@ -47,10 +47,10 @@
             </div>
         </div>
     </form>
+    <form action="{{ route('dosen.delete') }}" method="POST" id="deleteForm">
+        @csrf <!-- Token CSRF untuk keamanan -->
+        <button type="button" class="btn btn-danger" onclick="confirmDelete()">Hapus</button>
     <div class="table-responsive">
-        <form id="deleteForm" action="{{ route('dosen.delete') }}" method="POST">
-            @csrf <!-- Sesuaikan dengan teknologi backend Anda, contoh ini menggunakan Blade Laravel -->
-            <button type="submit" class="btn btn-danger" onclick="return confirm('Yakin ingin menghapus data?')">Hapus</button>
             <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
                 <thead class="text-center">
                 <tr>
@@ -120,7 +120,8 @@
                     </tr>
                 @endforeach
             </tbody>
-            
+            </table>
+        </form>   
             
     </div>
 </div>
