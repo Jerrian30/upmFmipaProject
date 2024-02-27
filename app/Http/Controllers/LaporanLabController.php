@@ -35,4 +35,16 @@ class LaporanLabController extends Controller
         return redirect()->route('lab.index')->with('success', 'Data berhasil diimpor.');
     }
 
+    public function delete(Request $request)
+    {
+        $request->validate([
+            'ids' => 'required|array',
+            'ids.*' => 'exists:labs,id',
+        ]);
+
+        Lab::destroy($request->ids);
+
+        return back()->with('success', 'Data berhasil dihapus.');
+    }
+
 }

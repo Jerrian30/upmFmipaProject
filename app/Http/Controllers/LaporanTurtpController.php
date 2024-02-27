@@ -35,4 +35,16 @@ class LaporanTurtpController extends Controller
         return redirect()->route('turtp.index')->with('success', 'Data berhasil diimpor.');
     }
 
+    public function delete(Request $request)
+    {
+        $request->validate([
+            'ids' => 'required|array',
+            'ids.*' => 'exists:turtps,id',
+        ]);
+
+        Turtp::destroy($request->ids);
+
+        return back()->with('success', 'Data berhasil dihapus.');
+    }
+
 }

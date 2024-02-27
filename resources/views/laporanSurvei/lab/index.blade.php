@@ -14,6 +14,15 @@
         });
     });
 </script>
+<script>
+    document.getElementById('checkAll').onclick = function() {
+        var checkboxes = document.querySelectorAll('input[type="checkbox"]');
+        for (var checkbox of checkboxes) {
+            checkbox.checked = this.checked;
+        }
+    }
+    // Jika Anda menambahkan checkbox di footer, duplikat dan sesuaikan script untuk 'checkAllFooter'
+</script>
 @endsection
 
 @section('content')
@@ -39,9 +48,13 @@
         </div>
     </form>
     <div class="table-responsive">
-        <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
-            <thead class="text-center">
+        <form id="deleteForm" action="{{ route('lab.delete') }}" method="POST">
+            @csrf <!-- Sesuaikan dengan teknologi backend Anda, contoh ini menggunakan Blade Laravel -->
+            <button type="submit" class="btn btn-danger" onclick="return confirm('Yakin ingin menghapus data?')">Hapus</button>
+            <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                <thead class="text-center">
                 <tr>
+                    <th><input type="checkbox" id="checkAll"></th>
                     <th>#</th>
                     <th>Timestamp</th>
                     <th>Status Responden</th>
@@ -64,6 +77,7 @@
             </thead>
             <tfoot class="text-center">
                 <tr>
+                    <th><input type="checkbox" id="checkAll"></th>
                     <th>#</th>
                     <th>Timestamp</th>
                     <th>Status Responden</th>
@@ -87,6 +101,7 @@
             <tbody>
                 @foreach($labs as $lab)
                     <tr>
+                        <td><input type="checkbox" name="ids[]" value="{{ $lab->id }}"></td>
                         <td>{{ $loop->iteration }}</td>
                         <td>{{ $lab->timestamp }}</td>
                         <td>{{ $lab->responden_status }}</td>

@@ -14,6 +14,15 @@
         });
     });
 </script>
+<script>
+    document.getElementById('checkAll').onclick = function() {
+        var checkboxes = document.querySelectorAll('input[type="checkbox"]');
+        for (var checkbox of checkboxes) {
+            checkbox.checked = this.checked;
+        }
+    }
+    // Jika Anda menambahkan checkbox di footer, duplikat dan sesuaikan script untuk 'checkAllFooter'
+</script>
 @endsection
 
 @section('content')
@@ -39,9 +48,13 @@
         </div>
     </form>
     <div class="table-responsive">
-        <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
-            <thead class="text-center">
+        <form id="deleteForm" action="{{ route('kemahasiswaan.delete') }}" method="POST">
+            @csrf <!-- Sesuaikan dengan teknologi backend Anda, contoh ini menggunakan Blade Laravel -->
+            <button type="submit" class="btn btn-danger" onclick="return confirm('Yakin ingin menghapus data?')">Hapus</button>
+            <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                <thead class="text-center">
                 <tr>
+                    <th><input type="checkbox" id="checkAll"></th>
                     <th>#</th>
                     <th>Timestamp</th>
                     <th>Status Responden</th>
@@ -62,30 +75,28 @@
             </thead>
             <tfoot class="text-center">
                 <tr>
-                    <tr>
-                        <th>#</th>
-                        <th>Timestamp</th>
-                        <th>Status Responden</th>
-                        <th>Ketersediaan Informasi</th>
-                        <th>Suasana Ruangan</th>
-                        <th>Penampilan Staff</th>
-                        <th>Pengetahuan Staff</th>
-                        <th>Pelayanan SOP</th>
-                        <th>Responsivitas Staff</th>
-                        <th>Kemudahan Menghubungi Staff</th>
-                        <th>Keterbukaan Terhadap Kritik/Saran</th>
-                        <th>Saran/Kritik</th>
-                        <th>Jenis Kelamin</th>
-                        <th>Program Studi/Unit Kerja/Lainnya</th>
-                        <th>Lama Bergabung dengan UNIB</th>
-                    </tr>
-                    
-
+                    <th><input type="checkbox" id="checkAll"></th>
+                    <th>#</th>
+                    <th>Timestamp</th>
+                    <th>Status Responden</th>
+                    <th>Ketersediaan Informasi</th>
+                    <th>Suasana Ruangan</th>
+                    <th>Penampilan Staff</th>
+                    <th>Pengetahuan Staff</th>
+                    <th>Pelayanan SOP</th>
+                    <th>Responsivitas Staff</th>
+                    <th>Kemudahan Menghubungi Staff</th>
+                    <th>Keterbukaan Terhadap Kritik/Saran</th>
+                    <th>Saran/Kritik</th>
+                    <th>Jenis Kelamin</th>
+                    <th>Program Studi/Unit Kerja/Lainnya</th>
+                    <th>Lama Bergabung dengan UNIB</th>
                 </tr>
             </tfoot>
             <tbody>
                 @foreach($kemahasiswaans as $kemahasiswaan)
                 <tr>
+                    <td><input type="checkbox" name="ids[]" value="{{ $kemahasiswaan->id }}"></td>
                     <td>{{ $loop->iteration }}</td>
                     <td>{{ $kemahasiswaan->timestamp }}</td>
                     <td>{{ $kemahasiswaan->status }}</td>

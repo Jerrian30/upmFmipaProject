@@ -35,4 +35,16 @@ class LaporanKemahasiswaanController extends Controller
         return redirect()->route('kemahasiswaan.index')->with('success', 'Data berhasil diimpor.');
     }
 
+    public function delete(Request $request)
+    {
+        $request->validate([
+            'ids' => 'required|array',
+            'ids.*' => 'exists:kemahasiswaans,id',
+        ]);
+
+        Kemahasiswaan::destroy($request->ids);
+
+        return back()->with('success', 'Data berhasil dihapus.');
+    }
+
 }

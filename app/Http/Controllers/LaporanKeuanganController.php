@@ -35,4 +35,16 @@ class LaporanKeuanganController extends Controller
         return redirect()->route('keuangan.index')->with('success', 'Data berhasil diimpor.');
     }
 
+    public function delete(Request $request)
+    {
+        $request->validate([
+            'ids' => 'required|array',
+            'ids.*' => 'exists:keuangans,id',
+        ]);
+
+        Keuangan::destroy($request->ids);
+
+        return back()->with('success', 'Data berhasil dihapus.');
+    }
+
 }

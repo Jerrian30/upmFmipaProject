@@ -1138,7 +1138,7 @@ class EvalMahasiswaController extends Controller
     $percentages15 = $pl15->getDetailedPercentages();
     $percentages16 = $pl16->getDetailedPercentages();
     $percentages17 = $pl17->getDetailedPercentages();
-    $percentages18 = $pl17->getDetailedPercentages();
+    $percentages18 = $pl18->getDetailedPercentages();
     $percentages19 = $pl19->getDetailedPercentages();
     $percentages20 = $pl20->getDetailedPercentages();
     $percentages21 = $pl21->getDetailedPercentages();

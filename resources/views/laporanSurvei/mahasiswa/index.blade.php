@@ -48,7 +48,7 @@
         </div>
     </form>
     <div class="table-responsive">
-        <form id="deleteForm" action="{{ route('akademik.delete') }}" method="POST">
+        <form id="deleteForm" action="{{ route('mahasiswa.delete') }}" method="POST">
             @csrf <!-- Sesuaikan dengan teknologi backend Anda, contoh ini menggunakan Blade Laravel -->
             <button type="submit" class="btn btn-danger" onclick="return confirm('Yakin ingin menghapus data?')">Hapus</button>
             <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">

@@ -14,6 +14,15 @@
         });
     });
 </script>
+<script>
+    document.getElementById('checkAll').onclick = function() {
+        var checkboxes = document.querySelectorAll('input[type="checkbox"]');
+        for (var checkbox of checkboxes) {
+            checkbox.checked = this.checked;
+        }
+    }
+    // Jika Anda menambahkan checkbox di footer, duplikat dan sesuaikan script untuk 'checkAllFooter'
+</script>
 @endsection
 
 @section('content')
@@ -39,9 +48,13 @@
         </div>
     </form>
     <div class="table-responsive">
-        <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
-            <thead class="text-center">
+        <form id="deleteForm" action="{{ route('pimpinan.delete') }}" method="POST">
+            @csrf <!-- Sesuaikan dengan teknologi backend Anda, contoh ini menggunakan Blade Laravel -->
+            <button type="submit" class="btn btn-danger" onclick="return confirm('Yakin ingin menghapus data?')">Hapus</button>
+            <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                <thead class="text-center">
                 <tr>
+                    <th><input type="checkbox" id="checkAll"></th>
                     <th>#</th>
                     <th>Timestamp</th>
                     <th>Status</th>
@@ -57,11 +70,12 @@
                     <th>Saran/Kritik</th>
                     <th>Pimpinan Dinilai</th>
                     <th>Jenis Kelamin</th>
-                    <th>Prodi/Unit Kerja</th>
+                    <th>Program Studi</th>
                 </tr>
             </thead>
             <tfoot class="text-center">
                 <tr>
+                    <th><input type="checkbox" id="checkAll"></th>
                     <th>#</th>
                     <th>Timestamp</th>
                     <th>Status</th>
@@ -77,12 +91,13 @@
                     <th>Saran/Kritik</th>
                     <th>Pimpinan Dinilai</th>
                     <th>Jenis Kelamin</th>
-                    <th>Prodi/Unit Kerja</th>
+                    <th>Program Studi</th>
                 </tr>
             </tfoot>
             <tbody>
                 @foreach($pimpinans as $pimpinan)
                 <tr>
+                    <td><input type="checkbox" name="ids[]" value="{{ $pimpinan->id }}"></td>
                     <td>{{ $loop->iteration }}</td>
                     <td>{{ $pimpinan->timestamp }}</td>
                     <td>{{ $pimpinan->status }}</td>

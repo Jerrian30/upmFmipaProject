@@ -35,4 +35,16 @@ class LaporanDosenController extends Controller
         return redirect()->route('dosen.index')->with('success', 'Data berhasil diimpor.');
     }
 
+    public function delete(Request $request)
+    {
+        $request->validate([
+            'ids' => 'required|array',
+            'ids.*' => 'exists:dosens,id',
+        ]);
+
+        Dosen::destroy($request->ids);
+
+        return back()->with('success', 'Data berhasil dihapus.');
+    }
+
 }

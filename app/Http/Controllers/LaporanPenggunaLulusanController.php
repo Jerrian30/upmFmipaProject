@@ -35,4 +35,16 @@ class LaporanPenggunaLulusanController extends Controller
         return redirect()->route('penggunaLulusan.index')->with('success', 'Data Pengguna Lulusan berhasil diimpor.');
     }
 
+    public function delete(Request $request)
+    {
+        $request->validate([
+            'ids' => 'required|array',
+            'ids.*' => 'exists:pengguna_lulusans,id',
+        ]);
+
+        PenggunaLulusan::destroy($request->ids);
+
+        return back()->with('success', 'Data berhasil dihapus.');
+    }
+
 }

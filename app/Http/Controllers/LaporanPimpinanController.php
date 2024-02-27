@@ -35,4 +35,16 @@ class LaporanPimpinanController extends Controller
         return redirect()->route('pimpinan.index')->with('success', 'Data berhasil diimpor.');
     }
 
+    public function delete(Request $request)
+    {
+        $request->validate([
+            'ids' => 'required|array',
+            'ids.*' => 'exists:pimpinans,id',
+        ]);
+
+        Pimpinan::destroy($request->ids);
+
+        return back()->with('success', 'Data berhasil dihapus.');
+    }
+
 }

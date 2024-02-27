@@ -29,8 +29,8 @@ use App\Http\Controllers\EvalAkademikController;
 use App\Http\Controllers\LaporanPimpinanController;
 use App\Http\Controllers\EvalPimpinanController;
 
-use App\Http\Controllers\LaporanVmtsController;
-use App\Http\Controllers\EvalVmtsController;
+use App\Http\Controllers\LaporanKerjasamaController;
+use App\Http\Controllers\EvalKerjasamaController;
 
 use App\Http\Controllers\LaporanMahasiswaController;
 use App\Http\Controllers\EvalMahasiswaController;
@@ -73,37 +73,44 @@ Route::group(['middleware' => ['cek_login:admin']], function () {
             
     Route::get('penggunaLulusan', [LaporanPenggunaLulusanController::class, 'index'])->name('penggunaLulusan.index');
     Route::post('/penggunaLulusan/import', [LaporanPenggunaLulusanController::class, 'import'])->name('penggunaLulusan.import');
+    Route::post('/penggunaLulusan/delete', [LaporanPenggunaLulusanController::class, 'delete'])->name('penggunaLulusan.delete');
     Route::get('/penggunaLulusan/eval', [EvalPenggunaLulusanController::class, 'index'])->name('penggunaLulusan.eval');
     Route::get('/penggunaLulusan/table', [EvalPenggunaLulusanController::class, 'table'])->name('penggunaLulusan.table');
 
     Route::get('dosen', [LaporanDosenController::class, 'index'])->name('dosen.index');
     Route::post('/dosen/import', [LaporanDosenController::class, 'import'])->name('dosen.import');
+    Route::post('/dosen/delete', [LaporanDosenController::class, 'delete'])->name('dosen.delete');
     Route::get('/dosen/eval', [EvalDosenController::class, 'index'])->name('dosen.eval');
     Route::get('/dosen/table', [EvalDosenController::class, 'table'])->name('dosen.table');
 
     Route::get('lab', [LaporanLabController::class, 'index'])->name('lab.index');
     Route::post('/lab/import', [LaporanLabController::class, 'import'])->name('lab.import');
+    Route::post('/lab/delete', [LaporanLabController::class, 'delete'])->name('lab.delete');
     Route::get('/lab/eval', [EvalLabController::class, 'index'])->name('lab.eval');
     Route::get('/lab/table', [EvalLabController::class, 'table'])->name('lab.table');
 
     Route::get('kemahasiswaan', [LaporanKemahasiswaanController::class, 'index'])->name('kemahasiswaan.index');
     Route::post('/kemahasiswaan/import', [LaporanKemahasiswaanController::class, 'import'])->name('kemahasiswaan.import');
+    Route::post('/kemahasiswaan/delete', [LaporanKemahasiswaanController::class, 'delete'])->name('kemahasiswaan.delete');
     Route::get('/kemahasiswaan/eval', [EvalKemahasiswaanController::class, 'index'])->name('kemahasiswaan.eval');
     Route::get('/kemahasiswaan/table', [EvalKemahasiswaanController::class, 'table'])->name('kemahasiswaan.table');
 
 
     Route::get('laypro', [LaporanLayproController::class, 'index'])->name('laypro.index');
     Route::post('/laypro/import', [LaporanLayproController::class, 'import'])->name('laypro.import');
+    Route::post('/laypro/delete', [LaporanLayproController::class, 'delete'])->name('laypro.delete');
     Route::get('/laypro/eval', [EvalLayproController::class, 'index'])->name('laypro.eval');
     Route::get('/laypro/table', [EvalLayproController::class, 'table'])->name('laypro.table');
 
     Route::get('keuangan', [LaporanKeuanganController::class, 'index'])->name('keuangan.index');
     Route::post('/keuangan/import', [LaporanKeuanganController::class, 'import'])->name('keuangan.import');
+    Route::post('/keuangan/delete', [LaporanKeuanganController::class, 'delete'])->name('keuangan.delete');
     Route::get('/keuangan/eval', [EvalKeuanganController::class, 'index'])->name('keuangan.eval');
     Route::get('/keuangan/table', [EvalKeuanganController::class, 'table'])->name('keuangan.table');
 
     Route::get('turtp', [LaporanTurtpController::class, 'index'])->name('turtp.index');
     Route::post('/turtp/import', [LaporanTurtpController::class, 'import'])->name('turtp.import');
+    Route::post('/turtp/delete', [LaporanTurtpController::class, 'delete'])->name('turtp.delete');
     Route::get('/turtp/eval', [EvalTurtpController::class, 'index'])->name('turtp.eval');
     Route::get('/turtp/table', [EvalTurtpController::class, 'table'])->name('turtp.table');
 
@@ -122,13 +129,15 @@ Route::group(['middleware' => ['cek_login:admin']], function () {
 
     Route::get('pimpinan', [LaporanPimpinanController::class, 'index'])->name('pimpinan.index');
     Route::post('/pimpinan/import', [LaporanPimpinanController::class, 'import'])->name('pimpinan.import');
+    Route::post('/pimpinan/delete', [LaporanPimpinanController::class, 'delete'])->name('pimpinan.delete');
     Route::get('/pimpinan/eval', [EvalPimpinanController::class, 'index'])->name('pimpinan.eval');
     Route::get('/pimpinan/table', [EvalPimpinanController::class, 'table'])->name('pimpinan.table');
 
-    Route::get('vmts', [LaporanVmtsController::class, 'index'])->name('vmts.index');
-    Route::post('/vmts/import', [LaporanVmtsController::class, 'import'])->name('vmts.import');
-    Route::get('/vmts/eval', [EvalVmtsController::class, 'index'])->name('vmts.eval');
-    Route::get('/vmts/table', [EvalVmtsController::class, 'table'])->name('vmts.table');
+    Route::get('kerjasama', [LaporanKerjasamaController::class, 'index'])->name('kerjasama.index');
+    Route::post('/kerjasama/import', [LaporanKerjasamaController::class, 'import'])->name('kerjasama.import');
+    Route::post('/kerjasama/delete', [LaporanKerjasamaController::class, 'delete'])->name('kerjasama.delete');
+    Route::get('/kerjasama/eval', [EvalKerjasamaController::class, 'index'])->name('kerjasama.eval');
+    Route::get('/kerjasama/table', [EvalKerjasamaController::class, 'table'])->name('kerjasama.table');
 
 
     });

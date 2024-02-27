@@ -35,4 +35,16 @@ class LaporanMahasiswaController extends Controller
         return redirect()->route('mahasiswa.index')->with('success', 'Data berhasil diimpor.');
     }
 
+    public function delete(Request $request)
+    {
+        $request->validate([
+            'ids' => 'required|array',
+            'ids.*' => 'exists:mahasiswas,id',
+        ]);
+
+        Mahasiswa::destroy($request->ids);
+
+        return back()->with('success', 'Data berhasil dihapus.');
+    }
+
 }

@@ -48,7 +48,7 @@
                 <a class="dropdown-item" href="{{ route('penggunaLulusan.eval') }}" style="font-size: 14px;">Pengguna Lulusan</a>
                 <a class="dropdown-item" href="{{ route('dosen.eval') }}" style="font-size: 14px;">Dosen</a>
                 <a class="dropdown-item" href="{{ route('mahasiswa.eval') }}" style="font-size: 14px;">Mahasiswa</a>
-                <a class="dropdown-item" href="#" style="font-size: 14px;">Mitra Kerja Sama</a>
+                <a class="dropdown-item" href="{{ route('kerjasama.eval') }}" style="font-size: 14px;">Mitra Kerja Sama</a>
                 <a class="dropdown-item" href="#" style="font-size: 14px;">Tracer Studi</a>
                 <a class="dropdown-item" href="{{ route('pimpinan.eval') }}" style="font-size: 14px;">Pengguna Terhadap Kinerja Pimpinan Fakultas</a>
                 <a class="dropdown-item" href="{{ route('laypro.eval') }}" style="font-size: 14px;">Pengguna Terhadap Kinerja Layanan Prodi</a>
@@ -57,7 +57,7 @@
                 <a class="dropdown-item" href="{{ route('keuangan.eval') }}" style="font-size: 14px;">Pengguna Terhadap Kinerja Layanan Subbagian Keuangan</a>
                 <a class="dropdown-item" href="{{ route('turtp.eval') }}" style="font-size: 14px;">Pengguna Terhadap Kinerja Layanan Subbagian TURTP</a>
                 <a class="dropdown-item" href="{{ route('akademik.eval') }}" style="font-size: 14px;">Pengguna Terhadap Kinerja Layanan Subbagian Akademik</a>
-                <a class="dropdown-item" href="{{ route('vmts.eval') }}" style="font-size: 14px;">VMTS</a>
+                <a class="dropdown-item" href="#" style="font-size: 14px;">VMTS</a>
             </div>
         </li>
  @endif
@@ -81,7 +81,7 @@
                 <a class="dropdown-item" href="{{ route('penggunaLulusan.index') }}" style="font-size: 14px;">Pengguna Lulusan</a>
                 <a class="dropdown-item" href="{{ route('dosen.index') }}" style="font-size: 14px;">Dosen</a>
                 <a class="dropdown-item" href="{{ route('mahasiswa.index') }}" style="font-size: 14px;">Mahasiswa</a>
-                <a class="dropdown-item" href="#" style="font-size: 14px;">Mitra Kerja Sama</a>
+                <a class="dropdown-item" href="{{ route('kerjasama.index') }}" style="font-size: 14px;">Mitra Kerja Sama</a>
                 <a class="dropdown-item" href="#" style="font-size: 14px;">Tracer Studi</a>
                 <a class="dropdown-item" href="{{ route('pimpinan.index') }}" style="font-size: 14px;">Pengguna Terhadap Kinerja Pimpinan Fakultas</a>
                 <a class="dropdown-item" href="{{ route('laypro.index') }}" style="font-size: 14px;">Pengguna Terhadap Kinerja Layanan Prodi</a>
@@ -90,7 +90,7 @@
                 <a class="dropdown-item" href="{{ route('keuangan.index') }}" style="font-size: 14px;">Pengguna Terhadap Kinerja Layanan Subbagian Keuangan</a>
                 <a class="dropdown-item" href="{{ route('turtp.index') }}" style="font-size: 14px;">Pengguna Terhadap Kinerja Layanan Subbagian TURTP</a>
                 <a class="dropdown-item" href="{{ route('akademik.index') }}" style="font-size: 14px;">Pengguna Terhadap Kinerja Layanan Subbagian Akademik</a>
-                <a class="dropdown-item" href="{{ route('vmts.index') }}" style="font-size: 14px;">VMTS</a>
+                <a class="dropdown-item" href="#" style="font-size: 14px;">VMTS</a>
             </div>
         </li>
 

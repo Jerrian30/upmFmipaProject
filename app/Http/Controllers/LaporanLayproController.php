@@ -35,4 +35,16 @@ class LaporanLayproController extends Controller
         return redirect()->route('laypro.index')->with('success', 'Data berhasil diimpor.');
     }
 
+    public function delete(Request $request)
+    {
+        $request->validate([
+            'ids' => 'required|array',
+            'ids.*' => 'exists:laypros,id',
+        ]);
+
+        Laypro::destroy($request->ids);
+
+        return back()->with('success', 'Data berhasil dihapus.');
+    }
+
 }

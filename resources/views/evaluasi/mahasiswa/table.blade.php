@@ -37,7 +37,7 @@
         </tfoot>
         <tbody>
             <tr>
-                <td>Kebersihan dan kenyamanan ruangan</td>
+                <td>Prodi menetapkan dosen pembimbing akademik bagi mahasiswa</td>
                 <td>{{ $percentages1['persen4'] }}%</td>
                 <td>{{ $percentages1['persen3'] }}%</td>
                 <td>{{ $percentages1['persen2'] }}%</td>
@@ -63,7 +63,7 @@
                 </td>
             </tr>
             <tr>
-                <td>Fasilitas Perkuliahan</td>
+                <td>Prodi menetapkan dosen pembina/pembimbing kegiatan kemahasiswaan di bidang akademik dan non akademik</td>
                 <td>{{ $percentages2['persen4'] }}%</td>
                 <td>{{ $percentages2['persen3'] }}%</td>
                 <td>{{ $percentages2['persen2'] }}%</td>
@@ -90,7 +90,7 @@
             </tr>
 
             <tr>
-                <td>Fasilitas Laboratorium</td>
+                <td>Prodi menyediakan layanan bimbingan dan konseling/ pengembangan karir/ kesehatan bagi mahasiswa</td>
                 <td>{{ $percentages3['persen4'] }}%</td>
                 <td>{{ $percentages3['persen3'] }}%</td>
                 <td>{{ $percentages3['persen2'] }}%</td>
@@ -117,7 +117,7 @@
             </tr>
             
             <tr>
-                <td>Kemudahan mendapatkan informasi perkuliahan</td>
+                <td>Prodi menyediakan reward/ apresiasi/ beasiswa bagi mahasiswa</td>
                 <td>{{ $percentages4['persen4'] }}%</td>
                 <td>{{ $percentages4['persen3'] }}%</td>
                 <td>{{ $percentages4['persen2'] }}%</td>
@@ -144,7 +144,7 @@
             </tr>
 
             <tr>
-                <td>Kemudahan dalam mengurus transkrip nilai</td>
+                <td>Dosen memberikan materi kuliah dengan jelas</td>
                 <td>{{ $percentages5['persen4'] }}%</td>
                 <td>{{ $percentages5['persen3'] }}%</td>
                 <td>{{ $percentages5['persen2'] }}%</td>
@@ -171,7 +171,7 @@
             </tr>
             
             <tr>
-                <td>Kemudahan dalam mengurus KRS dan KHS</td>
+                <td>Dosen yang ramah, empati, responsif, datang tepat waktu dan mudah ditemui</td>
                 <td>{{ $percentages6['persen4'] }}%</td>
                 <td>{{ $percentages6['persen3'] }}%</td>
                 <td>{{ $percentages6['persen2'] }}%</td>
@@ -198,7 +198,7 @@
             </tr>
 
             <tr>
-                <td>Responsif terhadap keluhan mahasiswa</td>
+                <td>Kemampuan staf akademik untuk melayani administrasi kemahasiswaan</td>
                 <td>{{ $percentages7['persen4'] }}%</td>
                 <td>{{ $percentages7['persen3'] }}%</td>
                 <td>{{ $percentages7['persen2'] }}%</td>
@@ -225,7 +225,7 @@
             </tr>
 
             <tr>
-                <td>Penetapan dosen pengampu mata kuliah</td>
+                <td>Ruang kuliah tertata bersih, rapi dan nyaman</td>
                 <td>{{ $percentages8['persen4'] }}%</td>
                 <td>{{ $percentages8['persen3'] }}%</td>
                 <td>{{ $percentages8['persen2'] }}%</td>
@@ -252,7 +252,7 @@
             </tr>
 
             <tr>
-                <td>Dukungan jurusan/prodi terhadap kegiatan (organisasi) kemahasiswaan</td>
+                <td>Ruang laboratorium dan peralatannya menunjang proses belajar mahasiswa</td>
                 <td>{{ $percentages9['persen4'] }}%</td>
                 <td>{{ $percentages9['persen3'] }}%</td>
                 <td>{{ $percentages9['persen2'] }}%</td>
@@ -279,7 +279,7 @@
             </tr>
 
             <tr>
-                <td>Dukungan jurusan/prodi terhadap penyelesaian stud</td>
+                <td>Koleksi dan akses perpustakaan melengkapi sumber belajar mahasiswa</td>
                 <td>{{ $percentages10['persen4'] }}%</td>
                 <td>{{ $percentages10['persen3'] }}%</td>
                 <td>{{ $percentages10['persen2'] }}%</td>
@@ -306,7 +306,7 @@
             </tr>
 
             <tr>
-                <td>Kemudahan informasi mengenai kegiatan ilmiah (seminar, kuliah umum, dll)</td>
+                <td>Fasilitas ibadah/ olahraga/ kantin/ klinik/ toilet/ jalan dan akses transportasi tersedia untuk digunakan mahasiswa</td>
                 <td>{{ $percentages11['persen4'] }}%</td>
                 <td>{{ $percentages11['persen3'] }}%</td>
                 <td>{{ $percentages11['persen2'] }}%</td>
@@ -333,7 +333,7 @@
             </tr>
 
             <tr>
-                <td> Ketua Jurusan dan atau Program Studi berpakaian rapi dan memberi pelayanan administrasi dengan ramah</td>
+                <td>Prodi memberikan fasilitas internet (website, media sosial dan poster) untuk kegiatan mahasiswa</td>
                 <td>{{ $percentages12['persen4'] }}%</td>
                 <td>{{ $percentages12['persen3'] }}%</td>
                 <td>{{ $percentages12['persen2'] }}%</td>
@@ -360,7 +360,7 @@
             </tr>
 
             <tr>
-                <td> Ketua Jurusan dan atau Program Studi memberi pelayanan secara responsif dan sesuai SOP</td>
+                <td>Prodi memberikan fasilitas untuk organisasi kemahasiswaan</td>
                 <td>{{ $percentages13['persen4'] }}%</td>
                 <td>{{ $percentages13['persen3'] }}%</td>
                 <td>{{ $percentages13['persen2'] }}%</td>
@@ -387,7 +387,7 @@
             </tr>
 
             <tr>
-                <td>Ketua Jurusan dan atau Program Studi mudah dihubungi ketika ingin menemuinya untuk menanyakan atau mendiskusikan persoalan akademik anda</td>
+                <td>Prodi memberikan keamanan kampus bagi mahasiswa</td>
                 <td>{{ $percentages14['persen4'] }}%</td>
                 <td>{{ $percentages14['persen3'] }}%</td>
                 <td>{{ $percentages14['persen2'] }}%</td>
@@ -414,7 +414,7 @@
             </tr>
 
             <tr>
-                <td>Kerapihan, kesopanan dan keramahan petugas</td>
+                <td>Prodi menangani keluhan mahasiswa melalui dosen wali</td>
                 <td>{{ $percentages15['persen4'] }}%</td>
                 <td>{{ $percentages15['persen3'] }}%</td>
                 <td>{{ $percentages15['persen2'] }}%</td>
@@ -441,7 +441,7 @@
             </tr>
 
             <tr>
-                <td>Kemampuan petugas dalam menguasai IT terkait dengan pelayanan</td>
+                <td>Prodi memberikan sanksi bagi mahasiswa yang melanggar peraturan</td>
                 <td>{{ $percentages16['persen4'] }}%</td>
                 <td>{{ $percentages16['persen3'] }}%</td>
                 <td>{{ $percentages16['persen2'] }}%</td>
@@ -466,7 +466,168 @@
                     {{ $kinerja }}
                 </td>
             </tr>
-            
+
+            <tr>
+                <td>Kejelasan rencana pembelajaran/ kontrak perkuliahan</td>
+                <td>{{ $percentages17['persen4'] }}%</td>
+                <td>{{ $percentages17['persen3'] }}%</td>
+                <td>{{ $percentages17['persen2'] }}%</td>
+                <td>{{ $percentages17['persen1'] }}%</td>
+                <td>
+                    {{
+                        number_format(
+                            ($percentages17['persen4']*4 + $percentages17['persen3']*3 + $percentages17['persen2']*2 + $percentages17['persen1']*1) / 
+                            ($percentages17['persen4'] + $percentages17['persen3'] + $percentages17['persen2'] + $percentages17['persen1']),
+                        2)
+                    }}
+                </td>
+                <td>
+                    @php
+                        $average = 
+                            ($percentages17['persen4']*4 + $percentages17['persen3']*3 + $percentages17['persen2']*2 + $percentages17['persen1']) / 
+                            ($percentages17['persen4'] + $percentages17['persen3'] + $percentages17['persen2'] + $percentages17['persen1']);
+                        $kinerja = $average > 3.5 ? 'Sangat Baik' :
+                                    ($average > 2.5 ? 'Baik' :
+                                    ($average > 1.5 ? 'Cukup' : 'Kurang'));
+                    @endphp
+                    {{ $kinerja }}
+                </td>
+            </tr>
+
+            <tr>
+                <td>Setiap pekerjaan/ tugas selalu dikembalikan kepada mahasiswa</td>
+                <td>{{ $percentages18['persen4'] }}%</td>
+                <td>{{ $percentages18['persen3'] }}%</td>
+                <td>{{ $percentages18['persen2'] }}%</td>
+                <td>{{ $percentages18['persen1'] }}%</td>
+                <td>
+                    {{
+                        number_format(
+                            ($percentages18['persen4']*4 + $percentages18['persen3']*3 + $percentages18['persen2']*2 + $percentages18['persen1']*1) / 
+                            ($percentages18['persen4'] + $percentages18['persen3'] + $percentages18['persen2'] + $percentages18['persen1']),
+                        2)
+                    }}
+                </td>
+                <td>
+                    @php
+                        $average = 
+                            ($percentages18['persen4']*4 + $percentages18['persen3']*3 + $percentages18['persen2']*2 + $percentages18['persen1']) / 
+                            ($percentages18['persen4'] + $percentages18['persen3'] + $percentages18['persen2'] + $percentages18['persen1']);
+                        $kinerja = $average > 3.5 ? 'Sangat Baik' :
+                                    ($average > 2.5 ? 'Baik' :
+                                    ($average > 1.5 ? 'Cukup' : 'Kurang'));
+                    @endphp
+                    {{ $kinerja }}
+                </td>
+            </tr>
+
+            <tr>
+                <td>Sistem penilaian dan evaluasi (UAS/ UTS/ Ujian modul/ Tugas terstruktur) yang diberikan kepada mahasiswa</td>
+                <td>{{ $percentages19['persen4'] }}%</td>
+                <td>{{ $percentages19['persen3'] }}%</td>
+                <td>{{ $percentages19['persen2'] }}%</td>
+                <td>{{ $percentages19['persen1'] }}%</td>
+                <td>
+                    {{
+                        number_format(
+                            ($percentages19['persen4']*4 + $percentages19['persen3']*3 + $percentages19['persen2']*2 + $percentages19['persen1']*1) / 
+                            ($percentages19['persen4'] + $percentages19['persen3'] + $percentages19['persen2'] + $percentages19['persen1']),
+                        2)
+                    }}
+                </td>
+                <td>
+                    @php
+                        $average = 
+                            ($percentages19['persen4']*4 + $percentages19['persen3']*3 + $percentages19['persen2']*2 + $percentages19['persen1']) / 
+                            ($percentages19['persen4'] + $percentages19['persen3'] + $percentages19['persen2'] + $percentages19['persen1']);
+                        $kinerja = $average > 3.5 ? 'Sangat Baik' :
+                                    ($average > 2.5 ? 'Baik' :
+                                    ($average > 1.5 ? 'Cukup' : 'Kurang'));
+                    @endphp
+                    {{ $kinerja }}
+                </td>
+            </tr>
+
+            <tr>
+                <td>Suasana akademik yang mendukung pengembangan kompetensi mahasiswa</td>
+                <td>{{ $percentages20['persen4'] }}%</td>
+                <td>{{ $percentages20['persen3'] }}%</td>
+                <td>{{ $percentages20['persen2'] }}%</td>
+                <td>{{ $percentages20['persen1'] }}%</td>
+                <td>
+                    {{
+                        number_format(
+                            ($percentages20['persen4']*4 + $percentages20['persen3']*3 + $percentages20['persen2']*2 + $percentages20['persen1']*1) / 
+                            ($percentages20['persen4'] + $percentages20['persen3'] + $percentages20['persen2'] + $percentages20['persen1']),
+                        2)
+                    }}
+                </td>
+                <td>
+                    @php
+                        $average = 
+                            ($percentages20['persen4']*4 + $percentages20['persen3']*3 + $percentages20['persen2']*2 + $percentages20['persen1']) / 
+                            ($percentages20['persen4'] + $percentages20['persen3'] + $percentages20['persen2'] + $percentages20['persen1']);
+                        $kinerja = $average > 3.5 ? 'Sangat Baik' :
+                                    ($average > 2.5 ? 'Baik' :
+                                    ($average > 1.5 ? 'Cukup' : 'Kurang'));
+                    @endphp
+                    {{ $kinerja }}
+                </td>
+            </tr>
+
+            <tr>
+                <td>Prodi memonitor terhadap kemajuan mahasiswa melalui dosen pembimbing akademik dan dosen pembimbing tugas akhir</td>
+                <td>{{ $percentages21['persen4'] }}%</td>
+                <td>{{ $percentages21['persen3'] }}%</td>
+                <td>{{ $percentages21['persen2'] }}%</td>
+                <td>{{ $percentages21['persen1'] }}%</td>
+                <td>
+                    {{
+                        number_format(
+                            ($percentages21['persen4']*4 + $percentages21['persen3']*3 + $percentages21['persen2']*2 + $percentages21['persen1']*1) / 
+                            ($percentages21['persen4'] + $percentages21['persen3'] + $percentages21['persen2'] + $percentages21['persen1']),
+                        2)
+                    }}
+                </td>
+                <td>
+                    @php
+                        $average = 
+                            ($percentages21['persen4']*4 + $percentages21['persen3']*3 + $percentages21['persen2']*2 + $percentages21['persen1']) / 
+                            ($percentages21['persen4'] + $percentages21['persen3'] + $percentages21['persen2'] + $percentages21['persen1']);
+                        $kinerja = $average > 3.5 ? 'Sangat Baik' :
+                                    ($average > 2.5 ? 'Baik' :
+                                    ($average > 1.5 ? 'Cukup' : 'Kurang'));
+                    @endphp
+                    {{ $kinerja }}
+                </td>
+            </tr>
+
+            <tr>
+                <td>Prodi memahami minat/ bakat/ keluhan/ kepentingan/ kesulitan mahasiswa</td>
+                <td>{{ $percentages22['persen4'] }}%</td>
+                <td>{{ $percentages22['persen3'] }}%</td>
+                <td>{{ $percentages22['persen2'] }}%</td>
+                <td>{{ $percentages22['persen1'] }}%</td>
+                <td>
+                    {{
+                        number_format(
+                            ($percentages22['persen4']*4 + $percentages22['persen3']*3 + $percentages22['persen2']*2 + $percentages22['persen1']*1) / 
+                            ($percentages22['persen4'] + $percentages22['persen3'] + $percentages22['persen2'] + $percentages22['persen1']),
+                        2)
+                    }}
+                </td>
+                <td>
+                    @php
+                        $average = 
+                            ($percentages22['persen4']*4 + $percentages22['persen3']*3 + $percentages22['persen2']*2 + $percentages22['persen1']) / 
+                            ($percentages22['persen4'] + $percentages22['persen3'] + $percentages22['persen2'] + $percentages22['persen1']);
+                        $kinerja = $average > 3.5 ? 'Sangat Baik' :
+                                    ($average > 2.5 ? 'Baik' :
+                                    ($average > 1.5 ? 'Cukup' : 'Kurang'));
+                    @endphp
+                    {{ $kinerja }}
+                </td>
+            </tr>
             
         </tbody>
     </table>
