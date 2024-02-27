@@ -1,8 +1,8 @@
 <?php
 
-namespace App\Charts\Lab\S1Geofisika;
+namespace App\Charts\Kerjasama\S1Geofisika;
 
-use App\Models\Lab;
+use App\Models\Kerjasama;
 use ArielMejiaDev\LarapexCharts\LarapexChart;
 
 class Geo9
@@ -16,7 +16,7 @@ class Geo9
 
     protected function calculatePercentages()
     {
-        $dataD3Farmasi = Lab::where('program_studi', 'S1 Geofisika')
+        $dataD3Farmasi = Kerjasama::where('program_studi', 'S1 Geofisika')
             ->selectRaw('COUNT(*) as count, aplikasi_hasil_kerjasama')
             ->groupBy('aplikasi_hasil_kerjasama')
             ->pluck('count', 'aplikasi_hasil_kerjasama');

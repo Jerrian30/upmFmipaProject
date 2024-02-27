@@ -1,8 +1,8 @@
 <?php
 
-namespace App\Charts\PenggunaLulusan\S2Biologi;
+namespace App\Charts\Kerjasama\S2Biologi;
 
-use App\Models\PenggunaLulusan;
+use App\Models\Kerjasama;
 use ArielMejiaDev\LarapexCharts\LarapexChart;
 
 class S2Bio1
@@ -17,10 +17,10 @@ class S2Bio1
     public function build(): \ArielMejiaDev\LarapexCharts\DonutChart
     {
         // Ambil data dari database berdasarkan program_studi "D3 Farmasi"
-        $dataD3Farmasi = PenggunaLulusan::where('program_studi', 'S2 Biologi')
-            ->selectRaw('COUNT(*) as count, kejujuran_etika') // Menghitung jumlah responden untuk setiap nilai
-            ->groupBy('kejujuran_etika')
-            ->pluck('count', 'kejujuran_etika');
+        $dataD3Farmasi = Kerjasama::where('program_studi', 'S2 Biologi')
+            ->selectRaw('COUNT(*) as count, info_layanan') // Menghitung jumlah responden untuk setiap nilai
+            ->groupBy('info_layanan')
+            ->pluck('count', 'info_layanan');
 
         // Inisialisasi data dengan nilai default 0 untuk setiap nilai
         $dataValues = [

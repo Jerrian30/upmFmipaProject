@@ -1,8 +1,8 @@
 <?php
 
-namespace App\Charts\Lab\S1Fisika;
+namespace App\Charts\Kerjasama\S1Fisika;
 
-use App\Models\Lab;
+use App\Models\Kerjasama;
 use ArielMejiaDev\LarapexCharts\LarapexChart;
 
 class Fisika7
@@ -16,7 +16,7 @@ class Fisika7
 
     protected function calculatePercentages()
     {
-        $dataD3Farmasi = Lab::where('program_studi', 'S1 Fisika')
+        $dataD3Farmasi = Kerjasama::where('program_studi', 'S1 Fisika')
             ->selectRaw('COUNT(*) as count, proses_pelayanan_sop')
             ->groupBy('proses_pelayanan_sop')
             ->pluck('count', 'proses_pelayanan_sop');

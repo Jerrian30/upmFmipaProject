@@ -130,17 +130,17 @@ use App\Charts\Kerjasama\D3Keperawatan\Rawat10;
 use App\Charts\Kerjasama\D3Keperawatan\Rawat11;
 
 // Class Kerjasama Sains
-use App\Charts\Kerjasama\D3KerjasamaSains\KerjasamaSains1;
-use App\Charts\Kerjasama\D3KerjasamaSains\KerjasamaSains2;
-use App\Charts\Kerjasama\D3KerjasamaSains\KerjasamaSains3;
-use App\Charts\Kerjasama\D3KerjasamaSains\KerjasamaSains4;
-use App\Charts\Kerjasama\D3KerjasamaSains\KerjasamaSains5;
-use App\Charts\Kerjasama\D3KerjasamaSains\KerjasamaSains6;
-use App\Charts\Kerjasama\D3KerjasamaSains\KerjasamaSains7;
-use App\Charts\Kerjasama\D3KerjasamaSains\KerjasamaSains8;
-use App\Charts\Kerjasama\D3KerjasamaSains\KerjasamaSains9;
-use App\Charts\Kerjasama\D3KerjasamaSains\KerjasamaSains10;
-use App\Charts\Kerjasama\D3KerjasamaSains\KerjasamaSains11;
+use App\Charts\Kerjasama\D3LabSains\LabSains1;
+use App\Charts\Kerjasama\D3LabSains\LabSains2;
+use App\Charts\Kerjasama\D3LabSains\LabSains3;
+use App\Charts\Kerjasama\D3LabSains\LabSains4;
+use App\Charts\Kerjasama\D3LabSains\LabSains5;
+use App\Charts\Kerjasama\D3LabSains\LabSains6;
+use App\Charts\Kerjasama\D3LabSains\LabSains7;
+use App\Charts\Kerjasama\D3LabSains\LabSains8;
+use App\Charts\Kerjasama\D3LabSains\LabSains9;
+use App\Charts\Kerjasama\D3LabSains\LabSains10;
+use App\Charts\Kerjasama\D3LabSains\LabSains11;
 
 //Class Statistika
 use App\Charts\Kerjasama\S1Statistika\Statis1;
@@ -318,17 +318,17 @@ class EvalKerjasamaController extends Controller
         Rawat11 $rawat11,
 
         //D3 Kerjasama Sains
-        KerjasamaSains1 $Kerjasamasains1,
-        KerjasamaSains2 $Kerjasamasains2,
-        KerjasamaSains3 $Kerjasamasains3,
-        KerjasamaSains4 $Kerjasamasains4,
-        KerjasamaSains5 $Kerjasamasains5,
-        KerjasamaSains6 $Kerjasamasains6,
-        KerjasamaSains7 $Kerjasamasains7,
-        KerjasamaSains8 $Kerjasamasains8,
-        KerjasamaSains9 $Kerjasamasains9,
-        KerjasamaSains10 $Kerjasamasains10,
-        KerjasamaSains11 $Kerjasamasains11,
+        LabSains1 $labsains1,
+        LabSains2 $labsains2,
+        LabSains3 $labsains3,
+        LabSains4 $labsains4,
+        LabSains5 $labsains5,
+        LabSains6 $labsains6,
+        LabSains7 $labsains7,
+        LabSains8 $labsains8,
+        LabSains9 $labsains9,
+        LabSains10 $labsains10,
+        LabSains11 $labsains11,
 
         // S1 Statistika
         Statis1 $statis1,
@@ -503,17 +503,17 @@ class EvalKerjasamaController extends Controller
             'rawat11' => $rawat11->build(),
 
 
-            'Kerjasamasains1' => $Kerjasamasains1->build(),
-            'Kerjasamasains2' => $Kerjasamasains2->build(),
-            'Kerjasamasains3' => $Kerjasamasains3->build(),
-            'Kerjasamasains4' => $Kerjasamasains4->build(),
-            'Kerjasamasains5' => $Kerjasamasains5->build(),
-            'Kerjasamasains6' => $Kerjasamasains6->build(),
-            'Kerjasamasains7' => $Kerjasamasains7->build(),
-            'Kerjasamasains8' => $Kerjasamasains8->build(),
-            'Kerjasamasains9' => $Kerjasamasains9->build(),
-            'Kerjasamasains10' => $Kerjasamasains10->build(),
-            'Kerjasamasains11' => $Kerjasamasains11->build(),
+            'labsains1' => $labsains1->build(),
+            'labsains2' => $labsains2->build(),
+            'labsains3' => $labsains3->build(),
+            'labsains4' => $labsains4->build(),
+            'labsains5' => $labsains5->build(),
+            'labsains6' => $labsains6->build(),
+            'labsains7' => $labsains7->build(),
+            'labsains8' => $labsains8->build(),
+            'labsains9' => $labsains9->build(),
+            'labsains10' => $labsains10->build(),
+            'labsains11' => $labsains11->build(),
 
             
             'statis1' => $statis1->build(),

@@ -37,7 +37,7 @@
         </tfoot>
         <tbody>
             <tr>
-                <td>Konsistensi pimpinan dalam penegakan aturan dan kebijakan di UNIB</td>
+                <td>Ketersediaan, kejelasan dan kemudahan dalam memperoleh informasi layanan</td>
                 <td>{{ $percentages1['persen4'] }}%</td>
                 <td>{{ $percentages1['persen3'] }}%</td>
                 <td>{{ $percentages1['persen2'] }}%</td>
@@ -63,7 +63,7 @@
                 </td>
             </tr>
             <tr>
-                <td>Efektivitas pembagian tugas dan fungsi pimpinan secara jelas sesuai dengan struktur organisasi tata kelola UNIB</td>
+                <td>Rektorat/Lembaga/Unit/Fakultas memiliki tingkat kebersihan yang memadai dalam sarana gedung</td>
                 <td>{{ $percentages2['persen4'] }}%</td>
                 <td>{{ $percentages2['persen3'] }}%</td>
                 <td>{{ $percentages2['persen2'] }}%</td>
@@ -90,7 +90,7 @@
             </tr>
 
             <tr>
-                <td>Kebijakan pimpinan dibuat dan disosialisasikan dengan melibatkan para pemangku kepentingan</td>
+                <td>Rektorat/Lembaga/Unit/Fakultas merespon kebutuhan mitra dengan tepat, cepat dan professional</td>
                 <td>{{ $percentages3['persen4'] }}%</td>
                 <td>{{ $percentages3['persen3'] }}%</td>
                 <td>{{ $percentages3['persen2'] }}%</td>
@@ -117,7 +117,7 @@
             </tr>
             
             <tr>
-                <td>Pembagian tugas, wewenang, pengawasan, dan pemantauan terhadap kinerja dosen yang dilakukan pimpinan dalam pengelolaan SDM telah sesuai dengan organisasi tata kelola UNIB</td>
+                <td>Rektorat/Lembaga/Unit/Fakultas telah memberikan pendampingan yang baik dalam pemenuhan kerjasama dengan mitra</td>
                 <td>{{ $percentages4['persen4'] }}%</td>
                 <td>{{ $percentages4['persen3'] }}%</td>
                 <td>{{ $percentages4['persen2'] }}%</td>
@@ -144,7 +144,7 @@
             </tr>
 
             <tr>
-                <td>Ketersediaan fasilitas sarana (seperti gedung perkuliahan, laboratorium, perpustakaan, dan lainnya) dan prasarana (seperti LCD, papan tulis, spidol, pendingin ruangan, dan lainnya) yang berkualitas untuk dosen dalam menjalankan tugas pendidikan dan pengajaran</td>
+                <td>Mitra mendapatkan keuntungan, manfaat dan kesesuaian harapan dari kerjasama yang dilakukan</td>
                 <td>{{ $percentages5['persen4'] }}%</td>
                 <td>{{ $percentages5['persen3'] }}%</td>
                 <td>{{ $percentages5['persen2'] }}%</td>
@@ -171,7 +171,8 @@
             </tr>
             
             <tr>
-                <td>Ketersediaan fasilitas sarana dan prasarana untuk dosen dalam menjalankan tugas penelitian dan pengabdian kepada masyarakat</td>
+                <td>Program kerjasama telah sesuai dengan surat perjanjian kerjasama yang telah disepakati
+                </td>
                 <td>{{ $percentages6['persen4'] }}%</td>
                 <td>{{ $percentages6['persen3'] }}%</td>
                 <td>{{ $percentages6['persen2'] }}%</td>
@@ -198,7 +199,7 @@
             </tr>
 
             <tr>
-                <td>Suasana ruang perkuliahan yang nyaman dan memiliki prokes Covid 19</td>
+                <td>Rektorat/Lembaga/Unit/Fakultas melakukan proses pelayanan sesuai standar Operasional Prosedur</td>
                 <td>{{ $percentages7['persen4'] }}%</td>
                 <td>{{ $percentages7['persen3'] }}%</td>
                 <td>{{ $percentages7['persen2'] }}%</td>
@@ -225,7 +226,7 @@
             </tr>
 
             <tr>
-                <td>Adanya kesempatan bagi dosen untuk mengembangkan karir dengan mudah, khususnya yang berkaitan dengan Tri Dharma PT</td>
+                <td>Rektorat/Lembaga/unit/Fakultas memberikan sosialisasi terkait dengan aturan terbaru kepada mitra</td>
                 <td>{{ $percentages8['persen4'] }}%</td>
                 <td>{{ $percentages8['persen3'] }}%</td>
                 <td>{{ $percentages8['persen2'] }}%</td>
@@ -252,7 +253,7 @@
             </tr>
 
             <tr>
-                <td>Pembagian beban kerja dosen sesuai dengan tugas, pokok dan fungsi</td>
+                <td>Hasil Pendidikan/Penelitian/Pengabdian Kepada Masyarakat mampu diaplikasikan/diterapkan oleh mitra dengan mudah dan mandiri</td>
                 <td>{{ $percentages9['persen4'] }}%</td>
                 <td>{{ $percentages9['persen3'] }}%</td>
                 <td>{{ $percentages9['persen2'] }}%</td>
@@ -279,7 +280,7 @@
             </tr>
 
             <tr>
-                <td>Kepuasan terhadap kesejahteraan dosen (Besaran remunerasi, pembayaran remunerasi serta sertifikasi dosen tepat waktu)</td>
+                <td>Memiliki sumberdaya pendukung yang memadai untuk membantu proses Pendidikan/Penelitian/Pengabdian Kepada Masyarakat agar berjalan lancar</td>
                 <td>{{ $percentages10['persen4'] }}%</td>
                 <td>{{ $percentages10['persen3'] }}%</td>
                 <td>{{ $percentages10['persen2'] }}%</td>
@@ -297,6 +298,33 @@
                         $average = 
                             ($percentages10['persen4']*4 + $percentages10['persen3']*3 + $percentages10['persen2']*2 + $percentages10['persen1']) / 
                             ($percentages10['persen4'] + $percentages10['persen3'] + $percentages10['persen2'] + $percentages10['persen1']);
+                        $kinerja = $average > 3.5 ? 'Sangat Baik' :
+                                    ($average > 2.5 ? 'Baik' :
+                                    ($average > 1.5 ? 'Cukup' : 'Kurang'));
+                    @endphp
+                    {{ $kinerja }}
+                </td>
+            </tr>
+
+            <tr>
+                <td>Penyusunan dan penyerahan laporan kerjasama selalu melibatkan mitra</td>
+                <td>{{ $percentages11['persen4'] }}%</td>
+                <td>{{ $percentages11['persen3'] }}%</td>
+                <td>{{ $percentages11['persen2'] }}%</td>
+                <td>{{ $percentages11['persen1'] }}%</td>
+                <td>
+                    {{
+                        number_format(
+                            ($percentages11['persen4']*4 + $percentages11['persen3']*3 + $percentages11['persen2']*2 + $percentages11['persen1']*1) / 
+                            ($percentages11['persen4'] + $percentages11['persen3'] + $percentages11['persen2'] + $percentages11['persen1']),
+                        2)
+                    }}
+                </td>
+                <td>
+                    @php
+                        $average = 
+                            ($percentages11['persen4']*4 + $percentages11['persen3']*3 + $percentages11['persen2']*2 + $percentages11['persen1']) / 
+                            ($percentages11['persen4'] + $percentages11['persen3'] + $percentages11['persen2'] + $percentages11['persen1']);
                         $kinerja = $average > 3.5 ? 'Sangat Baik' :
                                     ($average > 2.5 ? 'Baik' :
                                     ($average > 1.5 ? 'Cukup' : 'Kurang'));
