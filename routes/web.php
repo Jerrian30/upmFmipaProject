@@ -41,6 +41,7 @@ use App\Http\Controllers\DokumenController;
 use App\Http\Controllers\BerandaController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\RoleController;
+use App\Http\Controllers\UnduhController;
 
 /*
 |--------------------------------------------------------------------------
@@ -62,12 +63,15 @@ Auth::routes();
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
 // Route Autentikasi Login
-Route::group(['middleware' => ['auth']], function () {
-    Route::get('/formulir', [FormulirController::class, 'index'])->name('formulir.index');
-    Route::get('/dokumen', [DokumenController::class, 'index'])->name('dokumen.index');
-    Route::get('/', [BerandaController::class, 'index'])->name('beranda');
+
 
 Route::group(['middleware' => ['cek_login:admin']], function () {
+        Route::get('unduhs/create', [UnduhController::class, 'create'])->name('unduhs.create');
+        Route::post('unduhs', [UnduhController::class, 'store'])->name('unduhs.store');
+        Route::get('unduhs/{unduh}/edit', [UnduhController::class, 'edit'])->name('unduhs.edit');
+        Route::put('unduhs/{unduh}', [UnduhController::class, 'update'])->name('unduhs.update');
+        Route::delete('unduhs/{unduh}', [UnduhController::class, 'destroy'])->name('unduhs.destroy');
+
     Route::get('/user_roles', [RoleController::class, 'index'])->name('user_roles.index');
     Route::put('/user_roles/{user}', [RoleController::class, 'update'])->name('user_roles.update');
             
@@ -138,6 +142,13 @@ Route::group(['middleware' => ['cek_login:admin']], function () {
     Route::post('/kerjasama/delete', [LaporanKerjasamaController::class, 'delete'])->name('kerjasama.delete');
     Route::get('/kerjasama/eval', [EvalKerjasamaController::class, 'index'])->name('kerjasama.eval');
     Route::get('/kerjasama/table', [EvalKerjasamaController::class, 'table'])->name('kerjasama.table');
+
+Route::group(['middleware' => ['auth']], function () {
+        Route::get('/formulir', [FormulirController::class, 'index'])->name('formulir.index');
+        Route::get('/dokumen', [DokumenController::class, 'index'])->name('dokumen.index');
+        Route::get('/', [BerandaController::class, 'index'])->name('beranda');
+        Route::get('unduhs', [UnduhController::class, 'index'])->name('unduhs.index');
+        Route::get('unduhs/{unduh}', [UnduhController::class, 'show'])->name('unduhs.show');
 
 
     });

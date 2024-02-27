@@ -93,14 +93,14 @@
                 <a class="dropdown-item" href="#" style="font-size: 14px;">VMTS</a>
             </div>
         </li>
-
+        @endif
         <li class="nav-item active">
-            <a class="nav-link" href="#" style="font-size: 14px;">
+            <a class="nav-link" href="{{ route('unduhs.index') }}" style="font-size: 14px;">
                 <i class="fas fa-download"></i>&nbsp;
                 <span>Unduh</span>
             </a>
         </li>
-
+        @if (auth()->user()->role == 'admin')
         <li class="nav-item active">
             <a class="nav-link" href="#" style="font-size: 14px;">
                 <i class="fas fa-clipboard-list"></i>&nbsp;
