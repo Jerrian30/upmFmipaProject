@@ -1,8 +1,8 @@
 <?php
 
-namespace App\Charts\Lab\D3Kebidanan;
+namespace App\Charts\Kerjasama\D3Kebidanan;
 
-use App\Models\Lab;
+use App\Models\Kerjasama;
 use ArielMejiaDev\LarapexCharts\LarapexChart;
 
 class Bidan2
@@ -16,10 +16,10 @@ class Bidan2
 
     protected function calculatePercentages()
     {
-        $dataD3Farmasi = Lab::where('program_studi', 'D3 Kebidanan')
-            ->selectRaw('COUNT(*) as count, kebersihan_laboratorium')
-            ->groupBy('kebersihan_laboratorium')
-            ->pluck('count', 'kebersihan_laboratorium');
+        $dataD3Farmasi = Kerjasama::where('program_studi', 'D3 Kebidanan')
+            ->selectRaw('COUNT(*) as count, kebersihan')
+            ->groupBy('kebersihan')
+            ->pluck('count', 'kebersihan');
 
         $dataValues = [1 => 0, 2 => 0, 3 => 0, 4 => 0];
 

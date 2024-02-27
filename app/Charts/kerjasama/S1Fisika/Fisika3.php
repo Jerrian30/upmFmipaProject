@@ -17,9 +17,9 @@ class Fisika3
     protected function calculatePercentages()
     {
         $dataD3Farmasi = Lab::where('program_studi', 'S1 Fisika')
-            ->selectRaw('COUNT(*) as count, sarpras_terawat')
-            ->groupBy('sarpras_terawat')
-            ->pluck('count', 'sarpras_terawat');
+            ->selectRaw('COUNT(*) as count, respon_kebutuhan')
+            ->groupBy('respon_kebutuhan')
+            ->pluck('count', 'respon_kebutuhan');
 
         $dataValues = [1 => 0, 2 => 0, 3 => 0, 4 => 0];
 

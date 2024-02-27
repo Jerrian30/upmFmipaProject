@@ -17,9 +17,9 @@ class S2Kim8
     protected function calculatePercentages()
     {
         $dataD3Farmasi = Lab::where('program_studi', 'S2 Kimia')
-            ->selectRaw('COUNT(*) as count, ketrampilan_staf')
-            ->groupBy('ketrampilan_staf')
-            ->pluck('count', 'ketrampilan_staf');
+            ->selectRaw('COUNT(*) as count, sosialisasi_aturan')
+            ->groupBy('sosialisasi_aturan')
+            ->pluck('count', 'sosialisasi_aturan');
 
         $dataValues = [1 => 0, 2 => 0, 3 => 0, 4 => 0];
 

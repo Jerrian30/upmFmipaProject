@@ -17,9 +17,9 @@ class S1Farm4
     protected function calculatePercentages()
     {
         $dataD3Farmasi = Lab::where('program_studi', 'S1 Farmasi')
-            ->selectRaw('COUNT(*) as count, pelayanan_staf')
-            ->groupBy('pelayanan_staf')
-            ->pluck('count', 'pelayanan_staf');
+            ->selectRaw('COUNT(*) as count, pendampingan_kerjasama')
+            ->groupBy('pendampingan_kerjasama')
+            ->pluck('count', 'pendampingan_kerjasama');
 
         $dataValues = [1 => 0, 2 => 0, 3 => 0, 4 => 0];
 

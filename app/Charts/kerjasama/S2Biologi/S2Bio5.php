@@ -18,9 +18,9 @@ class S2Bio5
     {
         // Ambil data dari database berdasarkan program_studi "D3 Farmasi"
         $dataD3Farmasi = PenggunaLulusan::where('program_studi', 'S2 Biologi')
-            ->selectRaw('COUNT(*) as count, kemampuan_berkomunikasi') // Menghitung jumlah responden untuk setiap nilai
-            ->groupBy('kemampuan_berkomunikasi')
-            ->pluck('count', 'kemampuan_berkomunikasi');
+            ->selectRaw('COUNT(*) as count, manfaat_kerjasama') // Menghitung jumlah responden untuk setiap nilai
+            ->groupBy('manfaat_kerjasama')
+            ->pluck('count', 'manfaat_kerjasama');
 
         // Inisialisasi data dengan nilai default 0 untuk setiap nilai
         $dataValues = [

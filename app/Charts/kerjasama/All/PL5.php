@@ -1,8 +1,8 @@
 <?php
 
-namespace App\Charts\Lab\All;
+namespace App\Charts\Kerjasama\All;
 
-use App\Models\Lab;
+use App\Models\Kerjasama;
 use ArielMejiaDev\LarapexCharts\LarapexChart;
 
 class PL5
@@ -16,7 +16,7 @@ class PL5
 
     public function build(): \ArielMejiaDev\LarapexCharts\DonutChart
     {
-        $dataPercentages = $this->calculatePercentages('terbuka_kritik_saran');
+        $dataPercentages = $this->calculatePercentages('manfaat_kerjasama');
         
         return $this->chart->donutChart()
             ->addData(array_values($dataPercentages))
@@ -25,7 +25,7 @@ class PL5
 
     protected function calculatePercentages($columnName): array
     {
-        $dataTotal = Lab::selectRaw("COUNT(*) as count, $columnName")
+        $dataTotal = Kerjasama::selectRaw("COUNT(*) as count, $columnName")
             ->groupBy($columnName)
             ->pluck('count', $columnName);
 
@@ -53,7 +53,7 @@ class PL5
     public function getDetailedPercentages()
     {
         
-        $percentages = $this->calculatePercentages('terbuka_kritik_saran');
+        $percentages = $this->calculatePercentages('manfaat_kerjasama');
         return [
             'persen1' => $percentages[1] ?? 0,
             'persen2' => $percentages[2] ?? 0,

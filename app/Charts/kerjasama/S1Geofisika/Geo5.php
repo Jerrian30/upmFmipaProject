@@ -17,9 +17,9 @@ class Geo5
     protected function calculatePercentages()
     {
         $dataD3Farmasi = Lab::where('program_studi', 'S1 Geofisika')
-            ->selectRaw('COUNT(*) as count, terbuka_kritik_saran')
-            ->groupBy('terbuka_kritik_saran')
-            ->pluck('count', 'terbuka_kritik_saran');
+            ->selectRaw('COUNT(*) as count, manfaat_kerjasama')
+            ->groupBy('manfaat_kerjasama')
+            ->pluck('count', 'manfaat_kerjasama');
 
         $dataValues = [1 => 0, 2 => 0, 3 => 0, 4 => 0];
 

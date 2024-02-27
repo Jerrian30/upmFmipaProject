@@ -4,207 +4,212 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-use App\Models\Lab;
+use App\Models\Kerjasama;
 
 
-use App\Charts\Lab\All\PL1;
-use App\Charts\Lab\All\PL2;
-use App\Charts\Lab\All\PL3;
-use App\Charts\Lab\All\PL4;
-use App\Charts\Lab\All\PL5;
-use App\Charts\Lab\All\PL6;
-use App\Charts\Lab\All\PL7;
-use App\Charts\Lab\All\PL8;
-use App\Charts\Lab\All\PL9;
-use App\Charts\Lab\All\PL10;
-use App\Charts\Lab\All\PL11;
-use App\Charts\Lab\All\PL12;
+use App\Charts\Kerjasama\All\PL1;
+use App\Charts\Kerjasama\All\PL2;
+use App\Charts\Kerjasama\All\PL3;
+use App\Charts\Kerjasama\All\PL4;
+use App\Charts\Kerjasama\All\PL5;
+use App\Charts\Kerjasama\All\PL6;
+use App\Charts\Kerjasama\All\PL7;
+use App\Charts\Kerjasama\All\PL8;
+use App\Charts\Kerjasama\All\PL9;
+use App\Charts\Kerjasama\All\PL10;
+use App\Charts\Kerjasama\All\PL11;
+
 
 
 // // Class Geofisika
-use App\Charts\Lab\S1Geofisika\Geo1;
-use App\Charts\Lab\S1Geofisika\Geo2;
-use App\Charts\Lab\S1Geofisika\Geo3;
-use App\Charts\Lab\S1Geofisika\Geo4;
-use App\Charts\Lab\S1Geofisika\Geo5;
-use App\Charts\Lab\S1Geofisika\Geo6;
-use App\Charts\Lab\S1Geofisika\Geo7;
-use App\Charts\Lab\S1Geofisika\Geo8;
-use App\Charts\Lab\S1Geofisika\Geo9;
-use App\Charts\Lab\S1Geofisika\Geo10;
-use App\Charts\Lab\S1Geofisika\Geo11;
-use App\Charts\Lab\S1Geofisika\Geo12;
+use App\Charts\Kerjasama\S1Geofisika\Geo1;
+use App\Charts\Kerjasama\S1Geofisika\Geo2;
+use App\Charts\Kerjasama\S1Geofisika\Geo3;
+use App\Charts\Kerjasama\S1Geofisika\Geo4;
+use App\Charts\Kerjasama\S1Geofisika\Geo5;
+use App\Charts\Kerjasama\S1Geofisika\Geo6;
+use App\Charts\Kerjasama\S1Geofisika\Geo7;
+use App\Charts\Kerjasama\S1Geofisika\Geo8;
+use App\Charts\Kerjasama\S1Geofisika\Geo9;
+use App\Charts\Kerjasama\S1Geofisika\Geo10;
+use App\Charts\Kerjasama\S1Geofisika\Geo11;
+
 
 // // Class D3Farmasi
-use App\Charts\Lab\D3Farmasi\Farm1;
-use App\Charts\Lab\D3Farmasi\Farm2;
-use App\Charts\Lab\D3Farmasi\Farm3;
-use App\Charts\Lab\D3Farmasi\Farm4;
-use App\Charts\Lab\D3Farmasi\Farm5;
-use App\Charts\Lab\D3Farmasi\Farm6;
-use App\Charts\Lab\D3Farmasi\Farm7;
-use App\Charts\Lab\D3Farmasi\Farm8;
-use App\Charts\Lab\D3Farmasi\Farm9;
-use App\Charts\Lab\D3Farmasi\Farm10;
-use App\Charts\Lab\D3Farmasi\Farm11;
-use App\Charts\Lab\D3Farmasi\Farm12;
+use App\Charts\Kerjasama\D3Farmasi\Farm1;
+use App\Charts\Kerjasama\D3Farmasi\Farm2;
+use App\Charts\Kerjasama\D3Farmasi\Farm3;
+use App\Charts\Kerjasama\D3Farmasi\Farm4;
+use App\Charts\Kerjasama\D3Farmasi\Farm5;
+use App\Charts\Kerjasama\D3Farmasi\Farm6;
+use App\Charts\Kerjasama\D3Farmasi\Farm7;
+use App\Charts\Kerjasama\D3Farmasi\Farm8;
+use App\Charts\Kerjasama\D3Farmasi\Farm9;
+use App\Charts\Kerjasama\D3Farmasi\Farm10;
+use App\Charts\Kerjasama\D3Farmasi\Farm11;
+
 
 // // Class S1Farmasi
-use App\Charts\Lab\S1Farmasi\S1Farm1;
-use App\Charts\Lab\S1Farmasi\S1Farm2;
-use App\Charts\Lab\S1Farmasi\S1Farm3;
-use App\Charts\Lab\S1Farmasi\S1Farm4;
-use App\Charts\Lab\S1Farmasi\S1Farm5;
-use App\Charts\Lab\S1Farmasi\S1Farm6;
-use App\Charts\Lab\S1Farmasi\S1Farm7;
-use App\Charts\Lab\S1Farmasi\S1Farm8;
-use App\Charts\Lab\S1Farmasi\S1Farm9;
-use App\Charts\Lab\S1Farmasi\S1Farm10;
-use App\Charts\Lab\S1Farmasi\S1Farm11;
-use App\Charts\Lab\S1Farmasi\S1Farm12;
+use App\Charts\Kerjasama\S1Farmasi\S1Farm1;
+use App\Charts\Kerjasama\S1Farmasi\S1Farm2;
+use App\Charts\Kerjasama\S1Farmasi\S1Farm3;
+use App\Charts\Kerjasama\S1Farmasi\S1Farm4;
+use App\Charts\Kerjasama\S1Farmasi\S1Farm5;
+use App\Charts\Kerjasama\S1Farmasi\S1Farm6;
+use App\Charts\Kerjasama\S1Farmasi\S1Farm7;
+use App\Charts\Kerjasama\S1Farmasi\S1Farm8;
+use App\Charts\Kerjasama\S1Farmasi\S1Farm9;
+use App\Charts\Kerjasama\S1Farmasi\S1Farm10;
+use App\Charts\Kerjasama\S1Farmasi\S1Farm11;
+
 
 // // // Class Matematika
-use App\Charts\Lab\S1Matematika\Math1;
-use App\Charts\Lab\S1Matematika\Math2;
-use App\Charts\Lab\S1Matematika\Math3;
-use App\Charts\Lab\S1Matematika\Math4;
-use App\Charts\Lab\S1Matematika\Math5;
-use App\Charts\Lab\S1Matematika\Math6;
-use App\Charts\Lab\S1Matematika\Math7;
-use App\Charts\Lab\S1Matematika\Math8;
-use App\Charts\Lab\S1Matematika\Math9;
-use App\Charts\Lab\S1Matematika\Math10;
-use App\Charts\Lab\S1Matematika\Math11;
-use App\Charts\Lab\S1Matematika\Math12;
+use App\Charts\Kerjasama\S1Matematika\Math1;
+use App\Charts\Kerjasama\S1Matematika\Math2;
+use App\Charts\Kerjasama\S1Matematika\Math3;
+use App\Charts\Kerjasama\S1Matematika\Math4;
+use App\Charts\Kerjasama\S1Matematika\Math5;
+use App\Charts\Kerjasama\S1Matematika\Math6;
+use App\Charts\Kerjasama\S1Matematika\Math7;
+use App\Charts\Kerjasama\S1Matematika\Math8;
+use App\Charts\Kerjasama\S1Matematika\Math9;
+use App\Charts\Kerjasama\S1Matematika\Math10;
+use App\Charts\Kerjasama\S1Matematika\Math11;
+
 
 // Class Biologi
-use App\Charts\Lab\S1Biologi\Bio1;
-use App\Charts\Lab\S1Biologi\Bio2;
-use App\Charts\Lab\S1Biologi\Bio3;
-use App\Charts\Lab\S1Biologi\Bio4;
-use App\Charts\Lab\S1Biologi\Bio5;
-use App\Charts\Lab\S1Biologi\Bio6;
-use App\Charts\Lab\S1Biologi\Bio7;
-use App\Charts\Lab\S1Biologi\Bio8;
-use App\Charts\Lab\S1Biologi\Bio9;
-use App\Charts\Lab\S1Biologi\Bio10;
-use App\Charts\Lab\S1Biologi\Bio11;
-use App\Charts\Lab\S1Biologi\Bio12;
+use App\Charts\Kerjasama\S1Biologi\Bio1;
+use App\Charts\Kerjasama\S1Biologi\Bio2;
+use App\Charts\Kerjasama\S1Biologi\Bio3;
+use App\Charts\Kerjasama\S1Biologi\Bio4;
+use App\Charts\Kerjasama\S1Biologi\Bio5;
+use App\Charts\Kerjasama\S1Biologi\Bio6;
+use App\Charts\Kerjasama\S1Biologi\Bio7;
+use App\Charts\Kerjasama\S1Biologi\Bio8;
+use App\Charts\Kerjasama\S1Biologi\Bio9;
+use App\Charts\Kerjasama\S1Biologi\Bio10;
+use App\Charts\Kerjasama\S1Biologi\Bio11;
+
+use App\Charts\Kerjasama\S2Biologi\S2Bio1;
+use App\Charts\Kerjasama\S2Biologi\S2Bio2;
+use App\Charts\Kerjasama\S2Biologi\S2Bio3;
+use App\Charts\Kerjasama\S2Biologi\S2Bio4;
+use App\Charts\Kerjasama\S2Biologi\S2Bio5;
+use App\Charts\Kerjasama\S2Biologi\S2Bio6;
+use App\Charts\Kerjasama\S2Biologi\S2Bio7;
+use App\Charts\Kerjasama\S2Biologi\S2Bio8;
+use App\Charts\Kerjasama\S2Biologi\S2Bio9;
+use App\Charts\Kerjasama\S2Biologi\S2Bio10;
+use App\Charts\Kerjasama\S2Biologi\S2Bio11;
 
 // Class Kebidanan
-use App\Charts\Lab\D3Kebidanan\Bidan1;
-use App\Charts\Lab\D3Kebidanan\Bidan2;
-use App\Charts\Lab\D3Kebidanan\Bidan3;
-use App\Charts\Lab\D3Kebidanan\Bidan4;
-use App\Charts\Lab\D3Kebidanan\Bidan5;
-use App\Charts\Lab\D3Kebidanan\Bidan6;
-use App\Charts\Lab\D3Kebidanan\Bidan7;
-use App\Charts\Lab\D3Kebidanan\Bidan8;
-use App\Charts\Lab\D3Kebidanan\Bidan9;
-use App\Charts\Lab\D3Kebidanan\Bidan10;
-use App\Charts\Lab\D3Kebidanan\Bidan11;
-use App\Charts\Lab\D3Kebidanan\Bidan12;
+use App\Charts\Kerjasama\D3Kebidanan\Bidan1;
+use App\Charts\Kerjasama\D3Kebidanan\Bidan2;
+use App\Charts\Kerjasama\D3Kebidanan\Bidan3;
+use App\Charts\Kerjasama\D3Kebidanan\Bidan4;
+use App\Charts\Kerjasama\D3Kebidanan\Bidan5;
+use App\Charts\Kerjasama\D3Kebidanan\Bidan6;
+use App\Charts\Kerjasama\D3Kebidanan\Bidan7;
+use App\Charts\Kerjasama\D3Kebidanan\Bidan8;
+use App\Charts\Kerjasama\D3Kebidanan\Bidan9;
+use App\Charts\Kerjasama\D3Kebidanan\Bidan10;
+use App\Charts\Kerjasama\D3Kebidanan\Bidan11;
+
 
 // // // Class Keperawatan
-use App\Charts\Lab\D3Keperawatan\Rawat1;
-use App\Charts\Lab\D3Keperawatan\Rawat2;
-use App\Charts\Lab\D3Keperawatan\Rawat3;
-use App\Charts\Lab\D3Keperawatan\Rawat4;
-use App\Charts\Lab\D3Keperawatan\Rawat5;
-use App\Charts\Lab\D3Keperawatan\Rawat6;
-use App\Charts\Lab\D3Keperawatan\Rawat7;
-use App\Charts\Lab\D3Keperawatan\Rawat8;
-use App\Charts\Lab\D3Keperawatan\Rawat9;
-use App\Charts\Lab\D3Keperawatan\Rawat10;
-use App\Charts\Lab\D3Keperawatan\Rawat11;
-use App\Charts\Lab\D3Keperawatan\Rawat12;
+use App\Charts\Kerjasama\D3Keperawatan\Rawat1;
+use App\Charts\Kerjasama\D3Keperawatan\Rawat2;
+use App\Charts\Kerjasama\D3Keperawatan\Rawat3;
+use App\Charts\Kerjasama\D3Keperawatan\Rawat4;
+use App\Charts\Kerjasama\D3Keperawatan\Rawat5;
+use App\Charts\Kerjasama\D3Keperawatan\Rawat6;
+use App\Charts\Kerjasama\D3Keperawatan\Rawat7;
+use App\Charts\Kerjasama\D3Keperawatan\Rawat8;
+use App\Charts\Kerjasama\D3Keperawatan\Rawat9;
+use App\Charts\Kerjasama\D3Keperawatan\Rawat10;
+use App\Charts\Kerjasama\D3Keperawatan\Rawat11;
 
-// Class Lab Sains
-use App\Charts\Lab\D3LabSains\LabSains1;
-use App\Charts\Lab\D3LabSains\LabSains2;
-use App\Charts\Lab\D3LabSains\LabSains3;
-use App\Charts\Lab\D3LabSains\LabSains4;
-use App\Charts\Lab\D3LabSains\LabSains5;
-use App\Charts\Lab\D3LabSains\LabSains6;
-use App\Charts\Lab\D3LabSains\LabSains7;
-use App\Charts\Lab\D3LabSains\LabSains8;
-use App\Charts\Lab\D3LabSains\LabSains9;
-use App\Charts\Lab\D3LabSains\LabSains10;
-use App\Charts\Lab\D3LabSains\LabSains11;
-use App\Charts\Lab\D3LabSains\LabSains12;
+// Class Kerjasama Sains
+use App\Charts\Kerjasama\D3KerjasamaSains\KerjasamaSains1;
+use App\Charts\Kerjasama\D3KerjasamaSains\KerjasamaSains2;
+use App\Charts\Kerjasama\D3KerjasamaSains\KerjasamaSains3;
+use App\Charts\Kerjasama\D3KerjasamaSains\KerjasamaSains4;
+use App\Charts\Kerjasama\D3KerjasamaSains\KerjasamaSains5;
+use App\Charts\Kerjasama\D3KerjasamaSains\KerjasamaSains6;
+use App\Charts\Kerjasama\D3KerjasamaSains\KerjasamaSains7;
+use App\Charts\Kerjasama\D3KerjasamaSains\KerjasamaSains8;
+use App\Charts\Kerjasama\D3KerjasamaSains\KerjasamaSains9;
+use App\Charts\Kerjasama\D3KerjasamaSains\KerjasamaSains10;
+use App\Charts\Kerjasama\D3KerjasamaSains\KerjasamaSains11;
 
 //Class Statistika
-use App\Charts\Lab\S1Statistika\Statis1;
-use App\Charts\Lab\S1Statistika\Statis2;
-use App\Charts\Lab\S1Statistika\Statis3;
-use App\Charts\Lab\S1Statistika\Statis4;
-use App\Charts\Lab\S1Statistika\Statis5;
-use App\Charts\Lab\S1Statistika\Statis6;
-use App\Charts\Lab\S1Statistika\Statis7;
-use App\Charts\Lab\S1Statistika\Statis8;
-use App\Charts\Lab\S1Statistika\Statis9;
-use App\Charts\Lab\S1Statistika\Statis10;
-use App\Charts\Lab\S1Statistika\Statis11;
-use App\Charts\Lab\S1Statistika\Statis12;
+use App\Charts\Kerjasama\S1Statistika\Statis1;
+use App\Charts\Kerjasama\S1Statistika\Statis2;
+use App\Charts\Kerjasama\S1Statistika\Statis3;
+use App\Charts\Kerjasama\S1Statistika\Statis4;
+use App\Charts\Kerjasama\S1Statistika\Statis5;
+use App\Charts\Kerjasama\S1Statistika\Statis6;
+use App\Charts\Kerjasama\S1Statistika\Statis7;
+use App\Charts\Kerjasama\S1Statistika\Statis8;
+use App\Charts\Kerjasama\S1Statistika\Statis9;
+use App\Charts\Kerjasama\S1Statistika\Statis10;
+use App\Charts\Kerjasama\S1Statistika\Statis11;
 
-use App\Charts\Lab\S2Statistika\S2Statis1;
-use App\Charts\Lab\S2Statistika\S2Statis2;
-use App\Charts\Lab\S2Statistika\S2Statis3;
-use App\Charts\Lab\S2Statistika\S2Statis4;
-use App\Charts\Lab\S2Statistika\S2Statis5;
-use App\Charts\Lab\S2Statistika\S2Statis6;
-use App\Charts\Lab\S2Statistika\S2Statis7;
-use App\Charts\Lab\S2Statistika\S2Statis8;
-use App\Charts\Lab\S2Statistika\S2Statis9;
-use App\Charts\Lab\S2Statistika\S2StatiS10;
-use App\Charts\Lab\S2Statistika\S2StatiS11;
-use App\Charts\Lab\S2Statistika\S2Statis12;
+use App\Charts\Kerjasama\S2Statistika\S2Statis1;
+use App\Charts\Kerjasama\S2Statistika\S2Statis2;
+use App\Charts\Kerjasama\S2Statistika\S2Statis3;
+use App\Charts\Kerjasama\S2Statistika\S2Statis4;
+use App\Charts\Kerjasama\S2Statistika\S2Statis5;
+use App\Charts\Kerjasama\S2Statistika\S2Statis6;
+use App\Charts\Kerjasama\S2Statistika\S2Statis7;
+use App\Charts\Kerjasama\S2Statistika\S2Statis8;
+use App\Charts\Kerjasama\S2Statistika\S2Statis9;
+use App\Charts\Kerjasama\S2Statistika\S2StatiS10;
+use App\Charts\Kerjasama\S2Statistika\S2StatiS11;
+
 
 // // //Class S1 Kimia
-use App\Charts\Lab\S1Kimia\S1Kim1;
-use App\Charts\Lab\S1Kimia\S1Kim2;
-use App\Charts\Lab\S1Kimia\S1Kim3;
-use App\Charts\Lab\S1Kimia\S1Kim4;
-use App\Charts\Lab\S1Kimia\S1Kim5;
-use App\Charts\Lab\S1Kimia\S1Kim6;
-use App\Charts\Lab\S1Kimia\S1Kim7;
-use App\Charts\Lab\S1Kimia\S1Kim8;
-use App\Charts\Lab\S1Kimia\S1Kim9;
-use App\Charts\Lab\S1Kimia\S1Kim10;
-use App\Charts\Lab\S1Kimia\S1Kim11;
-use App\Charts\Lab\S1Kimia\S1Kim12;
+use App\Charts\Kerjasama\S1Kimia\S1Kim1;
+use App\Charts\Kerjasama\S1Kimia\S1Kim2;
+use App\Charts\Kerjasama\S1Kimia\S1Kim3;
+use App\Charts\Kerjasama\S1Kimia\S1Kim4;
+use App\Charts\Kerjasama\S1Kimia\S1Kim5;
+use App\Charts\Kerjasama\S1Kimia\S1Kim6;
+use App\Charts\Kerjasama\S1Kimia\S1Kim7;
+use App\Charts\Kerjasama\S1Kimia\S1Kim8;
+use App\Charts\Kerjasama\S1Kimia\S1Kim9;
+use App\Charts\Kerjasama\S1Kimia\S1Kim10;
+use App\Charts\Kerjasama\S1Kimia\S1Kim11;
 
 // // //Class S2 Kimia
-use App\Charts\Lab\S2Kimia\S2Kim1;
-use App\Charts\Lab\S2Kimia\S2Kim2;
-use App\Charts\Lab\S2Kimia\S2Kim3;
-use App\Charts\Lab\S2Kimia\S2Kim4;
-use App\Charts\Lab\S2Kimia\S2Kim5;
-use App\Charts\Lab\S2Kimia\S2Kim6;
-use App\Charts\Lab\S2Kimia\S2Kim7;
-use App\Charts\Lab\S2Kimia\S2Kim8;
-use App\Charts\Lab\S2Kimia\S2Kim9;
-use App\Charts\Lab\S2Kimia\S2Kim10;
-use App\Charts\Lab\S2Kimia\S2Kim11;
-use App\Charts\Lab\S2Kimia\S2Kim12;
+use App\Charts\Kerjasama\S2Kimia\S2Kim1;
+use App\Charts\Kerjasama\S2Kimia\S2Kim2;
+use App\Charts\Kerjasama\S2Kimia\S2Kim3;
+use App\Charts\Kerjasama\S2Kimia\S2Kim4;
+use App\Charts\Kerjasama\S2Kimia\S2Kim5;
+use App\Charts\Kerjasama\S2Kimia\S2Kim6;
+use App\Charts\Kerjasama\S2Kimia\S2Kim7;
+use App\Charts\Kerjasama\S2Kimia\S2Kim8;
+use App\Charts\Kerjasama\S2Kimia\S2Kim9;
+use App\Charts\Kerjasama\S2Kimia\S2Kim10;
+use App\Charts\Kerjasama\S2Kimia\S2Kim11;
 
-use App\Charts\Lab\S1Fisika\Fisika1;
-use App\Charts\Lab\S1Fisika\Fisika2;
-use App\Charts\Lab\S1Fisika\Fisika3;
-use App\Charts\Lab\S1Fisika\Fisika4;
-use App\Charts\Lab\S1Fisika\Fisika5;
-use App\Charts\Lab\S1Fisika\Fisika6;
-use App\Charts\Lab\S1Fisika\Fisika7;
-use App\Charts\Lab\S1Fisika\Fisika8;
-use App\Charts\Lab\S1Fisika\Fisika9;
-use App\Charts\Lab\S1Fisika\Fisika10;
-use App\Charts\Lab\S1Fisika\Fisika11;
-use App\Charts\Lab\S1Fisika\Fisika12;
+use App\Charts\Kerjasama\S1Fisika\Fisika1;
+use App\Charts\Kerjasama\S1Fisika\Fisika2;
+use App\Charts\Kerjasama\S1Fisika\Fisika3;
+use App\Charts\Kerjasama\S1Fisika\Fisika4;
+use App\Charts\Kerjasama\S1Fisika\Fisika5;
+use App\Charts\Kerjasama\S1Fisika\Fisika6;
+use App\Charts\Kerjasama\S1Fisika\Fisika7;
+use App\Charts\Kerjasama\S1Fisika\Fisika8;
+use App\Charts\Kerjasama\S1Fisika\Fisika9;
+use App\Charts\Kerjasama\S1Fisika\Fisika10;
+use App\Charts\Kerjasama\S1Fisika\Fisika11;
 
 
 
 
-class EvalLabController extends Controller
+class EvalKerjasamaController extends Controller
 {
     public function index(
 
@@ -220,7 +225,6 @@ class EvalLabController extends Controller
         PL9 $pl9,
         PL10 $pl10,
         PL11 $pl11,
-        PL12 $pl12,
 
 
         // // D3 Farmasi
@@ -235,7 +239,6 @@ class EvalLabController extends Controller
         Farm9 $farm9,
         Farm10 $farm10,
         Farm11 $farm11,
-        Farm12 $farm12,
 
         // // S1 Farmasi
         S1Farm1 $s1farm1,
@@ -249,7 +252,6 @@ class EvalLabController extends Controller
         S1Farm9 $s1farm9,
         S1Farm10 $s1farm10,
         S1Farm11 $s1farm11,
-        S1Farm12 $s1farm12,
 
         // // // S1 Matematika
         Math1 $math1,
@@ -263,8 +265,6 @@ class EvalLabController extends Controller
         Math9 $math9,
         Math10 $math10,
         Math11 $math11,
-        Math12 $math12,
-
 
         // S1 Biologi
         Bio1 $bio1,
@@ -278,7 +278,18 @@ class EvalLabController extends Controller
         Bio9 $bio9,
         Bio10 $bio10,
         Bio11 $bio11,
-        Bio12 $bio12,
+
+        S2Bio1 $s2bio1,
+        S2Bio2 $s2bio2,
+        S2Bio3 $s2bio3,
+        S2Bio4 $s2bio4,
+        S2Bio5 $s2bio5,
+        S2Bio6 $s2bio6,
+        S2Bio7 $s2bio7,
+        S2Bio8 $s2bio8,
+        S2Bio9 $s2bio9,
+        S2Bio10 $s2bio10,
+        S2Bio11 $s2bio11,
 
         // D3 Kebidanan
         Bidan1 $bidan1,
@@ -292,7 +303,6 @@ class EvalLabController extends Controller
         Bidan9 $bidan9,
         Bidan10 $bidan10,
         Bidan11 $bidan11,
-        Bidan12 $bidan12,
 
         // //D3 Keperawatan
         Rawat1 $rawat1,
@@ -306,21 +316,19 @@ class EvalLabController extends Controller
         Rawat9 $rawat9,
         Rawat10 $rawat10,
         Rawat11 $rawat11,
-        Rawat12 $rawat12,
 
-        //D3 Lab Sains
-        LabSains1 $labsains1,
-        LabSains2 $labsains2,
-        LabSains3 $labsains3,
-        LabSains4 $labsains4,
-        LabSains5 $labsains5,
-        LabSains6 $labsains6,
-        LabSains7 $labsains7,
-        LabSains8 $labsains8,
-        LabSains9 $labsains9,
-        LabSains10 $labsains10,
-        LabSains11 $labsains11,
-        LabSains12 $labsains12,
+        //D3 Kerjasama Sains
+        KerjasamaSains1 $Kerjasamasains1,
+        KerjasamaSains2 $Kerjasamasains2,
+        KerjasamaSains3 $Kerjasamasains3,
+        KerjasamaSains4 $Kerjasamasains4,
+        KerjasamaSains5 $Kerjasamasains5,
+        KerjasamaSains6 $Kerjasamasains6,
+        KerjasamaSains7 $Kerjasamasains7,
+        KerjasamaSains8 $Kerjasamasains8,
+        KerjasamaSains9 $Kerjasamasains9,
+        KerjasamaSains10 $Kerjasamasains10,
+        KerjasamaSains11 $Kerjasamasains11,
 
         // S1 Statistika
         Statis1 $statis1,
@@ -334,7 +342,6 @@ class EvalLabController extends Controller
         Statis9 $statis9,
         Statis10 $statis10,
         Statis11 $statis11,
-        Statis12 $statis12,
         
         S2Statis1 $s2statis1,
         S2Statis2 $s2statis2,
@@ -347,7 +354,6 @@ class EvalLabController extends Controller
         S2Statis9 $s2statis9,
         S2Statis10 $s2statis10,
         S2Statis11 $s2statis11,
-        S2Statis12 $s2statis12,
 
 
         // S1 Kimia
@@ -362,7 +368,6 @@ class EvalLabController extends Controller
         S1kim9 $s1kim9,
         S1kim10 $s1kim10,
         S1kim11 $s1kim11,
-        S1kim12 $s1kim12,
 
         // S2 Kimia
         S2Kim1 $s2kim1,
@@ -376,7 +381,6 @@ class EvalLabController extends Controller
         S2Kim9 $s2kim9,
         S2Kim10 $s2kim10,
         S2Kim11 $s2kim11,
-        S2Kim12 $s2kim12,
 
         // Fisika
         Fisika1 $fisika1,
@@ -390,7 +394,7 @@ class EvalLabController extends Controller
         Fisika9 $fisika9,
         Fisika10 $fisika10,
         Fisika11 $fisika11,
-        Fisika12 $fisika12,
+
 
         // Geofisika
         Geo1 $geo1,
@@ -404,14 +408,12 @@ class EvalLabController extends Controller
         Geo9 $geo9,
         Geo10 $geo10,
         Geo11 $geo11,
-        Geo12 $geo12,
 
     )
     {
-        $lab = Lab::all();
-        return view('evaluasi.lab.index',
+        return view('evaluasi.kerjasama.index',
         [
-            // 'lab' => $Lab,
+            // 'Kerjasama' => $Kerjasama,
 
             'farm1' => $farm1->build(),
             'farm2' => $farm2->build(),
@@ -424,7 +426,6 @@ class EvalLabController extends Controller
             'farm9' => $farm9->build(),
             'farm10' => $farm10->build(),
             'farm11' => $farm11->build(),
-            'farm12' => $farm12->build(),
 
             's1farm1' => $s1farm1->build(),
             's1farm2' => $s1farm2->build(),
@@ -437,7 +438,6 @@ class EvalLabController extends Controller
             's1farm9' => $s1farm9->build(),
             's1farm10' => $s1farm10->build(),
             's1farm11' => $s1farm11->build(),
-            's1farm12' => $s1farm12->build(),
 
             'math1' => $math1->build(),
             'math2' => $math2->build(),
@@ -450,7 +450,7 @@ class EvalLabController extends Controller
             'math9' => $math9->build(),
             'math10' => $math10->build(),
             'math11' => $math11->build(),
-            'math12' => $math12->build(),
+
 
             'bio1' => $bio1->build(),
             'bio2' => $bio2->build(),
@@ -463,7 +463,20 @@ class EvalLabController extends Controller
             'bio9' => $bio9->build(),
             'bio10' => $bio10->build(),
             'bio11' => $bio11->build(),
-            'bio12' => $bio12->build(),
+
+            's2bio1' => $s2bio1->build(),
+            's2bio2' => $s2bio2->build(),
+            's2bio3' => $s2bio3->build(),
+            's2bio4' => $s2bio4->build(),
+            's2bio5' => $s2bio5->build(),
+            's2bio6' => $s2bio6->build(),
+            's2bio7' => $s2bio7->build(),
+            's2bio8' => $s2bio8->build(),
+            's2bio9' => $s2bio9->build(),
+            's2bio10' => $s2bio10->build(),
+            's2bio11' => $s2bio11->build(),
+
+
 
             'bidan1' => $bidan1->build(),
             'bidan2' => $bidan2->build(),
@@ -476,7 +489,6 @@ class EvalLabController extends Controller
             'bidan9' => $bidan9->build(),
             'bidan10' => $bidan10->build(),
             'bidan11' => $bidan11->build(),
-            'bidan12' => $bidan12->build(),
 
             'rawat1' => $rawat1->build(),
             'rawat2' => $rawat2->build(),
@@ -489,20 +501,20 @@ class EvalLabController extends Controller
             'rawat9' => $rawat9->build(),
             'rawat10' => $rawat10->build(),
             'rawat11' => $rawat11->build(),
-            'rawat12' => $rawat12->build(),
 
-            'labsains1' => $labsains1->build(),
-            'labsains2' => $labsains2->build(),
-            'labsains3' => $labsains3->build(),
-            'labsains4' => $labsains4->build(),
-            'labsains5' => $labsains5->build(),
-            'labsains6' => $labsains6->build(),
-            'labsains7' => $labsains7->build(),
-            'labsains8' => $labsains8->build(),
-            'labsains9' => $labsains9->build(),
-            'labsains10' => $labsains10->build(),
-            'labsains11' => $labsains11->build(),
-            'labsains12' => $labsains12->build(),
+
+            'Kerjasamasains1' => $Kerjasamasains1->build(),
+            'Kerjasamasains2' => $Kerjasamasains2->build(),
+            'Kerjasamasains3' => $Kerjasamasains3->build(),
+            'Kerjasamasains4' => $Kerjasamasains4->build(),
+            'Kerjasamasains5' => $Kerjasamasains5->build(),
+            'Kerjasamasains6' => $Kerjasamasains6->build(),
+            'Kerjasamasains7' => $Kerjasamasains7->build(),
+            'Kerjasamasains8' => $Kerjasamasains8->build(),
+            'Kerjasamasains9' => $Kerjasamasains9->build(),
+            'Kerjasamasains10' => $Kerjasamasains10->build(),
+            'Kerjasamasains11' => $Kerjasamasains11->build(),
+
             
             'statis1' => $statis1->build(),
             'statis2' => $statis2->build(),
@@ -515,7 +527,6 @@ class EvalLabController extends Controller
             'statis9' => $statis9->build(),
             'statis10' => $statis10->build(),
             'statis11' => $statis11->build(),
-            'statis12' => $statis12->build(),
 
             's2statis1' => $s2statis1->build(),
             's2statis2' => $s2statis2->build(),
@@ -528,8 +539,6 @@ class EvalLabController extends Controller
             's2statis9' => $s2statis9->build(),
             's2statis10' => $s2statis10->build(),
             's2statis11' => $s2statis11->build(),
-            's2statis12' => $s2statis12->build(),
-
 
             's1kim1' => $s1kim1->build(),
             's1kim2' => $s1kim2->build(),
@@ -542,7 +551,6 @@ class EvalLabController extends Controller
             's1kim9' => $s1kim9->build(),
             's1kim10' => $s1kim10->build(),
             's1kim11' => $s1kim11->build(),
-            's1kim12' => $s1kim12->build(),
 
             's2kim1' => $s2kim1->build(),
             's2kim2' => $s2kim2->build(),
@@ -555,8 +563,6 @@ class EvalLabController extends Controller
             's2kim9' => $s2kim9->build(),
             's2kim10' => $s2kim10->build(),
             's2kim11' => $s2kim11->build(),
-            's2kim12' => $s2kim12->build(),
-
             
             'fisika1' => $fisika1->build(),
             'fisika2' => $fisika2->build(),
@@ -569,7 +575,6 @@ class EvalLabController extends Controller
             'fisika9' => $fisika9->build(),
             'fisika10' => $fisika10->build(),
             'fisika11' => $fisika11->build(),
-            'fisika12' => $fisika12->build(),
 
             'geo1' => $geo1->build(),
             'geo2' => $geo2->build(),
@@ -582,7 +587,6 @@ class EvalLabController extends Controller
             'geo9' => $geo9->build(),
             'geo10' => $geo10->build(),
             'geo11' => $geo11->build(),
-            'geo12' => $geo12->build(),
 
             'pl1' => $pl1->build(),
             'pl2' => $pl2->build(),
@@ -595,7 +599,6 @@ class EvalLabController extends Controller
             'pl9' => $pl9->build(),
             'pl10' => $pl10->build(),
             'pl11' => $pl11->build(),
-            'pl12' => $pl12->build(),
 
 
         ]);
@@ -613,7 +616,6 @@ class EvalLabController extends Controller
         PL9 $pl9,
         PL10 $pl10,
         PL11 $pl11,
-        PL12 $pl12,
         )
 {
     $percentages1 = $pl1->getDetailedPercentages();
@@ -627,10 +629,9 @@ class EvalLabController extends Controller
     $percentages9 = $pl9->getDetailedPercentages();
     $percentages10 = $pl10->getDetailedPercentages();
     $percentages11 = $pl11->getDetailedPercentages();
-    $percentages12 = $pl12->getDetailedPercentages();
 
 
-    return view('evaluasi.Lab.table', [
+    return view('evaluasi.kerjasama.table', [
         'percentages1' => $percentages1,
         'percentages2' => $percentages2,
         'percentages3' => $percentages3,
@@ -642,7 +643,6 @@ class EvalLabController extends Controller
         'percentages9' => $percentages9,
         'percentages10' => $percentages10,
         'percentages11' => $percentages11,
-        'percentages12' => $percentages12,
     ]);
 }
 
