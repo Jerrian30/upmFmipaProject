@@ -11,7 +11,7 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('vmtsdatas', function (Blueprint $table) {
+        Schema::create('visis', function (Blueprint $table) {
             $table->id();
             $table->datetime('timestamp');
             $table->string('program_studi')->nullable();
@@ -38,6 +38,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('vmtsdatas');
+        Schema::dropIfExists('visis');
     }
 };

@@ -23,4 +23,11 @@ class RoleController extends Controller
 
         return redirect()->route('user_roles.index')->with('success', 'Role berhasil diubah.');
     }
+
+    public function destroy(User $user)
+    {
+        $user->delete();
+
+        return back()->with('success', 'Berhasil dihapus');
+    }
 }

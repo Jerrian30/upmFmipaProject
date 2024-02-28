@@ -57,7 +57,7 @@
                 <a class="dropdown-item" href="{{ route('keuangan.eval') }}" style="font-size: 14px;">Pengguna Terhadap Kinerja Layanan Subbagian Keuangan</a>
                 <a class="dropdown-item" href="{{ route('turtp.eval') }}" style="font-size: 14px;">Pengguna Terhadap Kinerja Layanan Subbagian TURTP</a>
                 <a class="dropdown-item" href="{{ route('akademik.eval') }}" style="font-size: 14px;">Pengguna Terhadap Kinerja Layanan Subbagian Akademik</a>
-                <a class="dropdown-item" href="#" style="font-size: 14px;">VMTS</a>
+                <a class="dropdown-item" href="{{ route('visi.eval') }}" style="font-size: 14px;">VMTS</a>
             </div>
         </li>
  @endif
@@ -90,7 +90,7 @@
                 <a class="dropdown-item" href="{{ route('keuangan.index') }}" style="font-size: 14px;">Pengguna Terhadap Kinerja Layanan Subbagian Keuangan</a>
                 <a class="dropdown-item" href="{{ route('turtp.index') }}" style="font-size: 14px;">Pengguna Terhadap Kinerja Layanan Subbagian TURTP</a>
                 <a class="dropdown-item" href="{{ route('akademik.index') }}" style="font-size: 14px;">Pengguna Terhadap Kinerja Layanan Subbagian Akademik</a>
-                <a class="dropdown-item" href="#" style="font-size: 14px;">VMTS</a>
+                <a class="dropdown-item" href="{{ route('visi.index') }}" style="font-size: 14px;">VMTS</a>
             </div>
         </li>
         @endif
@@ -115,9 +115,7 @@
             </a>
         </li>
 @endif
-        <!-- ... Lanjutkan dengan item-menu lain sesuai kebutuhan ... -->
 
-        <!-- Pengaturan Dropdown User yang sudah ada di Topbar -->
 
     </ul>
     <ul class="navbar-nav ml-auto">
@@ -125,26 +123,20 @@
         <!-- Nav Item - User Information -->
         <li class="nav-item dropdown no-arrow ml-auto">
             <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                <span class="mr-2 d-none d-lg-inline text-gray-600 small">Jerrian</span>
-                <img class="img-profile rounded-circle" src="{{ asset('images/' . Auth::user()->profile_picture) }}">
+                <span class="mr-2 d-none d-lg-inline text-gray-600 small"></span>
+                @php
+                                    // Tentukan URL gambar profil atau gunakan gambar default
+                    $profilePicture = Auth::user()->profile_picture ? asset('images/' . Auth::user()->profile_picture) : asset('images/profile.png');
+                    @endphp
+                    <img class="img-profile rounded img-thumbnail" width="430" src="{{ $profilePicture }}" alt="Profile Picture">
             </a>
             <!-- Dropdown - User Information -->
             <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="userDropdown">
                 <a class="dropdown-item" href="{{ route('profile.show') }}">
-                    <i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>
                     Profile
-                </a>
-                <a class="dropdown-item" href="#">
-                    <i class="fas fa-cogs fa-sm fa-fw mr-2 text-gray-400"></i>
-                    Settings
-                </a>
-                <a class="dropdown-item" href="#">
-                    <i class="fas fa-list fa-sm fa-fw mr-2 text-gray-400"></i>
-                    Activity Log
                 </a>
                 <div class="dropdown-divider"></div>
                 <a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal">
-                    <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
                     Logout
                 </a>
             </div>

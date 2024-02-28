@@ -35,6 +35,9 @@ use App\Http\Controllers\EvalKerjasamaController;
 use App\Http\Controllers\LaporanMahasiswaController;
 use App\Http\Controllers\EvalMahasiswaController;
 
+use App\Http\Controllers\LaporanVisiController;
+use App\Http\Controllers\EvalVisiController;
+
 use App\Http\Controllers\FormulirController;
 
 use App\Http\Controllers\DokumenController;
@@ -75,6 +78,7 @@ Route::get('/home', [AksesController::class, 'index'])->name('home');
 
     Route::get('/user_roles', [RoleController::class, 'index'])->name('user_roles.index');
     Route::put('/user_roles/{user}', [RoleController::class, 'update'])->name('user_roles.update');
+    Route::delete('/user_roles/{user}', [RoleController::class, 'destroy'])->name('user_roles.destroy');
             
     Route::get('penggunaLulusan', [LaporanPenggunaLulusanController::class, 'index'])->name('penggunaLulusan.index');
     Route::post('/penggunaLulusan/import', [LaporanPenggunaLulusanController::class, 'import'])->name('penggunaLulusan.import');
@@ -143,6 +147,12 @@ Route::get('/home', [AksesController::class, 'index'])->name('home');
     Route::post('/kerjasama/delete', [LaporanKerjasamaController::class, 'delete'])->name('kerjasama.delete');
     Route::get('/kerjasama/eval', [EvalKerjasamaController::class, 'index'])->name('kerjasama.eval');
     Route::get('/kerjasama/table', [EvalKerjasamaController::class, 'table'])->name('kerjasama.table');
+
+    Route::get('visi', [LaporanVisiController::class, 'index'])->name('visi.index');
+    Route::post('/visi/import', [LaporanVisiController::class, 'import'])->name('visi.import');
+    Route::post('/visi/delete', [LaporanVisiController::class, 'delete'])->name('visi.delete');
+    Route::get('/visi/eval', [EvalVisiController::class, 'index'])->name('visi.eval');
+    Route::get('/visi/table', [EvalVisiController::class, 'table'])->name('visi.table');
 
 });
 Route::group(['middleware' => ['cek_login:user']], function () {

@@ -1,5 +1,7 @@
 @extends('layouts.master')
 
+@section('page','Profile')
+@section('title', 'Profile')
 @section('css')
 <style>
     body{margin-top:20px;}
@@ -117,29 +119,21 @@ section {
                     <div class="card-body p-1-9 p-sm-2-3 p-md-6 p-lg-7">
                         <div class="row align-items-center">
                             <div class="col-lg-6 mb-4 mb-lg-0">
-                                <img class="img-profile rounded-circle" width="430" src="{{ asset('images/' . Auth::user()->profile_picture) }}">
+                                @php
+                                    // Tentukan URL gambar profil atau gunakan gambar default
+                                    $profilePicture = Auth::user()->profile_picture ? asset('images/' . Auth::user()->profile_picture) : asset('images/profile.png');
+                                @endphp
+                                <img class="img-profile rounded img-thumbnail" width="430" src="{{ $profilePicture }}" alt="Profile Picture"><br><br>
                                 <button class="btn btn-primary" type="button" data-toggle="modal" data-target="#changeProfilePictureModal">
                                     <i class="fas fa-image fa-sm fa-fw mr-2 text-gray-400"></i>
                                     Ganti Foto Profil
                                 </button>
-                            </div>                            
+                            </div>                              
                             <div class="col-lg-6 px-xl-10">
-                                <div class="bg-secondary d-lg-inline-block py-1-9 px-1-9 px-sm-6 mb-1-9 rounded">
-                                    <h3 class="h2 text-white mb-0">John mark Doe Kyzer</h3>
-                                    <span class="text-primary">Coach</span>
-                                </div>
                                 <ul class="list-unstyled mb-1-9">
-                                    <li class="mb-2 mb-xl-3 display-28"><span class="display-26 text-secondary me-2 font-weight-600">Position:</span> Coach</li>
-                                    <li class="mb-2 mb-xl-3 display-28"><span class="display-26 text-secondary me-2 font-weight-600">Experience:</span> 10 Years</li>
-                                    <li class="mb-2 mb-xl-3 display-28"><span class="display-26 text-secondary me-2 font-weight-600">Email:</span> edith@mail.com</li>
-                                    <li class="mb-2 mb-xl-3 display-28"><span class="display-26 text-secondary me-2 font-weight-600">Website:</span> www.example.com</li>
-                                    <li class="display-28"><span class="display-26 text-secondary me-2 font-weight-600">Phone:</span> 507 - 541 - 4567</li>
-                                </ul>
-                                <ul class="social-icon-style1 list-unstyled mb-0 ps-0">
-                                    <li><a href="#!"><i class="ti-twitter-alt"></i></a></li>
-                                    <li><a href="#!"><i class="ti-facebook"></i></a></li>
-                                    <li><a href="#!"><i class="ti-pinterest"></i></a></li>
-                                    <li><a href="#!"><i class="ti-instagram"></i></a></li>
+                                    <li class="mb-2 mb-xl-3 display-28">Nama: <span class="display-26 text-secondary me-2 font-weight-600">{{ $user->name }}</span></li>
+                                    <li class="mb-2 mb-xl-3 display-28">Email: <span class="display-26 text-secondary me-2 font-weight-600">{{ $user->email }}</span></li>
+                                    <li class="mb-2 mb-xl-3 display-28">Akun dibuat Pada: <span class="display-26 text-secondary me-2 font-weight-600">{{ $user->created_at }}</span></li>
                                 </ul>
                             </div>
                         </div>

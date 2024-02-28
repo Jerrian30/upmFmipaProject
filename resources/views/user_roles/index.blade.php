@@ -2,14 +2,33 @@
 @section('title', 'Manajemen User')
 @section('page', 'Manajemen User')
 
+@section('js')
+<script>
+    document.querySelectorAll('.delete-confirm').forEach(button => {
+    button.addEventListener('click', function (event) {
+        event.preventDefault();
+        const form = this.closest('form');
+        Swal.fire({
+            title: "Anda yakin ingin hapus data?",
+            text: "Anda tidak akan dapat mengembalikan ini!",
+            icon: "warning",
+            showCancelButton: true,
+            confirmButtonColor: "#3085d6",
+            cancelButtonColor: "#d33",
+            confirmButtonText: "Yes, delete it!"
+        }).then((result) => {
+            if (result.isConfirmed) {
+                form.submit(); // Submit form secara programatik setelah konfirmasi
+            }
+        });
+    });
+});
+
+</script>
+@endsection
+
 @section('content')
 <div class="container">
-    @if(session('success'))
-        <div class="alert alert-success">
-            {{ session('success') }}
-        </div>
-    @endif
-
     <div class="table-responsive">
         <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
             <thead class="text-center">
@@ -17,6 +36,7 @@
                 <th>Nama</th>
                 <th>Email</th>
                 <th>Role</th>
+                <th>Ubah Role</th>
                 <th>Aksi</th>
             </tr>
         </thead>
@@ -37,6 +57,13 @@
                         <button type="submit" class="btn btn-primary">Ubah Role</button>
                     </form>
                 </td>
+                <td>
+                    <form id="deleteForm" action="{{ route('user_roles.destroy', $user->id) }}" method="POST" style="display: inline-block;">
+                        @csrf
+                        @method('DELETE')
+                        <button type="button" class="btn btn-danger delete-confirm">Hapus</button>
+                    </form>
+                </td>                
             </tr>
             @endforeach
         </tbody>

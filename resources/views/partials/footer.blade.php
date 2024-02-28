@@ -162,7 +162,7 @@
     } else {
         // Jika ada yang dipilih, tampilkan konfirmasi penghapusan
         Swal.fire({
-            title: "Kamu yakin ingin hapus data?",
+            title: "Anda yakin ingin hapus data?",
             text: "Anda tidak akan dapat mengembalikan ini!",
             icon: "warning",
             showCancelButton: true,

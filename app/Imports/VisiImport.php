@@ -2,13 +2,13 @@
 
 namespace App\Imports;
 
-use App\Models\Vmtsdata;
+use App\Models\Visi;
 use Maatwebsite\Excel\Concerns\ToModel;
 use Maatwebsite\Excel\Concerns\WithEvents;
 use Maatwebsite\Excel\Events\BeforeImport;
 use Carbon\Carbon;
 
-class VmtsImport implements ToModel
+class VisiImport implements ToModel
 {
     /**
     * @param array $row
@@ -20,7 +20,7 @@ class VmtsImport implements ToModel
         $timestamp = Carbon::createFromTimestamp($row[0] * 86400 - 2209186799) // 25569 adalah jumlah hari dari 30 Desember 1899 ke 1 Januari 1970
         ->setTimezone('Asia/Jakarta');
 
-        return new Vmtsdata([
+        return new Visi([
             'timestamp'                 => $timestamp,
             'program_studi' => $row[1],
             'status_di_universitas'     => $row[2],
@@ -37,7 +37,6 @@ class VmtsImport implements ToModel
             'vmts_dukung_atmosfer_akademik' => $row[13],
             'yakin_capai_vmts'          => $row[14],
             'estimasi_waktu_capai_vmts' => $row[15],
-
         ]);
     }
 }
