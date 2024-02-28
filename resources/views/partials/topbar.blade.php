@@ -15,7 +15,7 @@
 
 
         <li class="nav-item active">
-            <a class="nav-link" href="#" style="font-size: 14px;" >
+            <a class="nav-link" href="{{ route('beranda') }}" style="font-size: 14px;" >
                 <i class="fas fa-home"></i>&nbsp;
                 <span>Beranda</span>
             </a>
@@ -122,16 +122,15 @@
     </ul>
     <ul class="navbar-nav ml-auto">
         <div class="topbar-divider d-none d-sm-block"></div>
-
         <!-- Nav Item - User Information -->
         <li class="nav-item dropdown no-arrow ml-auto">
             <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 <span class="mr-2 d-none d-lg-inline text-gray-600 small">Jerrian</span>
-                <img class="img-profile rounded-circle" src="{{ asset('sbadmin/img/jerot.jpg') }}">
+                <img class="img-profile rounded-circle" src="{{ asset('images/' . Auth::user()->profile_picture) }}">
             </a>
             <!-- Dropdown - User Information -->
             <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="userDropdown">
-                <a class="dropdown-item" href="#">
+                <a class="dropdown-item" href="{{ route('profile.show') }}">
                     <i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>
                     Profile
                 </a>
@@ -149,6 +148,9 @@
                     Logout
                 </a>
             </div>
+        </li>
     </ul>
 </nav>
 <!-- End of Topbar -->
+<!-- Modal Change Profile Picture -->
+

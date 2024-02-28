@@ -32,7 +32,7 @@ class LaporanPenggunaLulusanController extends Controller
 
         Excel::import(new PenggunaLulusanImport, $file);
 
-        return redirect()->route('penggunaLulusan.index')->with('success', 'Data Pengguna Lulusan berhasil diimpor.');
+        return redirect()->route('penggunaLulusan.index')->with('success', 'Data berhasil diimpor.');
     }
 
     public function delete(Request $request)

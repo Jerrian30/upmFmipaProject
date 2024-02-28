@@ -39,9 +39,10 @@ use App\Http\Controllers\FormulirController;
 
 use App\Http\Controllers\DokumenController;
 use App\Http\Controllers\BerandaController;
-use App\Http\Controllers\HomeController;
+use App\Http\Controllers\AksesController;
 use App\Http\Controllers\RoleController;
 use App\Http\Controllers\UnduhController;
+use App\Http\Controllers\UserController;
 
 /*
 |--------------------------------------------------------------------------
@@ -60,12 +61,12 @@ use App\Http\Controllers\UnduhController;
 
 Auth::routes();
 
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::get('/home', [AksesController::class, 'index'])->name('home');
 
 // Route Autentikasi Login
 
 
-Route::group(['middleware' => ['cek_login:admin']], function () {
+    Route::group(['middleware' => ['cek_login:admin']], function () {
         Route::get('unduhs/create', [UnduhController::class, 'create'])->name('unduhs.create');
         Route::post('unduhs', [UnduhController::class, 'store'])->name('unduhs.store');
         Route::get('unduhs/{unduh}/edit', [UnduhController::class, 'edit'])->name('unduhs.edit');
@@ -143,17 +144,18 @@ Route::group(['middleware' => ['cek_login:admin']], function () {
     Route::get('/kerjasama/eval', [EvalKerjasamaController::class, 'index'])->name('kerjasama.eval');
     Route::get('/kerjasama/table', [EvalKerjasamaController::class, 'table'])->name('kerjasama.table');
 
-Route::group(['middleware' => ['auth']], function () {
-        Route::get('/formulir', [FormulirController::class, 'index'])->name('formulir.index');
-        Route::get('/dokumen', [DokumenController::class, 'index'])->name('dokumen.index');
-        Route::get('/', [BerandaController::class, 'index'])->name('beranda');
-        Route::get('unduhs', [UnduhController::class, 'index'])->name('unduhs.index');
-        Route::get('unduhs/{unduh}', [UnduhController::class, 'show'])->name('unduhs.show');
-
-
-    });
-
-    Route::group(['middleware' => ['cek_login:user']], function () {
+});
+Route::group(['middleware' => ['cek_login:user']], function () {
     
-    });
+});
+Route::group(['middleware' => ['auth']], function () {
+    Route::post('/profile/update', [UserController::class, 'updateProfile'])->name('profile.update');
+    Route::get('/profile', [UserController::class, 'showProfile'])->name('profile.show');
+    Route::get('/formulir', [FormulirController::class, 'index'])->name('formulir.index');
+    Route::get('/dokumen', [DokumenController::class, 'index'])->name('dokumen.index');
+    Route::get('/', [BerandaController::class, 'index'])->name('beranda');
+    Route::get('unduhs', [UnduhController::class, 'index'])->name('unduhs.index');
+    Route::get('unduhs/{unduh}', [UnduhController::class, 'show'])->name('unduhs.show');
+
+
 });
