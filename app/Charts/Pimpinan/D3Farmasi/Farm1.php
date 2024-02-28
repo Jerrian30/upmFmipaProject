@@ -16,7 +16,7 @@ class Farm1
 
     protected function calculatePercentages()
     {
-        $dataD3Farmasi = Pimpinan::where('program_studi', 'D3 Farmasi')
+        $dataD3Farmasi = Pimpinan::where('pimpinan_dinilai', 'Dekan')
             ->selectRaw('COUNT(*) as count, mudah_dihubungi')
             ->groupBy('mudah_dihubungi')
             ->pluck('count', 'mudah_dihubungi');

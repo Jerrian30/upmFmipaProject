@@ -1,6 +1,6 @@
 @extends('layouts.master')
-@section('title', 'Evaluasi -> Pengguna Terhadap Kinerja Layanan Prodi')
-@section('page', 'Evaluasi -> Pengguna Terhadap Kinerja Layanan Prodi')
+@section('title', 'Evaluasi -> Mahasiswa')
+@section('page', 'Evaluasi -> Mahasiswa')
 
 
 {{-- content --}}

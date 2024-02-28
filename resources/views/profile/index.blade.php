@@ -140,13 +140,6 @@ section {
                     </div>
                 </div>
             </div>
-            <div class="col-lg-12 mb-4 mb-sm-5">
-                <div>
-                    <span class="section-title text-primary mb-3 mb-sm-4">About Me</span>
-                    <p>Edith is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-                    <p class="mb-0">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed.</p>
-                </div>
-            </div>
         </div>
     </div>
 </section>
@@ -180,9 +173,9 @@ section {
 <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 <script>
 Swal.fire({
-  icon: 'error',
-  title: 'Foto Profil Gagal Diubah',
-  text: 'Mohon Pilih Foto Profil Yang Sesuai',
+    icon: 'error',
+    title: 'Foto Profil Gagal Diubah',
+    text: 'Mohon Pilih Foto Profil Yang Sesuai',
 });
 </script>
 @endsection

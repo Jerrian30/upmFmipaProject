@@ -79,16 +79,6 @@ use App\Charts\Dosen\S1Biologi\Bio8;
 use App\Charts\Dosen\S1Biologi\Bio9;
 use App\Charts\Dosen\S1Biologi\Bio10;
 
-use App\Charts\Dosen\S2Biologi\S2Bio1;
-use App\Charts\Dosen\S2Biologi\S2Bio2;
-use App\Charts\Dosen\S2Biologi\S2Bio3;
-use App\Charts\Dosen\S2Biologi\S2Bio4;
-use App\Charts\Dosen\S2Biologi\S2Bio5;
-use App\Charts\Dosen\S2Biologi\S2Bio6;
-use App\Charts\Dosen\S2Biologi\S2Bio7;
-use App\Charts\Dosen\S2Biologi\S2Bio8;
-use App\Charts\Dosen\S2Biologi\S2Bio9;
-use App\Charts\Dosen\S2Biologi\S2Bio10;
 // // Class Kebidanan
 use App\Charts\Dosen\D3Kebidanan\Bidan1;
 use App\Charts\Dosen\D3Kebidanan\Bidan2;
@@ -251,16 +241,6 @@ class EvalDosenController extends Controller
         Bio9 $bio9,
         Bio10 $bio10,
 
-        S2Bio1 $s2bio1,
-        S2Bio2 $s2bio2,
-        S2Bio3 $s2bio3,
-        S2Bio4 $s2bio4,
-        S2Bio5 $s2bio5,
-        S2Bio6 $s2bio6,
-        S2Bio7 $s2bio7,
-        S2Bio8 $s2bio8,
-        S2Bio9 $s2bio9,
-        S2Bio10 $s2bio10,
 
         // //D3 Kebidanan
         Bidan1 $bidan1,
@@ -419,17 +399,6 @@ class EvalDosenController extends Controller
             'bio8' => $bio8->build(),
             'bio9' => $bio9->build(),
             'bio10' => $bio10->build(),
-
-            's2bio1' => $s2bio1->build(),
-            's2bio2' => $s2bio2->build(),
-            's2bio3' => $s2bio3->build(),
-            's2bio4' => $s2bio4->build(),
-            's2bio5' => $s2bio5->build(),
-            's2bio6' => $s2bio6->build(),
-            's2bio7' => $s2bio7->build(),
-            's2bio8' => $s2bio8->build(),
-            's2bio9' => $s2bio9->build(),
-            's2bio10' => $s2bio10->build(),
 
             'bidan1' => $bidan1->build(),
             'bidan2' => $bidan2->build(),

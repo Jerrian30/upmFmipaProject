@@ -20,8 +20,6 @@
                 <span>Beranda</span>
             </a>
         </li>
-
-@if (auth()->user()->role == 'admin')
         <li class="nav-item active">
             <a class="nav-link" href="{{ route('dokumen.index') }}" style="font-size: 14px;">
                 <i class="fas fa-file-alt"></i>&nbsp;
@@ -60,7 +58,6 @@
                 <a class="dropdown-item" href="{{ route('visi.eval') }}" style="font-size: 14px;">VMTS</a>
             </div>
         </li>
- @endif
         <li class="nav-item active">
             <a class="nav-link" href="{{ route('formulir.index') }}" style="font-size: 14px;">
                 <i class="fas fa-poll"></i>
@@ -68,12 +65,11 @@
                 <span>Formulir Survei</span>
             </a>
         </li>
-@if (auth()->user()->role == 'admin')
         <li class="nav-item dropdown no-arrow">
             <a class="nav-link dropdown-toggle" href="#" style="font-size: 14px;" id="laporanSurveiDropdown" role="button"
                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 <i class="fas fa-file-alt fa-fw"></i>
-                <span>Laporan Survei<i class="fas fa-chevron-down"></i></span>
+                <span>Database Survei<i class="fas fa-chevron-down"></i></span>
             </a>
             <!-- Dropdown - Laporan Survei -->
             <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in"
@@ -93,21 +89,19 @@
                 <a class="dropdown-item" href="{{ route('visi.index') }}" style="font-size: 14px;">VMTS</a>
             </div>
         </li>
-        @endif
         <li class="nav-item active">
             <a class="nav-link" href="{{ route('unduhs.index') }}" style="font-size: 14px;">
                 <i class="fas fa-download"></i>&nbsp;
                 <span>Unduh</span>
             </a>
         </li>
-        @if (auth()->user()->role == 'admin')
         <li class="nav-item active">
             <a class="nav-link" href="#" style="font-size: 14px;">
                 <i class="fas fa-clipboard-list"></i>&nbsp;
                 <span>SOP</span>
             </a>
         </li>
-        
+@if (auth()->user()->role == 'admin')
         <li class="nav-item active">
             <a class="nav-link" href="{{ route('user_roles.index') }}" style="font-size: 14px;">
                 <i class="fas fa-users"></i>&nbsp;

@@ -69,16 +69,29 @@ Route::get('/home', [AksesController::class, 'index'])->name('home');
 // Route Autentikasi Login
 
 
-    Route::group(['middleware' => ['cek_login:admin']], function () {
-        Route::get('unduhs/create', [UnduhController::class, 'create'])->name('unduhs.create');
-        Route::post('unduhs', [UnduhController::class, 'store'])->name('unduhs.store');
-        Route::get('unduhs/{unduh}/edit', [UnduhController::class, 'edit'])->name('unduhs.edit');
-        Route::put('unduhs/{unduh}', [UnduhController::class, 'update'])->name('unduhs.update');
-        Route::delete('unduhs/{unduh}', [UnduhController::class, 'destroy'])->name('unduhs.destroy');
+Route::group(['middleware' => ['cek_login:admin']], function () {
+    Route::get('unduhs/create', [UnduhController::class, 'create'])->name('unduhs.create');
+    Route::post('unduhs', [UnduhController::class, 'store'])->name('unduhs.store');
+    Route::get('unduhs/{unduh}/edit', [UnduhController::class, 'edit'])->name('unduhs.edit');
+    Route::put('unduhs/{unduh}', [UnduhController::class, 'update'])->name('unduhs.update');
+    Route::delete('unduhs/{unduh}', [UnduhController::class, 'destroy'])->name('unduhs.destroy');
 
     Route::get('/user_roles', [RoleController::class, 'index'])->name('user_roles.index');
     Route::put('/user_roles/{user}', [RoleController::class, 'update'])->name('user_roles.update');
     Route::delete('/user_roles/{user}', [RoleController::class, 'destroy'])->name('user_roles.destroy');
+
+});
+Route::group(['middleware' => ['cek_login:user']], function () {
+    
+});
+Route::group(['middleware' => ['auth']], function () {
+    Route::post('/profile/update', [UserController::class, 'updateProfile'])->name('profile.update');
+    Route::get('/profile', [UserController::class, 'showProfile'])->name('profile.show');
+    Route::get('/formulir', [FormulirController::class, 'index'])->name('formulir.index');
+    Route::get('/dokumen', [DokumenController::class, 'index'])->name('dokumen.index');
+    Route::get('/', [BerandaController::class, 'index'])->name('beranda');
+    Route::get('unduhs', [UnduhController::class, 'index'])->name('unduhs.index');
+    Route::get('unduhs/{unduh}', [UnduhController::class, 'show'])->name('unduhs.show');
             
     Route::get('penggunaLulusan', [LaporanPenggunaLulusanController::class, 'index'])->name('penggunaLulusan.index');
     Route::post('/penggunaLulusan/import', [LaporanPenggunaLulusanController::class, 'import'])->name('penggunaLulusan.import');
@@ -153,19 +166,6 @@ Route::get('/home', [AksesController::class, 'index'])->name('home');
     Route::post('/visi/delete', [LaporanVisiController::class, 'delete'])->name('visi.delete');
     Route::get('/visi/eval', [EvalVisiController::class, 'index'])->name('visi.eval');
     Route::get('/visi/table', [EvalVisiController::class, 'table'])->name('visi.table');
-
-});
-Route::group(['middleware' => ['cek_login:user']], function () {
-    
-});
-Route::group(['middleware' => ['auth']], function () {
-    Route::post('/profile/update', [UserController::class, 'updateProfile'])->name('profile.update');
-    Route::get('/profile', [UserController::class, 'showProfile'])->name('profile.show');
-    Route::get('/formulir', [FormulirController::class, 'index'])->name('formulir.index');
-    Route::get('/dokumen', [DokumenController::class, 'index'])->name('dokumen.index');
-    Route::get('/', [BerandaController::class, 'index'])->name('beranda');
-    Route::get('unduhs', [UnduhController::class, 'index'])->name('unduhs.index');
-    Route::get('unduhs/{unduh}', [UnduhController::class, 'show'])->name('unduhs.show');
 
 
 });

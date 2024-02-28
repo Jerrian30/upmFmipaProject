@@ -16,7 +16,7 @@ class LabSains9
 
     protected function calculatePercentages()
     {
-        $dataD3Farmasi = Pimpinan::where('program_studi',  'D3 Lab Sains')
+        $dataD3Farmasi = Pimpinan::where('pimpinan_dinilai', 'Wakil Dekan Kemahasiswaan')
             ->selectRaw('COUNT(*) as count, terbuka_kritik_saran')
             ->groupBy('terbuka_kritik_saran')
             ->pluck('count', 'terbuka_kritik_saran');

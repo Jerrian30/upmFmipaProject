@@ -223,33 +223,6 @@
                     {{ $kinerja }}
                 </td>
             </tr>
-
-            <tr>
-                <td>Staf terbuka dengan kritik/saran yang di sampaikan</td>
-                <td>{{ $percentages8['persen4'] }}%</td>
-                <td>{{ $percentages8['persen3'] }}%</td>
-                <td>{{ $percentages8['persen2'] }}%</td>
-                <td>{{ $percentages8['persen1'] }}%</td>
-                <td>
-                    {{
-                        number_format(
-                            ($percentages8['persen4']*4 + $percentages8['persen3']*3 + $percentages8['persen2']*2 + $percentages8['persen1']*1) / 
-                            ($percentages8['persen4'] + $percentages8['persen3'] + $percentages8['persen2'] + $percentages8['persen1']),
-                        2)
-                    }}
-                </td>
-                <td>
-                    @php
-                        $average = 
-                            ($percentages8['persen4']*4 + $percentages8['persen3']*3 + $percentages8['persen2']*2 + $percentages8['persen1']) / 
-                            ($percentages8['persen4'] + $percentages8['persen3'] + $percentages8['persen2'] + $percentages8['persen1']);
-                        $kinerja = $average > 3.5 ? 'Sangat Baik' :
-                                    ($average > 2.5 ? 'Baik' :
-                                    ($average > 1.5 ? 'Cukup' : 'Kurang'));
-                    @endphp
-                    {{ $kinerja }}
-                </td>
-            </tr>
         </tbody>
     </table>
    </div>

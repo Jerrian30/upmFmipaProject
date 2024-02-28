@@ -17,7 +17,6 @@
 @include('grafik.dosen.s2kimia.js') 
 @include('grafik.dosen.s1geofisika.js')
 @include('grafik.dosen.s1biologi.js')
-@include('grafik.dosen.s2biologi.js')
 @include('grafik.dosen.s1fisika.js')
 
     <script>
@@ -57,11 +56,6 @@
             var biologiContainers = document.querySelectorAll('.biologiContainer');
             biologiContainers.forEach(function(container) {
                 container.style.display = (value === 's1biologi') ? 'block' : 'none';
-            });
-
-            var s2biologiContainers = document.querySelectorAll('.s2biologiContainer');
-            s2biologiContainers.forEach(function(container) {
-                container.style.display = (value === 's2biologi') ? 'block' : 'none';
             });
 
             var kebidananContainer = document.querySelectorAll('.kebidananContainer');
@@ -118,7 +112,6 @@
         <select class="form-control" id="programStudi" name="programStudi">
             <option value="" disabled selected>Pilih</option>
             <option value="all">Semua</option>
-            <option value="s2biologi">S2 Biologi</option>
             <option value="s2kimia">S2 Kimia</option>
             <option value="s2statistika">S2 Statistika</option>
             <option value="s1biologi">S1 Biologi</option>
@@ -148,7 +141,6 @@
         @include('grafik.dosen.s2kimia.view') 
         @include('grafik.dosen.s1geofisika.view')
         @include('grafik.dosen.s1biologi.view')
-        @include('grafik.dosen.s2biologi.view')
         @include('grafik.dosen.s1fisika.view') 
     </div>
 </div>

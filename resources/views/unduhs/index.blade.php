@@ -13,8 +13,7 @@
         <thead>
             <tr>
                 <th>#</th>
-                <th>Link</th>
-                <th>Deskripsi</th>
+                <th>Nama Dokumen</th>
                 <th>Aksi</th>
             </tr>
         </thead>
@@ -22,11 +21,10 @@
             @foreach ($unduhs as $unduh)
                 <tr>
                     <td>{{ $loop->iteration }}</td>
-                    <td><a href="{{ $unduh->link }}" target="_blank">{{ $unduh->link }}</a></td>
                     <td>{{ $unduh->deskripsi }}</td>
                     
                     <td>
-                        <a href="{{ route('unduhs.show', $unduh->id) }}" class="btn btn-info">Lihat</a>
+                        <a href="{{ $unduh->link }}" class="btn btn-info">Lihat</a>
                         @if (auth()->user()->role == 'admin')
                         <a href="{{ route('unduhs.edit', $unduh->id) }}" class="btn btn-warning">Edit</a>
                         <form id="deleteForm" action="{{ route('unduhs.destroy', $unduh->id) }}" method="POST" style="display: inline-block;">

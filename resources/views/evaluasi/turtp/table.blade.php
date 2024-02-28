@@ -26,13 +26,13 @@
         </thead>
         <tfoot>
             <tr>
-                <th>Item Pertanyaan</th>
-                <th>Sangat Baik</th>
-                <th>Baik</th>
-                <th>Cukup</th>
-                <th>Kurang</th>
-                <th>Rata Rata</th>
-                <th>Kinerja</th>
+                <th>Rata-rata</th>
+                <th>{{ $rataRata ['persen4']  }}</th>
+                <th>{{ $rataRata ['persen4']  }}</th>
+                <th>{{ $rataRata ['persen4']  }}</th>
+                <th>{{ $rataRata ['persen4']  }}</th>
+                <th>{{ $ratRata [ number_forma()] }}</th>
+                <th>{{ $rataRata[{{ $kinerja }}] }}</th>
             </tr>
         </tfoot>
         <tbody>
