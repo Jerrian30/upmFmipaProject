@@ -21,7 +21,7 @@ class PL3
             ->groupBy('ikut_sosialisasi_vmts')
             ->pluck('total', 'ikut_sosialisasi_vmts')->all();
     
-            $labels = ['Sering', 'Beberapa kali', 'Satu kali', 'Tidak pernah'];
+        $labels = ['Sering', 'Beberapa kali', 'Satu kali', 'Tidak pernah'];
         $counts = array_fill_keys($labels, 0);
     
         // Hitung total keseluruhan responden

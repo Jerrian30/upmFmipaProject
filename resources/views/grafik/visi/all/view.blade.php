@@ -2,110 +2,111 @@
     <div class="col-lg-4 mb-4">
         <div class="card">
             <div class="card-body" >
-                <h6 class="card-title">1. Ketersediaan, kejelasan dan kemudahan memperoleh informasi layanan</h6>
+                <h6 class="card-title">1. Konsistensi pimpinan dalam penegakan aturan dan kebijakan di UNIB</h6>
                 {!! $pl1->container() !!}
             </div>
         </div>
     </div>
 
-    <div class="col-lg-4  mb-4">
+    <div class="col-lg-4 mb-4">
         <div class="card">
             <div class="card-body">
-                <h6 class="card-title">2. Kebersihan dan kenyamanan laboratorium</h6>
+                <h6 class="card-title">2. Efektivitas pembagian tugas dan fungsi pimpinan secara jelas sesuai dengan struktur organisasi tata kelola UNIB<br></h6>
                 {!! $pl2->container() !!}
             </div>
         </div>
     </div>
     
-    <div class="col-lg-4  mb-4">
+    <div class="col-lg-4 mb-4">
         <div class="card">
             <div class="card-body">
-                <h6 class="card-title">3. Sarana / prasarana laboratorium terawat dan berfungsi baik</h6>
+                <h6 class="card-title">3. Kebijakan pimpinan dibuat dan disosialisasikan dengan melibatkan para pemangku kepentingan</h6>
                 {!! $pl3->container() !!}
             </div>
         </div>
     </div>
+
     <!-- Grafik Kedua -->
-    <div class="col-lg-4  mb-4">
+    <div class="col-lg-4 mb-4">
         <div class="card">
             <div class="card-body">
-                <h6 class="card-title">4. Ketua dan staf laboratorium/bengkel/studio mampu memberikan pelayanan sesuai dengan kebutuhan pengguna</h6>
+                <h6 class="card-title">4. Pembagian tugas, wewenang, pengawasan, dan pemantauan terhadap kinerja dosen yang dilakukan pimpinan dalam pengelolaan SDM telah sesuai dengan organisasi tata kelola UNIB</h6>
                 {!! $pl4->container() !!}
             </div>
         </div>
     </div>
 
-    <div class="col-lg-4  mb-4">
+    <div class="col-lg-4 mb-4">
         <div class="card">
             <div class="card-body">
-                <h6 class="card-title">5. Ketua dan staf laboratorium/ bengkel/ studio terbuka dengan kritik dan saran terkait pelayanan yang diberikan</h6>
+                <h6 class="card-title">5. Ketersediaan fasilitas sarana (seperti gedung perkuliahan, laboratorium, perpustakaan, dan lainnya) dan prasarana (seperti LCD, papan tulis, spidol, pendingin ruangan, dan lainnya) yang berkualitas untuk dosen dalam menjalankan tugas pendidikan dan pengajaran</h6>
                 {!! $pl5->container() !!}
             </div>
         </div>
     </div>
-{{-- 
-    <div class="col-lg-4  mb-4">
+
+    <div class="col-lg-4 mb-4">
         <div class="card">
             <div class="card-body">
-                <h6 class="card-title">6. Ketua dan staf laboratorium/ bengkel/ studio dapat menyelesaikan persoalan secara cepat dan tepat</h6>
+                <h6 class="card-title">6. Ketersediaan fasilitas sarana dan prasarana untuk dosen dalam menjalankan tugas penelitian dan pengabdian kepada masyarakat</h6>
                 {!! $pl6->container() !!}
             </div>
         </div>
     </div>
 
     <!-- Grafik Kedua -->
-    <div class="col-lg-4  mb-4">
+    <div class="col-lg-4 mb-4">
         <div class="card">
             <div class="card-body">
-                <h6 class="card-title">7. Tersedia manual untuk setiap peralatan</h6>
+                <h6 class="card-title">7. Suasana ruang perkuliahan yang nyaman dan memiliki prokes Covid 19</h6>
                 {!! $pl7->container() !!}
             </div>
         </div>
     </div>
     
-    <div class="col-lg-4  mb-4">
+    <div class="col-lg-4 mb-4">
         <div class="card">
             <div class="card-body">
-                <h6 class="card-title">8. Staf laboratorium/bengkel/studio trampil mengoperasikan peralatan yang dimiliki</h6>
+                <h6 class="card-title">8. Adanya kesempatan bagi dosen untuk mengembangkan karir dengan mudah, khususnya yang berkaitan dengan Tri Dharma PT</h6>
                 {!! $pl8->container() !!}
             </div>
         </div>
     </div>
 
     <!-- Grafik Kedua -->
-    <div class="col-lg-4  mb-4">
+    <div class="col-lg-4 mb-4">
         <div class="card">
             <div class="card-body">
-                <h6 class="card-title">9. Hasil analisis/produk dapat dipertanggungjawabkan</h6>
+                <h6 class="card-title">9.Pembagian beban kerja dosen sesuai dengan tugas, pokok dan fungsi</p></h6>
                 {!! $pl9->container() !!}
             </div>
         </div>
     </div>
 
-    <div class="col-lg-4  mb-4">
+    <div class="col-lg-4 mb-4">
         <div class="card">
             <div class="card-body">
-                <h6 class="card-title">10. Ketua dan staf laboratorium/bengkel/studio mudah ditemui/dihubungi</h6>
+                <h6 class="card-title">10. Kepuasan terhadap kesejahteraan dosen (Besaran remunerasi, pembayaran remunerasi serta sertifikasi dosen tepat waktu).</h6>
                 {!! $pl10->container() !!}
             </div>
         </div>
     </div>
-    
-    <div class="col-lg-4  mb-4">
+
+    <div class="col-lg-4 mb-4">
         <div class="card">
             <div class="card-body">
-                <h6 class="card-title">11. Ketua dan staf laboratorium/bengkel/studio menunjukkan sikap peduli dan responsif terhadap kebutuhan/ keluhan pengguna</h6>
+                <h6 class="card-title">10. Kepuasan terhadap kesejahteraan dosen (Besaran remunerasi, pembayaran remunerasi serta sertifikasi dosen tepat waktu).</h6>
                 {!! $pl11->container() !!}
             </div>
         </div>
     </div>
 
-    <div class="col-lg-4  mb-4">
+    <div class="col-lg-4 mb-4">
         <div class="card">
             <div class="card-body">
-                <h6 class="card-title">12. Sarana/prasarana laboratorium/bengkel/studio lengkap dan nyaman</h6>
+                <h6 class="card-title">10. Kepuasan terhadap kesejahteraan dosen (Besaran remunerasi, pembayaran remunerasi serta sertifikasi dosen tepat waktu).</h6>
                 {!! $pl12->container() !!}
             </div>
         </div>
-    </div> --}}
-</div> 
+    </div>
+</div>

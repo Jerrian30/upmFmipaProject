@@ -12,13 +12,13 @@ use App\Charts\Visi\All\PL2;
 use App\Charts\Visi\All\PL3;
 use App\Charts\Visi\All\PL4;
 use App\Charts\Visi\All\PL5;
-// use App\Charts\Visi\All\PL6;
-// use App\Charts\Visi\All\PL7;
-// use App\Charts\Visi\All\PL8;
-// use App\Charts\Visi\All\PL9;
-// use App\Charts\Visi\All\PL10;
-// use App\Charts\Visi\All\PL11;
-// use App\Charts\Visi\All\PL12;
+use App\Charts\Visi\All\PL6;
+use App\Charts\Visi\All\PL7;
+use App\Charts\Visi\All\PL8;
+use App\Charts\Visi\All\PL9;
+use App\Charts\Visi\All\PL10;
+use App\Charts\Visi\All\PL11;
+use App\Charts\Visi\All\PL12;
 
 
 
@@ -32,13 +32,13 @@ class EvalVisiController extends Controller
         PL3 $pl3,
         PL4 $pl4,
         PL5 $pl5,
-        // PL6 $pl6,
-        // PL7 $pl7,
-        // PL8 $pl8,
-        // PL9 $pl9,
-        // PL10 $pl10,
-        // PL11 $pl11,
-        // PL12 $pl12,
+        PL6 $pl6,
+        PL7 $pl7,
+        PL8 $pl8,
+        PL9 $pl9,
+        PL10 $pl10,
+        PL11 $pl11,
+        PL12 $pl12,
 
     )
     {
@@ -50,13 +50,13 @@ class EvalVisiController extends Controller
             'pl3' => $pl3->build(),
             'pl4' => $pl4->build(),
             'pl5' => $pl5->build(),
-            // 'pl6' => $pl6->build(),
-            // 'pl7' => $pl7->build(),
-            // 'pl8' => $pl8->build(),
-            // 'pl9' => $pl9->build(),
-            // 'pl10' => $pl10->build(),
-            // 'pl11' => $pl11->build(),
-            // 'pl12' => $pl12->build(),
+            'pl6' => $pl6->build(),
+            'pl7' => $pl7->build(),
+            'pl8' => $pl8->build(),
+            'pl9' => $pl9->build(),
+            'pl10' => $pl10->build(),
+            'pl11' => $pl11->build(),
+            'pl12' => $pl12->build(),
 
 
         ]);
