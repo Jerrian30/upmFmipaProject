@@ -1,9 +1,10 @@
 <?php
 
-namespace App\Charts\Lab\All;
+namespace App\Charts\Visi\All;
 
-use App\Models\Lab;
+use App\Models\Visi;
 use ArielMejiaDev\LarapexCharts\LarapexChart;
+use ArielMejiaDev\LarapexCharts\DonutChart;
 
 class PL3
 {
@@ -16,49 +17,30 @@ class PL3
 
     public function build(): \ArielMejiaDev\LarapexCharts\DonutChart
     {
-        $dataPercentages = $this->calculatePercentages('sarpras_terawat');
-        
-        return $this->chart->donutChart()
-            ->addData(array_values($dataPercentages))
-            ->setLabels(['1', '2', '3', '4']);
-    }
-
-    protected function calculatePercentages($columnName): array
-    {
-        $dataTotal = Lab::selectRaw("COUNT(*) as count, $columnName")
-            ->groupBy($columnName)
-            ->pluck('count', $columnName);
-
-        $dataValues = [
-            1 => 0,
-            2 => 0,
-            3 => 0,
-            4 => 0,
-        ];
-
-        foreach ($dataTotal as $nilai => $count) {
-            if (isset($dataValues[$nilai])) {
-                $dataValues[$nilai] = $count;
+        $data = Visi::select('ikut_sosialisasi_vmts', \DB::raw('count(*) as total'))
+            ->groupBy('ikut_sosialisasi_vmts')
+            ->pluck('total', 'ikut_sosialisasi_vmts')->all();
+    
+            $labels = ['Sering', 'Beberapa kali', 'Satu kali', 'Tidak pernah'];
+        $counts = array_fill_keys($labels, 0);
+    
+        // Hitung total keseluruhan responden
+        $totalResponden = array_sum($data);
+    
+        // Mengisi $counts dengan persentase data yang ada
+        foreach ($data as $key => $value) {
+            if (array_key_exists($key, $counts)) {
+                // Hitung persentase dan simpan ke dalam $counts
+                $counts[$key] = $totalResponden > 0 ? round(($value / $totalResponden) * 100, 2) : 0;
             }
         }
-
-        $totalResponden = array_sum($dataValues);
-
-        return array_map(function ($value) use ($totalResponden) {
-            return ($totalResponden > 0) ? round(($value / $totalResponden) * 100, 2) : 0;
-        }, $dataValues);
-    }
-
-    // Asumsikan Anda memerlukan method ini untuk tujuan tertentu
-    public function getDetailedPercentages()
-    {
-        
-        $percentages = $this->calculatePercentages('sarpras_terawat');
-        return [
-            'persen1' => $percentages[1] ?? 0,
-            'persen2' => $percentages[2] ?? 0,
-            'persen3' => $percentages[3] ?? 0,
-            'persen4' => $percentages[4] ?? 0,
-        ];
+    
+        // Agar label menampilkan persentase, Anda bisa memodifikasi $labels disini
+        // atau saat menampilkan di view/front-end, tergantung pada kebutuhan Anda.
+    
+        return $this->chart->donutChart()
+            ->addData(array_values($counts))
+            ->setLabels(array_keys($counts));
     }
 }
+

@@ -16,49 +16,22 @@ class PL6
 
     public function build(): \ArielMejiaDev\LarapexCharts\DonutChart
     {
-        $dataPercentages = $this->calculatePercentages('penyelesaian_persoalan');
-        
-        return $this->chart->donutChart()
-            ->addData(array_values($dataPercentages))
-            ->setLabels(['1', '2', '3', '4']);
-    }
+        $data = Visi::select('pemahaman_visi', \DB::raw('count(*) as total'))
+            ->groupBy('pemahaman_visi')
+            ->pluck('total', 'pemahaman_visi')->all();
 
-    protected function calculatePercentages($columnName): array
-    {
-        $dataTotal = Lab::selectRaw("COUNT(*) as count, $columnName")
-            ->groupBy($columnName)
-            ->pluck('count', $columnName);
+        $labels = ['Sangat paham', 'Paham', 'Kurang paham', 'Tidak paham'];
+        $counts = array_fill_keys($labels, 0); // Inisialisasi array dengan 0 untuk setiap label
 
-        $dataValues = [
-            1 => 0,
-            2 => 0,
-            3 => 0,
-            4 => 0,
-        ];
-
-        foreach ($dataTotal as $nilai => $count) {
-            if (isset($dataValues[$nilai])) {
-                $dataValues[$nilai] = $count;
+        // Mengisi $counts dengan data yang ada
+        foreach ($data as $key => $value) {
+            if (array_key_exists($key, $counts)) {
+                $counts[$key] = $value;
             }
         }
 
-        $totalResponden = array_sum($dataValues);
-
-        return array_map(function ($value) use ($totalResponden) {
-            return ($totalResponden > 0) ? round(($value / $totalResponden) * 100, 2) : 0;
-        }, $dataValues);
-    }
-
-    // Asumsikan Anda memerlukan method ini untuk tujuan tertentu
-    public function getDetailedPercentages()
-    {
-        
-        $percentages = $this->calculatePercentages('penyelesaian_persoalan');
-        return [
-            'persen1' => $percentages[1] ?? 0,
-            'persen2' => $percentages[2] ?? 0,
-            'persen3' => $percentages[3] ?? 0,
-            'persen4' => $percentages[4] ?? 0,
-        ];
+        return $this->chart->donutChart()
+            ->addData(array_values($counts))
+            ->setLabels(array_keys($counts));
     }
 }
