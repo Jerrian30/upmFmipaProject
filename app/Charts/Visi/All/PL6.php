@@ -1,8 +1,8 @@
 <?php
 
-namespace App\Charts\Lab\All;
+namespace App\Charts\Visi\All;
 
-use App\Models\Lab;
+use App\Models\Visi;
 use ArielMejiaDev\LarapexCharts\LarapexChart;
 
 class PL6
@@ -16,11 +16,11 @@ class PL6
 
     public function build(): \ArielMejiaDev\LarapexCharts\DonutChart
     {
-        $data = Visi::select('pemahaman_visi', \DB::raw('count(*) as total'))
-            ->groupBy('pemahaman_visi')
-            ->pluck('total', 'pemahaman_visi')->all();
+        $data = Visi::select('visi_sesuai_tuntutan_kerja', \DB::raw('count(*) as total'))
+            ->groupBy('visi_sesuai_tuntutan_kerja')
+            ->pluck('total', 'visi_sesuai_tuntutan_kerja')->all();
 
-        $labels = ['Sangat paham', 'Paham', 'Kurang paham', 'Tidak paham'];
+        $labels = ['Sangat sesuai', 'Sesuai', 'Kurang sesuai', 'Tidak sesuai'];
         $counts = array_fill_keys($labels, 0); // Inisialisasi array dengan 0 untuk setiap label
 
         // Mengisi $counts dengan data yang ada
