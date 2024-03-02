@@ -23,7 +23,7 @@
         <div class="row align-items-center g-lg-5 py-5">
         <div class="col-lg-7 text-center text-lg-start">
             <h1 class="display-4 fw-bold lh-1 text-body-emphasis mb-3" style="color: #2a37b7;">Error 404</h1>
-            <p class="col-lg-10 fs-4">Anda Tidak Punya Hak Akses!</p>
+            <a href="{{ route('beranda') }}" class="btn btn-success">Menuju menu utama</a>
         </div>
     </div>
 

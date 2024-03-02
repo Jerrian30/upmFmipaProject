@@ -12,7 +12,7 @@ class FormulirController extends Controller
      */
     public function index()
     {
-        $formulirs = Formulir::all(); // Mengambil semua data formuliran
+        $formulirs = Formulir::all(); // Mengambil semua data Formulir
         return view('formulirs.index', compact('formulirs')); // Mengembalikan view dengan data formulirs
     }
 
@@ -21,7 +21,7 @@ class FormulirController extends Controller
      */
     public function create()
     {
-        return view('formulirs.create'); // Mengembalikan view untuk membuat formuliran baru
+        return view('formulirs.create'); // Mengembalikan view untuk membuat Formulir baru
     }
 
     /**
@@ -31,12 +31,13 @@ class FormulirController extends Controller
     {
         $validatedData = $request->validate([
             'link' => 'required|url',
+            'diisi_oleh' => 'required',
             'deskripsi' => 'required',
         ]);
 
         Formulir::create($validatedData);
 
-        return redirect()->route('formulirs.index')->with('success', 'formuliran berhasil ditambahkan');
+        return redirect()->route('formulirs.index')->with('success', 'Formulir berhasil ditambahkan');
     }
 
     /**
@@ -58,12 +59,13 @@ class FormulirController extends Controller
     {
         $validatedData = $request->validate([
             'link' => 'required|url',
+            'diisi_oleh' => 'required',
             'deskripsi' => 'required',
         ]);
 
         $formulir->update($validatedData);
 
-        return redirect()->route('formulirs.index')->with('success', 'formuliran berhasil diperbarui');
+        return redirect()->route('formulirs.index')->with('success', 'Formulir berhasil diperbarui');
     }
 
     /**
@@ -73,6 +75,6 @@ class FormulirController extends Controller
     {
         $formulir->delete();
 
-        return back()->with('success', 'formuliran berhasil dihapus');
+        return back()->with('success', 'formulir berhasil dihapus');
     }
 }

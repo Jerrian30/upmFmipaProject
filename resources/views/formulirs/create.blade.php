@@ -9,6 +9,10 @@
     <form action="{{ route('formulirs.store') }}" method="POST">
         @csrf
         <div class="form-group">
+            <label for="diisi_oleh">Diisi oleh</label>
+            <input type="text" class="form-control" id="diisi_oleh" name="diisi_oleh" required>
+        </div>
+        <div class="form-group">
             <label for="link">Link:</label>
             <input type="text" class="form-control" id="link" name="link" required>
         </div>

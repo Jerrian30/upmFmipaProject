@@ -10,6 +10,10 @@
         @csrf
         @method('PUT')
         <div class="form-group">
+            <label for="diisi_oleh">Diisi oleh</label>
+            <input type="text" class="form-control" id="diisi_oleh" name="diisi_oleh" value="{{ old('diisi_oleh', $formulir->diisi_oleh) }}" required>
+        </div>
+        <div class="form-group">
             <label for="link">Link:</label>
             <input type="text" class="form-control" id="link" name="link" value="{{ old('link', $formulir->link) }}" required>
         </div>
