@@ -1,6 +1,6 @@
 @extends('layouts.master')
-@section('title', 'Unduh')
-@section('page', 'Unduh')
+@section('title', 'Formulir')
+@section('page', 'Formulir')
 
 @section('js')
 
@@ -35,29 +35,29 @@
 @section('content')
 
 <div class="container mt-5">
-    <h2 class="text-center">Daftar Unduhan</h2>
+    <h2 class="text-center">Daftar Formilir</h2>
     @if (auth()->user()->role == 'admin')
-    <a href="{{ route('unduhs.create') }}" class="btn btn-primary">Tambah Unduhan Baru</a>
+    <a href="{{ route('formulirs.create') }}" class="btn btn-primary">Tambah Formulir Baru</a>
     @endif
     <table class="table table-bordered mt-3">
         <thead>
             <tr>
                 <th>#</th>
-                <th>Nama Dokumen</th>
+                <th>Formulir</th>
                 <th>Aksi</th>
             </tr>
         </thead>
         <tbody>
-            @foreach ($unduhs as $unduh)
+            @foreach ($formulirs as $formulir)
                 <tr>
                     <td>{{ $loop->iteration }}</td>
-                    <td>{{ $unduh->deskripsi }}</td>
+                    <td>{{ $formulir->deskripsi }}</td>
                     
                     <td>
-                        <a href="{{ $unduh->link }}" class="btn btn-info">Menuju Link Download</a>
+                        <a href="{{ $formulir->link }}" class="btn btn-info">Buka Form</a>
                         @if (auth()->user()->role == 'admin')
-                        <a href="{{ route('unduhs.edit', $unduh->id) }}" class="btn btn-warning">Edit</a>
-                        <form id="deleteForm" action="{{ route('unduhs.destroy', $unduh->id) }}" method="POST" style="display: inline-block;">
+                        <a href="{{ route('formulirs.edit', $formulir->id) }}" class="btn btn-warning">Edit</a>
+                        <form id="deleteForm" action="{{ route('formulirs.destroy', $formulir->id) }}" method="POST" style="display: inline-block;">
                             @csrf
                             @method('DELETE')
                             <button type="button" class="btn btn-danger delete-confirm">Hapus</button>

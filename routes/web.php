@@ -76,6 +76,12 @@ Route::group(['middleware' => ['cek_login:admin']], function () {
     Route::put('unduhs/{unduh}', [UnduhController::class, 'update'])->name('unduhs.update');
     Route::delete('unduhs/{unduh}', [UnduhController::class, 'destroy'])->name('unduhs.destroy');
 
+    Route::get('formulirs/create', [FormulirController::class, 'create'])->name('formulirs.create');
+    Route::post('formulirs', [FormulirController::class, 'store'])->name('formulirs.store');
+    Route::get('formulirs/{formulir}/edit', [FormulirController::class, 'edit'])->name('formulirs.edit');
+    Route::put('formulirs/{formulir}', [FormulirController::class, 'update'])->name('formulirs.update');
+    Route::delete('formulirs/{formulir}', [FormulirController::class, 'destroy'])->name('formulirs.destroy');
+
     Route::get('/user_roles', [RoleController::class, 'index'])->name('user_roles.index');
     Route::put('/user_roles/{user}', [RoleController::class, 'update'])->name('user_roles.update');
     Route::delete('/user_roles/{user}', [RoleController::class, 'destroy'])->name('user_roles.destroy');
@@ -90,8 +96,12 @@ Route::group(['middleware' => ['auth']], function () {
     Route::get('/formulir', [FormulirController::class, 'index'])->name('formulir.index');
     Route::get('/dokumen', [DokumenController::class, 'index'])->name('dokumen.index');
     Route::get('/', [BerandaController::class, 'index'])->name('beranda');
+
     Route::get('unduhs', [UnduhController::class, 'index'])->name('unduhs.index');
     Route::get('unduhs/{unduh}', [UnduhController::class, 'show'])->name('unduhs.show');
+
+    Route::get('formulirs', [FormulirController::class, 'index'])->name('formulirs.index');
+    Route::get('formulirs/{formulir}', [FormulirController::class, 'show'])->name('formulirs.show');
             
     Route::get('penggunaLulusan', [LaporanPenggunaLulusanController::class, 'index'])->name('penggunaLulusan.index');
     Route::post('/penggunaLulusan/import', [LaporanPenggunaLulusanController::class, 'import'])->name('penggunaLulusan.import');
