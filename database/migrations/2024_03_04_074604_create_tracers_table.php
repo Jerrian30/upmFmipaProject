@@ -13,55 +13,57 @@ return new class extends Migration
     {
         Schema::create('tracers', function (Blueprint $table) {
             $table->id();
-            $table->datetime('timestamp')->nullable(); // Timestamp menjadi 'waktu'
-            $table->string('email')->nullable(); // Email Address
-            $table->string('nama_lengkap')->nullable(); // Nama Lengkap (Beserta Gelar)
-            $table->string('jenis_kelamin', 10)->nullable(); // Jenis Kelamin
-            $table->string('tempat_tanggal_lahir')->nullable(); // Tempat dan Tanggal Lahir
-            $table->text('alamat')->nullable(); // Alamat Rumah
-            $table->string('no_hp')->nullable(); // No. HP (Aktif WA)
-            $table->string('lulusan_prodi')->nullable(); // Lulus dari Program Studi
-            $table->year('angkatan')->nullable(); // Angkatan (Tahun Masuk Kuliah)
-            $table->string('bulan_tahun_lulus')->nullable(); // Bulan dan Tahun Lulus
+            $table->datetime('timestamp');
+            $table->string('nama');
+            $table->string('ttl');
+            $table->string('alamat_rumah');
+            $table->string('kode_pos');
+            $table->string('no_hp_wa');
+            $table->string('email');
+            $table->year('tahun_masuk_kuliah');
+            $table->string('program_studi');
 
-            $table->string('jalur_masuk')->nullable(); // Jalur Masuk ke UNIB
-            $table->boolean('berorganisasi')->nullable(); // Apakah berorganisasi ketika mahasiswa
-            $table->string('sumber_biaya')->nullable(); // Sumber biaya saat kuliah
-            $table->decimal('ipk', 3, 2)->nullable(); // IPK lulusan
-            $table->boolean('melanjutkan_studi')->nullable(); // Setelah lulus Sarjana, apakah melanjutkan studi lagi?
-            $table->string('tempat_studi_lanjutan')->nullable(); // Jika ya, dimana melanjutkan studi
-            $table->string('tahun_studi_lanjutan')->nullable(); // Tahun masuk dan tahun lulus bagi yang melanjutkan studi
-            $table->text('alasan_lanjut_studi')->nullable(); // Alasan utama melanjutkan studi
-            $table->string('waktu_tunggu_pekerjaan')->nullable(); // Waktu tunggu untuk mendapatkan pekerjaan
-            $table->string('nama_instansi')->nullable(); // Nama instansi/perusahaan/wirausaha tempat bekerja
+            $table->string('bulan_tahun_lulus');
+            $table->integer('lama_pendidikan');
+            $table->string('kepemilikan_sertifikat_kompetensi');
+            $table->string('kepemilikan_str');
+            $table->string('tanggal_keluar_str')->nullable();
+            $table->string('melanjutkan_pendidikan');
+            $table->string('tempat_melanjutkan_pendidikan')->nullable();
+            $table->string('alasan_melanjutkan_pendidikan')->nullable();
+            $table->string('mengetahui_cara_melamar_pekerjaan');
+            $table->integer('jumlah_perusahaan_dilamar');
 
-            $table->string('bidang_pekerjaan')->nullable(); // Bergerak di bidang apa pekerjaan/wirausaha
-            $table->string('jabatan')->nullable(); // Jabatan dalam perusahaan/instansi
-            $table->text('alamat_instansi')->nullable(); // Alamat perusahaan/instansi
-            $table->string('no_telp_instansi')->nullable(); // Nomor telepon perusahaan/instansi
-            $table->string('nama_atasan')->nullable(); // Nama atasan Langsung
-            $table->string('jabatan_atasan')->nullable(); // Jabatan atasan Langsung
-            $table->string('email_atasan')->nullable(); // Email atasan Langsung
-            $table->text('proses_dapat_pekerjaan')->nullable(); // Proses mendapatkan pekerjaan
-            $table->decimal('pendapatan_per_bulan', 15, 2)->nullable(); // Pendapatan rata-rata per bulan
-            $table->string('kerja_sesuai_bidang')->nullable(); // Apakah pekerjaan sesuai dengan bidang ilmu
+            $table->string('respon_perusahaan_terhadap_lamaran');
+            $table->string('bekerja');
+            $table->string('nama_tempat_bekerja')->nullable();
+            $table->string('jenis_instansi_bidang_usaha')->nullable();
+            $table->string('jabatan_profesi')->nullable();
+            $table->date('bulan_tahun_mulai_bekerja')->nullable();
+            $table->integer('masa_tunggu_mendapatkan_pekerjaan')->nullable();
+            $table->string('proses_mendapatkan_pekerjaan')->nullable();
+            $table->date('tanggal_mulai_mencari_pekerjaan')->nullable();
+            $table->string('jenis_pekerjaan')->nullable();
 
-            $table->text('kebutuhan_institusi')->nullable(); // Kebutuhan institusi terhadap lulusan prodi
-            $table->text('pertimbangan_pilih_pekerjaan')->nullable(); // Pertimbangan utama memilih pekerjaan
-            $table->decimal('omset_per_bulan', 15, 2)->nullable(); // Omset rata-rata per bulan (khusus wirausaha)
-            $table->boolean('pernah_bekerja_sebelumnya')->nullable(); // Apakah pernah bekerja sebelumnya? (khusus wirausaha)
-            $table->string('lama_bekerja_sebelum_wirausaha')->nullable(); // Berapa lama bekerja setelah lulus sebelum memutuskan untuk wirausaha? (khusus wirausaha)
-            $table->decimal('omset_rata_bulan_wirausaha', 15, 2)->nullable(); // Omset rata-rata per bulan (khusus wirausaha)
-            $table->string('kompetensi_bersaing')->nullable(); // Saat baru lulus, sejauh mana mampu bersaing dengan lulusan perguruan tinggi lain?
-            $table->string('kompetensi_etika')->nullable(); // Saat baru lulus, kompetensi etika
-            $table->string('kompetensi_keahlian_ilmu_utama')->nullable(); // Saat baru lulus, kompetensi keahlian bidang ilmu utama
-            $table->string('kompetensi_bahasa_asing')->nullable(); // Saat baru lulus, kompetensi kemampuan berbahasa asing
+            $table->string('tempat_bekerja_tenaga_kesehatan')->nullable();
+            $table->string('pekerjaan_sesuai_bidang_ilmu');
+            $table->string('informasi_lowongan_pekerjaan')->nullable();
+            $table->string('puas_dengan_pekerjaan')->nullable();
+            $table->string('pertimbangan_memilih_pekerjaan')->nullable();
+            $table->integer('rata_rata_pendapatan')->nullable();
+            $table->string('kebutuhan_institusi_terhadap_lulusan')->nullable();
+            $table->string('pendidikan_relevan_dengan_pekerjaan');
+            $table->string('alasan_pendidikan_tidak_relevan')->nullable();
+            $table->string('saran_praktis_untuk_pendidikan')->nullable();
 
-            $table->string('kompetensi_teknologi_informasi')->nullable(); // Saat baru lulus, kompetensi penggunaan teknologi informasi
-            $table->string('kompetensi_komunikasi')->nullable(); // Saat baru lulus, kompetensi kemampuan berkomunikasi
-            $table->string('kompetensi_kerjasama')->nullable(); // Saat baru lulus, kompetensi kerjasama
-            $table->string('kompetensi_pengembangan_diri')->nullable(); // Saat baru lulus, kompetensi pengembangan diri
-            $table->text('kriteria_lulusan_prodi')->nullable(); // Sejauh ini, menurut kriteria lulusan prodi seperti apa yang diperlukan oleh lapangan pekerjaan?
+            $table->string('kompetensi_diperlukan_dalam_pekerjaan')->nullable();
+            $table->string('penilaian_kompetensi_etika')->nullable();
+            $table->string('penilaian_keahlian_bidang_ilmu')->nullable();
+            $table->string('penilaian_kemampuan_bahasa_inggris')->nullable();
+            $table->string('penilaian_penggunaan_teknologi_informasi')->nullable();
+            $table->string('penilaian_kemampuan_berkomunikasi')->nullable();
+            $table->string('penilaian_kerjasama_dalam_tim_dan_kepemimpinan')->nullable();
+            $table->string('penilaian_pengembangan_diri')->nullable();
             $table->timestamps();
         });
         
