@@ -8,6 +8,9 @@ use Illuminate\Database\Eloquent\Model;
 class Tracer extends Model
 {
     use HasFactory;
+    
 
     protected $guarded = ['id'];
+
+
 }

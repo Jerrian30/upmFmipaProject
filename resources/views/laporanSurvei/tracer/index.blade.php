@@ -58,8 +58,7 @@
                         <th>#</th>
                         <th>Timestamp</th>
                         <th>Nama</th>
-                        <th>Tempat Lahir</th>
-                        <th>Tanggal Lahir</th>
+                        <th>Tempat,Tanggal Lahir</th>
                         <th>Alamat Rumah</th>
                         <th>Kode Pos</th>
                         <th>No HP WA</th>
@@ -89,6 +88,7 @@
                         <th>Tempat Bekerja Tenaga Kesehatan</th>
                         <th>Pekerjaan Sesuai Bidang Ilmu</th>
                         <th>Informasi Lowongan Pekerjaan</th>
+                        <th>Pekerjaan Sesuai Harapan</th>
                         <th>Puas Dengan Pekerjaan</th>
                         <th>Pertimbangan Memilih Pekerjaan</th>
                         <th>Rata-Rata Pendapatan</th>
@@ -112,8 +112,7 @@
                     <th>#</th>
                     <th>Timestamp</th>
                     <th>Nama</th>
-                    <th>Tempat Lahir</th>
-                    <th>Tanggal Lahir</th>
+                    <th>Tempat, Tanggal Lahir</th>
                     <th>Alamat Rumah</th>
                     <th>Kode Pos</th>
                     <th>No HP WA</th>
@@ -143,6 +142,7 @@
                     <th>Tempat Bekerja Tenaga Kesehatan</th>
                     <th>Pekerjaan Sesuai Bidang Ilmu</th>
                     <th>Informasi Lowongan Pekerjaan</th>
+                    <th>Pekerjaan Sesuai Harapan</th>
                     <th>Puas Dengan Pekerjaan</th>
                     <th>Pertimbangan Memilih Pekerjaan</th>
                     <th>Rata-Rata Pendapatan</th>
@@ -162,59 +162,59 @@
             </tfoot>
             <tbody>
                 @foreach($tracers as $tracer)
-                <tr>
-                    <td><input type="checkbox" name="ids[]" value="{{ $tracer->id }}"></td>
-                    <td>{{ $loop->iteration }}</td>
-                    <td>{{ $tracer->timestamp }}</td>
-                    <td>{{ $tracer->nama }}</td>
-                    <td>{{ $tracer->tempat_lahir }}</td>
-                    <td>{{ $tracer->tanggal_lahir }}</td>
-                    <td>{{ $tracer->alamat_rumah }}</td>
-                    <td>{{ $tracer->kode_pos }}</td>
-                    <td>{{ $tracer->no_hp_wa }}</td>
-                    <td>{{ $tracer->email }}</td>
-                    <td>{{ $tracer->tahun_masuk_kuliah }}</td>
-                    <td>{{ $tracer->program_studi }}</td>
-                    <td>{{ $tracer->bulan_tahun_lulus }}</td>
-                    <td>{{ $tracer->lama_pendidikan }}</td>
-                    <td>{{ $tracer->kepemilikan_sertifikat_kompetensi }}</td>
-                    <td>{{ $tracer->kepemilikan_str }}</td>
-                    <td>{{ $tracer->tanggal_keluar_str }}</td>
-                    <td>{{ $tracer->melanjutkan_pendidikan }}</td>
-                    <td>{{ $tracer->tempat_melanjutkan_pendidikan }}</td>
-                    <td>{{ $tracer->alasan_melanjutkan_pendidikan }}</td>
-                    <td>{{ $tracer->mengetahui_cara_melamar_pekerjaan }}</td>
-                    <td>{{ $tracer->jumlah_perusahaan_dilamar }}</td>
-                    <td>{{ $tracer->respon_perusahaan_terhadap_lamaran }}</td>
-                    <td>{{ $tracer->bekerja }}</td>
-                    <td>{{ $tracer->nama_tempat_bekerja }}</td>
-                    <td>{{ $tracer->jenis_instansi_bidang_usaha }}</td>
-                    <td>{{ $tracer->jabatan_profesi }}</td>
-                    <td>{{ $tracer->bulan_tahun_mulai_bekerja }}</td>
-                    <td>{{ $tracer->masa_tunggu_mendapatkan_pekerjaan }}</td>
-                    <td>{{ $tracer->proses_mendapatkan_pekerjaan }}</td>
-                    <td>{{ $tracer->tanggal_mulai_mencari_pekerjaan }}</td>
-                    <td>{{ $tracer->jenis_pekerjaan }}</td>
-                    <td>{{ $tracer->tempat_bekerja_tenaga_kesehatan }}</td>
-                    <td>{{ $tracer->pekerjaan_sesuai_bidang_ilmu }}</td>
-                    <td>{{ $tracer->informasi_lowongan_pekerjaan }}</td>
-                    <td>{{ $tracer->puas_dengan_pekerjaan }}</td>
-                    <td>{{ $tracer->pertimbangan_memilih_pekerjaan }}</td>
-                    <td>{{ $tracer->rata_rata_pendapatan }}</td>
-                    <td>{{ $tracer->kebutuhan_institusi_terhadap_lulusan }}</td>
-                    <td>{{ $tracer->pendidikan_relevan_dengan_pekerjaan }}</td>
-                    <td>{{ $tracer->alasan_pendidikan_tidak_relevan }}</td>
-                    <td>{{ $tracer->saran_praktis_untuk_pendidikan }}</td>
-                    <td>{{ $tracer->kompetensi_diperlukan_dalam_pekerjaan }}</td>
-                    <td>{{ $tracer->penilaian_kompetensi_etika }}</td>
-                    <td>{{ $tracer->penilaian_keahlian_bidang_ilmu }}</td>
-                    <td>{{ $tracer->penilaian_kemampuan_bahasa_inggris }}</td>
-                    <td>{{ $tracer->penilaian_penggunaan_teknologi_informasi }}</td>
-                    <td>{{ $tracer->penilaian_kemampuan_berkomunikasi }}</td>
-                    <td>{{ $tracer->penilaian_kerjasama_dalam_tim_dan_kepemimpinan }}</td>
-                    <td>{{ $tracer->penilaian_pengembangan_diri }}</td>
-                </tr>
-            @endforeach            
+                    <tr>
+                        <td><input type="checkbox" name="ids[]" value="{{ $tracer->id }}"></td>
+                        <td>{{ $loop->iteration }}</td>
+                        <td>{{ $tracer->timestamp }}</td>
+                        <td>{{ $tracer->nama }}</td>
+                        <td>{{ $tracer->ttl }}</td>
+                        <td>{{ $tracer->alamat_rumah }}</td>
+                        <td>{{ $tracer->kode_pos }}</td>
+                        <td>{{ $tracer->no_hp_wa }}</td>
+                        <td>{{ $tracer->email }}</td>
+                        <td>{{ $tracer->tahun_masuk_kuliah }}</td>
+                        <td>{{ $tracer->program_studi }}</td>
+                        <td>{{ $tracer->bulan_tahun_lulus }}</td>
+                        <td>{{ $tracer->lama_pendidikan }}</td>
+                        <td>{{ $tracer->kepemilikan_serkom }}</td>
+                        <td>{{ $tracer->kepemilikan_str }}</td>
+                        <td>{{ $tracer->tanggal_keluar_str }}</td>
+                        <td>{{ $tracer->melanjutkan_pendidikan }}</td>
+                        <td>{{ $tracer->tempat_melanjutkan_pendidikan }}</td>
+                        <td>{{ $tracer->alasan_melanjutkan_pendidikan }}</td>
+                        <td>{{ $tracer->mengetahui_cara_melamar_pekerjaan }}</td>
+                        <td>{{ $tracer->jumlah_perusahaan_dilamar }}</td>
+                        <td>{{ $tracer->respon_perusahaan_terhadap_lamaran }}</td>
+                        <td>{{ $tracer->bekerja }}</td>
+                        <td>{{ $tracer->nama_tempat_bekerja }}</td>
+                        <td>{{ $tracer->jenis_instansi_bidang_usaha }}</td>
+                        <td>{{ $tracer->jabatan_profesi }}</td>
+                        <td>{{ $tracer->bulan_tahun_mulai_bekerja }}</td>
+                        <td>{{ $tracer->masa_tunggu_mendapatkan_pekerjaan }}</td>
+                        <td>{{ $tracer->proses_mendapatkan_pekerjaan }}</td>
+                        <td>{{ $tracer->kapan_mulai_mencari_pekerjaan }}</td>
+                        <td>{{ $tracer->jenis_pekerjaan }}</td>
+                        <td>{{ $tracer->tempat_bekerja_tenaga_kesehatan }}</td>
+                        <td>{{ $tracer->pekerjaan_sesuai_bidang_ilmu }}</td>
+                        <td>{{ $tracer->informasi_lowongan_pekerjaan }}</td>
+                        <td>{{ $tracer->pekerjaan_sesuai_harapan }}</td>
+                        <td>{{ $tracer->puas_dengan_pekerjaan }}</td>
+                        <td>{{ $tracer->pertimbangan_memilih_pekerjaan }}</td>
+                        <td>{{ $tracer->rata_rata_pendapatan }}</td>
+                        <td>{{ $tracer->kebutuhan_institusi_terhadap_lulusan }}</td>
+                        <td>{{ $tracer->pendidikan_relevan_dengan_pekerjaan }}</td>
+                        <td>{{ $tracer->alasan_pendidikan_tidak_relevan }}</td>
+                        <td>{{ $tracer->saran_praktis_untuk_pendidikan }}</td>
+                        <td>{{ $tracer->kompetensi_diperlukan_dalam_pekerjaan }}</td>
+                        <td>{{ $tracer->penilaian_kompetensi_etika }}</td>
+                        <td>{{ $tracer->penilaian_keahlian_bidang_ilmu }}</td>
+                        <td>{{ $tracer->penilaian_kemampuan_bahasa_inggris }}</td>
+                        <td>{{ $tracer->penilaian_penggunaan_teknologi_informasi }}</td>
+                        <td>{{ $tracer->penilaian_kemampuan_berkomunikasi }}</td>
+                        <td>{{ $tracer->penilaian_kerjasama_dalam_tim_dan_kepemimpinan }}</td>
+                        <td>{{ $tracer->penilaian_pengembangan_diri }}</td>
+                    </tr>
+                @endforeach          
             </tbody>
             
         </table>
