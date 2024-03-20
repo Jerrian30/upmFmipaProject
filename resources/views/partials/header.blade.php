@@ -2,7 +2,6 @@
 <html lang="en">
 
 <head>
-
     <link rel="stylesheet" href="{{ asset('style.css') }}">
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -20,6 +19,8 @@
 
     <!-- Custom styles for this template-->
     <link href="{{ asset('sbadmin/css/sb-admin-2.min.css') }}" rel="stylesheet">
+    <link rel="icon" href="{{ asset('sbadmin/img/logoUNIB.png') }}" type="image/x-icon">
+
     @yield('css')
 
 </head>
