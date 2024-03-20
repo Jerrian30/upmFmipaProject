@@ -2,12 +2,12 @@
     <div class="col-lg-3 mb-4 allContainer" style="display: none;">
         <div class="card">
             <div class="card-body" >
-                <h6 class="card-title">1. Prodi menetapkan dosen pembimbing akademik bagi mahasiswa</h6>
+                <h6 class="card-title">1. Kepemilikan Sertifikat Kompetensi</h6>
                 {!! $pl1->container() !!}
             </div>
         </div>
     </div>
-
+{{-- 
     <div class="col-lg-3 mb-4 allContainer" style="display: none;">
         <div class="card">
             <div class="card-body">
@@ -193,4 +193,4 @@
             </div>
         </div>
     </div>
-</div>
+</div> --}}

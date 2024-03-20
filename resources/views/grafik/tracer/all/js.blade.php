@@ -1,5 +1,5 @@
 <script src="{{ $pl1->cdn() }}"></script>
-<script src="{{ $pl2->cdn() }}"></script>
+{{-- <script src="{{ $pl2->cdn() }}"></script>
 <script src="{{ $pl3->cdn() }}"></script>
 <script src="{{ $pl4->cdn() }}"></script>
 <script src="{{ $pl5->cdn() }}"></script>
@@ -19,10 +19,10 @@
 <script src="{{ $pl19->cdn() }}"></script>
 <script src="{{ $pl20->cdn() }}"></script>
 <script src="{{ $pl21->cdn() }}"></script>
-<script src="{{ $pl22->cdn() }}"></script>
+<script src="{{ $pl22->cdn() }}"></script> --}}
 
 {{ $pl1->script() }}
-{{ $pl2->script() }}
+{{-- {{ $pl2->script() }}
 {{ $pl3->script() }}
 {{ $pl4->script() }}
 {{ $pl5->script() }}
@@ -42,4 +42,4 @@
 {{ $pl19->script() }}
 {{ $pl20->script() }}
 {{ $pl21->script() }}
-{{ $pl22->script() }}
+{{ $pl22->script() }} --}}
