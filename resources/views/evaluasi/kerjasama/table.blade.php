@@ -1,6 +1,6 @@
 @extends('layouts.master')
-@section('title', 'Evaluasi -> Dosen')
-@section('page', 'Evaluasi -> Dosen')
+@section('title', 'Evaluasi -> Mitra Kerja Sama')
+@section('page', 'Evaluasi -> Mitra Kerja Sama')
 
 
 {{-- content --}}

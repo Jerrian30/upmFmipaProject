@@ -21,7 +21,7 @@ class PL1
             ->groupBy('kepemilikan_serkom')
             ->pluck('total', 'kepemilikan_serkom')->all();
     
-        $labels = ['Ada', 'Tidak Ada'];
+        $labels = ['Tidak', 'Ada'];
         $counts = array_fill_keys($labels, 0);
     
         // Hitung total keseluruhan responden
