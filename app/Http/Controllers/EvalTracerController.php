@@ -168,29 +168,23 @@ use App\Charts\Tracer\All\PL1;
 // use App\Charts\Tracer\S1Biologi\Bio22;
 
 
-// // // Class Kebidanan
-// use App\Charts\Tracer\D3Kebidanan\Bidan1;
-// use App\Charts\Tracer\D3Kebidanan\Bidan2;
-// use App\Charts\Tracer\D3Kebidanan\Bidan3;
-// use App\Charts\Tracer\D3Kebidanan\Bidan4;
-// use App\Charts\Tracer\D3Kebidanan\Bidan5;
-// use App\Charts\Tracer\D3Kebidanan\Bidan6;
-// use App\Charts\Tracer\D3Kebidanan\Bidan7;
-// use App\Charts\Tracer\D3Kebidanan\Bidan8;
-// use App\Charts\Tracer\D3Kebidanan\Bidan9;
-// use App\Charts\Tracer\D3Kebidanan\Bidan10;
-// use App\Charts\Tracer\D3Kebidanan\Bidan11;
-// use App\Charts\Tracer\D3Kebidanan\Bidan12;
-// use App\Charts\Tracer\D3Kebidanan\Bidan13;
-// use App\Charts\Tracer\D3Kebidanan\Bidan14;
-// use App\Charts\Tracer\D3Kebidanan\Bidan15;
-// use App\Charts\Tracer\D3Kebidanan\Bidan16;
-// use App\Charts\Tracer\D3Kebidanan\Bidan17;
-// use App\Charts\Tracer\D3Kebidanan\Bidan18;
-// use App\Charts\Tracer\D3Kebidanan\Bidan19;
-// use App\Charts\Tracer\D3Kebidanan\Bidan20;
-// use App\Charts\Tracer\D3Kebidanan\Bidan21;
-// use App\Charts\Tracer\D3Kebidanan\Bidan22;
+// // Class Kebidanan
+use App\Charts\Tracer\D3Kebidanan\Bidan1;
+use App\Charts\Tracer\D3Kebidanan\Bidan2;
+use App\Charts\Tracer\D3Kebidanan\Bidan3;
+use App\Charts\Tracer\D3Kebidanan\Bidan4;
+use App\Charts\Tracer\D3Kebidanan\Bidan5;
+use App\Charts\Tracer\D3Kebidanan\Bidan6;
+use App\Charts\Tracer\D3Kebidanan\Bidan7;
+use App\Charts\Tracer\D3Kebidanan\Bidan8;
+use App\Charts\Tracer\D3Kebidanan\Bidan9;
+use App\Charts\Tracer\D3Kebidanan\Bidan10;
+use App\Charts\Tracer\D3Kebidanan\Bidan11;
+use App\Charts\Tracer\D3Kebidanan\Bidan12;
+use App\Charts\Tracer\D3Kebidanan\Bidan13;
+use App\Charts\Tracer\D3Kebidanan\Bidan14;
+use App\Charts\Tracer\D3Kebidanan\Bidan15;
+
 
 // // Class Keperawatan
 // use App\Charts\Tracer\D3Keperawatan\Rawat1;
@@ -530,29 +524,22 @@ class EvalTracerController extends Controller
         // Bio21 $bio21,
         // Bio22 $bio22,
 
-        // // D3 Kebidanan
-        // Bidan1 $bidan1,
-        // Bidan2 $bidan2,
-        // Bidan3 $bidan3,
-        // Bidan4 $bidan4,
-        // Bidan5 $bidan5,
-        // Bidan6 $bidan6,
-        // Bidan7 $bidan7,
-        // Bidan8 $bidan8,
-        // Bidan9 $bidan9,
-        // Bidan10 $bidan10,
-        // Bidan11 $bidan11,
-        // Bidan12 $bidan12,
-        // Bidan13 $bidan13,
-        // Bidan14 $bidan14,
-        // Bidan15 $bidan15,
-        // Bidan16 $bidan16,
-        // Bidan17 $bidan17,
-        // Bidan18 $bidan18,
-        // Bidan19 $bidan19,
-        // Bidan20 $bidan20,
-        // Bidan21 $bidan21,
-        // Bidan22 $bidan22,
+        // D3 Kebidanan
+        Bidan1 $bidan1,
+        Bidan2 $bidan2,
+        Bidan3 $bidan3,
+        Bidan4 $bidan4,
+        Bidan5 $bidan5,
+        Bidan6 $bidan6,
+        Bidan7 $bidan7,
+        Bidan8 $bidan8,
+        Bidan9 $bidan9,
+        Bidan10 $bidan10,
+        Bidan11 $bidan11,
+        Bidan12 $bidan12,
+        Bidan13 $bidan13,
+        Bidan14 $bidan14,
+        Bidan15 $bidan15,
 
         // //D3 Keperawatan
         // Rawat1 $rawat1,
@@ -868,28 +855,22 @@ class EvalTracerController extends Controller
             // 'bio21' => $bio21->build(),
             // 'bio22' => $bio22->build(),
 
-            // 'bidan1' => $bidan1->build(),
-            // 'bidan2' => $bidan2->build(),
-            // 'bidan3' => $bidan3->build(),
-            // 'bidan4' => $bidan4->build(),
-            // 'bidan5' => $bidan5->build(),
-            // 'bidan6' => $bidan6->build(),
-            // 'bidan7' => $bidan7->build(),
-            // 'bidan8' => $bidan8->build(),
-            // 'bidan9' => $bidan9->build(),
-            // 'bidan10' => $bidan10->build(),
-            // 'bidan11' => $bidan11->build(),
-            // 'bidan12' => $bidan12->build(),
-            // 'bidan13' => $bidan13->build(),
-            // 'bidan14' => $bidan14->build(),
-            // 'bidan15' => $bidan15->build(),
-            // 'bidan16' => $bidan16->build(),
-            // 'bidan17' => $bidan17->build(),
-            // 'bidan18' => $bidan18->build(),
-            // 'bidan19' => $bidan19->build(),
-            // 'bidan20' => $bidan20->build(),
-            // 'bidan21' => $bidan21->build(),
-            // 'bidan22' => $bidan22->build(),
+            'bidan1' => $bidan1->build(),
+            'bidan2' => $bidan2->build(),
+            'bidan3' => $bidan3->build(),
+            'bidan4' => $bidan4->build(),
+            'bidan5' => $bidan5->build(),
+            'bidan6' => $bidan6->build(),
+            'bidan7' => $bidan7->build(),
+            'bidan8' => $bidan8->build(),
+            'bidan9' => $bidan9->build(),
+            'bidan10' => $bidan10->build(),
+            'bidan11' => $bidan11->build(),
+            'bidan12' => $bidan12->build(),
+            'bidan13' => $bidan13->build(),
+            'bidan14' => $bidan14->build(),
+            'bidan15' => $bidan15->build(),
+
 
             // 'rawat1' => $rawat1->build(),
             // 'rawat2' => $rawat2->build(),
