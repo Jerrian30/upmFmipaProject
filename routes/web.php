@@ -41,6 +41,9 @@ use App\Http\Controllers\EvalVisiController;
 use App\Http\Controllers\LaporanTracerController;
 use App\Http\Controllers\EvalTracerController;
 
+use App\Http\Controllers\LaporanTracerrController;
+use App\Http\Controllers\EvalTracerrController;
+
 use App\Http\Controllers\FormulirController;
 
 use App\Http\Controllers\DokumenController;
@@ -123,6 +126,12 @@ Route::group(['middleware' => ['auth']], function () {
     Route::post('/tracer/delete', [LaporanTracerController::class, 'delete'])->name('tracer.delete');
     Route::get('/tracer/eval', [EvalTracerController::class, 'index'])->name('tracer.eval');
     Route::get('/tracer/table', [EvalTracerController::class, 'table'])->name('tracer.table');
+
+    Route::get('tracerr', [LaporanTracerrController::class, 'index'])->name('tracerr.index');
+    Route::post('/tracerr/import', [LaporanTracerrController::class, 'import'])->name('tracerr.import');
+    Route::post('/tracerr/delete', [LaporanTracerrController::class, 'delete'])->name('tracerr.delete');
+    Route::get('/tracerr/eval', [EvalTracerrController::class, 'index'])->name('tracerr.eval');
+    Route::get('/tracerr/table', [EvalTracerrController::class, 'table'])->name('tracerr.table');
 
     Route::get('lab', [LaporanLabController::class, 'index'])->name('lab.index');
     Route::post('/lab/import', [LaporanLabController::class, 'import'])->name('lab.import');
