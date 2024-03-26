@@ -1,5 +1,5 @@
 <div class="row">
-    <div class="col-l7-7 mb-4 kebidananContainer" style="display: none;">
+    <div class="col-lg-7 mb-4 kebidananContainer" style="display: none;">
         <div class="card">
             <div class="card-body" >
                 <h6 class="card-title">1. Kepemilikan sertifikat kompetensi (Serkom)</h6>

@@ -1,6 +1,6 @@
 @extends('layouts.master')
-@section('title', 'Evaluasi -> Mahasiswa')
-@section('page', 'Evaluasi -> Mahasiswa')
+@section('title', 'Evaluasi -> Tracer Studi')
+@section('page', 'Evaluasi -> Tracer Studi')
 {{-- java script --}}
 @section('js')
 
@@ -112,6 +112,7 @@
 @endsection
 {{-- content --}}
 @section('content')
+
 <div class="row">
     <div class="container mt-1">
         <a href="{{ route('tracer.table') }}" class="btn btn-primary">Lihat Penjelasan Tiap Butir Pertanyaan</a>
