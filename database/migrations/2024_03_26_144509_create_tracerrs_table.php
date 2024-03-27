@@ -14,20 +14,20 @@ return new class extends Migration
         Schema::create('tracerrs', function (Blueprint $table) {
             $table->id();
             $table->datetime('timestamp');
-            $table->string('alamat_email');
-            $table->string('nama_lengkap');
-            $table->string('jenis_kelamin');
-            $table->string('tempat_tanggal_lahir');
-            $table->text('alamat_rumah');
-            $table->string('nomor_hp');
-            $table->string('lulus_dari_program_studi');
-            $table->year('angkatan');
-            $table->string('bulan_tahun_lulus');
+            $table->string('alamat_email')->nullable();
+            $table->string('nama_lengkap')->nullable();
+            $table->string('jenis_kelamin')->nullable();
+            $table->string('tempat_tanggal_lahir')->nullable();
+            $table->text('alamat_rumah')->nullable();
+            $table->string('nomor_hp')->nullable();
+            $table->string('lulus_dari_program_studi')->nullable();
+            $table->year('angkatan')->nullable();
+            $table->string('bulan_tahun_lulus')->nullable();
 
-            $table->string('jalur_masuk');
-            $table->string('berorganisasi')->nullable();
-            $table->string('sumber_biaya_kuliah');
-            $table->decimal('ipk', 3, 2);
+            $table->string('jalur_masuk')->nullable();
+            $table->string('berorganisasi')->nullable()->nullable();
+            $table->string('sumber_biaya_kuliah')->nullable();
+            $table->decimal('ipk', 3, 2)->nullable();
             $table->string('melanjutkan_studi')->nullable();
             $table->string('detail_lanjut_studi')->nullable();
             $table->string('periode_lanjut_studi')->nullable();
@@ -36,22 +36,22 @@ return new class extends Migration
             $table->string('nama_instansi')->nullable();
 
             $table->string('bidang_pekerjaan')->nullable();
-            $table->string('jabatan')->nullable();
+            $table->text('jabatan')->nullable();
             $table->text('alamat_instansi')->nullable();
             $table->string('telepon_instansi')->nullable();
             $table->string('nama_atasan')->nullable();
             $table->string('jabatan_atasan')->nullable();
             $table->string('email_atasan')->nullable();
             $table->string('proses_mendapatkan_pekerjaan')->nullable();
-            $table->decimal('pendapatan_rata_rata_per_bulan', 10, 2)->nullable();
+            $table->string('pendapatan_rata_rata_per_bulan')->nullable();
             $table->string('kerja_terkait_bidang_ilmu')->nullable();
 
             $table->text('kebutuhan_institusi_terhadap_lulusan');
-            $table->text('pertimbangan_memilih_pekerjaan');
+            $table->text('pertimbangan_memilih_pekerjaan')->nullable();
             $table->text('alasan_memutuskan_wirausaha')->nullable();
-            $table->boolean('pernah_bekerja_sebelum_wirausaha')->nullable();
-            $table->integer('lama_bekerja_sebelum_wirausaha')->nullable(); // Dalam bulan
-            $table->decimal('omset_rata_rata_wirausaha', 10, 2)->nullable();
+            $table->string('pernah_bekerja_sebelum_wirausaha')->nullable();
+            $table->string('lama_bekerja_sebelum_wirausaha')->nullable(); // Dalam bulan
+            $table->text('omset_rata_rata_wirausaha', 10, 2)->nullable();
             $table->string('kompetisi_dengan_lulusan_lain');
             $table->string('kompetensi_etika');
             $table->string('kompetensi_bidang_ilmu_utama');

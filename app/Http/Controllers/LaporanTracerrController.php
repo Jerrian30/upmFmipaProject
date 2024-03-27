@@ -16,7 +16,7 @@ class LaporanTracerrController extends Controller
     public function index()
     {
         $tracerrs = Tracerr::all();
-        return view('laporanSurvei.tracer.index', compact('tracerrs'));
+        return view('laporanSurvei.tracerr.index', compact('tracerrs'));
     }
 
     /**
@@ -30,7 +30,7 @@ class LaporanTracerrController extends Controller
 
         $file = $request->file('excel_file');
 
-        Excel::import(new TracerImport, $file);
+        Excel::import(new TracerrImport, $file);
 
         return redirect()->route('tracerr.index')->with('success', 'Data berhasil diimpor.');
     }

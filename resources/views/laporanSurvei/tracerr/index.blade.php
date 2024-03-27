@@ -33,7 +33,7 @@
         <div class="alert alert-success">{{ session('success') }}</div>
     @endif
 
-    <form action="{{ route('tracer.import') }}" method="POST" enctype="multipart/form-data" class="mb-3">
+    <form action="{{ route('tracerr.import') }}" method="POST" enctype="multipart/form-data" class="mb-3">
         @csrf
         <div class="row justify-content-center">
             <div class="col-md-6"> <!-- Atur lebar kolom di sini -->
@@ -47,7 +47,7 @@
             </div>
         </div>
     </form>
-    <form action="{{ route('tracer.delete') }}" method="POST" id="deleteForm">
+    <form action="{{ route('tracerr.delete') }}" method="POST" id="deleteForm">
         @csrf <!-- Token CSRF untuk keamanan -->
         <button type="button" class="btn btn-danger" onclick="confirmDelete()">Hapus</button>
     <div class="table-responsive">
@@ -165,7 +165,7 @@
                     <td>{{ $tracerr->jenis_kelamin }}</td>
                     <td>{{ $tracerr->tempat_tanggal_lahir }}</td>
                     <td>{{ $tracerr->alamat_rumah }}</td>
-                    <td>{{ $tracerr->no_hp }}</td>
+                    <td>{{ $tracerr->nomor_hp }}</td>
                     <td>{{ $tracerr->lulus_dari_program_studi }}</td>
                     <td>{{ $tracerr->angkatan }}</td>
                     <td>{{ $tracerr->bulan_tahun_lulus }}</td>

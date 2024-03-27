@@ -17,8 +17,8 @@ class TracerImport implements ToModel
     */
     public function model(array $row)
     {
-        $timestamp = Carbon::instance(\PhpOffice\PhpSpreadsheet\Shared\Date::excelToDateTimeObject($row[0]))
-            ->setTimezone('Asia/Jakarta');
+        $timestamp = Carbon::createFromTimestamp($row[0] * 86400 - 2209186799) // 25569 adalah jumlah hari dari 30 Desember 1899 ke 1 Januari 1970
+        ->setTimezone('Asia/Jakarta');
 
         return new Tracer([
             'timestamp'                              => $timestamp,

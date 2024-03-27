@@ -78,7 +78,8 @@
                 <a class="dropdown-item" href="{{ route('dosen.index') }}" style="font-size: 14px;">Dosen</a>
                 <a class="dropdown-item" href="{{ route('mahasiswa.index') }}" style="font-size: 14px;">Mahasiswa</a>
                 <a class="dropdown-item" href="{{ route('kerjasama.index') }}" style="font-size: 14px;">Mitra Kerja Sama</a>
-                <a class="dropdown-item" href="{{ route('tracer.index') }}" style="font-size: 14px;">Tracer Studi</a>
+                <a class="dropdown-item" href="{{ route('tracer.index') }}" style="font-size: 14px;">Tracer Studi 1</a>
+                <a class="dropdown-item" href="{{ route('tracerr.index') }}" style="font-size: 14px;">Tracer Studi 2</a>
                 <a class="dropdown-item" href="{{ route('pimpinan.index') }}" style="font-size: 14px;">Pengguna Terhadap Kinerja Pimpinan Fakultas</a>
                 <a class="dropdown-item" href="{{ route('laypro.index') }}" style="font-size: 14px;">Pengguna Terhadap Kinerja Layanan Prodi</a>
                 <a class="dropdown-item" href="{{ route('lab.index') }}" style="font-size: 14px;">Pengguna Terhadap Kinerja Layanan Laboratorium</a>
