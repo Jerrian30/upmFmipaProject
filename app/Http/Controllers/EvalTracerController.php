@@ -119,10 +119,10 @@ use App\Charts\Tracer\All\PL1;
 // use App\Charts\Tracer\S1Farmasi\S1Farm21;
 // use App\Charts\Tracer\S1Farmasi\S1Farm22;
 
-// // Class Matematika
-// use App\Charts\Tracer\S1Matematika\Math1;
-// use App\Charts\Tracer\S1Matematika\Math2;
-// use App\Charts\Tracer\S1Matematika\Math3;
+// Class Matematika
+use App\Charts\Tracer\S1Matematika\Math1;
+use App\Charts\Tracer\S1Matematika\Math2;
+use App\Charts\Tracer\S1Matematika\Math3;
 // use App\Charts\Tracer\S1Matematika\Math4;
 // use App\Charts\Tracer\S1Matematika\Math5;
 // use App\Charts\Tracer\S1Matematika\Math6;
@@ -475,10 +475,10 @@ class EvalTracerController extends Controller
         // S1Farm21 $s1farm21,
         // S1Farm22 $s1farm22,
 
-        // // S1 Matematika
-        // Math1 $math1,
-        // Math2 $math2,
-        // Math3 $math3,
+        // S1 Matematika
+        Math1 $math1,
+        Math2 $math2,
+        Math3 $math3,
         // Math4 $math4,
         // Math5 $math5,
         // Math6 $math6,
@@ -809,9 +809,9 @@ class EvalTracerController extends Controller
             // 's1farm21' => $s1farm21->build(),
             // 's1farm22' => $s1farm22->build(),
 
-            // 'math1' => $math1->build(),
-            // 'math2' => $math2->build(),
-            // 'math3' => $math3->build(),
+            'math1' => $math1->build(),
+            'math2' => $math2->build(),
+            'math3' => $math3->build(),
             // 'math4' => $math4->build(),
             // 'math5' => $math5->build(),
             // 'math6' => $math6->build(),

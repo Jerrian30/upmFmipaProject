@@ -6,7 +6,7 @@
 
 {{-- @include('grafik.tracer.d3farmasi.js')
 @include('grafik.tracer.s1farmasi.js')
-@include('grafik.tracer.s1matematika.js')
+
 @include('grafik.tracer.s1statistika.js') 
 @include('grafik.tracer.s2statistika.js')
 
@@ -18,6 +18,7 @@
 @include('grafik.tracer.s1biologi.js')
 @include('grafik.tracer.s2biologi.js')
 @include('grafik.tracer.s1fisika.js') --}}
+@include('grafik.tracer.s1matematika.js')
 @include('grafik.tracer.d3kebidanan.js')
 @include('grafik.tracer.all.js')
 
@@ -139,7 +140,8 @@
     
         @include('grafik.tracer.all.view')
         @include('grafik.tracer.d3kebidanan.view')
-        {{-- @include('grafik.tracer.s1matematika.view')
+        @include('grafik.tracer.s1matematika.view')
+        {{-- 
 
         @include('grafik.tracer.s1statistika.view')
         @include('grafik.tracer.s2statistika.view')
