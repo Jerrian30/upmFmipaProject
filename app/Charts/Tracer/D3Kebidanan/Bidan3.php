@@ -22,7 +22,7 @@ class Bidan3
             ->groupBy('melanjutkan_pendidikan')
             ->pluck('total', 'melanjutkan_pendidikan')->all();
 
-        $labels = ['Tidak', 'Ada'];
+        $labels = ['Tidak', 'Ya'];
         $counts = array_fill_keys($labels, 0);
 
         // Hitung total keseluruhan responden
