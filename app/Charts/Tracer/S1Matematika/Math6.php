@@ -22,7 +22,7 @@ class Math6
             ->groupBy('bidang_pekerjaan')
             ->pluck('total', 'bidang_pekerjaan')->all();
 
-        $labels = ['Pemerintah Daerah', 'Pemerintah Pusat', 'BUMN', 'Swasta di bidang Jasa', 'Swasta di bidang Manufaktur', 'Swasta di bidang Keuangan','Swasta di bidang Pendidikan', 'Wiraswasta'];
+        $labels = ['Pemerintah Daerah', 'Pemerintah Pusat', 'BUMN', 'Swasta di bidang Jasa', 'Swasta di bidang Manufaktur', 'Swasta di bidang Keuangan','Swasta di bidang Pendidikan', 'Wiraswasta', 'Other'];
         $counts = array_fill_keys($labels, 0);
 
         // Hitung total keseluruhan responden

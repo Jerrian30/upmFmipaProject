@@ -22,7 +22,7 @@ class Bidan7
             ->groupBy('proses_mendapatkan_pekerjaan')
             ->pluck('total', 'proses_mendapatkan_pekerjaan')->all();
 
-        $labels = ['Pasif (ditawari pekerjaan)', 'Aktif (mencari sendiri)'];
+        $labels = ['Pasif (ditawari pekerjaan)', 'Aktif ( mencari sendiri)'];
         $counts = array_fill_keys($labels, 0);
 
         // Hitung total keseluruhan responden

@@ -22,7 +22,7 @@ class Math7
             ->groupBy('proses_mendapatkan_pekerjaan')
             ->pluck('total', 'proses_mendapatkan_pekerjaan')->all();
 
-        $labels = ['Aktif (mencari sendiri)', 'Pasif (mendapatkan tawaran kerja)', 'Tes CPNS', 'Lainnya'];
+        $labels = ['Aktif (mencari sendiri)', 'Pasif (mendapatkan tawaran kerja)', 'Tes CPNS','Other'];
         $counts = array_fill_keys($labels, 0);
 
         // Hitung total keseluruhan responden
