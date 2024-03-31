@@ -123,25 +123,23 @@ use App\Charts\Tracer\All\PL1;
 use App\Charts\Tracer\S1Matematika\Math1;
 use App\Charts\Tracer\S1Matematika\Math2;
 use App\Charts\Tracer\S1Matematika\Math3;
-// use App\Charts\Tracer\S1Matematika\Math4;
-// use App\Charts\Tracer\S1Matematika\Math5;
-// use App\Charts\Tracer\S1Matematika\Math6;
-// use App\Charts\Tracer\S1Matematika\Math7;
-// use App\Charts\Tracer\S1Matematika\Math8;
-// use App\Charts\Tracer\S1Matematika\Math9;
-// use App\Charts\Tracer\S1Matematika\Math10;
-// use App\Charts\Tracer\S1Matematika\Math11;
-// use App\Charts\Tracer\S1Matematika\Math12;
-// use App\Charts\Tracer\S1Matematika\Math13;
-// use App\Charts\Tracer\S1Matematika\Math14;
-// use App\Charts\Tracer\S1Matematika\Math15;
-// use App\Charts\Tracer\S1Matematika\Math16;
-// use App\Charts\Tracer\S1Matematika\Math17;
-// use App\Charts\Tracer\S1Matematika\Math18;
-// use App\Charts\Tracer\S1Matematika\Math19;
-// use App\Charts\Tracer\S1Matematika\Math20;
-// use App\Charts\Tracer\S1Matematika\Math21;
-// use App\Charts\Tracer\S1Matematika\Math22;
+use App\Charts\Tracer\S1Matematika\Math4;
+use App\Charts\Tracer\S1Matematika\Math5;
+use App\Charts\Tracer\S1Matematika\Math6;
+use App\Charts\Tracer\S1Matematika\Math7;
+use App\Charts\Tracer\S1Matematika\Math8;
+use App\Charts\Tracer\S1Matematika\Math9;
+use App\Charts\Tracer\S1Matematika\Math10;
+use App\Charts\Tracer\S1Matematika\Math11;
+use App\Charts\Tracer\S1Matematika\Math12;
+use App\Charts\Tracer\S1Matematika\Math13;
+use App\Charts\Tracer\S1Matematika\Math14;
+use App\Charts\Tracer\S1Matematika\Math15;
+use App\Charts\Tracer\S1Matematika\Math16;
+use App\Charts\Tracer\S1Matematika\Math17;
+use App\Charts\Tracer\S1Matematika\Math18;
+use App\Charts\Tracer\S1Matematika\Math19;
+
 
 // // Class Biologi
 // use App\Charts\Tracer\S1Biologi\Bio1;
@@ -479,25 +477,23 @@ class EvalTracerController extends Controller
         Math1 $math1,
         Math2 $math2,
         Math3 $math3,
-        // Math4 $math4,
-        // Math5 $math5,
-        // Math6 $math6,
-        // Math7 $math7,
-        // Math8 $math8,
-        // Math9 $math9,
-        // Math10 $math10,
-        // Math11 $math11,
-        // Math12 $math12,
-        // Math13 $math13,
-        // Math14 $math14,
-        // Math15 $math15,
-        // Math16 $math16,
-        // Math17 $math17,
-        // Math18 $math18,
-        // Math19 $math19,
-        // Math20 $math20,
-        // Math21 $math21,
-        // Math22 $math22,
+        Math4 $math4,
+        Math5 $math5,
+        Math6 $math6,
+        Math7 $math7,
+        Math8 $math8,
+        Math9 $math9,
+        Math10 $math10,
+        Math11 $math11,
+        Math12 $math12,
+        Math13 $math13,
+        Math14 $math14,
+        Math15 $math15,
+        Math16 $math16,
+        Math17 $math17,
+        Math18 $math18,
+        Math19 $math19,
+
 
 
         // // S1 Biologi
@@ -812,26 +808,23 @@ class EvalTracerController extends Controller
             'math1' => $math1->build(),
             'math2' => $math2->build(),
             'math3' => $math3->build(),
-            // 'math4' => $math4->build(),
-            // 'math5' => $math5->build(),
-            // 'math6' => $math6->build(),
-            // 'math7' => $math7->build(),
-            // 'math8' => $math8->build(),
-            // 'math9' => $math9->build(),
-            // 'math10' => $math10->build(),
-            // 'math11' => $math11->build(),
-            // 'math12' => $math12->build(),
-            // 'math13' => $math13->build(),
-            // 'math14' => $math14->build(),
-            // 'math15' => $math15->build(),
-            // 'math16' => $math16->build(),
-            // 'math17' => $math17->build(),
-            // 'math18' => $math18->build(),
-            // 'math19' => $math19->build(),
-            // 'math20' => $math20->build(),
-            // 'math21' => $math21->build(),
-            // 'math22' => $math22->build(),
-
+            'math4' => $math4->build(),
+            'math5' => $math5->build(),
+            'math6' => $math6->build(),
+            'math7' => $math7->build(),
+            'math8' => $math8->build(),
+            'math9' => $math9->build(),
+            'math10' => $math10->build(),
+            'math11' => $math11->build(),
+            'math12' => $math12->build(),
+            'math13' => $math13->build(),
+            'math14' => $math14->build(),
+            'math15' => $math15->build(),
+            'math16' => $math16->build(),
+            'math17' => $math17->build(),
+            'math18' => $math18->build(),
+            'math19' => $math19->build(),
+            
             // 'bio1' => $bio1->build(),
             // 'bio2' => $bio2->build(),
             // 'bio3' => $bio3->build(),

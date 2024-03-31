@@ -1,7 +1,7 @@
 <script src="{{ $math1->cdn() }}"></script>
 <script src="{{ $math2->cdn() }}"></script>
 <script src="{{ $math3->cdn() }}"></script>
-{{-- <script src="{{ $math4->cdn() }}"></script>
+<script src="{{ $math4->cdn() }}"></script>
 <script src="{{ $math5->cdn() }}"></script>
 <script src="{{ $math6->cdn() }}"></script>
 <script src="{{ $math7->cdn() }}"></script>
@@ -17,14 +17,12 @@
 <script src="{{ $math17->cdn() }}"></script>
 <script src="{{ $math18->cdn() }}"></script>
 <script src="{{ $math19->cdn() }}"></script>
-<script src="{{ $math20->cdn() }}"></script>
-<script src="{{ $math21->cdn() }}"></script>
-<script src="{{ $math22->cdn() }}"></script> --}}
+
 
 {{ $math1->script() }}
 {{ $math2->script() }}
 {{ $math3->script() }}
-{{-- {{ $math4->script() }}
+{{ $math4->script() }}
 {{ $math5->script() }}
 {{ $math6->script() }}
 {{ $math7->script() }}
@@ -40,6 +38,3 @@
 {{ $math17->script() }}
 {{ $math18->script() }}
 {{ $math19->script() }}
-{{ $math20->script() }}
-{{ $math21->script() }}
-{{ $math22->script() }} --}}
