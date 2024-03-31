@@ -1,5 +1,5 @@
 <div class="row">
-    <div class="col-12">
+    <div class="col-12 matematikaContainer" style="display: none;">
         <h3>1. Riwayat Studi Alumni</h3>
     </div>
     <div class="col-lg-5 mb-4 matematikaContainer" style="display: none;">
@@ -39,7 +39,7 @@
         </div>
     </div>
 <br><br><br>
-<div class="col-12">
+<div class="col-12 matematikaContainer" style="display: none;">
     <h3>2. Riwayat Pekerjaan Alumni</h3>
 </div>
     <div class="col-lg-5 mb-4 matematikaContainer" style="display: none;">
@@ -108,7 +108,7 @@
         </div>
     </div>
 <br><br><br>
-<div class="col-12">
+<div class="col-12 matematikaContainer" style="display: none;">
     <h3>3. Kemampuan Lulusan</h3>
 </div>
     <div class="col-lg-5 mb-4 matematikaContainer" style="display: none;">

@@ -1,11 +1,12 @@
 <?php
 
-namespace App\Charts\Mahasiswa\S1Biologi;
+namespace App\Charts\Tracer\S1Matematika;
 
-use App\Models\Mahasiswa;
+use App\Models\Tracerr;
 use ArielMejiaDev\LarapexCharts\LarapexChart;
+use ArielMejiaDev\LarapexCharts\DonutChart;
 
-class Bio12
+class Math12
 {
     protected $chart;
 
@@ -14,33 +15,31 @@ class Bio12
         $this->chart = $chart;
     }
 
-    protected function calculatePercentages()
-    {
-        $dataD3Farmasi = Mahasiswa::where('program_studi', 'S1 Biologi')
-            ->selectRaw('COUNT(*) as count, fasilitas_internet')
-            ->groupBy('fasilitas_internet')
-            ->pluck('count', 'fasilitas_internet');
-
-        $dataValues = [1 => 0, 2 => 0, 3 => 0, 4 => 0];
-
-        foreach ($dataD3Farmasi as $nilai => $count) {
-            $dataValues[$nilai] = $count;
-        }
-
-        $totalResponden = array_sum($dataValues);
-
-        return array_map(function ($value) use ($totalResponden) {
-            return ($totalResponden > 0) ? round(($value / $totalResponden) * 100, 2) : 0;
-        }, $dataValues);
-    }
-
     public function build(): \ArielMejiaDev\LarapexCharts\DonutChart
     {
-        $dataPercentages = $this->calculatePercentages();
-        
+        $data = Tracerr::select('kompetisi_dengan_lulusan_lain', \DB::raw('count(*) as total'))
+            ->where('lulus_dari_program_studi', 'S1 Matematika') // Menambahkan filter untuk program_studi
+            ->groupBy('kompetisi_dengan_lulusan_lain')
+            ->pluck('total', 'kompetisi_dengan_lulusan_lain')->all();
+
+        $labels = ['Sangat mampu', 'Mampu', 'Kurang mampu', 'Sangat tidak mampu'];
+        $counts = array_fill_keys($labels, 0);
+
+        // Hitung total keseluruhan responden
+        $totalResponden = array_sum($data);
+
+        // Mengisi $counts dengan persentase data yang ada
+        foreach ($data as $key => $value) {
+            if (array_key_exists($key, $counts)) {
+                // Hitung persentase dan simpan ke dalam $counts
+                $counts[$key] = $totalResponden > 0 ? round(($value / $totalResponden) * 100, 2) : 0;
+            }
+        }
+
+        // Mengembalikan objek DonutChart dengan data yang sudah difilter
         return $this->chart->donutChart()
-            ->addData(array_values($dataPercentages))
-            ->setLabels(['1', '2', '3', '4']);
+            ->addData(array_values($counts))
+            ->setLabels(array_keys($counts));
     }
 
 }

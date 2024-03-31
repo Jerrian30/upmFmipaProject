@@ -22,7 +22,7 @@ class Math14
             ->groupBy('kompetensi_bidang_ilmu_utama')
             ->pluck('total', 'kompetensi_bidang_ilmu_utama')->all();
 
-        $labels = ['Kurang', 'Cukup','Baik', 'Sangat Baik'];
+            $labels = ['Sangat Baik', 'Baik','Cukup', 'Kurang'];
         $counts = array_fill_keys($labels, 0);
 
         // Hitung total keseluruhan responden

@@ -22,7 +22,7 @@ class Math13
             ->groupBy('kompetensi_etika')
             ->pluck('total', 'kompetensi_etika')->all();
 
-        $labels = ['Kurang', 'Cukup','Baik', 'Sangat Baik'];
+        $labels = ['Sangat Baik', 'Baik','Cukup', 'Kurang'];
         $counts = array_fill_keys($labels, 0);
 
         // Hitung total keseluruhan responden

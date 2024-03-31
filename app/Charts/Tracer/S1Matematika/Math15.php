@@ -22,7 +22,7 @@ class Math15
             ->groupBy('kompetensi_bahasa_asing')
             ->pluck('total', 'kompetensi_bahasa_asing')->all();
 
-        $labels = ['Kurang', 'Cukup','Baik', 'Sangat Baik'];
+            $labels = ['Sangat Baik', 'Baik','Cukup', 'Kurang'];
         $counts = array_fill_keys($labels, 0);
 
         // Hitung total keseluruhan responden

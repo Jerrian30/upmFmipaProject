@@ -22,7 +22,7 @@ class Math17
             ->groupBy('kompetensi_kemampuan_berkomunikasi')
             ->pluck('total', 'kompetensi_kemampuan_berkomunikasi')->all();
 
-        $labels = ['Kurang', 'Cukup','Baik', 'Sangat Baik'];
+            $labels = ['Sangat Baik', 'Baik','Cukup', 'Kurang'];
         $counts = array_fill_keys($labels, 0);
 
         // Hitung total keseluruhan responden

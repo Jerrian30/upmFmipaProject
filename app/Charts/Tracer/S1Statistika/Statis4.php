@@ -1,12 +1,12 @@
 <?php
 
-namespace App\Charts\Tracer\S1Matematika;
+namespace App\Charts\Tracer\S1Statistika;
 
 use App\Models\Tracerr;
 use ArielMejiaDev\LarapexCharts\LarapexChart;
 use ArielMejiaDev\LarapexCharts\DonutChart;
 
-class Math4
+class Statis4
 {
     protected $chart;
 
@@ -18,7 +18,7 @@ class Math4
     public function build(): \ArielMejiaDev\LarapexCharts\DonutChart
     {
         $data = Tracerr::select('melanjutkan_studi', \DB::raw('count(*) as total'))
-            ->where('lulus_dari_program_studi', 'S1 Matematika') // Menambahkan filter untuk program_studi
+            ->where('lulus_dari_program_studi', 'S1 Statistika') // Menambahkan filter untuk program_studi
             ->groupBy('melanjutkan_studi')
             ->pluck('total', 'melanjutkan_studi')->all();
 

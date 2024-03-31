@@ -22,7 +22,7 @@ class Math10
             ->groupBy('kebutuhan_institusi_terhadap_lulusan')
             ->pluck('total', 'kebutuhan_institusi_terhadap_lulusan')->all();
 
-        $labels = ['Rendah', 'Tinggi','Sangat tinggi'];
+        $labels = ['Sangat tinggi', 'Tinggi','Rendah'];
         $counts = array_fill_keys($labels, 0);
 
         // Hitung total keseluruhan responden

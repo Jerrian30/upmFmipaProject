@@ -22,7 +22,7 @@ class Math16
             ->groupBy('kompetensi_penggunaan_teknologi_informasi')
             ->pluck('total', 'kompetensi_penggunaan_teknologi_informasi')->all();
 
-        $labels = ['Kurang', 'Cukup','Baik', 'Sangat Baik'];
+            $labels = ['Sangat Baik', 'Baik','Cukup', 'Kurang'];
         $counts = array_fill_keys($labels, 0);
 
         // Hitung total keseluruhan responden

@@ -22,7 +22,7 @@ class Math19
             ->groupBy('kompetensi_pengembangan_diri')
             ->pluck('total', 'kompetensi_pengembangan_diri')->all();
 
-        $labels = ['Kurang', 'Cukup','Baik', 'Sangat Baik'];
+            $labels = ['Sangat Baik', 'Baik','Cukup', 'Kurang'];
         $counts = array_fill_keys($labels, 0);
 
         // Hitung total keseluruhan responden

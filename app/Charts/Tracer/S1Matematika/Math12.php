@@ -22,7 +22,7 @@ class Math12
             ->groupBy('kompetisi_dengan_lulusan_lain')
             ->pluck('total', 'kompetisi_dengan_lulusan_lain')->all();
 
-        $labels = ['Sangat tidak mampu', 'Kurang mampu','Mampu', 'Sangat mampu'];
+        $labels = ['Sangat mampu', 'Mampu', 'Kurang mampu', 'Sangat tidak mampu'];
         $counts = array_fill_keys($labels, 0);
 
         // Hitung total keseluruhan responden

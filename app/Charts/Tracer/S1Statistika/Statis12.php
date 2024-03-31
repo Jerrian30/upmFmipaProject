@@ -1,12 +1,12 @@
 <?php
 
-namespace App\Charts\Tracer\S1Matematika;
+namespace App\Charts\Tracer\S1Statistika;
 
 use App\Models\Tracerr;
 use ArielMejiaDev\LarapexCharts\LarapexChart;
 use ArielMejiaDev\LarapexCharts\DonutChart;
 
-class Math12
+class Statis12
 {
     protected $chart;
 
@@ -18,11 +18,11 @@ class Math12
     public function build(): \ArielMejiaDev\LarapexCharts\DonutChart
     {
         $data = Tracerr::select('kompetisi_dengan_lulusan_lain', \DB::raw('count(*) as total'))
-            ->where('lulus_dari_program_studi', 'S1 Matematika') // Menambahkan filter untuk program_studi
+            ->where('lulus_dari_program_studi', 'S1 Statistika') // Menambahkan filter untuk program_studi
             ->groupBy('kompetisi_dengan_lulusan_lain')
             ->pluck('total', 'kompetisi_dengan_lulusan_lain')->all();
 
-        $labels = ['Sangat tidak mampu', 'Kurang mampu','Mampu', 'Sangat mampu'];
+        $labels = ['Sangat mampu', 'Mampu', 'Kurang mampu', 'Sangat tidak mampu'];
         $counts = array_fill_keys($labels, 0);
 
         // Hitung total keseluruhan responden
