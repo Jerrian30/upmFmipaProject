@@ -1,9 +1,10 @@
 <?php
 
-namespace App\Charts\Mahasiswa\D3LabSains;
+namespace App\Charts\Tracer\D3LabSains;
 
-use App\Models\Mahasiswa;
+use App\Models\Tracerr;
 use ArielMejiaDev\LarapexCharts\LarapexChart;
+use ArielMejiaDev\LarapexCharts\DonutChart;
 
 class LabSains3
 {
@@ -14,33 +15,25 @@ class LabSains3
         $this->chart = $chart;
     }
 
-    protected function calculatePercentages()
-    {
-        $dataD3Farmasi = Mahasiswa::where('program_studi', 'D3 Lab Sains')
-            ->selectRaw('COUNT(*) as count, layanan_bimbingan_konseling')
-            ->groupBy('layanan_bimbingan_konseling')
-            ->pluck('count', 'layanan_bimbingan_konseling');
-
-        $dataValues = [1 => 0, 2 => 0, 3 => 0, 4 => 0];
-
-        foreach ($dataD3Farmasi as $nilai => $count) {
-            $dataValues[$nilai] = $count;
-        }
-
-        $totalResponden = array_sum($dataValues);
-
-        return array_map(function ($value) use ($totalResponden) {
-            return ($totalResponden > 0) ? round(($value / $totalResponden) * 100, 2) : 0;
-        }, $dataValues);
-    }
-
     public function build(): \ArielMejiaDev\LarapexCharts\DonutChart
     {
-        $dataPercentages = $this->calculatePercentages();
-        
-        return $this->chart->donutChart()
-            ->addData(array_values($dataPercentages))
-            ->setLabels(['1', '2', '3', '4']);
-    }
+        // Menghitung total IPK dan jumlah responden
+        $totalIpkDanJumlahResponden = Tracerr::where('lulus_dari_program_studi', 'D3 Lab Sains')
+            ->selectRaw('SUM(ipk) as total_ipk, COUNT(*) as jumlah_responden')
+            ->first();
 
+        // Menghitung rata-rata IPK
+        $rataRataIpk = $totalIpkDanJumlahResponden->jumlah_responden > 0
+            ? round($totalIpkDanJumlahResponden->total_ipk / $totalIpkDanJumlahResponden->jumlah_responden, 2)
+            : 0;
+
+        // Membuat label dan data untuk chart
+        $labels = ['Rata-Rata IPK'];
+        $data = [$rataRataIpk];
+
+        // Mengembalikan objek DonutChart dengan rata-rata IPK
+        return $this->chart->donutChart()
+            ->addData($data)
+            ->setLabels($labels);
+    }
 }

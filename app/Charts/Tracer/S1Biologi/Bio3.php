@@ -1,12 +1,12 @@
 <?php
 
-namespace App\Charts\Tracer\S1Matematika;
+namespace App\Charts\Tracer\S1Biologi;
 
 use App\Models\Tracerr;
 use ArielMejiaDev\LarapexCharts\LarapexChart;
 use ArielMejiaDev\LarapexCharts\DonutChart;
 
-class Math3
+class Bio3
 {
     protected $chart;
 
@@ -18,7 +18,7 @@ class Math3
     public function build(): \ArielMejiaDev\LarapexCharts\DonutChart
     {
         // Menghitung total IPK dan jumlah responden
-        $totalIpkDanJumlahResponden = Tracerr::where('lulus_dari_program_studi', 'S1 Matematika')
+        $totalIpkDanJumlahResponden = Tracerr::where('lulus_dari_program_studi', 'S1 Biologi')
             ->selectRaw('SUM(ipk) as total_ipk, COUNT(*) as jumlah_responden')
             ->first();
 

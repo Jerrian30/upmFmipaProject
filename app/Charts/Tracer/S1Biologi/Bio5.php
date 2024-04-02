@@ -1,12 +1,12 @@
 <?php
 
-namespace App\Charts\Tracer\S1Matematika;
+namespace App\Charts\Tracer\S1Biologi;
 
 use App\Models\Tracerr;
 use ArielMejiaDev\LarapexCharts\LarapexChart;
 use ArielMejiaDev\LarapexCharts\DonutChart;
 
-class Math5
+class Bio5
 {
     protected $chart;
 
@@ -18,7 +18,7 @@ class Math5
     public function build(): \ArielMejiaDev\LarapexCharts\DonutChart
     {
         $data = Tracerr::select('waktu_tunggu_pekerjaan', \DB::raw('count(*) as total'))
-            ->where('lulus_dari_program_studi', 'S1 Matematika')
+            ->where('lulus_dari_program_studi', 'S1 Biologi')
             ->whereNotNull('waktu_tunggu_pekerjaan') // Mengabaikan nilai null
             ->where('waktu_tunggu_pekerjaan', '<>', '-') // Mengabaikan nilai '-'
             ->groupBy('waktu_tunggu_pekerjaan')

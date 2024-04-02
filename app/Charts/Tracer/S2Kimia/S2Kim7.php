@@ -1,9 +1,10 @@
 <?php
 
-namespace App\Charts\Mahasiswa\S2Kimia;
+namespace App\Charts\Tracer\S2Kimia;
 
-use App\Models\Mahasiswa;
+use App\Models\Tracerr;
 use ArielMejiaDev\LarapexCharts\LarapexChart;
+use ArielMejiaDev\LarapexCharts\DonutChart;
 
 class S2Kim7
 {
@@ -14,33 +15,36 @@ class S2Kim7
         $this->chart = $chart;
     }
 
-    protected function calculatePercentages()
-    {
-        $dataD3Farmasi = Mahasiswa::where('program_studi', 'S2 Kimia')
-            ->selectRaw('COUNT(*) as count, staf_akademik_kemahasiswaan')
-            ->groupBy('staf_akademik_kemahasiswaan')
-            ->pluck('count', 'staf_akademik_kemahasiswaan');
-
-        $dataValues = [1 => 0, 2 => 0, 3 => 0, 4 => 0];
-
-        foreach ($dataD3Farmasi as $nilai => $count) {
-            $dataValues[$nilai] = $count;
-        }
-
-        $totalResponden = array_sum($dataValues);
-
-        return array_map(function ($value) use ($totalResponden) {
-            return ($totalResponden > 0) ? round(($value / $totalResponden) * 100, 2) : 0;
-        }, $dataValues);
-    }
-
     public function build(): \ArielMejiaDev\LarapexCharts\DonutChart
-    {
-        $dataPercentages = $this->calculatePercentages();
-        
-        return $this->chart->donutChart()
-            ->addData(array_values($dataPercentages))
-            ->setLabels(['1', '2', '3', '4']);
+{
+    $data = Tracerr::select('proses_mendapatkan_pekerjaan', \DB::raw('count(*) as total'))
+        ->where('lulus_dari_program_studi', 'S2 Kimia')
+        ->whereNotNull('proses_mendapatkan_pekerjaan') // Mengabaikan nilai null
+        ->where('proses_mendapatkan_pekerjaan', '<>', '-') // Mengabaikan nilai '-'
+        ->groupBy('proses_mendapatkan_pekerjaan')
+        ->pluck('total', 'proses_mendapatkan_pekerjaan')->all();
+
+    $definedLabels = ['Aktif (mencari sendiri)', 'Pasif (mendapatkan tawaran pekerjaan)', 'Tes CPNS'];
+    // 'Other' dimasukkan ke dalam labels untuk menangani nilai yang tidak terdefinisi selain null dan '-'
+    $labels = array_merge($definedLabels, ['Other']);
+
+    $counts = array_fill_keys($labels, 0);
+
+    // Hitung total keseluruhan responden, termasuk mengabaikan nilai null dan '-'
+    $totalResponden = array_sum($data);
+
+    foreach ($data as $key => $value) {
+        if (in_array($key, $definedLabels)) {
+            $counts[$key] = $totalResponden > 0 ? round(($value / $totalResponden) * 100, 2) : 0;
+        } else {
+            // Hanya nilai non-null dan non-'-' yang 'lainnya' akan ditambahkan ke 'Other'
+            $counts['Other'] += $totalResponden > 0 ? round(($value / $totalResponden) * 100, 2) : 0;
+        }
     }
+
+    return $this->chart->donutChart()
+        ->addData(array_values($counts))
+        ->setLabels(array_keys($counts));
+}
 
 }
