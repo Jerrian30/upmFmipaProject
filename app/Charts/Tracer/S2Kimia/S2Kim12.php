@@ -6,7 +6,7 @@ use App\Models\Tracerr;
 use ArielMejiaDev\LarapexCharts\LarapexChart;
 use ArielMejiaDev\LarapexCharts\DonutChart;
 
-class S2Kim11
+class S2Kim12
 {
     protected $chart;
 

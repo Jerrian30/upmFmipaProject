@@ -17,9 +17,6 @@
 <script src="{{ $labsains17->cdn() }}"></script>
 <script src="{{ $labsains18->cdn() }}"></script>
 <script src="{{ $labsains19->cdn() }}"></script>
-<script src="{{ $labsains20->cdn() }}"></script>
-<script src="{{ $labsains21->cdn() }}"></script>
-<script src="{{ $labsains22->cdn() }}"></script>
 
 {{ $labsains1->script() }}
 {{ $labsains2->script() }}
@@ -40,6 +37,3 @@
 {{ $labsains17->script() }}
 {{ $labsains18->script() }}
 {{ $labsains19->script() }}
-{{ $labsains20->script() }}
-{{ $labsains21->script() }}
-{{ $labsains22->script() }}

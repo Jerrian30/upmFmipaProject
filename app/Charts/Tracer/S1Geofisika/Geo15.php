@@ -6,7 +6,7 @@ use App\Models\Tracerr;
 use ArielMejiaDev\LarapexCharts\LarapexChart;
 use ArielMejiaDev\LarapexCharts\DonutChart;
 
-class Bio15
+class Geo15
 {
     protected $chart;
 

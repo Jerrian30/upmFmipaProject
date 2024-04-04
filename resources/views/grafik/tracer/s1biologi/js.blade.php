@@ -17,9 +17,6 @@
 <script src="{{ $bio17->cdn() }}"></script>
 <script src="{{ $bio18->cdn() }}"></script>
 <script src="{{ $bio19->cdn() }}"></script>
-<script src="{{ $bio20->cdn() }}"></script>
-<script src="{{ $bio21->cdn() }}"></script>
-<script src="{{ $bio22->cdn() }}"></script>
 
 {{ $bio1->script() }}
 {{ $bio2->script() }}
@@ -40,6 +37,3 @@
 {{ $bio17->script() }}
 {{ $bio18->script() }}
 {{ $bio19->script() }}
-{{ $bio20->script() }}
-{{ $bio21->script() }}
-{{ $bio22->script() }}

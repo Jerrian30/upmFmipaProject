@@ -6,7 +6,7 @@ use App\Models\Tracerr;
 use ArielMejiaDev\LarapexCharts\LarapexChart;
 use ArielMejiaDev\LarapexCharts\DonutChart;
 
-class Geoo5
+class Geo5
 {
     protected $chart;
 

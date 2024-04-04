@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Charts\Tracer\D3Biologi;
+namespace App\Charts\Tracer\D3LabSains;
 
 use App\Models\Tracerr;
 use ArielMejiaDev\LarapexCharts\LarapexChart;

@@ -17,9 +17,6 @@
 <script src="{{ $s2statis17->cdn() }}"></script>
 <script src="{{ $s2statis18->cdn() }}"></script>
 <script src="{{ $s2statis19->cdn() }}"></script>
-<script src="{{ $s2statis20->cdn() }}"></script>
-<script src="{{ $s2statis21->cdn() }}"></script>
-<script src="{{ $s2statis22->cdn() }}"></script>
 
 {{ $s2statis1->script() }}
 {{ $s2statis2->script() }}
@@ -40,6 +37,3 @@
 {{ $s2statis17->script() }}
 {{ $s2statis18->script() }}
 {{ $s2statis19->script() }}
-{{ $s2statis20->script() }}
-{{ $s2statis21->script() }}
-{{ $s2statis22->script() }}

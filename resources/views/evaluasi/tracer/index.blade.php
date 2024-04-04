@@ -3,21 +3,13 @@
 @section('page', 'Evaluasi -> Tracer Studi')
 {{-- java script --}}
 @section('js')
-
-{{-- @include('grafik.tracer.d3farmasi.js')
-@include('grafik.tracer.s1farmasi.js')
-
 @include('grafik.tracer.s1statistika.js') 
 @include('grafik.tracer.s2statistika.js')
-
-@include('grafik.tracer.d3keperawatan.js')
 @include('grafik.tracer.d3labsains.js')
 @include('grafik.tracer.s1kimia.js')
 @include('grafik.tracer.s2kimia.js') 
 @include('grafik.tracer.s1geofisika.js')
-@include('grafik.tracer.s1biologi.js')
-@include('grafik.tracer.s2biologi.js')
-@include('grafik.tracer.s1fisika.js') --}}
+@include('grafik.tracer.s1biologi.js') 
 @include('grafik.tracer.s1matematika.js')
 @include('grafik.tracer.d3kebidanan.js')
 @include('grafik.tracer.all.js')
@@ -31,25 +23,11 @@
                 container.style.display = (value === 'all') ? 'block' : 'none';
             });
 
-            var farmasiContainers = document.querySelectorAll('.farmasiContainer');
-            farmasiContainers.forEach(function(container) {
-                container.style.display = (value === 'd3farmasi') ? 'block' : 'none';
-            });
-
-            var fisikaContainers = document.querySelectorAll('.fisikaContainer');
-            fisikaContainers.forEach(function(container) {
-                container.style.display = (value === 's1fisika') ? 'block' : 'none';
-            });
-
             var geofisikaContainers = document.querySelectorAll('.geofisikaContainer');
             geofisikaContainers.forEach(function(container) {
                 container.style.display = (value === 's1geofisika') ? 'block' : 'none';
             });
             
-            var s1farmasiContainers = document.querySelectorAll('.s1farmasiContainer');
-            s1farmasiContainers.forEach(function(container) {
-                container.style.display = (value === 's1farmasi') ? 'block' : 'none';
-            });
 
             var matematikaContainers = document.querySelectorAll('.matematikaContainer');
             matematikaContainers.forEach(function(container) {
@@ -66,10 +44,6 @@
                 container.style.display = (value === 'd3kebidanan') ? 'block' : 'none';
             });
 
-            var keperawatanContainer = document.querySelectorAll('.keperawatanContainer');
-            keperawatanContainer.forEach(function(container) {
-                container.style.display = (value === 'd3keperawatan') ? 'block' : 'none';
-            });
 
             var labSainsContainer = document.querySelectorAll('.labsainsContainer');
             labSainsContainer.forEach(function(container) {
@@ -96,10 +70,6 @@
                 container.style.display = (value === 's2kimia') ? 'block' : 'none';
             });
 
-            var s2biologiContainer = document.querySelectorAll('.s2biologiContainer');
-            s2biologiContainer.forEach(function(container) {
-                container.style.display = (value === 's2biologi') ? 'block' : 'none';
-            });
         });
 
     </script>
@@ -141,20 +111,13 @@
         @include('grafik.tracer.all.view')
         @include('grafik.tracer.d3kebidanan.view')
         @include('grafik.tracer.s1matematika.view')
-        {{-- 
-
         @include('grafik.tracer.s1statistika.view')
         @include('grafik.tracer.s2statistika.view')
-        @include('grafik.tracer.s2biologi.view')
-        @include('grafik.tracer.d3farmasi.view')
-        @include('grafik.tracer.s1farmasi.view')
         @include('grafik.tracer.s1kimia.view')
         @include('grafik.tracer.s2kimia.view') 
-        @include('grafik.tracer.d3keperawatan.view')
         @include('grafik.tracer.d3labsains.view')  
-        @include('grafik.tracer.s1fisika.view') 
         @include('grafik.tracer.s1geofisika.view')
-        @include('grafik.tracer.s1biologi.view') --}}
+        @include('grafik.tracer.s1biologi.view')
     </div>
 </div>
 @endsection
