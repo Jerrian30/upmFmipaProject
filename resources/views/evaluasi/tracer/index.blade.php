@@ -91,19 +91,14 @@
         <select class="form-control" id="programStudi" name="programStudi">
             <option value="" disabled selected>Pilih</option>
             <option value="all">Semua</option>
-            <option value="s2biologi">S2 Biologi</option>
             <option value="s2kimia">S2 Kimia</option>
             <option value="s2statistika">S2 Statistika</option>
             <option value="s1biologi">S1 Biologi</option>
-            <option value="s1farmasi">S1 Farmasi</option>
-            <option value="s1fisika">S1 Fisika</option>
             <option value="s1geofisika">S1 Geofisika</option>
             <option value="s1kimia">S1 Kimia</option>
             <option value="s1matematika">S1 Matematika</option>
             <option value="s1statistika">S1 Statistika</option>
-            <option value="d3farmasi">D3 Farmasi</option>
             <option value="d3kebidanan">D3 Kebidanan</option>
-            <option value="d3keperawatan">D3 Keperawatan</option>
             <option value="d3labsains">D3 Lab Sains</option>
         </select>
         <br>
